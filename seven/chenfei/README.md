@@ -83,7 +83,6 @@ v：def update(table,field,data):
 
 
 #### 删除账号
-'''
 v：userlist.html
    <a href="/del?id={{ user.id }}">删除</a>
 m:@app.route('/del/')
@@ -96,7 +95,7 @@ def deleteuser():
 v:def delete(data):
     sql = "delete from  user  where id='%s';"%(data['id'])
     cur.execute(sql)
-'''
+
 
 
 
