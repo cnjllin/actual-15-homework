@@ -7,7 +7,7 @@ total =3
 user="test"
 password="123456"
 
-name = raw_input("please input your name:")
+name = raw_input("please input your name:").strip()
 if name == user:
     while count <=3:
         total=total-1
