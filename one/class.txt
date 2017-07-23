@@ -1,0 +1,29 @@
+1: 实战班的项目结果
+2：pip ipython
+3: 数据类型
+   数字
+   字符串
+      格式化—— C# vs C   *****
+      大小写——upper lower
+      random 随时数
+      string.letters
+
+4: 变量  = vs  ==
+
+5: if elif else   raw_input   验证用户名/密码  type
+
+6: while—— break,exit   三次锁定
+
+7: for in  ——  求最大数
+
+8： try except ——  后期细讲
+
+9：github常用操作—— 后期细讲
+
+
+希望
+
+1： 有同学能写好15期博客 
+2： 有人能共享课堂笔记
+3： 每个人都要有实战 有沉淀  有自己亲手写的代码和作品
+
