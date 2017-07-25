@@ -15,6 +15,7 @@ while namecount <=3:
 			pwd = (raw_input("输入6位密码: "))
 			if pwd == realpwd:
 				print "\033[32m你好:%s,恭喜你已登录成功\033[0m" %name
+				namecount = 4
 				break
 			pwd = list(pwd)
 			pwdlen = len(pwd)
