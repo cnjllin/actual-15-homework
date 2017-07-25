@@ -36,5 +36,4 @@ else:
     rw_user_lockd.write(Username)
     rw_user_lockd.write("\n")                     
     rw_user_lockd.close()
-
             
