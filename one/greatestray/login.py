@@ -4,11 +4,11 @@
 
 import os,sys,crypt
 
-def op_file(user_file):
+def get_uarray(user_file):
     with open(user_file,"r") as f:
         user_file_content = f.readlines()
-        squares = [x.split(":")[0] for x in user_file_content ]
-        return squares
+        uarray = [x.split(":")[0] for x in user_file_content ]
+        return uarray
 
 
 def get_passwd(passwd_file,user_name):
@@ -43,7 +43,7 @@ if __name__=="__main__":
     user_name = raw_input("Pls enter your user name:")
     passwd = get_passwd(passwd_file, "yutian")
 
-    if user_name in op_file(user_file):
+    if user_name in get_uarray(user_file):
 
         if passwd.split("$")[0] == "!":
             print "%s is lock." % user_name 
@@ -70,7 +70,7 @@ if __name__=="__main__":
             adduser = "useradd %s" % user_name
             os.system("adduser")
             
-        else
+        else:
             print "bye"
             sys.exit()
 
