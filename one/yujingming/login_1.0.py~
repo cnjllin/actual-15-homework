@@ -1,0 +1,25 @@
+#!/usr/bin/bash
+# If name=tangseng & password=88888888, print login welcom info.
+cnt=0
+while cnt <3:
+	name=input("please input your name:") # input() Fail, why?
+	if type(name) != str:  # Not 'str'
+		print "Wrong type,retry it:"
+
+	elif name == 'tangseng':   
+		pwd = raw_input("please input password:")
+		if len(pwd) >6: 
+			if pwd=='88888888':
+				print "welcome you {}".format(name)
+				break # stop on this point.
+			else:
+				print "password is wrong!"
+		else:
+			print "password num should >= 6 "
+
+	else:
+		print "userid is wrong"
+	cnt=cnt+1	
+# print "input cycle >3, input have been locked" # wrong!!!
+	if cnt==3: # not =
+		print "input cycle >3, input have been locked"
