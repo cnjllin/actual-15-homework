@@ -39,9 +39,10 @@ if __name__=="__main__":
     user_file="/etc/passwd"
 
     count = 0
-  
+
+
     user_name = raw_input("Pls enter your user name:")
-    passwd = get_passwd(passwd_file, "yutian")
+    passwd = get_passwd(passwd_file, user_name)
 
     if user_name in get_uarray(user_file):
 
