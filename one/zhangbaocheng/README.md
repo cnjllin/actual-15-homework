@@ -1,3 +1,4 @@
+                                        login 流程图                                                
 ![image](https://github.com/1032231418/python/blob/master/day1/login_%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
 
 作业：
