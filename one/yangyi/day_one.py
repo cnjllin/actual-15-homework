@@ -7,7 +7,7 @@
    3:密码位数必须超过6位
 '''
 #name = 'TailorYang'
-#password = '123456'
+#password = '113456'
 import sys
 time = 0
 name = raw_input('Please input your username :')
