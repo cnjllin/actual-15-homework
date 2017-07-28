@@ -1,5 +1,3 @@
-流程图：
-
 ![image](https://github.com/51reboot/actual-15-homework/blob/master/one/zhangbaocheng/login_%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
 
 
