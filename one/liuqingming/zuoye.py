@@ -11,9 +11,9 @@ import json
 data = {}
 with open('user.json', 'r') as f:
     data = json.load(f)
-    #print type (data)
+    print type (data)
     #data = json.loads(data)
-    #print type (data)
+    print type (data)
 
 num = 0
 while num < 3 :
@@ -24,23 +24,24 @@ while num < 3 :
     len_passwd = len(user_passwd1)
     code = "".join(random.sample(string.letters+string.digits,4))
     print "验证码:%s" % code
-    user_code = raw_input("请输入验证码:")
+    lower_code = string.lower(code)
+    user_code = string.lower(raw_input("请输入验证码，不区分大小写:"))
     if user_name not in data :
         if len_passwd < 6 :
             print "密码少于6位，请重新输入"
             continue
         else :
-            if user_passwd1 == user_passwd2 and code == user_code :     
+            if user_passwd1 == user_passwd2 and lower_code == user_code :     
                 data[user_name] = user_passwd1
                 #j_str = json.dumps(data)
                 with open('user.json', 'w') as f:
                     json.dump(data,f)
                 print "恭喜您注册成功，您的用户名为%s" % user_name
                 break
-            elif user_passwd1 == user_passwd2 and code != user_code :
+            elif user_passwd1 == user_passwd2 and lower_code != user_code :
                 print "验证码错误"
                 continue
-            elif user_passwd1 != user_passwd2 and code == user_code :
+            elif user_passwd1 != user_passwd2 and lower_code == user_code :
                 print "两次密码不一致"
                 continue
             else :
@@ -73,14 +74,15 @@ while num < 3 :
         else :
             code = "".join(random.sample(string.letters+string.digits,4))
             print "验证码:%s" % code
-            user_code = raw_input("请输入验证码:")
-            if data[user_name] == user_passwd and code == user_code :
+            lower_code = string.lower(code)
+            user_code = string.lower(raw_input("请输入验证码，不区分大小写:"))
+            if data[user_name] == user_passwd and lower_code == user_code :
                 print "登陆成功，欢迎%s" % user_name
                 break
-            elif data[user_name] == user_passwd and code != user_code :
+            elif data[user_name] == user_passwd and lower_code != user_code :
                 print "登陆失败，验证码错误"
                 continue
-            elif data[user_name] != user_passwd and code == user_code :
+            elif data[user_name] != user_passwd and lower_code == user_code :
                 print "登陆失败，密码错误"
                 continue
             else :
