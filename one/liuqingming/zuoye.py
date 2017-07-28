@@ -1,5 +1,5 @@
 #!/bin/env python
-# -*- coding: UTF-8 -*-
+# -*- coding:UTF-8 -*-
 #
 
 import string
@@ -11,9 +11,9 @@ def register():
     data = {}
     with open('user.json', 'r') as f:
         data = json.load(f)
-        print type (data)
+        #print type (data)
         #data = json.loads(data)
-        print type (data)
+        #print type (data)
     
     num = 0
     while num < 3 :
