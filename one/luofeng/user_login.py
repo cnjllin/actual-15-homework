@@ -8,7 +8,7 @@ count = 0
 username = "luofeng"
 password = "123456"
 
-user = raw_input("please input your username: ").strip()
+user = raw_input("please input your username: ").strip()  # 判断用户是否在黑名单中，如果在黑名单提示后就推出整个程序.
 with open('black_list.txt', 'r') as lock_read:
     for lock in lock_read:
         lock_user = lock.strip()
@@ -19,13 +19,13 @@ with open('black_list.txt', 'r') as lock_read:
             continue
 
 while True:
-    if user == username:
+    if user == username:    # 用户名正确，提示输入密码
         passwd = raw_input("please input your password: ").strip()
         count = count + 1
         retry_count = retry_count - 1
-        if len(passwd) != 6:
+        if len(passwd) != 6:    # 判断密码的长度是否匹配6位，不匹配就提示用户输入，并减少密码重试的次数.
             print "\033[31mError: The password does not match six lengths and there are %d retries.\033[0m" % (retry_count)
-            if count == 3:
+            if count == 3:   # 判断用户输入密码重试的次数，如果满足三次，则提示非法操作，用户将被锁定.
                 print "\033[31mError: Very operation, the user will be locked.\033[0m"
                 with open('black_list.txt', 'a+') as lock:
                     lock.write(user)
