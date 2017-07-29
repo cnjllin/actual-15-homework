@@ -11,11 +11,11 @@ while count<=3:
 			print "欢迎"
 			break
 		elif len(str(password))<7:
-			print "您的密码小于7位"
+			print "您的密码小于7位,请重新输入，您还有%d次机会"%(3-count)
 			count+=1
 		else:
-			print "您的密码错误"
-			count+=1			
+			print "您的密码错误,请重新输入，您还有%d次机会"%(3-count)
+			count+=1
 	else:
 		print "用户名不存在"
 		count+=1
