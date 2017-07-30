@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 #_*_ coding:utf-8 _*_
+__author__ = 'Eagle'
 import  sys
 counts = 0 
 
@@ -36,5 +37,4 @@ else:
     rw_user_lockd.write(Username)
     rw_user_lockd.write("\n")                     
     rw_user_lockd.close()
-
             

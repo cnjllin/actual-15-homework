@@ -36,19 +36,21 @@
 #思路 关键信息
 #用户名 密码（必须超过6位）3次验证，返回具体错误信息，超过三次锁定用户
 
-user_name = raw_input('Please enter your user name：')
+usr_name = 'liuyang'
+usr_pwd = '123456'
 
-if user_name == 'liuyang':
-	count = 0
+user_name = raw_input('Please enter your user name：')
+if user_name == usr_name:
+	count = 1
 	while count <=3:
 		user_pwd = raw_input('Please enter your user passwd: ')
-		if user_pwd == '':
-			print '\033[1;31;40mPassword cannt be empty,please input again！\033[0m'
-		elif len(user_pwd)< 6:
-			print '\033[1;31;40mPassword must be more than six,please input again！\033[0m'
-		else:
+		if user_pwd == usr_pwd:
 			print '\033[1;32;40mLogin sucessfully! \nHey %s,Welcome!\033[0m'%(user_name)
 			break
+		elif len(user_pwd)<6:
+			print '\033[1;31;40mPassword must be more than six,you have %s times,please input again！\033[0m'%(3-count)
+		else:
+			print '\033[1;31;40mWrong password,you have %s times！\033[0m'%(3-count)			
 		count += 1
 	else:
 		print '\033[1;31;40mUser name or password wrong input more than three times, the account will be locked!!!\033[0m'
