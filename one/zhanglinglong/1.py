@@ -14,7 +14,7 @@ if name == "zll":
         if len(passwd) <6:
             print "密码位数必须超过6位"
             break
-        #如果密码输入错误，提示错误，并且最多可以输入3次
+        #如果密码输入错误，提示错误，并且最多可以输入3次，超过3次后退出
         if count < 3:
             print "密码错误，你还有%s次机会" %(3 - count)
             count +=1
