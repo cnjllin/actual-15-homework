@@ -1,6 +1,6 @@
 #/usr/bin/python
 #coding:utf-8
-#输入错误，回车前可以清楚
+#输入错误，回车前可以清除
 import readline
 name = raw_input("请输入用户名：")
 if name == "zll":
