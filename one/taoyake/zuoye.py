@@ -20,7 +20,7 @@ while count < 3:
         break
     else:
         pwd = getpass.getpass("请输入您的密码: ")  #输入密码
-        if pwd != password and len(pwd) <= 6:       #如果输入的密码连续三次小于六位数，则提示账号锁定并退出
+        if len(pwd) <= 6:       #如果输入的密码连续三次小于六位数，则提示账号锁定并退出
             count = count + 1
             time = 3 - count
             if time == 0:
