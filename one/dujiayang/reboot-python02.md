@@ -83,3 +83,45 @@ print b
 
 * a.keys()  查看所有key
 * a.value() 查看所有值
+* a.has_key('name') 查看有没有name这个key，返回bool值
+* a.update(b) 合并ab2个字典
+```
+for k,v in b.items():
+	print "%s --> %s" %(k,v)
+```
+* a.get("name","hehe") get取值，如果name这个key不存在，则给指定的hehe作为默认值,不指定默认为空。
+```
+>>> a = {'name':'tom','gf':{'lily':18,'vivi':20},'age':22,'job':'java'}
+>>> a
+{'job': 'java', 'gf': {'vivi': 20, 'lily': 18}, 'age': 22, 'name': 'tom'}
+>>> a.get("name")
+'tom'
+>>> a.get("name","")
+'tom'
+>>> a.get("name","hehe")
+'tom'
+>>> a.get("nam","hehe")
+'hehe'
+```
+```
+In [2]: users
+Out[2]:
+[{'age': 18, 'job': 'coo', 'name': 'wd', 'passwd': '12323'},
+ {'age': 19, 'job': 'cto', 'name': 'kk', 'passwd': 'abcdef'},
+ {'age': 20, 'job': 'cio', 'name': 'pc', 'passwd': 'ABC'}]
+In [4]: for i,user in enumerate(users):
+   ...:     print i,user['name']
+   ...:
+0 wd
+1 kk
+2 pc
+```
+with open() as f: 自动close()不用在手动输入f.close()
+```
+In [5]: with open('test.txt','a+') as f:
+   ...:     data = f.read()
+   ...:
+
+In [6]: data
+Out[6]: 'aaa\n'
+```
