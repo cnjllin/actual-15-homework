@@ -6,6 +6,7 @@
 * 对字典的items遍历，使用 lambda value作为key 排行.并倒叙
 
 #### 测试代码：
+```
 [root@reboot-python renwei]# python zuoye.py 10
 请输入您需要统计排行数:10
 --------排名前10IP的信息---------
