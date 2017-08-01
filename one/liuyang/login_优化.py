@@ -32,9 +32,9 @@ usr_pwd = '123456'
 user_name = raw_input('Please enter your user name：').strip()
 # 判断用户是否存在，存在，则继续if中语句
 if user_name == usr_name:
-	count = 1
+	count = 0
 	# 判断输入次数，3次机会，输入错误超过3次，退出程序
-	while count <=3:
+	while count <3:
 		user_pwd = raw_input('Please enter your user passwd: ').strip()
 		# 判断密码长度，如果小于6,提示密码大于6位，重新输入，还有两次机会
 		if len(user_pwd)<6:
