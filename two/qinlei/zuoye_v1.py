@@ -42,7 +42,7 @@ for i in range(0,len(li3)):
         if li3[i][1]>li3[j][1]:
             li3[i],li3[j] = li3[j],li3[i]
 
-'''第五个循环，格式化输入打印'''
+'''第五个循环，列表切片取前10个IP，格式化输入打印'''
 
 li4 = li3[-10:]
 li4.reverse()
