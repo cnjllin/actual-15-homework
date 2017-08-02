@@ -12,7 +12,7 @@
     import collections
     
     # 打开并读取日志文件   
-    with open('/root/gaofan/access.txt') as f:
+    with open('access.txt') as f:
         data=f.readlines() 
     
     # 提取log中所有ip到列表
