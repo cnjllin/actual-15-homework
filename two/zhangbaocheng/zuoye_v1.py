@@ -1,7 +1,7 @@
 #!/usr/bin/env  python
 #_*_ coding:utf-8 _*_
 __author__ = 'Eagle'
-#1 导入time模块，及Counter计数器模块
+#1. 导入time模块，及Counter计数器模块
 import   time
 from collections import Counter
 #2. 取当前时钟时间，打开文件，赋值一个空列表
