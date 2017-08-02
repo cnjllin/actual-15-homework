@@ -1,6 +1,0 @@
-测试结果
-冒泡排序法：
-![](https://github.com/51reboot/actual-15-homework/blob/master/two/gaofan/test1.png)
-
-Counter计数：
-![](https://github.com/51reboot/actual-15-homework/blob/master/two/gaofan/test2.png)
