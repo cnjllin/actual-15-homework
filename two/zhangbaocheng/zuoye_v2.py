@@ -18,7 +18,7 @@ log_file.close()
 
 # 4. 通过字典items方法，返回，key和value值，通过切片，取得key,元组里面的值，赋值给列表
 log_list  = [(k,v) for  k,v in log_dict.items()]
-print log_list
+
 print "==============IP TOP10 信息=============="
 #5. sorted 方法对log_list列表进行排序，通过列表第三个值进行，排序，通过reverse 升序排序，取前10个
 for j  in sorted(log_list,key = lambda x:x[1], reverse=True)[:10]:
