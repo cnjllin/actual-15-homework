@@ -5,10 +5,10 @@
     zuoye_v1.py 是第一版
     zuoye_v2.py 是第二版
 '''
-#<center>zuoye_v1 流程图</center >                                               
+<center>zuoye_v1 流程图</center >                                               
 ![image](https://github.com/1032231418/python/blob/master/day2/log1.png)
 
-#<center>zuoye_v2 流程图</center >                                                
+<center>zuoye_v2 流程图</center >                                                
 ![image](https://github.com/1032231418/python/blob/master/day2/log2.png)
-#<center>程序运行结果</center >  
+<center>程序运行结果</center >  
 ![image](https://github.com/1032231418/python/blob/master/day2/run.png)
