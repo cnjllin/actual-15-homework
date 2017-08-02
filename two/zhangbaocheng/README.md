@@ -16,6 +16,6 @@
                                  
 ![image](https://github.com/1032231418/python/blob/master/day2/log2.png)
 
-<center>程序运行结果</center >  
+<center>程序运行结果:</center >  
 
 ![image](https://github.com/1032231418/python/blob/master/day2/run.png)
