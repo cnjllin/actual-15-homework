@@ -1,0 +1,18 @@
+[root@ireadbook01 luofeng]# python user_login.py
+please input your username: luofeng
+please input your password: 123456
+hello ,luofeng login success.
+
+[root@ireadbook01 luofeng]# python user_login.py
+please input your username: luofeng
+please input your password: 1234
+Error: The password does not match six lengths and there are 2 retries.
+please input your password: 123498
+Error: Password error, You have 1 more chances，please re-enter.
+please input your password: 129346
+Error: Password error, You have 0 more chances，please re-enter.
+Error: Login once, the user is locked.
+
+[root@ireadbook01 luofeng]# python user_login.py
+please input your username: luofeng
+Error, luofeng The user has been locked in the blacklist.
