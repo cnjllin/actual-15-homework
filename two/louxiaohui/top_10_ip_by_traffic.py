@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
-# description:Analyse a nginx access log for the top 10 ip addresses
+# description:Analyse a nginx access log for the top 10 ip addresses by traffic
+# log_example: 1477659822.520 930938 123.42.130.36 TCP_MISS/206 66277 GET http://mvvideo10.meitudata.com/57a6d9da14310908.mp4?avthumb/mp4/s/140x94/an/1  - DIRECT/123.218.34.203 video/mp4 "http://admin.meitumv.com:8080/medias?filter_type=uid&search_keyword=1071373222" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:49.0) Gecko/20100101 Firefox/49.0" -
 
 import time
 start = time.time()
