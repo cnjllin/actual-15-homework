@@ -2,10 +2,10 @@ python第1天课堂笔记
 ====
 第1阶段 基础安装
 ----
-###1. linux系统安装`python`
+#### 1. linux系统安装`python`
 >[root@linux-node1 ~]# yum -y install openssl-devel python-devel zlib*
 
-###2. 安装`pip`
+#### 2. 安装`pip`
 ***`pip`类似linux系统中的`yum`***
 
 * 2.1 首先下载`pip`
@@ -45,7 +45,7 @@ python第1天课堂笔记
 
 	pip 9.0.1 from /usr/lib/python2.7/site-packages (python 2.7)
 
-###3. 使用`pip`安装`flask`和ipython
+#### 3. 使用`pip`安装`flask`和ipython
 * 3.1 安装`flask`
 > [root@linux-node1 ~]# pip install flask	
 
@@ -86,7 +86,7 @@ python第1天课堂笔记
 
 ***推荐使用第一种方法，因为第二种方法容易污染其他的环境***
 
-### 4. `python`和`ipython`的区别
+#### 4. `python`和`ipython`的区别
 <pre>
 1) `ipython`是一个增强的交互式的python shell
 2) `ipython`和`python`最大区别在于`ipython`会对命令提示符的每一行进行编号
@@ -97,7 +97,7 @@ python第1天课堂笔记
 
 第2阶段 基础练习
 ----
-###1. 使用`python`打印`hello world`和四则运算
+#### 1. 使用`python`打印`hello world`和四则运算
 
 	In [1]: print "hello world"
 	hello world
@@ -114,7 +114,7 @@ python第1天课堂笔记
 	In [7]: print 10+10*2/5
 	14
 
-###2. 拼接字符串和变量
+#### 2. 拼接字符串和变量
 
 	In [8]: print "hello "+"world"
 	hello world
@@ -134,7 +134,7 @@ python第1天课堂笔记
 	In [14]: print x+y
 	hello world
 
-###3. 交互式输入、使用脚本打印内容
+#### 3. 交互式输入、使用脚本打印内容
 	
 	In [19]: raw_input("please input your name: ")
 	please input your name: reboot
@@ -160,7 +160,7 @@ python第1天课堂笔记
 	please input your name: reboot
 	hello reboot
 
-###4. `python`脚本的注意细节
+#### 4. `python`脚本的注意细节
 <pre>
 1) `python`脚本的缩进问题：`python`脚本对缩进非常严格，缩进不正确会直接倒是脚本执行失败
 2）字符集问题：如果`python`脚本里包含汉字，则要指定字符集
@@ -170,7 +170,7 @@ python第1天课堂笔记
   #coding：utf-8
 </pre>
 
-###5. 字符串格式化输出
+#### 5. 字符串格式化输出
 
 	定义变量
 	In [5]: name = "lx"
@@ -191,7 +191,7 @@ python第1天课堂笔记
 	hello lx,age is 20,job is   sa,fenshu is99.900000
 ***注释：%s----字符串  %d----数值   %f-----浮点数   %4s----4代表占位符   %2f-----2代表保留多少位小数***
 
-###6. 模块
+#### 6. 模块
 	
 	1）统计value值的个数
 	In [39]: name = ["aoi","maria","aoi","aaa","aoi","aaa"]
@@ -257,7 +257,7 @@ python第1天课堂笔记
 
 第3阶段 `if/for/while`语句的使用
 ----
-###1. if语句的流程控制
+#### 1. if语句的流程控制
 
 ***if else语句实现逻辑控制***
 
@@ -363,7 +363,7 @@ python第1天课堂笔记
 	print "user not is exist!"
 </pre>
 
-###2. while循环语句
+#### 2. while循环语句
 	
 	while语句流程控制
 	方式1：
@@ -477,7 +477,7 @@ python第1天课堂笔记
 			break
 </pre>
 
-###3. `for`循环语句
+#### 3. `for`循环语句
 
 	`for`循环语法：
 	for n in 1,2,3,4,5
@@ -529,7 +529,7 @@ python第1天课堂笔记
 			i +=1
 	print i
 
-###4. 排错，判断字符类型对错
+#### 4. 排错，判断字符类型对错
     例如：print 1/0,正常情况下，会报错
     [root@linux-node1 python]# python test.py 
 	Traceback (most recent call last):
