@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #coding:utf-8
-#
+#作业要求：读取access.txt（从群共享下载）日志文件，找出重复次数前10的IP地址，打印地址和重复次数
 #defaultdict会在初始化时指定默认值.
 from collections import defaultdict
 fo = open('access.txt')
