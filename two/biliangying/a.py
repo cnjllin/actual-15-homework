@@ -1,5 +1,6 @@
 #!/usr/bin/python
 #coding:utf-8
+#
 #defaultdict会在初始化时指定默认值.
 from collections import defaultdict
 fo = open('access.txt')
@@ -11,7 +12,7 @@ for i in fo.readlines():
 b = defaultdict(int)
 for j in a:
 	b[j] += 1
-#字典按value排序
+#字典排序
 b=sorted(b.items(),key=lambda item:item[1],reverse=True)[0:10]
 for x in b:
         #把元祖转换为列表
