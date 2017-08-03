@@ -4,7 +4,6 @@
 
 import time
 start = time.time()
-
 # create a dictionary named dict to store the key:ip and the value:traffic.
 dict = {}
 
