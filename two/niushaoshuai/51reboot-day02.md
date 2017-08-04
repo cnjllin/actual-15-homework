@@ -249,8 +249,43 @@
      In [39]: dict.clear()
      In [40]: dict
      Out[40]: {}
+     
+     In [1]: x={}
+     In [2]: y=x
+     In [3]: x['name']='xiaoming'
+     In [4]: y
+     Out[4]: {'name': 'xiaoming'}
+     In [5]: x.clear()
+     In [6]: x
+     Out[6]: {}
+     In [7]: y
+     Out[7]: {}
+
+     In [1]: x={}
+     In [2]: y=x
+     In [13]: x['name']='xiaoming'
+     In [14]: y
+     Out[14]: {'name': 'xiaoming'}
+     In [15]: x={}
+     In [16]: y
+     Out[16]: {'name': 'xiaoming'}
+
+     In [69]: x
+     Out[69]: {'name': 'xiaoming'}
+     In [70]: y=x.copy()
+     In [71]: x['age']=18
+     In [72]: x
+     Out[72]: {'age': 18, 'name': 'xiaoming'}
+     In [73]: y
+     Out[73]: {'name': 'xiaoming'}
+     In [74]: x.clear()
+     In [75]: x
+     Out[75]: {}
+     In [76]: y
+     Out[76]: {'name': 'xiaoming'}
+
      ```
-     *点评：清空字典中的元素*
+     *点评：清空字典中的元素,.clear()方法是清空复制关系中字典们的数据，但不会清空副本中数据。{}只会清空当前字典中的数据*
      
      - pop方法：
        - dict.pop(key)
