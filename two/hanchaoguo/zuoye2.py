@@ -2,7 +2,7 @@
 #coding:utf-8
 ips_list = {}
 
-#读文件，并生切割成IP列表
+#读文件
 with open("/server/scripts/python/access.txt",'r') as f:
      
      #遍历文件，生成key为ip,value为次数的字典
