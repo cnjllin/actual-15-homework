@@ -4,7 +4,7 @@
 思路：
 1.将日志文件按行读取成列表
 2.使用split分割出IP，并将所有IP添加到另一个列表中
-3.将IP地址和该地址出现的次数添加到字典，k是地址，v是次数，不添加重复的IP，并要准确保留IP和次数的对应关系
+3.将IP地址和该地址出现的次数添加到字典，k是地址，v是次数。
 4.将字典里的k和v（也就是IP和次数）分别转换成2个列表，要确保每一对k和v在各自的列表里序号相同
 5.找出v列表（次数）中的最大值，并根据该元素的序号找出k列表中对应的元素，打印信息
 6.分别在k和v列表中删除上一步找出元素
@@ -15,7 +15,7 @@ start = time.clock()
 # 创建后续代码需要的列表和字典
 ip = []
 count_list = []
-ip_list = []
+ip_dict = {}
 # 将日志文件按行读取，并组成列表
 with open('F:\\access.txt') as file:
     log_list = file.readlines()
@@ -23,15 +23,14 @@ with open('F:\\access.txt') as file:
     for i in log_list:
         l_list = i.split()
         ip.append(l_list[0])
-    # 将IP地址和出现次数添加到字典中，不添加重复的IP
+    # 将IP地址和出现次数添加到字典中
     for i in ip:
-        if i not in ip_list:
-            # 确保IP和次数对应关系没错
-            ip_list.append(i)
-            count_list.append(ip.count(i))
-    end = time.clock()
-    print "程序运行时间: %f s" % (end - start)
-'''
+        ip_dict[i] = ip_dict.get(i,0) + 1 # 优化部分，不使用count函数，能大幅度缩短运行时间
+    # 输出字典所有k（IP）到列表ip_list中
+    ip_list = ip_dict.keys()
+    # 输出字典所有的v（次数）到列表count_list中，确保每一对k和v在各自的列表里序号相同
+    for i in ip_list:
+        count_list.append(ip_dict.get(i))
     n = 1
     for i in range(10):
         # 得到count_list列表的最大值（次数），并根据序号找到另一个列表中的IP地址
@@ -45,4 +44,3 @@ with open('F:\\access.txt') as file:
         ip_list.remove(z)
 end = time.clock()
 print "程序运行时间: %f s" % (end - start)
-'''
