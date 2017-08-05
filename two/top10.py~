@@ -1,6 +1,0 @@
-#!/usr/bin/bash
-
-with open('access.log') as f:
-	data = f.readline()
-print data
-
