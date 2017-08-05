@@ -32,7 +32,7 @@
 >>> a
 ['aa', 'aa', 'bb', 'cc', 'dd']
 ```
-####list.pop() 参数为index
+#### list.pop() 参数为index
 ```
 >>> a
 ['aa', 'aa', 'bb', 'cc', 'dd']
@@ -41,7 +41,7 @@
 >>> a
 ['aa', 'bb', 'cc', 'dd']
 ```
-####list.remove() 参数为value
+#### list.remove() 参数为value
 ```
 a
 ['aa', 'bb', 'cc', 'dd']
@@ -63,6 +63,31 @@ list.sort() 列表排序
 >>> a
 ['aa', 'bb', 'cc']
 ```
+### 遍历列表a，x,y随意写，x是下标，y是下标对应的列表内容
+```
+>>> a
+['aa', 'bb', 11, 22, 'cc']
+>>> for x,y in enumerate(a):
+...     print y,x
+...
+aa 0
+bb 1
+11 2
+22 3
+cc 4
+```
+### 列表取值
+```
+>>> a
+['aa', 'bb', 11, 22, 'cc']
+>>> a[:4]
+['aa', 'bb', 11, 22]
+>>> a[:4:1]
+['aa', 'bb', 11, 22]
+>>> a[:4:2]
+['aa', 11]
+>>> a[:4:3]
+['aa', 22]
 ```
 * split(",") 以逗号为分隔将字符串转换为列表
 * ",".join() 以逗号为分隔将列表转换为字符串
@@ -85,6 +110,55 @@ print b
 * a.value() 查看所有值
 * a.has_key('name') 查看有没有name这个key，返回bool值
 * a.update(b) 合并ab2个字典
+```
+>>> dict
+{'Age': 7, 'Name': 'Manni'}
+>>> for hehe in dict:
+...     print hehe,'value is %s' % dict[hehe]
+...
+Age value is 7
+Name value is Manni
+```
+dict.items()会把字典的key，value变成个元组，然后把所有元组放在一个列表里。
+```
+>>> dict
+{'Age': 7, 'Name': 'Manni'}
+
+>>> dict.items()
+[('Age', 7), ('Name', 'Manni')]
+>>> dict.items()[0]
+('Age', 7)
+>>> dict.items()[0][1]
+7
+>>> dict.items()[0][0]
+'Age'
+>>> for i in dict.items():
+...     print i
+...
+('Age', 7)
+('Name', 'Manni')
+>>> for i in dict.items():
+...     print i[0]
+...
+Age
+Name
+>>> for i in dict.items():
+...     print i[1]
+...
+7
+Manni
+>>> for i in dict.items():
+...     print i[0][0]
+...
+A
+N
+
+>>> for x,y in dict.items():
+...     print x,y
+...
+Age 7
+Name Manni
+```
 ```
 for k,v in b.items():
 	print "%s --> %s" %(k,v)
