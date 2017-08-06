@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #_*_ coding:utf-8 _*_
-
+import sys
 def User_lockd(Username):
     #1. 判断用户是否锁定
     user_locked  = file('user_lockd.txt')
@@ -136,15 +136,17 @@ def  register():
 if __name__ == '__main__':
     while True:
         try:
-            login_or_register = int(raw_input( '请输入数字:' '注册/1,登录/2:>').strip())
+            login_or_register = int(raw_input( '请输入数字:' '注册/1,登录/2,退出/3:>').strip())
             #判断类型错误
         except ValueError,e:
             print '输入的不是数字！'
         else:
-            #输入1，调用注册函数，输入 2调用登录函数,输入其他，不合法
+            #输入1，调用注册函数，输入 2调用登录函数,输入3 退出，输入其他，不合法
             if login_or_register == 1:
                 register()
             elif login_or_register == 2:
                 login()
+            elif login_or_register == 3:
+                sys.exit();
             else:
                 print '输入不合法！'
