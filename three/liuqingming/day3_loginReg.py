@@ -106,10 +106,16 @@ def login():
         print "输入错误达到3次，您已被锁定"
 
 def start():
-    choice = raw_input('请输入reg/login:').strip()
-    if choice == "login":
-        login()
-    else :
-        register()
+    while True :
+        choice = raw_input('请输入reg/login:').strip()
+        if choice == "login" :
+            login()
+            break
+        elif choice == "reg" :
+            register()
+            break
+        else :
+            print "输入错误，(注册:reg 登陆:login) 请重新输入"
+
 
 start()
