@@ -14,6 +14,7 @@
 ![image](https://github.com/1032231418/python/blob/master/day3/login_register.png)
 
 <center>程序运行结果</center >
+
 ![image](https://github.com/1032231418/python/blob/master/day3/login_or_register.png)
 
 <center>ip_top10  流程图</center >               
