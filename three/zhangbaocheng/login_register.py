@@ -7,7 +7,7 @@ def User_lockd(Username):
     for  lines in  user_locked.readlines():
         if  Username  in  lines:
             return 'locked'
-
+			
 def User_empty(Username):
     #2. 判断用户名是否为空
     empty = False
@@ -15,9 +15,7 @@ def User_empty(Username):
         print "用户名不能为空，请重新输入！"
         empty = True
     return empty
-
-
-
+	
 def User_already_exists(Username):
     #3. 判断用户名是否存在
     Usr_messages = file('user_messages.txt', 'rb')
@@ -64,11 +62,10 @@ def  write_User_messages(Username,Password):
     messages_file.write("%s %s\n" % (Username, Password))
     messages_file.close()
     print  "恭喜你已经注册成功"
-
-
+	
 def login():
     counts =0
-    Username = raw_input('Please input Username:')
+    Username = raw_input('Please input Username:').strip()
 
     while counts < 3:
 	        #  调用函数，判断用户名是否为空
@@ -80,9 +77,8 @@ def login():
             break
 
         else:
-            Password = raw_input('Please input Password:')
-
-
+            Password = raw_input('Please input Password:').strip()
+			
             # 判断函数返回True还是False,如果返回True 则密码太短，否则就是符合长度
             if  Password_length(Password) == True :
                 counts += 1
@@ -101,10 +97,7 @@ def login():
 
         # 将输入密码错误三次的用户锁定
         lock_Username(Username)
-
-
-
-
+		
 def  register():
 
     counts = 0
@@ -122,7 +115,7 @@ def  register():
             if User_already_exists(Username) == True:
                 print "该用户已经存在"
                 break
-
+				
             else:
                 # 输入两次密码
                 Password = raw_input('Please input Password:').strip()
@@ -139,8 +132,7 @@ def  register():
                         # 用户名密码符合要求，调用函数，写入文件
                         write_User_messages(Username, Password)
                         break
-
-
+						
 if __name__ == '__main__':
     while True:
         try:
