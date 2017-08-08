@@ -13,7 +13,7 @@ def register():
                 File = open('user.txt','a+')
                 File.write('%s:%s\n' % (username,password))
                 File.close()
-                return "恭喜你,注册成功"
+                return "恭喜你,%s用户注册成功" % username
             else:
                 return "密码不匹配"
 
