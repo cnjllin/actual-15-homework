@@ -15,7 +15,6 @@ def login():
     login_file = open('/Users/guanqing/PycharmProjects/reboot15/day3/test','r')
     # for循环这个文件并通过':'的格式将用户名和密码传参到usernum和passwordnum
     for line in login_file.readlines():
-        print line.strip().split(':')
         usernum,passwordnum = line.strip().split(':')
         # 判断用户以及密码是否正确，用户名和密码错误的时候有相应的提示
         if username == usernum:
