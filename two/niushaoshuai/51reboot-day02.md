@@ -134,25 +134,31 @@
     In [50]: a.sort()
     In [51]: a
     Out[51]: [1, 3, 4, 5, 6]
+    ```
     *点评：a.sort() 对list列表元素递增排序，修改列表自身*
-    
+    ```python
     In [52]: a.reverse()
     In [53]: a
     Out[53]: [6, 5, 4, 3, 1]
+    ```
     *点评：a.reverse() 对list列表元素翻转排列，修改列表自身*
     
+    ```python
     In [55]: max(a)
     Out[55]: 6
+    ```
     *点评：max(a) 提取a列表元素中最大值*
-    
+    ```python
     In [56]: min(a)
     Out[56]: 1
+    ```
     *点评：min(a) 提取a列表元素中最小值*
-    
+    ```python
     In [57]: len(a)
     Out[57]: 5
+    ```
     *点评：len(a) 计算列表a中元素个数*
-    
+    ```python
     In [58]: a[::-1]
     Out[58]: [1, 3, 4, 5, 6]
     In [59]: a[0:2]
@@ -161,36 +167,41 @@
     Out[60]: [6, 4, 1]
     In [61]: a[0:-1]
     Out[61]: [6, 5, 4, 3]
+    ```
     *点评：列表a的切片操作，list[start:stop:step] ,注意不包括stop索引的元素。start为空表示从0索引开始，stop亦然。*
-    
+    ```python
     In [64]: a= [6, 5, 4, 3, 1,1,2,5,6]
     In [65]: set(a)
     Out[65]: {1, 2, 3, 4, 5, 6}
     In [66]: a
     Out[66]: [6, 5, 4, 3, 1, 1, 2, 5, 6]
+    ```
     *点评：set(a) 对列表a中元素去重并递增排序展示出来，不修改列表自身*
     *点评：常用在开发中，eg:对个人和部门权限重合的部分去重*
-    
+    ```python
     In [66]: a
     Out[66]: [6, 5, 4, 3, 1, 1, 2, 5, 6]
     In [67]: a.index(1)
     Out[67]: 4
+    ```
     *点评：a.index(obj) 获取元素的索引*
-    
+    ```python
     Out[29]: ['124.238.248.52', '[30/Jul/2017:15:22:42', '/crontab/collect', '200']
     In [30]: b=",".join(a)  #join 列表转换成字符串
     In [31]: b
     Out[31]: '124.238.248.52,[30/Jul/2017:15:22:42,/crontab/collect,200'
+    ```
     *点评：列表转换成索引*
-    
+    ```python
     In [5]: with open('test.txt','a+') as f:
     ...:     for i,v in  enumerate(f.readlines()):
     ...:         print i,v
     0 hello world
     1  hello world2
     2  hello world3
-    *点评：enumerate（list）遍历去除obj中的index和obj ，常用于for语句中*
     ```
+    *点评：enumerate（list）遍历去除obj中的index和obj ，常用于for语句中*
+    
     
  # 六、字典操作：
  - 增加：
@@ -249,8 +260,43 @@
      In [39]: dict.clear()
      In [40]: dict
      Out[40]: {}
+     
+     In [1]: x={}
+     In [2]: y=x
+     In [3]: x['name']='xiaoming'
+     In [4]: y
+     Out[4]: {'name': 'xiaoming'}
+     In [5]: x.clear()
+     In [6]: x
+     Out[6]: {}
+     In [7]: y
+     Out[7]: {}
+
+     In [1]: x={}
+     In [2]: y=x
+     In [13]: x['name']='xiaoming'
+     In [14]: y
+     Out[14]: {'name': 'xiaoming'}
+     In [15]: x={}
+     In [16]: y
+     Out[16]: {'name': 'xiaoming'}
+
+     In [69]: x
+     Out[69]: {'name': 'xiaoming'}
+     In [70]: y=x.copy()
+     In [71]: x['age']=18
+     In [72]: x
+     Out[72]: {'age': 18, 'name': 'xiaoming'}
+     In [73]: y
+     Out[73]: {'name': 'xiaoming'}
+     In [74]: x.clear()
+     In [75]: x
+     Out[75]: {}
+     In [76]: y
+     Out[76]: {'name': 'xiaoming'}
+
      ```
-     *点评：清空字典中的元素*
+     *点评：清空字典中的元素,.clear()方法是清空复制关系中字典们的数据，但不会清空副本中数据。{}只会清空当前字典中的数据*
      
      - pop方法：
        - dict.pop(key)
@@ -263,6 +309,13 @@
      Out[52]: {'age': '20', 'name': 'my_dict', 'score': [80, 90, 100]}
      ```
      *点评：等同于del命令，除此之外pop方法还可以返回被删除元素的value*
+     - popitem方法：
+       - dict.popitem()
+     ```python
+     In [60]: md.popitem()
+     Out[60]: ('name456', 1)
+     ```
+     *点评：弹出一个随机的项*
      
   - 修改：
      ```python
@@ -279,12 +332,16 @@
     Out[52]: {'age': '20', 'name': 'my_dict', 'score': [80, 90, 100]}
     In [53]: dict['name']
     Out[53]: 'my_dict'
+    ```
     *点评：简单粗暴*
     
+    ```python
     In [54]: dict.has_key('name')
     Out[54]: True
+    ```
     *点评：相当于for x in a ；返回True or False*
     
+    ```python
     In [58]: dict
     Out[58]: {'address': 'CN', 'age': '20', 'name': 'my_dict', 'score': [80, 90, 100]}
     In [76]: dict.items()
@@ -297,8 +354,10 @@
        score  [80, 90, 100]
        name  my_dict
        address  CN
+    ```
     *点评:dict.items()以列表的形式返回可遍历的(键, 值) ,结合for循环可以实现遍历字典的功能*
     
+    ```python
     In [77]: dict
     Out[77]: {'address': 'CN', 'age': '20', 'name': 'my_dict', 'score': [80, 90, 100]}
     In [78]: dict.get('address','Unknow')
@@ -308,25 +367,60 @@
     In [80]: dict.get('address-1')
     In [81]: dict.get('address-1','Unknow')
     Out[81]: 'Unknow'
+    ```
     *点评：dict.get(key,[' ']) 判断字典中是否包含有key，如果有 返回value ；否则返回空也可以自定义输出。* 
     
+    ```python
     In [82]: dict.setdefault('address-1')
     In [83]: dict.setdefault('address')
     Out[83]: 'CN'
     In [84]: dict.setdefault('address-1','Unknow')
     In [85]: dict
     Out[85]: {'address': 'CN', 'address-1': None, 'age': '20', 'name':'my_dict', 'score': [80, 90, 100]}
+    ```
     *点评：dict.setdefault(key,[]) 判断字典中是否包含有key，如果有 返回value ；否则返回空也可以自定义输出。*
     
+    ```python
     In [6]: dict.items()
     Out[6]: [('age', '18'), ('name', 'my_dict'), ('sex', 'male')]
     In [8]: dict.keys()
     Out[8]: ['age', 'name', 'sex']
     In [9]: dict.values()
     Out[9]: ['18', 'my_dict', 'male']
-    *点评：dict.keys() 获取字典中所有的key，dict.values()获取字典中所有的值*
     ```
-        
+    *点评：dict.keys() 获取字典中所有的key，dict.values()获取字典中所有的值*
+    
+  - 字典排序：
+    - sorted(iterable[, cmp[, key[, reverse]]]）
+      - iterable:是可迭代类型类型;
+      - cmp：用于比较的函数，比较什么由key决定,有默认值，迭代集合中的一项;
+      - key：用列表元素的某个属性和函数进行作为关键字，有默认值，迭代集合中的一项;
+      - reverse：排序规则. reverse = True 或者 reverse = False，有默认值，默认为升序排列（False）。
+    ```python
+    In [50]: md
+    Out[50]: 
+    {'name100': 54,
+     'name2': 45,
+     'name2100': 2254,
+     'name22222': 42225,
+     'name4256': 1,
+     'name456': 1,
+     'name929': 22223,
+     'name99': 23}
+    
+    In [51]: sorted(md.items(),key=lambda i:i[1],reverse=True)
+    Out[51]: 
+    [('name22222', 42225),
+     ('name929', 22223),
+     ('name2100', 2254),
+     ('name100', 54),
+     ('name2', 45),
+     ('name99', 23),
+     ('name456', 1),
+     ('name4256', 1)]
+     ```
+    *点评： 返回以元组为元素的列表；其中，e表示dict.items()中的一个元素，e[0]表示按键排序，e[1]则表示按值排序。reverse=False可以省略，默认为升序排列；cmp和key可以使用lambda表达式*
+    
  # 七、文件操作
  - open函数：
    - f=open(filename[,mode[,buffering]])
@@ -362,11 +456,11 @@
    In [4]: with open('test.txt','a+') as f:
    ...:       print f.readlines()
           ['hello world\n', ' hello world2\n', ' hello world3']
-          
+    ```      
     *点评：with open('file'，a+) as f:   这种方式写自动关闭文件，不需要以f.close结尾*
-   ```
+   
   
- # nginx日志分析：
+ ## nginx日志分析：
  ```python
  In [23]: log='124.238.248.52 - - [30/Jul/2017:15:22:42 +0800] "POST /crontab/collect HTTP/1.1" 200 151 "-" "Python-urllib/2.6" "-" "0.166" "
     ...: 10.3.0.136:5000" "200" "0.106"'

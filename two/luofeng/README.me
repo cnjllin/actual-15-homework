@@ -1,0 +1,11 @@
+# 作业需求
+打印出Nginx请求日志中top 10的客户端IP.
+
+# 思路分析
+1. 定义一个空字典,count  = {}
+2. 利用with open('file','r') as f:打开日志文件
+3. 然后对f.readlines()字典中的数据进行遍历. 
+4. 利用split()方法，对遍历后的数据(字符串)进行分割，取出IP的列。
+5. 利用if else判断取出来的IP是否在count = {}字典中，不存在即赋值为1，存在即加1。
+6. 利用lamba表达式获取top 10的client ip地址。
+7. 然后遍历top 10的数据，格式话输出keys，value。
