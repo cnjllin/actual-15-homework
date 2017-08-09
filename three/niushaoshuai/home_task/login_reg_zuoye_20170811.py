@@ -2,23 +2,21 @@
 # --*-- coding:UTF-8 --*--
 def my_login():
     f=open('user_message.db','r')
-    md=f.readlines()
     user_name = raw_input("please input your name: ")
-    for line in md:
-        mu=line.split(':')[0]
-        mp=line.split(':')[1].strip('\n')
-        print mu,mp
-        if mu==user_name:
-            user_pass = raw_input("please input your password: ")
-            if mp==user_pass:
-                print "login ok ,welcom {}".format(user_name)
-                break
-            else:
-                print "input a error password!"
-                pass
+    md=dict()
+    for line in f.readlines():
+        mu = line.split(':')[0]
+        mp = line.split(':')[1].strip('\n')
+        md[mu]=mp
+    if user_name in md.keys():
+        user_pass = raw_input("please input your password: ")
+        if user_pass==md[user_name]:
+            print "login ok ,welcom {}".format(user_name)
         else:
-            print "user is not exist!"
-        #    exit(1)
+            print "input a error password!"
+    else:
+        print "user is not exist!"
+    #    exit(1)
     f.close()
 def my_reg():
     f = open('user_message.db', 'a+')
@@ -26,7 +24,7 @@ def my_reg():
         user_name = raw_input("please input your name: ")
         if len(user_name) == 0:
             print "user is prohibit to null,please reinput the message"
-            pass
+            continue
         else:
             user_pass1 = raw_input("please input your password: ")
             user_pass2 = raw_input("please reinput your password: ")
