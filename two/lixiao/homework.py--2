@@ -1,0 +1,32 @@
+#!/usr/bin/python
+#coding:utf-8
+import time
+start = time.clock()
+ip_num = []
+
+with open('/python/access.log') as fo:
+    data = fo.readlines()
+    for n in data:
+        ip_num.append(n.split(' ')[0])
+    
+    num = {}
+
+    for k in ip_num:
+        if k in num:
+            num[k] += 1
+        else:
+            num[k] = 1
+
+    num_list = []
+    for j in num:
+        num_list.append([j,num[j]])
+ 
+    for i in range(len(num_list)):
+        for y in range(len(num_list)-1):
+            if num_list[y][1]<num_list[y+1][1]:
+                num_list[y],num_list[y+1]=num_list[y+1],num_list[y]
+
+    for z in num_list[:10]:
+        print "%s --->%s" %(z[0],z[1])
+end = time.clock()
+print 'Running time：%s S' %(end-start)
