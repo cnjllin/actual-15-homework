@@ -38,21 +38,22 @@ key_list = []
 for i in reverse_res:
     key_list.append(i)
 key_list.sort()
+#print key_list
 
 count = 0
 while count<10:
     count += 1
-    ip = key_list.pop()
+    key = key_list.pop()
     #print val
-    for j in reverse_res[ip]:
-        f.write('<tr><td>%s</td><td>%s</td></tr>'%(ip,j))
-        print 'IP-->%s-->访问%s次'%(ip,j)
-    reverse_res.pop(ip)
+    for j in reverse_res[key]:
+        f.write('<tr><td>%s</td><td>%s</td></tr>'%(j,key))
+        print 'IP-->%s-->访问%s次'%(j,key)
+
+f.write("</table>")
+f.close()
 
 end = time.clock()
 print "程序执行用时: %f s" % (end - start)
 
-f.write("</table>")
-f.close()
 
 
