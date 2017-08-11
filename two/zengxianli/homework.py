@@ -1,6 +1,9 @@
 
 #coding:utf-8
 
+import time
+start = time.clock()
+
 #打开日志文件，以列表的形式储存，每一行为一个字符串为列表中的一个元素，列表名为data
 with open('access.txt') as f:
        data = f.readlines()
@@ -27,7 +30,9 @@ for ip in data:
     i=0
     for ip1 in data2:
         if ip==ip1:
-           i=i+1
+            i=i+1
+            
+            
         else:
             continue
     tmp[ip]=i
@@ -43,6 +48,9 @@ for i in range(0,10):
         if v==a[i]:
             print "IP:%s 出现的次数为：%s次" % (k,tmp.pop(k))
             break
+            
         else:
             continue
 
+end = time.clock()
+print "程序执行用时: %f s" % (end - start)
