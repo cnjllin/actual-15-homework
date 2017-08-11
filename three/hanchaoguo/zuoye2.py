@@ -9,9 +9,8 @@ def dict_1():
          #遍历文件，生成key为ip,value为次数的字典
          for n in f.read().split("\n"):
              ips_list[n.split(" - - ")[0]]=ips_list.get(n.split(" - - ")[0],0)+1    
-    #排序，并取出前十
 
-
+#排序，并取出前十
 def html():
     p = sorted(ips_list.items(),key=lambda d:d[1])
     m = open('top10.html','a+')
