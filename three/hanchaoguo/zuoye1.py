@@ -17,6 +17,8 @@ def zhuce():
                 print "密码不能为空"
             else:
                f.write("%s:%s\n" %(user,passwd))
+    return "欢迎注册" 
+    
 #登录函数
 def login():
 
@@ -36,21 +38,23 @@ def login():
                     print "passwd error"
             else:
                 print "no such the user of %s" %(name)
+     
+    return "欢迎登录"
+    
 #入口函数    
 def start():
     a = raw_input('pls input you chose (zhuce|login):')
     if len(a.strip())==0:
         print "不能为空"
     if a == "zhuce":
-        zhuce()
+        res = zhuce()
     elif a == "login":
-        login()    
+        res = login()    
     else:
         print "只能选择zhuce|login"
-    return a
+    return res
 a = start()
-
-
+print a
 
 
 
