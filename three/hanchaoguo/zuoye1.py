@@ -8,13 +8,15 @@ def zhuce():
         user = raw_input('请输入一个名字:')
         if len(user.strip()) == 0:
             print "用户名不能为空"
-            
+            exit()
         if user in date:
             print "用户名已存在"
+            exit()
         else:
             passwd = raw_input('输入一个密码:')
-            if len(user.strip()) == 0:
+            if len(passwd.strip()) == 0:
                 print "密码不能为空"
+                exit()
             else:
                f.write("%s:%s\n" %(user,passwd))
     return "欢迎注册" 
@@ -29,6 +31,7 @@ def login():
         name = raw_input('请输入你的用户名:')
         if len(name.strip()) == 0:
             print "用户名不能为空"
+            exit()
         else:
             if name in dict_1:
                 passwd = raw_input('请输入你的密码:')
@@ -53,8 +56,8 @@ def start():
     else:
         print "只能选择zhuce|login"
     return res
-a = start()
-print a
+p = start()
+print p
 
 
 
