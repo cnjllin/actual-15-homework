@@ -16,13 +16,12 @@ def userfile():
 
 #注册系统
 def registor():
-	#输入用户名
-	#userfile()
 	with open('user_passwd.txt','a+') as f:
 		user_dict = userfile()
 		#print user_dict
 		count = 0
 		while count <3:
+			#输入用户名
 			user_name = raw_input('请输入用户名：').strip()
 			#print user_name
 			#判断用户名是否存在于userfile函数生成的字典中,如果存在，注册提示用户已存在
