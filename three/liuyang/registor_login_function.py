@@ -71,8 +71,10 @@ def choose():
     elif action == 'login':
         act = login()
     else:
-    	print '选择输入错误'
+    	act = '选择输入错误'
     return act
 
 #执行选择登录或者注册
 result = choose()
+print result
+
