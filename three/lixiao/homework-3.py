@@ -27,10 +27,10 @@ def reg():
     fo = open('/python/user.txt','a+')
     while True:
         name = raw_input('请输入用户名: ').strip()
-        if name == " ":
+        if name == "":
             print "sorry,用户名不能为空！"
        
-        if name != " ":
+        if name != "":
             passwd = raw_input('请输入密码: ').strip()
             re_passwd = raw_input('请再次输入密码：').strip()
             if passwd != re_passwd or len(passwd) == 0:
@@ -41,13 +41,17 @@ def reg():
                 break
     fo.close
 
+def null():
+    print "please input reg or login! Think you"
+
 def start():
     action  = raw_input('pelase input reg or login: ').strip()
     if action == 'reg':
         res = reg()
     elif action == 'login':
         res = login()
-    
+    else:
+        res = null()
     return res 
 result = start()
 #print result
