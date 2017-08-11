@@ -47,7 +47,8 @@ def start():
         login()    
     else:
         print "只能选择zhuce|login"
-start()
+    return a
+a = start()
 
 
 
