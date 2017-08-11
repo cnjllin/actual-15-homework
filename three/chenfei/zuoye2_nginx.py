@@ -15,7 +15,7 @@ nginxIpBySort = sorted(nginxIp.iteritems(),key = lambda d:d[1] ,reverse = True)[
 for i,j in nginxIpBySort:
     print "%s => %d"%(i,j)
 
-with open('/root/actual-15-homework/two/chenfei/day2/IP_top10.html','w') as f:
+with open('/root/actual-15-homework/three/chenfei/iptop10.html','w') as f:
     f.write('<html>\n\n<title>\nNgnix日志IP前10\n</title>\n<h><style="color:red"> IP </h>\n<body>\n\n<table border=1 >\n<table style border=1 >\n')
     f.write('<tr><th>IP</th><th>数量</th></tr>')
     for i in nginxIpBySort:
