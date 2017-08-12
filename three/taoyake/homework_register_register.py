@@ -19,19 +19,27 @@ def register():
 
 def Signin():
     #通过user变量，获取到输入的用户名
-    user = raw_input("请输入您的用户名: ")
-    with open('user.txt','r') as file:
-        for line in file.readlines():
-            username = line.strip().split(":")[0]
-            password = line.strip().split(":")[1]
-    if user != username:  #如果输入的用户不等于预先定义的用户名,则打印用户不存在并且退出循环
-        return "对不起，你输入的%s用户不存在" % user
-    else:
-        pwd = raw_input("请输入您的密码: ")  #输入密码
-        if pwd != password:  #如果密码连续输错三次，提示账号锁定并退出
-            return "您的密码不正确"
-        else: #如果上边的都不成立，说明输入密码正确，提示登录成功
-            return "恭喜您%s成功登录" % user
+    log_files = open('user.txt','r')
+    while True:
+        line = log_files.readline()
+        if not line:
+            return "没有用户，请您先注册用户"
+            break
+            log_files.close()
+        else:    
+            user = raw_input("请输入您的用户名: ")
+            with open('user.txt','r') as file:
+                for line in file.readlines():
+                    username = line.strip().split(":")[0]
+                    password = line.strip().split(":")[1]
+            if user != username:  #如果输入的用户不等于预先定义的用户名,则打印用户不存在并且退出循环
+                return "对不起，你输入的%s用户不存在" % user
+            else:
+                pwd = raw_input("请输入您的密码: ")  #输入密码
+                if pwd != password:  #如果密码，提示退出
+                    return "您的密码不正确"
+                else: #如果上边的都不成立，说明输入密码正确，提示登录成功
+                    return "恭喜您%s成功登录" % user
 
 def start():
     action = raw_input("请输入 Signin or register :").strip()
