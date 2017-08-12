@@ -19,11 +19,11 @@
 * ip_list_html.py   ip出现次数并写入到html文件的脚本
 * user.txt          存用户和密码的文件
 * log.html          写入的html文件
-* bak               一个临时目录
+* bak               一个临时目录:
      jisuan.py        计算脚本（定义接口并调用）
      register.py      单独的注册脚本
      login.py         单独的登录脚本
-* test              测试的目录（脚本的测试结果）
-*     注册.png         用户注册的测试
-*     用户登录.png     用户登录的测试
-*     访问写入html.png 日志访问前10ip及次数写入后的日志文件
+* test              测试的目录（脚本的测试结果）:
+     注册.png         用户注册的测试
+     用户登录.png     用户登录的测试
+     访问写入html.png 日志访问前10ip及次数写入后的日志文件
