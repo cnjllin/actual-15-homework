@@ -8,11 +8,11 @@
 
 ```
 1.程序流程图
-[](https://github.com/51reboot/actual-15-homework/tree/master/three/yangyi/login(2).png)
+[!](https://github.com/51reboot/actual-15-homework/tree/master/three/yangyi/login(2).png)
 
 2.程序结果
 
-[](https://github.com/51reboot/actual-15-homework/tree/master/three/yangyi/login.png)
+[!image](https://github.com/51reboot/actual-15-homework/tree/master/three/yangyi/login.png)
 
 
 ##2的结果
