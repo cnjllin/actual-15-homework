@@ -8,14 +8,14 @@
 
 ```
 1.程序流程图
-[!login(2).png](login(2).png)
+[!login(2).png](login(2).png){ImgCap}{/ImgCap}
 
 2.程序结果
 
-[!login.png](login.png)
+[!login.png](login.png){ImgCap}{/ImgCap}
 
 
 ##2的结果
 
-[!index.png](index.png)
+[!index.png](index.png){ImgCap}{/ImgCap}
 
