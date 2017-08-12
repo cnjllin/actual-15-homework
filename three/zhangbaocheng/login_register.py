@@ -146,7 +146,7 @@ if __name__ == '__main__':
                 register()
             elif login_or_register == 2:
                 login()
-			elif login_or_register == 3:
+            elif login_or_register == 3:
                 sys.exit();
             else:
                 print '输入不合法！'
