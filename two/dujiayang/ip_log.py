@@ -2,7 +2,7 @@
 #coding:utf-8
 ip = []
 ip_dict = {}
-with open('access.log.bak') as f:    #打开日志文件
+with open('access.log') as f:    #打开日志文件
 	file = f.readlines()     		#readlines()日志变为列表
 	for i in file:				#遍历列表,以str字符串输出
 		client_ip = i.split(' ')	#split()函数用' '空格分隔,将字符串转换位列表

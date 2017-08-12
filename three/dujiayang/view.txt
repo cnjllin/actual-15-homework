@@ -1,0 +1,19 @@
+handishendu:dujiayang jiayang.du$ python start.py
+请输入 login or register :login
+请输入您的用户名: hehe
+请输入您的密码: 123
+您的密码不正确
+handishendu:dujiayang jiayang.du$ python start.py
+请输入 login or register :hehe
+input is null
+handishendu:dujiayang jiayang.du$ python start.py
+请输入 login or register :login
+请输入您的用户名: hehe
+请输入您的密码: 22
+您的密码不正确
+handishendu:dujiayang jiayang.du$ python start.py
+请输入 login or register :register
+请输入用户名:wo
+请输入您的密码: 345
+请您再次输入的密码: 3
+密码不匹配
