@@ -8,4 +8,5 @@
 
 * login_register.py 为用户注册登录作业
 * user_file 为用户注册登录账户保存文件
-
+* access_ip_top10.py 为获取日志top 10作业
+* log_info.html 为生成的html文件
