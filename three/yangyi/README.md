@@ -6,7 +6,7 @@
 
 ##作业1的程序流程图与结果
 
-```
+
 1.程序流程图
 ![image](https://github.com/51reboot/actual-15-homework/blob/master/three/yangyi/login%20(2).png)
 
