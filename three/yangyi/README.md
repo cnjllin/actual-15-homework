@@ -8,14 +8,14 @@
 
 
 1.程序流程图
-![alt text](https://github.com/51reboot/actual-15-homework/blob/master/three/yangyi/login%20(2).png)
+![image](https://github.com/tailorYang/Demo/tree/master/Images/login(2).png)
 
 2.程序结果
 
-![alt text](https://github.com/51reboot/actual-15-homework/tree/master/three/yangyi/login.png)
+![image](https://github.com/tailorYang/Demo/tree/master/Images/login.png)
 
 
 ##作业2的结果
 
-![alt text](https://github.com/51reboot/actual-15-homework/tree/master/three/yangyi/index.png)
+![image](https://github.com/tailorYang/Demo/tree/master/Images/index.png)
 
