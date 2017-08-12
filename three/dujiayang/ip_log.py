@@ -22,7 +22,6 @@ for i in range(len(ip_count)):
 			ip_count[i],ip_count[i+1] = ip_count[i+1],ip_count[i]
 #print ip_count
 ip_count.reverse()
-#print ip_count
 #for x in range(10):
 #	print "ip", ip_count[x][0] ,"is appear" ,ip_count[x][1] ,"次"
 #	print ip_count[x][0],ip_count[x][1] 
