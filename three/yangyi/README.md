@@ -8,14 +8,14 @@
 
 
 1.程序流程图
-![image](https://github.com/51reboot/actual-15-homework/blob/master/three/yangyi/login%20(2).png)
+![alt text](https://github.com/51reboot/actual-15-homework/blob/master/three/yangyi/login%20(2).png)
 
 2.程序结果
 
-![image](https://github.com/51reboot/actual-15-homework/tree/master/three/yangyi/login.png)
+![alt text](https://github.com/51reboot/actual-15-homework/tree/master/three/yangyi/login.png)
 
 
-##2的结果
+##作业2的结果
 
-![image](https://github.com/51reboot/actual-15-homework/tree/master/three/yangyi/index.png)
+![alt text](https://github.com/51reboot/actual-15-homework/tree/master/three/yangyi/index.png)
 
