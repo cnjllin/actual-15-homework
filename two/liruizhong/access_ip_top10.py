@@ -34,6 +34,7 @@ with open('access.txt','r') as f:
         access_ip = list1[-i][0]
         access_count = list1[-i][1]
         print "\033[32m%-15s\033[0m was visited \033[33m%s\033[0m times" % (access_ip,access_count)
+    print list1
 
 end = time.clock()
 # 打印出程序运行的时间

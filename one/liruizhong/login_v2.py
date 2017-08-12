@@ -11,7 +11,7 @@ def judge_locked(user):
         if user in user_list:
             return 1
         else:
-            return 0 
+            return 0
 
 def lock_user(user):
     with open('./lock_user','a') as f:
@@ -44,7 +44,6 @@ def judge_user(user):
                         print "\033[31mThree password errors, account locking\033[0m"
                         break
                     print "\033[31The password is wrong\033[0m"
-                    
             else:
                 count +=1
                 if count == 3:
