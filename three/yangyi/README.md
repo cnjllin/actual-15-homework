@@ -5,12 +5,10 @@
 ```
 
 
-1.程序流程图
-![image](https://github.com/tailorYang/Demo/tree/master/Images/login(2).png)
 
-2.程序结果
+程序结果
 
-![image](https://github.com/tailorYang/Demo/tree/master/Images/login.png)
+![image](https://github.com/tailorYang/Demo/raw/master/Images/login.png)
 
-![image](https://github.com/tailorYang/Demo/tree/master/Images/index.png)
+![image](https://github.com/tailorYang/Demo/raw/master/Images/index.png)
 
