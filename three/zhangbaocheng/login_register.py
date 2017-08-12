@@ -141,7 +141,7 @@ if __name__ == '__main__':
         except ValueError,e:
             print '输入的不是数字！'
         else:
-            #输入1，调用注册函数，输入 2调用登录函数,输入其他，不合法
+            #输入1，调用注册函数，输入 2调用登录函数,输入3 退出，输入其他，不合法
             if login_or_register == 1:
                 register()
             elif login_or_register == 2:
