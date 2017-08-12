@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 def register():
-    f = open('E:\\PYTHON-TEST\\zhuce.log', 'a+')     #打开文件并写入
+    f = open('E:\\actual-15-homework\\three\\luochuan\\zhuce.log', 'a+')     #打开文件并写入
     n = 0
     list = []
     while n <= 3:
@@ -24,28 +24,27 @@ def register():
 
 
 def login():
-    # -*- coding: utf-8 -*-
-    with open('E:\\PYTHON-TEST\\zhuce.log', 'r')as f:     #读取注册文件
-        user = raw_input('please input your usrname:')      #输入用户名
+    with open('E:\\actual-15-homework\\three\\luochuan\\zhuce.log', 'r')as f:  # 读取注册文件
+        user = raw_input('please input your usrname:')  # 输入用户名
         dict = {}
 
         for line in f.readlines():
-            dict[line.strip().split(":")[0]] = line.strip().split(":")[1]       #生成用户名和密码对应的字典
+            dict[line.strip().split(":")[0]] = line.strip().split(":")[1]  # 生成用户名和密码对应的字典
+        # print dict
 
-        for username in dict:                                       #在字典中遍历用户名
-            if user == username:                                    #判断用户名是否存在于字典中
-                password = dict[user]                               #找到对应的密码
+        for username in dict:  # 在字典中遍历用户名
+            if user == username:  # 判断用户名是否存在于字典中                                      # 找到对应的密码
                 passwd = raw_input('please input your password:')
-                if passwd == password:                            #判断密码是否正确
-                    return 'welcome %s' % username
+                if passwd == dict[user]:  # 判断密码是否正确
+                    print 'welcome %s' % username
                     break
                 else:
-                    return 'your password is not correct'
+                    print 'your password is not correct'
                     break
-
             else:
-                return ' '
-                break
+                continue
+
+
 
 
 def a():
