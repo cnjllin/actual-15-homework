@@ -20,9 +20,9 @@
 * user.txt          存用户和密码的文件
 * log.html          写入的html文件
 * bak               一个临时目录
-*      jisuan.py        计算脚本（定义接口并调用）
-*     register.py      单独的注册脚本
-*     login.py         单独的登录脚本
+     jisuan.py        计算脚本（定义接口并调用）
+     register.py      单独的注册脚本
+     login.py         单独的登录脚本
 * test              测试的目录（脚本的测试结果）
 *     注册.png         用户注册的测试
 *     用户登录.png     用户登录的测试
