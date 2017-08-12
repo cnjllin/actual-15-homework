@@ -1,0 +1,9 @@
+ll:dd
+ld:fe
+asd:lfe
+ad:dfd
+ff:dd
+bb:ww
+pp:kk
+tt:ll
+mm:jj
