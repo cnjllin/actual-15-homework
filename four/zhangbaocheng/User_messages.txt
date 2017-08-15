@@ -4,3 +4,4 @@ jack 123456
 admin 123456 
 zhangbaocheng zhangbaocheng 
 zhang zhang 
+linux 123456
