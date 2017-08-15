@@ -15,10 +15,12 @@ def zhuce():
 	    passwd = raw_input("请设置密码: ").strip()
 	    passwd1 = raw_input("请确认密码: ").strip()
 	    if passwd == passwd1:
-	        print "注册用户{}成功".format(username)
+	        #print "注册用户{}成功".format(username)
+	        return "注册用户{}成功".format(username)
 	        break
 	    else:
-	    	print "请重试"
+	    	#print "请重试"
+	    	return "请重试"
 	    sys.exit()
 	aa = "{}:{}\n".format(username,passwd)
 	#写入用户名密码到文件
@@ -38,11 +40,14 @@ def login():
 	#判断用户在不在data，并判断密码
 	if name1 in data:
 		if pass1 == data[name1]:
-		    print '欢迎登陆{}'.format(name1)
+		    #print '欢迎登陆{}'.format(name1)
+		    return '欢迎登陆{}'.format(name1)
 		else:
-			print 'passwd err'
+			#print 'passwd err'
+			return 'passwd err'
 	else:
-		print 'name err'
+		#print 'name err'
+		return 'name err'
 
 def status():
 	data = raw_input("plrase input  zhuce/login:  ").strip()
