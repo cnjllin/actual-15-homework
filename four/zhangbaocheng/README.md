@@ -22,12 +22,14 @@
 	
 文件说明：
     CMDB_V1
+	
 		  CMDB.py             #主程序
 		  User_messages.txt   #用户名密码存储文件
 		  static              #静态文件存放目录
 		  templates           #html 文件存放目录
 		  
     CMDB_V2
+	
 	      CMDB.py             #主程序
 		  表结构.txt          #表结构
 		  static              #静态文件存放目录
