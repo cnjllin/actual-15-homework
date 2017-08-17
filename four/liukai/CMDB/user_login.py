@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 #_*_coding:utf-8_*_
-# Ğ´Ò»¸ö×¢²áº¯ÊıºÍÒ»¸öµÇÂ½º¯Êı
+# å†™ä¸€ä¸ªæ³¨å†Œå‡½æ•°å’Œä¸€ä¸ªç™»é™†å‡½æ•°
 
-# ¶ÁÎÄ¼ş
+# è¯»æ–‡ä»¶
 def read_file():
     user_dict={}
     with open('user.txt') as f:
@@ -16,7 +16,7 @@ def read_file():
     return user_dict
 
 
-# Ğ´ÎÄ¼ş
+# å†™æ–‡ä»¶
 def write_file(user_dict):
     with open('user.txt','a+') as f:
         for k,v in user_dict.items():
@@ -24,36 +24,11 @@ def write_file(user_dict):
             f.write(data)
         return '1'
 
-# ¶ÁºÚÃûµ¥ÎÄ¼ş    
-#def read_lock_file():
-#    lock_list=[]
-#    with open('lock.txt') as f:
-#        for line in f:
-#            lock_list.append(line.split('\n')[0])
-#    return lock_list
-
-# Ğ´ÈëºÚÃûµ¥ÎÄ¼ş
-#def write_lock_file(user):
-#    with open('lock.txt','a+') as f:
-#            f.writelines("%s\n"%user)
-#            return 'ÕË»§¼ÓÈëºÚÃûµ¥'
 
 
 
-# ×¢²á
+# æ³¨å†Œ
 def register(user,pwd):
-    #user=raw_input('ÊäÈëÄãµÄÓÃ»§Ãû£º').strip()
-    # ÓÃ»§ÃûÎª¿ÕÍË³ö
-    #if len(user)==0:
-    #    return 'ÓÃ»§Ãû²»ÄÜÎª¿Õ'
-    
-    # ÅĞ¶ÏÓÃ»§ÊÇ·ñ¼ÓÈëÁËºÚÃûµ¥
-    #lock_list=read_lock_file()
-    #print lock_list
-    #if user in lock_list:
-    #    return  '¸ÃÓÃ»§ÒÑ¼ÓÈëºÚÃûµ¥'
-    
-    # ÅĞ¶ÏÓÃ»§ÃûÊÇ·ñ´æÔÚ
     user_dict=read_file()
     user_list=[]
     for k,v in user_dict.items():
@@ -61,44 +36,11 @@ def register(user,pwd):
     #print pwd_list    
     if user in user_list or len(pwd)<6:
         return '1'
-    #else:
-    #    pwd=raw_input('ÊäÈëÃÜÂë£º')
-        # ÓÃ»§Ãû²»ÄÜĞ¡ÓÚ6Î»
-    #if len(pwd)<6:
-    #    return '1'
     else:
-            # °ÑÓÃ»§ÃûºÍÃÜÂëĞ´ÈëÎÄ¼ş
-        #user_list.append(user)
-        #pwd_list.append(pwd)
-            #print user_list
-        #new_user_dict={}
-        #new_list=[]
-        #new_user_list.append(pwd)
-        #new_user_list.append(mail)
-        #new_user_list.append(phone)
-        #ne_user_dict=[user]=new_user_list
-        #user_login.write_file(new_user_dict)
-        return '0'
-
-
-#a=register()
-#print a            
+        return '0'           
             
-# µÇÂ¼
+# ç™»å½•
 def login(user,pwd):
-   # user=raw_input('ÊäÈëÄãµÄÓÃ»§Ãû£º').strip()
-    
-    # ÓÃ»§ÃûÎª¿ÕÍË³ö
-    #if len(user)==0:
-    #    return 'ÓÃ»§Ãû²»ÄÜÎª¿Õ'
-    
-    # ÅĞ¶ÏÓÃ»§ÊÇ·ñÔÚºÚÃûµ¥
-    #lock_list=read_lock_file()
-    #print lock_list
-    #if user in lock_list:
-    #    return  '¸ÃÓÃ»§ÒÑ¼ÓÈëºÚÃûµ¥'
-    
-    #ÅĞ¶ÏÓÃ»§ÃûÊÇ·ñ´æÔÚ£¬´æÔÚÊäÈëÃÜÂë£¬²»´æÔÚÍË³ö
     user_dict=read_file()
     user_list=[]
     pwd_list=[]
@@ -113,21 +55,6 @@ def login(user,pwd):
     elif user in user_list and pwd== pwd_list[user_list.index(user)]:
         return '2'
     
-# µÇÂ¼²âÊÔ
-#a=login()
-#print a
-
-#def start():
-#    a=raw_input('register/login')
-#    if a=='register':
-#        return register()
-#    elif a=='login':
-#        return login()
-#    else:
-#        return 'ÊäÈëÓĞÎó'
-    
-#a=start()
-#print a
 
 
 
