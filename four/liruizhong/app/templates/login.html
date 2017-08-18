@@ -1,0 +1,17 @@
+<html>
+	<title>登录</title>
+	<body style="text-align:center">
+	<h1>欢迎登录</h1>
+	<form action="/login" accept-charset="UTF-8" method="post">
+		昵 称：<input placeholder="请输入昵称" type="text" name="nick_name"><br>
+		密 码：<input placeholder="请输入密码" type="password" name="password"><br>
+		<input type="submit" name="commit" value="登录">
+
+	</form>
+	{% if ret %}
+	<h3 style="color:blue">{{ ret }}</h3>
+	{% else %}
+	<h3 style="color:blue"></h3>
+	{% endif %}
+	</body>
+</html>
