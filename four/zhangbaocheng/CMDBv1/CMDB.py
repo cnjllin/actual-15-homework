@@ -5,8 +5,9 @@ from flask import Flask,request,render_template
 
 app = Flask(__name__)
 
-# 处理nginx 日志，返回一个列表
+
 def nginx_log_Result():
+# 处理nginx 日志，返回一个列表
     log_dict = {}
     log_file = file('access.txt')
     for i in log_file:
@@ -24,10 +25,17 @@ def nginx_log_Result():
         status = j[0][2]
         counts  = j[1]
         result.append((ip,url,status,counts))
-    return  result
+    result_key = [('ip',1),('url',2),('status',3),('counts',4)]
+    result_list = []
+    for res in result:
+        row = {}
+        for i in range(len(result_key)):
+            row[result_key[i][0]] = res[i]
+        result_list.append(row)
+    return  result_list
 	
-#  判断用户是否存在	
 def User_already_exists(username):
+#判断用户是否存在
         Usr_messages = file('User_messages.txt', 'rb')
         match_flag = False
         for line in Usr_messages.readlines():
@@ -52,11 +60,10 @@ def login():
             message.append((arry[0],arry[1]))
         User_messages.close()
         for k in message:
-            
             if k[0] == username and k[1] == password:
+                print k[0],username,k[1],password
                 nginx_log = nginx_log_Result()
-                print nginx_log
-                return  render_template('nginx_log.html',nginx_log=nginx_log)
+                return  render_template('assetlist.html',nginx_log=nginx_log)
    
     return  render_template('login.html')
 
@@ -66,7 +73,6 @@ def register():
 三个参数， 调用函数，判断用户是否存在
 如果存在打出用户已经存在信息
 否则，写入用户信息，并打出注册成功页面'''
-
     if request.method == 'POST':
         username = request.form.get('username')
         if User_already_exists(username) == True:
