@@ -7,3 +7,4 @@
 
 * homework1.py为作业1的代码
 * homework2.py为作业2的代码
+* test_screenshots目录为相关测试截屏
