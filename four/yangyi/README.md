@@ -19,10 +19,10 @@
 
 ## 文件说明
 
-'''
- 1. user.txt 用户名密码信息
+
+ '''1. user.txt 用户名密码信息
  2. index.py 主程序
  3. /templates/login.html 登录与注册页面
  4. /tmplates/user.html　用户中心
- 5. /tmplates/ip.html nginx日志统计展示页
-'''
+ 5. /tmplates/ip.html nginx日志统计展示页'''
+
