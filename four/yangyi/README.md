@@ -29,13 +29,17 @@
 
  ## 效果展示
 ### 登录
+
 ![image](https://github.com/51reboot/actual-15-homework/raw/master/four/yangyi/day04/login1.png)
+
 ![image](https://github.com/51reboot/actual-15-homework/raw/master/four/yangyi/day04/login2.png)
 
 ### 注册
+
 ![image](https://github.com/51reboot/actual-15-homework/raw/master/four/yangyi/day04/login3.png)
 
 ### 日志统计
+
 ![image](https://github.com/51reboot/actual-15-homework/raw/master/four/yangyi/day04/IP.png)
 
 
