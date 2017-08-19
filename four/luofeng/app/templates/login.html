@@ -1,0 +1,17 @@
+<html>
+<body>
+<table width='800' border='1' cellspacing='1' cellpadding='1' style='text-align:center;margin:0 auto'>
+	<tr>
+		<td>CIP</td><td>URL</td><td>STATUS</td><td>COUNT</td>
+	</tr>
+{% for x in nginx_log %}
+	<tr>
+		<td>{{ x.ip }}</td>
+		<td>{{ x.url }}</td>
+		<td>{{ x.status }}</td>
+		<td>{{ x.count }}</td>
+	</tr>
+{% endfor %}
+</table>
+</body>
+</html>
