@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>用户管理系统</title>
+        <style type="text/css" rel="stylesheet">
+            .wrap{margin:0 auto;width:400px;}
+        </style>
+    </head>
+    <center>
+    <body>
+        <div class="wrap">
+            <fieldset  style=" margin:0px auto"> 
+                <h1>welcome!</h1>
+                <form action="/login/userinfo/" methods="post">
+                    <p>用户名:<input type="text" name="name"></p>
+                    <p>密&nbsp;&nbsp;&nbsp;&nbsp;码:<input type="password"
+                    name="password"></p>
+                    <p>验证码:<input type="text" name="iden_code"></p>
+                    <p>{{iden_code}}</p>
+                    <input type="submit"
+                    value="登录">&nbsp;&nbsp;&nbsp;&nbsp;<input type="button"
+                    onclick="window.location.href='/login/register/'" value="注册">
+                </form>
+            </fieldset>
+        </div>
+    </body>
+    </center>
+</html>
+                    
+
+
+
+
+        
+
