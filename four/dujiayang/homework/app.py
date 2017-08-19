@@ -14,14 +14,15 @@ def index_1():
 
 
 
-@app.route('/register',methods=['POST','GET'])
+@app.route('/zhuce',methods=['POST','GET'])
 def reg():
-	return render_template('signin.html')
-	mtd = request.form if request.method == 'POST' else request.args
-	name = mtd.get('username')
-	password = mtd.get('passwd')
+	#mtd = request.form if request.method == 'POST' else request.args
+	#name = mtd.get('username')
+	#password = mtd.get('passwd')
+	name = request.form.get('username')
+	password = request.form.get('passwd')
 	print name,password
-	register(name,password)
+	invoke.register(name,password)
 
 
 @app.route('/denglu',methods=['POST','GET'])
@@ -30,7 +31,6 @@ def login():
         mtd = request.form if request.method == 'POST' else request.args
         name = mtd.get('username')
         password = mtd.get('passwd')
-	print name,password
         login(name,password)
 
 if __name__== '__main__':
