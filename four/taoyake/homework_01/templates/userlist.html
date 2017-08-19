@@ -1,0 +1,13 @@
+{% if user == 'admin' %}
+<a href="/adduser">add user</a>
+{% endif %}
+<table border="1">
+
+    {% for user in userxxx %}
+    <tr>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+    </tr>
+
+{% endfor %} 
+</table>     

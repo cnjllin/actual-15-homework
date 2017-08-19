@@ -1,0 +1,19 @@
+<html>
+<table style='border:solid 1px'>
+<tr>
+<td style="border:solid 1px">IP</td>
+<td style="border:solid 1px">url</td>
+<td style="border:solid 1px">status</td>
+<td tyle="border:solid 1px">出现次数</td>
+</tr>
+{% for y in b %}
+<tr>
+<td style="border:solid 1px">{{y[0][0]}}</td>
+<td style="border:solid 1px">{{y[0][1]}}</td>
+<td style="border:solid 1px">{{y[0][2]}}</td>
+<td tyle="border:solid 1px">{{y[1]}}</td>
+</tr>
+{% endfor %}
+</form>
+</table>
+</html>

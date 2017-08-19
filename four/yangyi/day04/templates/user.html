@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<aside >
+	<input runat="server" id="divScrollValue" type="hidden" value="" />
+	<div >
+		<dl >
+			<dt>网站访问统计</dt>
+			<dd>
+				<ul>
+						<li><a href="/ip?user={{user}}&count=10" >IP TOP TEN</a></li>
+						<li><a href="/index" >Index页面</a></li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+</aside>
+{% endblock %}

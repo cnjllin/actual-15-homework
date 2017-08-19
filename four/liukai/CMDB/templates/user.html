@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="gb2312">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <style>
+	.container{
+                width:500px;
+       }
+      </style>
+    </head>
+<body>
+<div class="container">
+<h1>欢迎登录 </h1>
+<h1>用户名： {{ user }} </h1>
+   <h2> 密码：  {{ list[0] }}</h2>
+   <h2> 邮箱：{{ list[1] }}</h2>
+   <h2> 电话：{{ list[2] }}</h2>
+<a href="/">返回</a>
+</div>
+</body>
+</html>

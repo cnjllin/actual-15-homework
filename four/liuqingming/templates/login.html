@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<form name="input" action="/login/" method="post">
+<li> Username: <input  type="text" name="user"> </li>
+<li> Password: <input type="password" name="pwd"> </li>
+<li> <input type="submit" value="Submit"  </li>
+</from>
+<h1> {{ str }} </h1>
+{% for user in users %}
+    {% if user['role'] == 0 %}
+        <h2 style="color:blue">  your name is {{ user['name'] }} ,your age is {{ user.age }} , your are admin  </h2>
+    {% elif user['role'] == 1 %}
+        <h2 style="color:red">  your name is {{ user.name }} ,your age is {{ user.age }} , your are loser  </h2>
+    {% else %}
+        <h2 style="color:red">  your name is {{ user.name }} ,your age is {{ user.age }} , your are nothing </h2>
+    {% endif %}
+{% endfor %}
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+      <meta charset="gb2312">
+      <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+       <style>
+        .container{
+                width:500px
+        }
+       </style>
+</head>
+<body>
+<div class="container">
+<h1> 用户信息 </h1>
+<table border=1>
+<tr>
+<td>用户名</td><td>密码</td><td>邮箱</td><td>电话</td>
+</tr>
+
+{% for k,v in doct.items() %}
+<tr>
+<td>{{ k }}</td><td>{{ v[0] }}</td><td>{{ v[1] }}</td><td>{{ v[2] }}</td>
+</tr>
+{% endfor %}
+</table>
+<a href="/">返回</a>
+</div>
+</body>
+</html>
