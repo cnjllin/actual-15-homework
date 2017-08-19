@@ -23,7 +23,7 @@ def login():
 
 @app.route('/')
 def index():
-    return '欢迎登录'
+    return render_template('index.html')
 
 
 
