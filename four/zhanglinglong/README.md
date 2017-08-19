@@ -18,6 +18,7 @@
 
 ### 作业说明：
  
+*  ├── daotu.png           思维导图
 *  ├── login_register.py   登录注册脚本
 *  ├── templates           存放html的目录
 *  │   ├── login.html      登录的html
