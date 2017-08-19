@@ -27,3 +27,11 @@
  5. /tmplates/ip.html nginx日志统计展示页
  ```
 
+ ## 效果展示
+
+![Alt text]('https://github.com/51reboot/actual-15-homework/raw/master/four/yangyi/day04/login1.png')
+![Alt text]('https://github.com/51reboot/actual-15-homework/raw/master/four/yangyi/day04/login2.png')
+![Alt text]('https://github.com/51reboot/actual-15-homework/raw/master/four/yangyi/day04/login3.png')
+![Alt text]('https://github.com/51reboot/actual-15-homework/raw/master/four/yangyi/day04/IP.png')
+
+
