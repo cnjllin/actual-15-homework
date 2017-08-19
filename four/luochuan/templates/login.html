@@ -1,0 +1,19 @@
+<html>
+<body>
+<title>
+Login
+</title>
+<form action="/login/">
+        <ul>
+            {% if choice == '1' %}
+               <h1>welcome {{ user }}!</h1>        
+            {% elif choice == '0' %}
+               <h1>password wrong!</h1>
+            {% else %}                
+               <h1>your input is not correct or you need register!</h1>
+            {% endif %}        
+        </ul>
+
+</form>
+</body>
+</html>
