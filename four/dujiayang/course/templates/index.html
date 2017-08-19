@@ -1,0 +1,28 @@
+<html>
+<title>
+test
+</title>
+<body>
+<form action="/login/" method="POST" >
+    <ul>
+        <li>用户名：<input type="text" name="username"></li>
+        <li>密 码：<input type="password" name="passwd"></li>
+        <li><input type="submit"></li>
+    </ul>                                                                                                                             
+</form>
+<h1>hello world</h1>
+<h2>welcom {{ thename }},age is {{ theage }}
+<h2>hi {{dict.name}},you are {{dict.age}} now</h2>
+<h2>hello,{{list[1].name}},ni {{list[1].age}}</h2>
+{%for k,v in dict.items()%}
+	<h3>hello,hello,{{v}}--{{k}}</h3>
+{%endfor%}
+
+
+{% for i in list %}
+<h2>{{i.name}}----{{i['age']}}</h2>
+{% endfor %}
+
+
+</body>
+</html>
