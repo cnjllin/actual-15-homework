@@ -43,7 +43,7 @@ def register():
     if request.method == 'POST':
         user = request.form.get('user')
         pwd = request.form.get('pwd')
-        if len(user) == 0 or len(pwd) == 0:
+        if len(user.strip()) == 0 or len(pwd.strip()) == 0:
             return "用户名或者密码为空"
         with open('userinfo.txt','a') as f:
             f.write(user+':'+pwd+'\n')
