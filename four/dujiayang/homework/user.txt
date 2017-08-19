@@ -24,3 +24,4 @@ newt5:500
 None:None
 new6:600
 new7:700
+new8:800
