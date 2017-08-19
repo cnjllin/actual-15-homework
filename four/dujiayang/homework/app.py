@@ -12,8 +12,10 @@ def index_1():
 	return render_template('index.html')
 
 
-
-
+@app.route('/zhuceye',methods=['POST','GET'])
+def sigin():
+	return render_template('zhuceye.html')
+	
 @app.route('/zhuce',methods=['POST','GET'])
 def reg():
 	#mtd = request.form if request.method == 'POST' else request.args
@@ -21,8 +23,8 @@ def reg():
 	#password = mtd.get('passwd')
 	name = request.form.get('username')
 	password = request.form.get('passwd')
-	print name,password
 	invoke.register(name,password)
+	return "congratulation,%s reged is ok" %name
 
 
 @app.route('/denglu',methods=['POST','GET'])
