@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+reboot15
+</title>
+</head>
+<body>
+<form action="/login/" method="POST" >
+    <ul>
+        <li>用户名: <input type="TEXT" name="username"></li>
+        <li>密码: <input type="PASSWORD" name="passwd"></li>
+        <li>提交: <input type="SUBMIT"></li>
+    </ul>
+</form>
+
+<h1>hello,world</h1>
+<!--<h2>Welcome {{ username }},your age is {{ age  }}</h2>-->
+{% for i in score %}
+<h2>score --- {{ i }} </h2>
+{% endfor %}
+{% for user in users %}
+<h2 style="color:blue">Welcome,{{ user['name'] }},your age is {{ user.age }}</h2>
+{% endfor %}
+{% if user.role == 0 %}
+<h2>your name is {{ user.name }} ,your role is admin</h2>
+{% elif user.role ==1 %}
+<h2>your name is {{ user.name }} ,your role is common</h2>
+{% else %}
+<h2 style="color:red">your role does not exist</h2>
+{% endif %}
+</body>
+</html>
