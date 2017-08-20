@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>{{user.url}}</h1>
+    {% for i in user %}
+        <table border="1">
+            <tr>
+                <th>{{i[0]}}</th>
+                <th>{{i[1]}}</th>
+            </tr>
+        </table>
+    {% endfor %}
+{% endblock %}
