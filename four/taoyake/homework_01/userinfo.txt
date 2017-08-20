@@ -1,5 +1,3 @@
 taoyake:123456
 admin:123.com
 qqqq:qqq
-qqq: qqq  
-qqq: qqq  
