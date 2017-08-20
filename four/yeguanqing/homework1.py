@@ -5,7 +5,7 @@
 '''
 
 
-from flask import Flask,request,render_template
+from flask import Flask,request,render_template,redirect
 
 app = Flask(__name__)
 
@@ -52,7 +52,7 @@ def register():
 			if passwd == repasswd:
 				with open('user_info.txt','a+') as user_info:
 					user_info.write("%s:%s \n" % (username,passwd))
-				return "Congratulation, your registration is successful."
+				return redirect("/login/")
 	return render_template('register.html')
 if __name__ =='__main__':
 	app.run(host='0.0.0.0', port=8888,debug=True)
