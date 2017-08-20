@@ -38,11 +38,18 @@ def userlist():
 
 @app.route('/register',methods=['GET','POST'])
 def register():
+    a=[]
+    with open('userinfo.txt') as f:
+        for line in f:
+            a.append(line.strip('\n').split(':')[0])
     if request.method == 'GET':
         return render_template('register.html')
     if request.method == 'POST':
         user = request.form.get('user')
         pwd = request.form.get('pwd')
+        if user in a:
+            errmesg="user exist"
+            return render_template('register.html', error=errmesg)
         if len(user.strip()) == 0 or len(pwd.strip()) == 0:
             return "用户名或者密码为空"
         with open('userinfo.txt','a') as f:
