@@ -54,5 +54,9 @@ def afterlogin():
     else:
         return render_template('login.html',error='username or password is error')
 
+#首页
+@test.route('/')
+def index():
+    return render_template('index.html')
 if __name__ == '__main__':
     test.run(host='0.0.0.0',port=5678,debug=True)
