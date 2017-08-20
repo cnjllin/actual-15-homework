@@ -1,6 +1,6 @@
 # 第四天作业
 
-## 用户注册登录接口项目文档
+## 用户注册登录项目文档
 
 ###  1 项目需求
    - 用户注册 - 填写用户信息，并写入文件 
@@ -9,19 +9,20 @@
    - 用户注册：HTML页面提交表单（用户名，密码，确认密码），后端判断用户是否存在，返回用户注册状态
    - 用户登录：HTML页面提交表单（用户，密码），后端判断输入信息是否匹配，返回登录状态
  ### 3 项目细节：==前端输入后端接收存入文件，后端返回渲染HTML返回给前端==
-  框架--mvc(代码-python 框架（模板）-falsk 显示-jinjia2后端渲染html返回)
+  框架--mvc(代码-python 框架（flask/request/render_template模板）-falsk 显示-jinjia2后端渲染html返回)
  #### 3.1 Flask框架
    - flask框架是简单的web模型，包括包目录 模板 类 函数 流程控制
    - 通过route装饰器访问URL，调用函数，返回结果
    - 项目共定义两个URL
     
-    -- 1./页面
+    -- 1./登录页面
       @app.route('/')
       def index():
-	  return render_template('login.html')
+	      return render_template('login.html')
 
       @app.route('/login',methods=['GET','POST'])
-       render_template('loginsucess.html',status=status)	
+      def login():
+          render_template('loginsucess.html',status=status)	
        
     -- 2./registor (前端提交post表单，函数调用request模块获取表单内容)
        @app.route('/registor')
@@ -36,9 +37,9 @@
     -- userfile()函数：获取用户密码文件存入字典
        userfile() 返回user_dict
     -- login()：
-       调用userfile()判断输入用户密码，返回登录status,render_template()渲染成html返回给URL
+       调用userfile(),request模块获取表单返回内容，判断输入用户密码，返回登录status,render_template()渲染成html返回给URL
     -- reg():
-       调用userfile()判断输入是否存在，两次输入密码是否匹配，返回注册status,render_template()渲染成html返回给URL
+       调用userfile()，request模块获取表单返回内容，判断输入是否存在，两次输入密码是否匹配，返回注册status,render_template()渲染成html返回给URL
   #### 3.3 后端渲染HTML返回
     -- login.html:/主页面,action=/login（执行登录）
         <html>
@@ -61,3 +62,4 @@
     -- 登录返回：登录返回.png
     -- 注册：注册.png
     -- 注册返回：注册返回.png
+**

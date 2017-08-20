@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>用户信息</title>
+    </head>
+    <body>
+        <h3>您的基本信息:</h3>
+            <table border="1">
+                {% for k in user_item %}
+                <tr>
+                    <td>{{k}}</td>
+                    <td>{{users[k]}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+    </body>
+</html>
