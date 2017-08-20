@@ -1,0 +1,13 @@
+<html>
+    <title>修改密码</title>
+    <body>
+        <h0><a href="/userlist">back to userlist page</a></h0>
+    <form action="/update_user?id={{ uid }}" method="POST">
+        password：<input placeholder="password" type="password" name="password"><br>
+        input again：<input placeholder="ensure password" type="password" name="repwd"><br>
+        <input type="submit" name="commit" value="confirm">
+        <span style='color:red'>{{ res.msg }}</span>
+    </form>
+
+    </body>
+</html>

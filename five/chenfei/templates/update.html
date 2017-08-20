@@ -1,0 +1,9 @@
+hello {{user}}
+
+<form method='post' action='/update'>
+user:<input type='hidden' name='user' value={{user}}>
+oldpwd:<input type='password' name='oldpwd'>
+newpwd:<input type='password' name='newpwd'>
+confirmpwd:<input type='password' name='confirmpwd'>
+<input type='submit' value='update'>
+</form>

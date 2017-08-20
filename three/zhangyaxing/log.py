@@ -24,17 +24,17 @@ def log_up():
 def log_in():
 	name = raw_input('请输入姓名：').strip()
 	if len(name) == 0:
-		print '用户名不能为空'
+		print '用户名不能为空'	
 	else:
 		f =open('user.txt','r+')
 		for line in f.readlines():
 			li = line.strip()
 			username = li.split(':')[0]
 			password = li.split(':')[1]
+		while True:
 			if name != username:
-				# print '用户不存在'
-				# break
-				continue
+				print '用户不存在'
+				break
 			else:
 				passwd = raw_input('请输入密码：')
 				if passwd != password:

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="gb2132">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <style>
+            body{
+                padding-top:40px;
+                padding-bottom:40px;
+                background-color:#eee;
+            }
+            .container{
+                width:360px;
+             }
+            .form-signin{
+                max-width:330x;
+                padding:15px;
+                margin:0 auto;
+            }
+            .form-signin .form-signin-heading,
+            .fotm-signin.checkbox{
+                margin-bottom:10px
+            }
+            .fotm-signin .checkbox{
+                font-weight:normal:
+            }
+            .form-signin .form-control{
+                position:relative;
+                height:auto;
+                -webkit-box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                box-sizing:border-box;
+                padding:10px;
+                font-size:16px;
+            }
+            .form-signin .form-control:focus {
+                z-index:2;
+            }
+            .form-signin input[type="username"]{
+                margin-bottom:-1px;
+                border-bottom-right-radius:0;
+                border-bottom-left-radius:0;
+            }
+            .form-signin input[type="password"]{
+                margin-bottom:10px;
+                border-top-left-radius:0;
+                border-top-right-radius:0;
+            }
+     </style>
+     </head>
+    <body>
+        <div class="container">
+            <form class="form-signin" role="form" action="/login/" method="POST">
+                <h2 class="form-signin-heading" style="text-alin:center;">用户管理系统</h2>
+                <div class="form-group">
+                 <input type="text" class="form-control" name='user' placeholder="username" required autofocus>
+                 </div>
+                 <div class="form-group">
+                 <input type="password" class="form-control" name='pwd' placeholder="password" required >
+                  </div>
+                 <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+                 <h2 class="form-signin-heading" style="text-alin:center;"> {{ res['msg'] }}</h2>
+                 <a  class="btn"  href="/zhuce/">注册</a>
+            </form>
+        </div>
+        </body>
+    </html>
+            

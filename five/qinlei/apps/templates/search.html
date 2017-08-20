@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block chuser %}
+<div class="container ">
+<form class="row" method="post">
+    <table class="table">
+        <tr>
+        <th>用户ID</th>
+        <th>用户名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>手机</th>
+        <th>邮件</th>
+        <th>角色</th>
+        <th>日期</th>
+        </tr>
+    {% for i in user %}
+        <tr>
+            <td>a{{i.id}}</td>
+            <td>{{i.username}}</td>
+            <td>{{i.sex}}</td>
+            <td>{{i.age}}</td>
+            <td>{{ i.phone}}</td>
+            <td>{{i.email}}<td>{{i.role}}</td>
+            <td>{{ i.date}}</td>
+        </tr>
+
+    {% endfor %}
+    </table>
+</form>
+</div>
+{% endblock %}

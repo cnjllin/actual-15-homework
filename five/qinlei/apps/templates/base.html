@@ -1,0 +1,21 @@
+<html>
+    <head>
+        {% include 'head.html' %}
+    </head>
+<body>
+<div style="margin-top:50px" class="wrapper">
+    {% include "nav_bar.html" %}
+        {% block content %}{% endblock %}
+        <div class="row">
+            {% if session.logged_in %}
+                {% include "overview.html" %}
+                {% block dashboard %}{% endblock %}
+                {% block adduser %}{% endblock %}
+                {% block edit %}{% endblock %}
+
+            {% endif %}
+        </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>userlist</title>
+</head>
+<body>
+	<table border="1px">
+		<tr>
+			<td>id</td>
+			<td>username</td>
+			<td>password</td>
+			<td>update</td>
+			<td>delete</td>
+		</tr>
+		{% for user in result %}
+		<tr>
+			<td>{{user[0]}}</td>
+			<td>{{user[1]}}</td>
+			<td>{{user[2]}}</td>
+			<td><a href="/update/?id={{user[0]}}">update</a></td>
+			<td><a href="/del/?id={{user[0]}}">delete</a></td>
+		</tr>
+		{% endfor %}
+	</table>
+	<div>
+		<a href="http://127.0.0.1:5000/">返回首页</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>修改密码页面</title>
+</head>
+<body>
+
+<form action="/userlist/update/" method="POST">
+        {% if error %}
+		<span style='color:red'> {{error}} </span>
+	{%endif%}
+		用户名：
+                <input type="text" name='name'> 
+		原密码：
+		<input type="password" name='pwd'>
+		新密码：
+		<input type="password" name='new_pwd'>
+		<input type="submit" value='提交'>
+</form>
+</body>
+</html>

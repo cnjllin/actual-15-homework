@@ -1,0 +1,13 @@
+<html>
+	<title>修改密码</title>
+	<body>
+        <h0><a href="/selectusers">返回用户列表</a></h0>
+	<form action="/updateuser?id={{ uid }}" method="POST">
+		请输入密码：<input placeholder="密码" type="password" name="password"><br>
+		确认密码：<input placeholder="确认密码" type="password" name="repwd"><br>
+		<input type="submit" name="commit" value="确认修改">
+		<span style='color:red'>{{ res.msg }}</span>
+	</form>
+
+	</body>
+</html>

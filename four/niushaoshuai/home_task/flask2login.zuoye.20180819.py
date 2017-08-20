@@ -34,11 +34,9 @@ def userlist():
 #登陆表单
 @test.route('/login/',methods=['GET','POST'])
 def afterlogin():
-    print request.method
     if  request.method == 'POST':
         user_name=request.form.get('name')
         user_pass=request.form.get('pwd')
-        print user_name,user_pass
         if userinfo.checkout_user_pass(user_name,user_pass):
             return redirect('/userlist/')
 	else:
