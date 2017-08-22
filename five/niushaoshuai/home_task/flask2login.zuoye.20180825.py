@@ -39,11 +39,20 @@ def userlist():
     users=[[row[i] for i,k in enumerate(filed)] for row in s]
     return render_template('userlist.html',msg=users)
 
+@test.route('/userlist/delete/',methods=['GET','POST'])
 def delete():
+    if request.method == 'POST':
+        user_id=request.form.get('id')
+    else:
+        user_id=request.args.get('id')
     db = mysql.connect(host='localhost', user='root', passwd='', port=3306, db='51reboot', charset='utf8')
     cur = db.cursor()
-    sql='select %s  from user' %  (','.join(filed))
+    print user_id
+    sql="delete  from user where id='%s'" %  (user_id)
     cur.execute(sql)
+    db.commit()
+    return redirect('/userlist/')
+    
 
 #登陆表单
 @test.route('/login/',methods=['GET','POST'])
