@@ -5,7 +5,7 @@ import userinfo
 import MySQLdb as mysql
 test=Flask(__name__)
 
-#注册表单
+# 注册表单
 @test.route('/reg/',methods=['GET','POST'])
 def afterreg():
     if request.method == 'POST':
@@ -26,7 +26,7 @@ def afterreg():
         user_pass1=request.form.get('pwd')
         user_pass2=request.form.get('pwd1')
         return render_template('reg.html')
-#会员中心
+# 会员中心-首页
 @test.route('/userlist/')
 def userlist():
     db = mysql.connect(host='localhost', user='root', passwd='', port=3306, db='51reboot', charset='utf8')
@@ -39,6 +39,7 @@ def userlist():
     users=[[row[i] for i,k in enumerate(filed)] for row in s]
     return render_template('userlist.html',msg=users)
 
+# 会员中心-删除模块
 @test.route('/userlist/delete/',methods=['GET','POST'])
 def delete():
     if request.method == 'POST':
@@ -52,9 +53,33 @@ def delete():
     cur.execute(sql)
     db.commit()
     return redirect('/userlist/')
-    
 
-#登陆表单
+# 会员中心-更新模块
+@test.route('/userlist/update/',methods=['GET','POST'])
+def update():    
+    if request.method == 'POST':
+        user_name=request.form.get('name')
+        user_pass=request.form.get('pwd')
+        user_newpass=request.form.get('new_pwd')
+        db=mysql.connect(host='localhost', user='root', passwd='', port=3306, db='51reboot', charset='utf8')
+        cur=db.cursor()
+        print user_name ,user_pass
+        sql="select * from user where u_name='%s' and password='%s'" %  (user_name,user_pass)
+        print sql
+        sql1="update user set password='%s' where u_name='%s'" % (user_newpass,user_name)
+        print sql1
+        print cur.execute(sql)
+        if cur.execute(sql):
+            cur.execute(sql1)
+            db.commit()
+            return render_template('update.html',error='Congratulations on your successful update')
+        else:
+            return render_template('update.html',error='update failed,agine')
+
+    else:
+        return render_template('update.html')
+
+# 登陆模块
 @test.route('/login/',methods=['GET','POST'])
 def afterlogin():
     if  request.method == 'POST':
@@ -67,7 +92,7 @@ def afterlogin():
     else:
         return render_template('login.html')
 
-#首页
+# 首页
 @test.route('/')
 def index():
     return render_template('index.html')
