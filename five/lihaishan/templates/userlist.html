@@ -1,0 +1,42 @@
+<html>
+
+	<title>�û��б�</title>
+
+	<body style="background:LightGreen">
+
+	
+    <table border="1">
+    <tr>
+        <td>ID</td>
+        <td>user</td>
+        <td>password</td>
+        <td>phone</td>
+        <td>email</td>
+        <td>age</td>
+        <td>sex</td>
+        <td>role</td>
+        <td>操作</td>
+        
+    </tr>
+    {% for user in use %}
+    <tr>
+        <td>{{ user[0] }}</td>
+        <td>{{ user[1] }}</td>
+        <td>{{ user[2] }}</td>
+        <td>{{ user[3] }}</td>
+        <td>{{ user[4] }}</td>
+        <td>{{ user[5] }}</td>
+        <td>{{ user[6] }}</td>
+        <td>{{ user[7] }}</td>
+
+        <td><a href="/update/?id={{user[0]}}" class="dow">更新</a>/<a href="/dlt/?id={{user[0]}}" class="dow">删除</a>/<a href="/check/?id={{ user[0] }}" class="dow">查询</a></td>
+
+
+
+    </tr>
+
+    {% endfor %}
+    </table>
+	</body>
+
+</html>

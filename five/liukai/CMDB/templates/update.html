@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="gb2312">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <style>
+	.container{
+                width:500px;
+       }
+      </style>
+    </head>
+<body>
+</div>
+<div class="container">
+<h1> 修改用户信息 </h1>
+<table border=1>
+<tr>
+<td>名称</td><td>原始信息</td><td>新信息</td>
+</tr>
+
+{% for k in user %}
+<form action="/update_msg/" method='POST'>
+<tr>
+<td>密码</td><td>{{ k[2] }}</td><td>
+<input type='text' name='password' value="{{ k[2] }}",disabled><input type='hidden' name='id' value="{{ k[0] }}",disabled >><input type='hidden' name='username' value="{{ k[1] }}",disabled ></td>
+</tr>
+<tr>
+<td>性别</td><td>{{ k[3] }}</td><td>
+<input type='text' name='sex' value="{{ k[3] }}",disabled></td>
+</tr>
+<tr>
+<td>年龄</td><td>{{ k[4] }}</td><td>
+<input type='text' name='age' value="{{ k[4] }}",disabled ></td>
+</tr>
+<tr>
+<td>电话</td><td>{{ k[5] }}</td><td>
+<input type='text' name='phone' value="{{ k[5] }}",disabled></td>
+</tr>
+<tr>
+<td>邮箱</td><td>{{ k[6] }}</td><td>
+<input type='text' name='email' value="{{ k[6] }}",disabled></td>
+</tr>
+<tr>
+<td>权限</td><td>{{ k[7] }}</td><td>
+<input type='text' name='role' value="{{ k[7] }}",disabled></td>
+</tr>
+<tr>
+<input type="submit" value="提交">
+</tr>
+</form>
+{% endfor %}
+</table>
+<a href="/">返回</a>
+</div>
+
+</body>
+</html>
