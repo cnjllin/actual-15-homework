@@ -1,0 +1,24 @@
+<html>
+<h0 method='post'><a href="/userinfo?username={{username}}">返回用户操作页面</a></h0>
+<title>用户列表</title>
+	<table border="1px">
+		<tr>
+			<td>ID</td>
+			<td>用户名</td>
+			<td>密码</td>
+			<td>Age</td>
+			<td>电话</td>
+			<td>Email</td>
+			<td>Role</td>
+		</tr>
+		<tr>
+			<td>{{ data[0] }}</td> 
+			<td>{{ data[1] }}</td>
+			<td>{{ data[2] }}</td>
+			<td>{{ data[3] }}</td>
+			<td>{{ data[4] }}</td>
+			<td>{{ data[5] }}</td>
+			<td>{{ data[6] }}</td>
+		</tr>
+	</table>
+</html>
