@@ -1,0 +1,11 @@
+<html>
+<body>
+<h1>TOP10 IP </h1>
+<table whith='400' border='1' cellpadding='1' cellspacing='1'>
+<th style='border:solid 1px'>IP Address</th><th style='border:solid 1px'>NO</th>
+{% for k,v in list %}
+<tr><td style="border:solid 1px">{{k}}</td><td style="border:solid 1px">{{v}}</td></tr>
+{% endfor %}
+</table>
+</body>
+</html>

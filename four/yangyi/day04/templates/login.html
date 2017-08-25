@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>{{title}}</title>
+
+<script src="/static/js/jquery-2.2.4.min.js"></script>
+<script>
+	$(document).ready(function() {
+
+		$(".form").slideDown(500);
+
+		$("#landing").addClass("border-btn");
+
+		$("#registered").click(function() {
+			$("#landing").removeClass("border-btn");
+			$("#landing-content").hide(500);
+			$(this).addClass("border-btn");
+			$("#registered-content").show(500);
+
+		})
+
+		$("#landing").click(function() {
+			$("#registered").removeClass("border-btn");
+			$(this).addClass("border-btn");
+
+			$("#landing-content").show(500);
+			$("#registered-content").hide(500);
+		})
+		function user(obj,active){
+		    $.post('http://127.0.0.1:5000/checkuser',{user:$(obj).val()},function(data){
+						if (data == 0 && active == "login"){
+						    alert( "该用户名不存在");
+						}else if (data == 1 && active =="logup"){
+						    alert("该用户名已存在！")
+						}
+					});
+	}
+	$("#landing-content").find(".user").blur(function(){
+	     user(this,"login");
+		}
+	);
+	$("#registered-content").find(".user").blur(function(){
+	     user(this,"logup");
+		}
+	)
+		$("#registered-content").find(".password1").blur(function(){
+	     if($(this).val().length >=6){
+		 }else{
+	         alert("为了账号安全密码长度须大于六位！");
+		 }
+		}
+	);
+	$("#registered-content").find(".password2").blur(function(){
+	    var value = $("#registered-content").find(".password1").val();
+	     if($(this).val() == value){
+		 }else{
+	         alert("两次输入密码不一致！");
+		 }
+		}
+	);
+$("#landing-content").find('form').on('submit',function(e){
+    e.preventDefault();
+    $.ajax({
+        type:"POST",
+        url:"/login",
+        data:{
+            user:$("#uname").val(),
+			password:$("#pwd").val()//把表单填写值放这里传到后端
+        },
+        success:function (data) {
+            if (data == 0){
+                alert("用户名密码不一致！");
+            }
+            else if (data ==$("#uname").val()){
+                window.location.href="/user/username="+$("#uname").val();
+			}
+        }
+        })
+    });
+})
+
+</script>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: "微软雅黑";
+	}
+	a{
+		text-decoration:none;
+	}
+	body {
+		background: #F7F7F7;
+	}
+
+	.form {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -185px;
+		margin-top: -210px;
+		height: 420px;
+		width: 340px;
+		font-size: 18px;
+		-webkit-box-shadow: 0px 0px 10px #A6A6A6;
+		background: #fff;
+	}
+
+	.border-btn {
+		border-bottom: 1px solid #ccc;
+	}
+
+	#landing,
+	#registered {
+		float: left;
+		text-align: center;
+		width: 170px;
+		padding: 15px 0;
+		color: #545454;
+	}
+
+	#landing-content {
+		clear: both;
+	}
+
+	.inp {
+		height: 30px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		width: 200px;
+	}
+
+	.inp>input {
+		text-align: left;
+		height: 30px;
+		width: 200px;
+		margin: 0 auto;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.login {
+		border: 1px solid #A6A6A6;
+		color: #a6a6a6;
+		height: 30px;
+		width: 202px;
+		text-align: center;
+		font-size: 13.333333px;
+		margin-left: 70px;
+		line-height: 30px;
+		margin-top: 30px;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.login:hover {
+		background: #A6A6A6;
+		color: #fff;
+	}
+
+	#bottom {
+		margin-top: 30px;
+		font-size: 13.333333px;
+		color: #a6a6a6;
+	}
+
+	#registeredtxt {
+		float: left;
+		margin-left: 80px;
+	}
+
+	#forgotpassword {
+		float: right;
+		margin-right: 80px;
+	}
+
+	#photo {
+		border-radius: 80px;
+		border: 1px solid #ccc;
+		height: 80px;
+		width: 80px;
+		margin: 0 auto;
+		overflow: hidden;
+		clear: both;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	#photo>img:hover {
+		-webkit-transform: rotateZ(360deg);
+		-moz-transform: rotateZ(360deg);
+		-o-transform: rotateZ(360deg);
+		-ms-transform: rotateZ(360deg);
+		transform: rotateZ(360deg);
+	}
+
+	#photo>img {
+		height: 80px;
+		width: 80px;
+		-webkit-background-size: 220px 220px;
+		border-radius: 60px;
+		-webkit-transition: -webkit-transform 1s linear;
+		-moz-transition: -moz-transform 1s linear;
+		-o-transition: -o-transform 1s linear;
+		-ms-transition: -ms-transform 1s linear;
+	}
+
+
+	#registered-content {
+		margin-top: 40px;
+		display: none;
+	}
+
+	.fix {
+		clear: both;
+	}
+	.form{
+		display: none;
+	}
+</style>
+
+</head>
+
+<body>
+<div class="form">
+	<a href="#login" id="landing">登陆</a>
+	<a href="#logup" id="registered">注册</a>
+	<div class="fix"></div>
+	<div id="landing-content">
+		<form action="/login" method="POST">
+			<div id="photo"><img src="/static/img/photo.jpg" /></div>
+			<div class="inp"><input type="text" class="user" id = "uname"placeholder="用户名" name="user" /></div>
+			<div class="inp password"><input type="password" id = "pwd" placeholder="密码" name="password"/></div>
+			<input type="submit"  class="login" value="登录">
+		</form>
+	</div>
+	<div id="registered-content">
+		<form action="/register" method="POST">
+			<div class="inp"><input type="text" class="user" placeholder="请输入用户名" name="user" /></div>
+			<div class="inp"><input type="password" class="password1" placeholder="请输入密码" name="password1" /></div>
+			<div class="inp"><input type="password" class="password2" placeholder="请再次输入密码" name="password2"/></div>
+			<input type="submit" id="re" class="login" value="立即注册" />
+		</form>
+
+	</div>
+</div>
+</body>
+</html>

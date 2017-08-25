@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <style type="text/css" rel="stylesheet">
+        .wrap{margin:0 auto;width:500px;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h3>welcome to registering!</h3>
+        <form action="/login/register/check/">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;用户名: <input type="text"
+            name="name"></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;密&nbsp;&nbsp;&nbsp;码: <input
+            type="password" name="password1"></p>
+            <p>确认密码: <input  type="password" name="password2"></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;电&nbsp;&nbsp;&nbsp;话: <input
+            type="text" name="tel"></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;&nbsp;龄: <input
+            type="text" name="age"></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;邮&nbsp;&nbsp;&nbsp;件: <input
+            type="text" name="email"></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;职&nbsp;&nbsp;&nbsp;业: <input
+            type="text" name="job"></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="确认提交"></p>
+            <p><h4 style='color:red'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{error}}</h4></p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <title></title>
+
+    <link href="http://123.58.240.203:8080/bootstrap.min.css" type="text/css" media="screen" rel="stylesheet">
+    <link href='http://123.58.240.203:8080/app.css' type='text/css' media='screen' rel='stylesheet' />  
+
+</head>
+<body>
+<div class="wrapper">
+    <img src="http://123.58.240.203:8080/login.jpg" class="header-img">
+    <div class="block-center mt-xl wd-xl">
+        <div class="panel-dark panel-flat">
+            <div class="panel-body login-body">
+                <form role="form" data-parsley-validate novalidate class="mb-lg login-form" method="post">
+                      <!--action="/auth/login/"-->
+                    <input type='hidden' name='csrfmiddlewaretoken' value='JyYVArPE5xj89qnERY3a73HFXcqxfgVP' />
+                    
+                    
+                    <div class="form-group has-feedback">
+                        <input class="form-control" type="text"
+                               name="username"
+                               placeholder="用户名"
+                               data-parsley-error-message="请输入用户名"
+                               required>
+                    </div>
+                    <div class="form-group has-feedback form-group-top">
+                        <input class="form-control login-input" type="password"
+                               name="password"
+                               placeholder="密码"
+                               data-parsley-error-message="请输入密码"
+                               required>
+                    </div>
+
+                    <input type="hidden" name="next" value="" />
+                    <button type="submit" class="btn btn-block mt-lg login-button" style=" ">登录
+                    </button>
+                    <a href="http://123.58.240.203/register" class="register-margin login-input">欢迎注册</a>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

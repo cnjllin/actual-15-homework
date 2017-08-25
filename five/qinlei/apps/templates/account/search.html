@@ -1,0 +1,49 @@
+{% extends "dashboard.html" %}
+{% block searchuser %}
+<form class="row" method="post">
+    <div>
+        <a href="/adduser">添加用户</a>
+        <a>搜索</a>
+    </div>
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>用户ID</th>
+            <th>用户名</th>
+            <th>中文名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>手机</th>
+            <th>邮件</th>
+            <th>角色</th>
+            <th>日期</th>
+            <th>操作</th>
+        </tr>
+    {% for i in user %}
+
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.username}}</td>
+            <td>{{i.username_cn}}</td>
+            <td>
+                {% if i.sex == 1 %}
+                    男
+                {% elif i.sex ==2 %}
+                    女
+                {% else %}
+                    null
+                {% endif %}
+            </td>
+            <td>{{i.age}}</td>
+            <td>{{ i.phone}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.role}}</td>
+            <td>{{ i.create_time}}</td>
+            <td>
+                <a href="delete/?id={{i.id}}"><span>删除</span></a>
+                /<a href="edit/?id={{i.id}}"><span>编辑</span></a></td>
+        </tr>
+
+    {% endfor %}
+    </table>
+</form>
+{% endblock %}

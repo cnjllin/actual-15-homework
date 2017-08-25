@@ -1,0 +1,17 @@
+<html>
+	<title>注册</title>
+	<body style="text-align:center">
+	<h1>欢迎注册</h1>
+	<form action="/registor" accept-charset="UTF-8" method="POST">
+		用户名：<input  type="text" name="username"><br>
+		密 码：<input  type="password" name="password"><br>
+		年龄：<input  type="text" name="age"><br>
+		电话：<input  type="text" name="phone"><br>
+		Email：<input  type="text" name="email"><br>
+		职位：<input  type="text" name="role"><br>
+		<input type="submit" name="commit" value="注册">
+ 		<span style='color:red'>{{ res['msg'] }}</span>
+	</form>
+	</body>
+</html>
+
