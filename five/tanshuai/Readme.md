@@ -99,4 +99,4 @@ print count, rt_list
 ```
 
 ### 2.2 用户的注册、登录、列表展示、更新、删除功能和前后端实现，请观看我的录制视频；
-百度网盘链接：
+百度网盘链接:http://pan.baidu.com/s/1nvsnuYH  密码:d9dx
