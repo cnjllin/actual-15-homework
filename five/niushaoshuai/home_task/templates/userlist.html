@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>会员中心</title>
+</head>
+<table  border=1 >
+    <thead>
+        <tr>
+	        <th>ID</th>
+		<th>NAME</th>
+	        <th>PASSWORD</th>
+		<th>SEX</th>
+	        <th>AGE</th>
+		<th>PHONE</th>
+	        <th>EMAIL</th>
+	        <th>ROLE</th>
+    	</tr>
+    </thead>
+	<tbody>
+	    
+	    {%  for m in msg %}
+		<tr>
+                    {%  for n in m %}
+		        <td>{{n}}</td>
+                    {% endfor %}
+                    <td><a href="login">更新</a></td>
+                    <td><a href="delete">删除</a></td>
+	        </tr>
+	    {% endfor %}
+    </tbody>
+</table>
+</html>
