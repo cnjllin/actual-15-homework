@@ -99,12 +99,12 @@ def register():
    email=request.form.get('email')
    num=utils.register(username,password)
    print num
-   if num=="1":
+   if num==1:
        res={'code':0,'msg':''}
        res['code']=1
        res['msg']="username is  already "
        return render_template('zhuc.html',res=res)
-   elif num=="2":
+   elif num==2:
        res={'code':0,'msg':''}
        res['code']=1
        res['msg']="password < 6 "
