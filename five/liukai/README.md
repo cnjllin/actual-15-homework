@@ -5,19 +5,12 @@
 <pre>
 
 ├── flask_login.py
-
 ├── templates
-
 │   ├── login.html
-
 │   ├── update.html
-
 │   ├── user_show.html
-
 │   └── zhuce.html
-
 ├── utils.py
-
 └── utils.pyc
 
 </pre>
