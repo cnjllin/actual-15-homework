@@ -52,7 +52,30 @@ def delete():
     cur.execute(sql)
     db.commit()
     return redirect('/userlist/')
-    
+
+@test.route('/userlist/update/',methods=['GET','POST'])
+def update():    
+    if request.method == 'POST':
+        user_name=request.form.get('name')
+        user_pass=request.form.get('pwd')
+        user_newpass=request.form.get('new_pwd')
+        db=mysql.connect(host='localhost', user='root', passwd='', port=3306, db='51reboot', charset='utf8')
+        cur=db.cursor()
+        print user_name ,user_pass
+        sql="select * from user where u_name='%s' and password='%s'" %  (user_name,user_pass)
+        print sql
+        sql1="update user set password='%s' where u_name='%s'" % (user_newpass,user_name)
+        print sql1
+        print cur.execute(sql)
+        if cur.execute(sql):
+            cur.execute(sql1)
+            db.commit()
+            return render_template('update.html',error='Congratulations on your successful update')
+        else:
+            return render_template('update.html',error='update failed,agine')
+
+    else:
+        return render_template('update.html')
 
 #登陆表单
 @test.route('/login/',methods=['GET','POST'])
