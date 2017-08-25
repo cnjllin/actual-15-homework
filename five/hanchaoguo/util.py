@@ -4,7 +4,6 @@ import MySQLdb as mysql
 db=mysql.connect(host="127.0.0.1",user="root",passwd="123456",db="reboot15",port=3306,charset='utf8')
 cur = db.cursor()
 #注册函数
-list_1 = []
 def zhuc(username,passwd,sex,age,phone,email,role):
      userlist = []
      res = cha()
@@ -18,10 +17,6 @@ def zhuc(username,passwd,sex,age,phone,email,role):
          db.commit()
   
          return  "sescuss welcome"
-
-
-
-
 
 #删除函数
 def shan(id):
