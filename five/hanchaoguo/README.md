@@ -5,13 +5,17 @@
 #具体模块说明：
 
 *util.py 功能函数
+
 *cmdb.py 主函数
 
 #前端页面
 
 *denglu.html 登录页面
+
 *log.html    登录成功用户信息页面
+
 *login.html  注册页面
+
 *xiugai.html 用户修改个人信息页面
 
 
