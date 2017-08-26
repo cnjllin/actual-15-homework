@@ -1,0 +1,31 @@
+<html>
+  <title>首页</title>
+    <body bgcolor="#CAFFFF">
+      <table border="1px">
+        <tr>
+          <td>ID</td>
+          <td>user</td>
+          <td>passwd</td>
+          <td>age</td>
+          <td>phone</td>
+          <td>emial</td>
+          <td>操作</td>
+        </tr>
+        {% for user in res %}
+        <tr>
+          <td>{{ user[0] }}</td>
+          <td>{{ user[1] }}</td>
+          <td>{{ user[2] }}</td>
+          <td>{{ user[3] }}</td>
+          <td>{{ user[4] }}</td>
+          <td>{{ user[5] }}</td>
+          <td>
+          <a href="/update/?id={{ user[0] }}">修改密码</a>
+	  <a href="/delete/?id={{ user[0] }}">删除</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </body>
+</html>
+

@@ -1,0 +1,162 @@
+{% extends "head.html" %}
+{% block content %}
+<aside >
+	<input runat="server" id="divScrollValue" type="hidden" value="" />
+	<div >
+    <div> <a href="/add">{{ sql }}</a></div>
+		<table style="margin:20px 40px;">
+            <tr>
+                <th>ID</th>
+                <th>用户名</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>手机</th>
+                <th>邮件</th>
+                <th>用户角色</th>
+                <th>操作</th>
+            </tr>
+        {%  if role == 1 %}
+            {% for k in result %}
+            <tr>
+                {%  for key,value in enumerate(k) %}
+                    {% if key != 2 and key != 7 %}
+                        <td>{{ value }}</td>
+                    {% elif key == 7 and value ==1 %}
+                        <td>超级管理员</td>
+                    {% elif key == 7 and value == 0 %}
+                        <td>普通管理员</td>
+                    {% elif key ==2 %}
+                        <td style="display:none">{{ value }}</td>
+                    {% endif %}
+                {% endfor %}
+                <td>
+                    <a href="#" id="update">更新</a>
+                    <a href="#" id="del">删除</a>
+                </td>
+            </tr>
+            {% endfor %}
+        {% elif role==0 %}
+            {% for k in result %}
+            <tr>
+                {%  for key,value in enumerate(k) %}
+                    {% if key != 2 and key != 7 %}
+                        <td>{{ value }}</td>
+                    {% elif key == 7 and value ==1 %}
+                        <td>超级管理员</td>
+                    {% elif key == 7 and value == 0 %}
+                        <td>普通管理员</td>
+                    {% elif key ==2 %}
+                        <td style="display:none">{{ value }}</td>
+                    {% endif %}
+                {% endfor %}
+                <td>
+                    <a href="#" id="update">更新</a>
+                </td>
+            </tr>
+            {% endfor %}
+        {%  endif %}
+        </table>
+	</div>
+    <dialog id="favDialog">
+         <form action='/update' method="post" >
+             <ul>
+                 <li>
+                     用户名：&nbsp;&nbsp;&nbsp; <input type="text" name="username" disabled="disabled"  placeholder="用户名"/>
+                 </li>
+                 <li>
+                     <input type="hidden" name="id" />
+                 </li>
+                 <li>
+                   密码：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <input type="password" name="pwd" placeholder="密码"/>
+                 </li>
+                 <li>
+                    密码确认：<input type="password" name="repwd" placeholder="密码"/>
+                 </li>
+                 <li>性别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <label><input type="radio" name="sex" value="0"/>男</label>
+                     <label><input type="radio" name="sex" value="1"/>女</label>
+                 </li>
+                 <li>
+                    年龄：&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  <input type="text" name="age" placeholder="年龄" />
+                 </li>
+                 <li>
+                    手机号：&nbsp;&nbsp; &nbsp;<input type="text" name="phone" placeholder="手机号"/>
+                 </li>
+                 <li>
+                    邮箱：&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <input type="text" name="email" placeholder="邮箱"/>
+                 </li>
+             </ul>
+             <input type="submit" id="do" value="确认" />
+             <input type="submit" id="cancel" value="取消" />
+         </form>
+
+</dialog>
+</aside>
+<script>
+    (function() {
+  var updateButton = document.getElementById('update');
+  //var cancelButton = document.getElementById('cancel');
+  var favDialog = document.getElementById('favDialog');
+
+  updateButton.addEventListener('click', function() {
+      var btn = $(this).parent().parent().children('td');
+      favDialog.showModal();
+      var input= $('#favDialog').find('input');
+      $(input[0]).val($(btn[1]).text());
+      $(input[1]).val($(btn[0]).text());
+      notice($(input[2]));
+      check($(input[2]),$(input[3]));
+      console.log($(input))
+      $.post(
+          '/update',
+          {id:$(input[1]).val(),password:$(input[2]).val(),sex:$(input[4]).val(),
+           age:$(input[5]).val(),phone:$(input[6]).val(),email:$(input[7]).val()
+      },function(data){
+                if (data > 0){
+                    window.location="/user";
+                }
+
+          })
+
+  });
+function notice(obj){
+    obj.blur(function(){
+        if(obj.val().length <6){
+         alert('为了你的账号安全密码长度需大于六位！');
+         return false;
+        }
+    })
+};
+function check(obja,objb){
+    objb.blur(function(){
+         if(obja.val() != objb.val()){
+         alert('两次输入密码不一致！');
+         return false;
+        }
+    })
+}
+  $('#cancel').on('click', function(e) {
+      e.preventDefault();
+    favDialog.close();
+  });
+})();
+    $(document).ready(function(){
+        $("#del").click(function(){
+            var t = this
+            var btn = $(t).parent().parent().children('td');
+            alert('你确定要删除'+ $(btn[1]).text() +'吗？');
+            $.ajax(
+                {   url: "/del",
+                    type: 'POST',
+                    data:{id:$(btn[0]).text()},
+                    success: function(data){
+                            window.location.reload();
+                 }}
+            );
+        });
+
+
+    })
+
+</script>
+{% endblock %}

@@ -1,0 +1,35 @@
+<html>
+	<tittle></tittle>
+	<body>
+	<table align="center" border="1px">
+		<tr>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">ID</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">username</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">password</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">sex</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">age</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">phone</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">email</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">role</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">actions1</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">actions2</td>
+		</tr>
+		{% for user in res %}
+		<tr>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">{{user[0]}}</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">{{user[1]}}</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">{{user[2]}}</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">{{user[3]}}</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">{{user[4]}}</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">{{user[5]}}</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">{{user[6]}}</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle">{{user[7]}}</td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle"><a href="/update/?id={{user[0]}}">update</a></td>
+			<td align="center" style="width:120px; height: 21px;" valign="middle"><a href="/del/?id={{user[0]}}">delete</a></td>
+		</tr>
+		{% endfor %}
+	</table>
+	<h1 style="text-align:center">{{welcome}}</h1>
+	<h2 style="text-align:center"><a href="/register/">注册</a> &nbsp&nbsp<a href="/login/">登录</a></h2>
+	</body>
+</html>

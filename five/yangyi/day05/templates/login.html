@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{{title}}</title>
+
+<script src="/static/js/jquery-2.2.4.min.js"></script>
+<link rel="stylesheet" href="/static/css/login.css" type="text/css" />
+    <script>
+        $(document).ready(function() {
+            $(".login").click(function () {
+                $(".login").find("div").show();
+                $('.register').find("div").hide();
+            });
+            $(".register").click(function () {
+                $(".register").find("div").show();
+                $('.login').find("div").hide();
+            });
+            $(".checkuser").blur(function () {
+                var id = $(this).parent().attr('id');
+                var a = this;
+                var html = "<p style='font-size:12px;color:red; text-indent:40px;'>"
+                if (id == 'register' && $(this).val().length == 0) {
+                    html += '用户名不能为空 </p>'
+                    $(a).after(html);
+                }
+                $.post('/checkuser', {username: $(this).val()}, function (data) {
+                    if (data == 0 && id == 'login') {
+                        html += '该用户名不存在</p>';
+                        $(a).after(html);
+
+                    } else if (data == 1 && id == 'register') {
+                        html += '该用户名已存在 </p>';
+                        $(a).after(html);
+                    }
+                })
+            });
+            $(".checkuser").focus(function () {
+                var id = $(this).parent().attr('id');
+                if (id == 'login' && $('#login').find("p").html()) {
+                    $("#login").find('p').remove();
+                } else if (id = 'register' && $('#register').find("p").html()) {
+                    $("#register").find('p').remove();
+                }
+            });
+
+            $(".pwd").blur(function () {
+                var a = this;
+                var pwd =$(".pwd");
+                var html = "<p style='font-size:12px;color:red; text-indent:40px;'>"
+                    if($(this).val().length == 0){
+                       html += '密码不能为空 </p>';
+                      $(a).after(html)
+                    }else if ($(this).val().length <6) {
+                         html +='密码长度需大于六位</p>';
+                         $(a).after(html);
+                    }else if(($(pwd[2]).val()) !="" && ($(pwd[1]).val()) != ($(pwd[2]).val())){
+                        alert('两次输入密码不一致！');
+                    }
+                });
+            $(".pwd").focus(function () {
+                var id = $(this).parent().attr('id');
+                if (id = 'register' && $(this).next().is('p')) {
+                    $(this).next().remove();
+                    if ($("#register").find('p')){
+                        $("#register").find('p').remove();
+                    }
+                }
+            });
+            });
+
+
+
+    </script>
+</head>
+<body>
+<div class = "action">
+    <ul class="choice">
+        <a href="javascript:void(0)" class="left login">登 录</a>
+        <a href="javascript:void(0)" class="left register">注 册</a>
+        <li class=" login">
+            <div class="form">
+                <form action="/login" id="login" method="post">
+                    <input type="text" class="checkuser" placeholder="用户名" name="username"/>
+                    <input type="password" class = 'pwd'placeholder="密码" name="pwd"/>
+                    {% if error  %}
+                        <p style='font-size:12px;color:red; text-indent:40px;'>{{ error }}</p>
+                    {% endif %}
+                    <input type="submit" value="登 录"/>
+                </form>
+            </div>
+        </li>
+
+        <li class=" register">
+            <div class="form" style="display:none;">
+                <form action="/register" id="register" method="post">
+                    <input type="text" class="checkuser" placeholder="用户名" name="username"/>
+                    <input type="password" class = 'pwd' placeholder="密码" name="pwd"/>
+                    <input type="password"  class = 'pwd' placeholder="请再次密码" name="pwd2"/>
+                    {% if error  %}
+                        <p style='font-size:12px;color:red; text-indent:40px;'>{{ error }}</p>
+                    {% endif %}
+                    <input type="submit" value="注 册"/>
+                </form>
+            </div>
+        </li>
+    </ul>
+
+</div>
+</body>
+</html>

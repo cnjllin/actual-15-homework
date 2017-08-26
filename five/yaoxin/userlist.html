@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户列表</title>
+</head>
+<body>
+<table boarder="1px">
+    <tr>
+        <td>ID</td>
+        <td>user</td>
+        <td>password</td>
+        <td>sex</td>
+        <td>phone</td>
+    </tr>
+    {% for user in result %}
+    <tr>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+        <td>{{user[2]}}</td>
+        <td>{{user[3]}}</td>
+        <td>{{user[5]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

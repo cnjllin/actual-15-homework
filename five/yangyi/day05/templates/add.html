@@ -1,0 +1,33 @@
+{% extends "head.html" %}
+{% block content %}
+         <form >
+             <ul>
+                 <li>
+                     <input type="text" name="username" placeholder="用户名"/>
+                 </li>
+                 <li>
+                    <input type="password" name="pwd" placeholder="密码"/>
+                 </li>
+                 <li>性别：
+                     <label><input type="radio" name="sex" />男</label>
+                     <label><input type="radio" name="sex" />女</label>
+                 </li>
+                 <li>
+                     <input type="text" name="age" placeholder="年龄" />
+                 </li>
+                 <li>
+                      <input type="text" name="phone" placeholder="手机号"/>
+                 </li>
+                 <li>
+                     <input type="text" name="email" placeholder="邮箱"/>
+                 </li>
+                 <li>
+                       <input type="text" name="role" value="0"/>
+                 </li>
+             </ul>
+             <input type="submit" value="确认" />
+             <input type="submit" id="cancel" value="取消" />
+         </form>
+
+
+{% endblock %}
