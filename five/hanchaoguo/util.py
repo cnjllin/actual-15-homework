@@ -12,7 +12,7 @@ def zhuc(username,passwd,sex,age,phone,email,role):
      if username in userlist:
          return "error"
      else:       
-         sql = "insert into hanchaoguo(username,password,sex,age,phone,email,role) values(%s,%s,%s,%s,%s,%s,%s)"
+         sql = "insert into user(username,password,sex,age,phone,email,role) values(%s,%s,%s,%s,%s,%s,%s)"
          res = cur.execute(sql,(username,passwd,sex,age,phone,email,role))
          db.commit()
   
@@ -21,7 +21,7 @@ def zhuc(username,passwd,sex,age,phone,email,role):
 #删除函数
 def shan(id):
 
-   sql = "delete from hanchaoguo where id = %s" %id
+   sql = "delete from user where id = %s" %id
    res = cur.execute(sql)
    db.commit()
   
@@ -45,7 +45,7 @@ def select(username,passwd):
 
 #查询所有函数
 def cha():
-    sql = "select * from hanchaoguo"
+    sql = "select * from user"
     res = cur.execute(sql)
     res=cur.fetchall()
     return res
@@ -53,7 +53,7 @@ def cha():
 
 #按id条件查找函数
 def cha1(id):
-    sql = "select * from hanchaoguo where id = %s"%id
+    sql = "select * from user where id = %s"%id
     res = cur.execute(sql)
     res=cur.fetchone()
     return res
@@ -61,7 +61,7 @@ def cha1(id):
 
 #修改函数
 def update(username,passwd,sex,age,phone,eamil,role,id):
-     sql = "update hanchaoguo set username = '%s',password='%s',sex='%s',age='%s',phone='%s',email='%s',role='%s' where id =%s"%(username,passwd,sex,age,phone,eamil,role,id)
+     sql = "update user set username = '%s',password='%s',sex='%s',age='%s',phone='%s',email='%s',role='%s' where id =%s"%(username,passwd,sex,age,phone,eamil,role,id)
      res = cur.execute(sql)
      db.commit()
 

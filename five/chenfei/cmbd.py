@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.secret_key = 'adsfasfasfasdfasd567566546gdfsgsd'
 import MySQLdb as mysql
 
-con = mysql.connect(host='127.0.0.1',user='root',passwd='123456',db='re15',port=3306)
+con = mysql.connect(host='127.0.0.1',user='root',passwd='123456',db='ret15',port=3306)
 print con
 con.autocommit(True)
 cur = con.cursor()

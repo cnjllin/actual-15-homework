@@ -12,7 +12,7 @@ import MySQLdb as mysql
 app = Flask(__name__)
 
 # 连接数据库的固定用语
-conn = mysql.connect(host='127.0.0.1',user='root',passwd='123456',db='rebootye',port=3306)
+conn = mysql.connect(host='127.0.0.1',user='root',passwd='123456',db='reboot15',port=3306)
 conn.autocommit(True)
 cursor = conn.cursor()
 
