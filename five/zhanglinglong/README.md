@@ -12,13 +12,13 @@
 
 ### 作业说明：
 
-├── liucheng.png        流程示意图
-├── login_register.py   作业脚本
-├── README.md           文件目录说明
-├── templates           存放html文件
-│   ├── login.html      登录页面
-│   ├── register.html   注册页面
-│   ├── update.html     更新页面
-│   ├── userlist.html   用户列表（数据库中查询）
-│   └── welcome.html    欢迎页面
-└── user.txt            用户登录列表
+* ├── liucheng.png        流程示意图
+* ├── login_register.py   作业脚本
+* ├── README.md           文件目录说明
+* ├── templates           存放html文件
+* │   ├── login.html      登录页面
+* │   ├── register.html   注册页面
+* │   ├── update.html     更新页面
+* │   ├── userlist.html   用户列表（数据库中查询）
+* │   └── welcome.html    欢迎页面
+* └── user.txt            用户登录列表
