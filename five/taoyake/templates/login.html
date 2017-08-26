@@ -1,0 +1,9 @@
+<form action='/login' method="post">
+    用户名:
+    <input type="text"  name='username' value="{{ username }}"/>
+    密码:<input type="password" name='password'/>
+    {% if error %}
+    <span style="color:red">{{ error }}</span>
+    {% endif %}
+    <input type="submit"     value='登录'/>
+</form>

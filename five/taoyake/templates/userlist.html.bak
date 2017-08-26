@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<title>用户信息列表</title>
+    </head>
+    <body>
+       <a href="/adduser/">添加用户</a>
+        <table border="1px">
+          <tr>
+            <td>ID</td>
+            <td>username</td>
+            <td>password</td>
+            <td>sex</td>
+            <td>age</td>
+            <td>phone</td>
+            <td>email</td>
+            <td>role</td>
+          </tr>
+          {% for i in res %}
+          <tr>
+          <td>{{i[0]}}</td>
+          <td>{{i[1]}}</td>
+	  <td>{{i[2]}}</td>
+          <td>{{i[3]}}</td>
+	  <td>{{i[4]}}</td>
+          <td>{{i[5]}}</td>
+          <td>{{i[6]}}</td>
+          <td>{{i[7]}}</td>
+	  </tr>
+          {% endfor %}
+        </table>
+
+    </body>
+</html>   

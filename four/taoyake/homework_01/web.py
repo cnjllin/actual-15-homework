@@ -42,6 +42,7 @@ def register():
     with open('userinfo.txt') as f:
         for line in f:
             a.append(line.strip('\n').split(':')[0])
+            print a
     if request.method == 'GET':
         return render_template('register.html')
     if request.method == 'POST':
