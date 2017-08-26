@@ -1,0 +1,24 @@
+<html>
+	<tittle></tittle>
+	<body style="text-align:center">
+	<h1>欢迎注册</h1>
+	<form action="/register/" accept-charset="UTF-8" method="post">
+		姓名：<input placeholder="注册名称" type="text" name="yourname"><br>
+		密码：<input placeholder="设置密码" type="password" name="yourpasswd"><br>
+		密码：<input placeholder="设置密码" type="password" name="reyourpasswd"><br>
+		性别：<input placeholder="填写性别" type="text" name="sex"><br>
+		年龄：<input placeholder="填写年龄" type="text" name="age"><br>
+		手机：<input placeholder="填写手机" type="text" name="phone"><br>
+		邮件：<input placeholder="填写邮件" type="text" name="email"><br>
+		权限：<input placeholder="填写权限" type="text" name="role"><br>
+		<input type="submit" name="commit" value="注册">
+
+	</form>
+	{% if error %}
+	<h3 style="color:blue">{{error}} </h3>
+	{% else %}
+	<h3 style="color:blue"></h3>
+	{% endif %}
+	</body>
+
+</html>
