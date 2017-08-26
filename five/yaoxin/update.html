@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>更新用户信息</title>
+</head>
+<body>
+<a href="/userlist/">返回用户列表</a>
+<form action="/update/" method="POST">
+    <input type="hidden" name="id" value='{{userid}}'>
+    新密码：<input type="text" name="npassword">
+    确定输入：<input type="submit" name="commit" value="确定"> 
+</form>
+{% if error %}
+<h3>{{ error }}</h3>
+{% else %}
+<h3></h3>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>删除</title>
+</head>
+<body>
+<table boarder="1px">
+<form action="/delete_user" >
+    <tr>
+        <td>ID</td>
+        <td>用户名</td>
+        <td>密码</td>
+        <td>操作</td>
+    </tr>
+</form>
+    {% for item in userlist %}
+    <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.username}}</td>
+        <td>{{item.password}}</td>
+        <td nowrap>
+            <a href="/update/?id={{item.id}}">修改</a> 
+            <a href="/delete/?id={{item.id}}">删除</a> 
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
