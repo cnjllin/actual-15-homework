@@ -1,0 +1,45 @@
+用户管理系统
+
+1 增加用户
+insert into user（username,password,sex,age,phone,email,role） values("yaoxin",'123456',0,18,1599620,'1125612850@qq.om',0);
+
+2 查看用户列表--查看所有
+select * from user；相当于以前的读文件
+python中:
+db=mysql.connect(host="127.0.0.1",user="root",passwd="",db="reboot15",port=3306,charset='utf8')
+db.autocommit(True)
+import MySQLdb as mysql
+db.cursor()
+cur = db.cursor()
+sql = "select * from user"
+cur.execute(sql)
+s = cur.fetchall()
+
+3 查看某一用户信息(html中去掉for循环)
+select * from user limit 1;
+python:
+sql1 = "select * from user where id=1"
+cur.execute(sql1)
+ss = cur.fetchone()
+
+可以循环得到相关的信息
+
+例如：for ss in s:
+print s[0],s[1]
+
+4 删除用户
+delete user where id =3;
+
+5 更新数据
+
+update user set sex=0,age =30 where id =3;
+点更新：拿到用户信息渲染到表单
+修改更新数据后，再点更新采再写入数据库
+查出用户信息取ID然后根据ID修改密码
+需要导入的模块
+
+from flask import Flask,render_template,request
+from util import add_user,delete_user,change_user,check_user
+import MySQL as mysql
+需要导入的url
+
