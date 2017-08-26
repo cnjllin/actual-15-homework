@@ -56,12 +56,12 @@ def register():
 """
 @app.route('/user/delete/')
 def DeleteUser():
-    params = request.args if request.method == 'GET' else request.form
-    user_id = int(request.args.get('id'))
-    sql = 'delete from taoyake where id =%d' % user_id
-    res = util.del_user(user_id, sql)
-    if res:
-        return redirect('/')
+    if request.method == 'GET':
+        uid = int(request.args.get('uid'))
+        print uid
+        sql = 'delete from taoyake  where id=%d;' % (uid)
+        if util.del_user(uid, sql):
+            return redirect('/userlist')
         
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=8000,debug=True)
