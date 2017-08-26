@@ -17,11 +17,11 @@ def execute_sql(sql,tag=True):
     rt_list =[]
     try:
         if tag:
-		'''如果是查询语句,执行sql 语句，并返回数据列表'''
+		# 如果是查询语句,执行sql 语句，并返回数据列表
             comm = cursor.execute(sql)
             rt_list = cursor.fetchall()
         else:
-		'''如果是曾,删，改，这三个操作，执行下面语句提交事务 '''
+		# 如果是曾,删，改，这三个操作，执行下面语句提交事务 
             comm = cursor.execute(sql)
             connect_db.commit()
     except Exception, e:

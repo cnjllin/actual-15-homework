@@ -8,10 +8,7 @@ app = Flask(__name__)
 
 @app.route('/',methods=['GET', 'POST'])
 def login():
-''' 登录函数: 
-    获取前端post 提交账号密码，查询数据库进行验证
-    如果用户名密码正确,则跳转到用户信息页面,
-    否则返回登录界面，并返回错误信息'''
+# 登录函数:  获取前端post 提交账号密码，查询数据库进行验证 如果用户名密码正确,则跳转到用户信息页面, 否则返回登录界面，并返回错误信息
     if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
@@ -28,8 +25,7 @@ def login():
 
 @app.route('/userlist/',methods=['GET', 'POST'])        
 def userlist():
-''' 用户信息函数: 
-    查询用户信息,以列表的形式返回到页面,渲染后显示'''
+# 用户信息函数:  查询用户信息,以列表的形式返回到页面,渲染后显示
     sql = 'select * from usermessages ;'
     res = execute_sql(sql,tag=True)
     result =   res[1]
@@ -38,10 +34,7 @@ def userlist():
 
 @app.route('/register/',methods=['GET', 'POST'])
 def register():
-''' 注册函数:
-    获取前端post 提交账号，密码及重复输入密码，三个参数
-    如果两次密码输入正确，则提交到数据库，如果提交不一致，则返回注册页面
-    如果用户已经存在，则返回用户已经存在信息 '''
+# 注册函数: 获取前端post 提交账号，密码及重复输入密码，三个参数 如果两次密码输入正确，则提交到数据库，如果提交不一致，则返回注册页面如果用户已经存在，则返回用户已经存在信息 '''
     if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
@@ -62,9 +55,7 @@ def register():
 
 @app.route('/update/',methods=['GET', 'POST'])
 def  update():
-''' 修改函数:
-    修改操作，获取用户信息列表,用户id,然后，进入修改密码页面
-    如果用户旧密码，及新密码，如果旧密码匹配，则更新密码，如果不匹配则返回错误信息'''
+# 修改函数: 修改操作，获取用户信息列表,用户id,然后，进入修改密码页面 如果用户旧密码，及新密码，如果旧密码匹配，则更新密码，如果不匹配则返回错误信息'''
     if request.method=='GET':
             userid = request.args.get('id')
             return render_template('update.html',userid=userid)
@@ -91,8 +82,7 @@ def  update():
 
 @app.route('/delete/',methods=['GET', 'POST'])
 def  delete():
-''' 删除函数:
-    获取用户信息列表,用户id,根据所获取的id,执行sql 删除用户操作,并返回成功页面'''
+# 删除函数: 获取用户信息列表,用户id,根据所获取的id,执行sql 删除用户操作,并返回成功页面'''
     if request.method=='GET':
         userid = int(request.args.get('id'))
         sql = 'delete from usermessages where id=%d;' % (userid)
