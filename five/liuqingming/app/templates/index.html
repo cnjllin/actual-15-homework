@@ -1,0 +1,28 @@
+{% extends 'base.html'  %}
+
+{% block title %}首页{% endblock %}
+
+{% block head %}
+<style>
+     th {text-align:center;valign:center;align;center;}
+     td {text-align:center;valign:center;align;center;}
+     td {text-align:center}
+     th {text-align:center}
+</style>
+{% endblock %}
+
+{% block main %}
+
+<center>
+<div style="text-align:center">
+<table align="center" style="height:50px;margin:auto;width: 60%;" border="1" cellspacing="0" bordercolor="#000000" cellpadding="8" >
+<tr><th>ID</th><th>用户</th><th>密码</th><th>年龄</th><th>性别</th><th>电话</th><th>邮箱</th><th>角色</th><th>动作</th></tr>
+{%for n in users%}
+<tr><td>{{ n[0] }}</td><td>{{n[1]}}</td><td>{{n[2]}}</td><td>{{n[3]}}</td><td>{{n[4]}}</td><td>{{n[5]}}</td><td>{{n[6]}}/</td><td>{{n[7]}}</td><td><a href="{{  url_for('dele')+'?id='}}{{ n[0] }}">删除 </a><a href="/upd/?id={{n[0]}}">修改</a></td></tr>
+{%endfor%}
+</table>
+</div>
+</center>
+
+{% endblock %}
+
