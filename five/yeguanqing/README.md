@@ -6,4 +6,4 @@
 
 * app.py为作业的代码
 * templates为作业的代码各个模块的HTML
-* result目录为相关测试截图
+* result目录为相关测试结果
