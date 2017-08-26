@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>登录界面</title>
+<style>
+body{width:300px; height:200px; margin:0 auto;}
+fieldset{ width:300px; }
+table{ width:300px; height:100px;}
+</style>
+</head>
+<body bgcolor="#CAFFFF">
+<fieldset>
+<form action="/login/" method="POST">
+<div class="login">
+<p class="loginTittle">登录</p>
+<br>
+<input type="text" name="username" placeholder="输入你的
+用户名"/>
+</br><span style="color:red">{{errmsg1}}</span>
+<br>
+<input type="password" name="passwd" placeholder="请输入密码"/>
+<br/><span style="color:red">{{errmsg2}}</span>
+<input type="submit" value="登录" style="margin-left:66px; width:70px;">
+<input type="reset" value="重置" style="width:70px;"
+</form>
+</fieldset>
+</body>
+</html>
