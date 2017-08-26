@@ -4,7 +4,7 @@ __author__ = 'Eagle'
 import MySQLdb as mysql
 
 def execute_sql(sql,tag=True):
-'''# 连接数据库'''
+# 连接数据库
     connect_db = mysql.connect(user='root',
                            passwd='123456',
                            db='cmdb',
