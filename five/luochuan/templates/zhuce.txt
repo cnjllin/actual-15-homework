@@ -1,0 +1,14 @@
+<html>
+	<title>注册</title>
+	<form action="/registor/" accept-charset="UTF-8" method="POST">
+		用户名：<input  type="text" name="username"><br>
+		密 码：<input  type="password" name="password"><br>
+		年龄：<input  type="text" name="age"><br>
+		电话：<input  type="text" name="phone"><br>
+		Email：<input  type="text" name="email"><br>
+		性别：<input  type="text" name="sex"><br>
+		<input type="submit" name="commit" value="注册">
+ 		<span style='color:red'>{{ res['msg'] }}</span>
+	</form>
+	</body>
+</html>
