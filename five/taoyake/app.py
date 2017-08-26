@@ -1,6 +1,11 @@
 #coding:utf-8
 from flask import Flask,render_template,request,redirect
 import util
+import MySQLdb as mysql
+con = mysql.connect(host="localhost",user="root",passwd="123456",db="reboot15",port=3306,charset='utf8')
+con.autocommit(True)
+cur=con.cursor()
+
 app = Flask(__name__)
 
 
@@ -51,6 +56,29 @@ def register():
         sql = 'insert into taoyake values("%s","%s","%s","%s","%s","%s","%s");' % (username,password,sex,age,phone,email,role)
         args = (username,password,sex,age,phone,email,role)
         print args
+
+@app.route('/user/update/',methods=['GET','POST'])
+def update():
+    res={'msg':''} 
+    if request.method == 'GET':
+        uid = request.args.get('uid')
+        return render_template('update.html',res=res,uid=uid)
+    if request.method == 'POST':
+        uid = request.form.get('uid')
+        password = request.form.get('password')
+        repwd = request.form.get('repwd')
+        print uid,password,repwd
+        res = {'msg':''}
+        if password == repwd:
+            sql = 'update taoyake set password="'"%s"'" where id=%s;'%(password,uid)
+            print sql
+            cur.execute(sql)
+            res['msg']=True
+            print True
+            return render_template('update.html',res=res,uid=uid)
+        else:
+            res['msg']='Password not match !'
+            return render_template('update.html',res=res,uid=uid)
 
 """删除用户信息
 """
