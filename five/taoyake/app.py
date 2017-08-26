@@ -1,4 +1,7 @@
 #coding:utf-8
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 from flask import Flask,render_template,request,redirect
 import util
 import MySQLdb as mysql
@@ -75,9 +78,10 @@ def update():
             cur.execute(sql)
             res['msg']=True
             print True
-            return render_template('update.html',res=res,uid=uid)
+            return redirect('/userlist')
+            #return render_template('update.html',res=res,uid=uid)
         else:
-            res['msg']='Password not match !'
+            res['msg'] = '两次输入的密码不一致，请重新输入'
             return render_template('update.html',res=res,uid=uid)
 
 """删除用户信息

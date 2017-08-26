@@ -1,18 +1,20 @@
 目录介绍：
 
-app.py  		# 主程序
+app.py  	 	     # 主程序
 
-util.py   		# 连接数据库，增删改的函数模块
+util.py   		  # 连接数据库，增删改的函数模块
 
-templates    # 放页面的目录
+templates         # 放页面的目录
 
-   index.html  ＃ 首页
+   index.html     # 首页
    
-   login.html  ＃ 登录页面
+   login.html     # 用户登录页面
    
-   register.html ＃注册页面
+   register.html  # 注册用户页面
    
-   userlist.html  ＃ 用户展示页面
+   userlist.html  # 展示用户信息页面
+   
+   update.html    # 更新用户页面
 
 
 ##作业模块拆分：
