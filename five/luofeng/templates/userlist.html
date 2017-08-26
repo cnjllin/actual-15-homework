@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="is-AppPromotionBarVisible cssanimations csstransforms csstransitions flexbox no-touchevents no-mobile" style="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>用户信息</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<table class="table table-bordered table-hover" style="width:800px; margin:0 auto;">
+	<tr>
+		<td>用户ID</td>
+		<td>姓名</td>
+		<td>密码</td>
+		<td>性别</td>
+		<td>年龄</td>
+		<td>联系电话</td>
+		<td>邮箱</td>
+		<td>权限</td>
+		<td>操作</td>
+	</tr>
+	{% for idata in data %}
+	<tr>
+		<td>{{idata[0]}}</td>
+		<td>{{idata[1]}}</td>
+		<td>{{idata[2]}}</td>
+		<td>{{idata[3]}}</td>
+		<td>{{idata[4]}}</td>
+		<td>{{idata[5]}}</td>
+		<td>{{idata[6]}}</td>
+		<td>{{idata[7]}}</td>
+		<td>
+			<a class = "glyphicon glyphicon-refresh" href="/update/?uid={{ idata[0] }}"></a>
+			<a class = "glyphicon glyphicon-trash" href="/delete/?uid={{ idata[0] }}"></a>
+		</td>
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>
