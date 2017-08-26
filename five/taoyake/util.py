@@ -41,11 +41,11 @@ def insert(sql,args=()):
     else:
         print 'user %s already exist'%(username)
 
-def del_user(user_id,sql):
+def del_user(uid,sql):
     # 删除用户
     cur = connect()
     cur.execute(sql)
     if cur.rowcount == 1:
         return True
     else:
-        return 'del %s not exists'%(user_id)
+        return 'del %s not exists'%(uid)
