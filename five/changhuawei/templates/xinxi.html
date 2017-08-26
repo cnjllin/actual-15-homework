@@ -1,0 +1,40 @@
+<html>
+<body>
+
+<table border="1px">
+
+<tr>
+
+<td>ID</td>
+<td>user</td>
+<td>passwd</td>
+<td>sex</td>
+<td>age</td>
+<td>phone</td>
+<td>email</td>
+<td>role</td>
+<td>修改</td>
+<td>删除</td>
+</tr>
+{% block content %}
+{% for user in result %}
+<tr>
+<td>{{user[0]}}</td>
+<td>{{user[1]}}</td>
+<td>{{user[2]}}</td>
+<td>{{user[3]}}</td>
+<td>{{user[4]}}</td>
+<td>{{user[5]}}</td>
+<td>{{user[6]}}</td>
+<td>{{user[7]}}</td>
+<td><span><a href="http://192.168.64.144:5000/xiugai/?id={{user[0]}}">修改</a></span></td>
+<td><span><a href="http://192.168.64.144:5000/delete/?id={{user[0]}}">删除</a></span></td>
+</tr>
+
+{% endfor %}
+  {% endblock %}
+</table>
+
+</body>
+</html>
+
