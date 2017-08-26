@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <script src="/static/js/jquery-2.2.4.min.js"></script>
+    <title>{{title}}</title>
+    <style>
+        a{
+            color:#e5e5e5;
+            text-decoration:none;
+            line-height:40px;
+            display:block;
+
+        }
+
+        body{
+            margin:0px;
+            padding:0px;
+        }
+        td,th{
+            width:120px;
+            text-align: center;
+        }
+        td a{
+            display:inline-block;
+            color:#00eeee;
+        }
+        tr{
+            background-color:#e5e5e5;
+        }
+        div a{
+            color:#00eeee;
+        }
+        li{
+            list-style:none;
+            margin-top:12px;
+        }
+        li input{
+            height:20px;
+        }
+        #favDialog{
+            margin-top:20px;
+        }
+       #do,#cancel{
+           display:block;
+           float:left;
+           margin-left:60px;
+           width:140px;
+       }
+    </style>
+
+</head>
+<body>
+<header>
+
+</header>
+
+    {% block content %}{% endblock %}
+</body>
+</html>
