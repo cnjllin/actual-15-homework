@@ -1,0 +1,64 @@
+<html>
+<title>User_Management</title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="">
+<link rel="icon" href="http://www.51reboot.com/images/favicon.ico">
+<script type="text/javascript">
+function show_confirm(id,user="lxh")
+{
+var res=confirm("Are you sure to delete user "+user);
+if (res==true)
+  { 
+  window.location.href="/delete_user?id="+id;
+  }
+else
+  {
+  alert("back to userlist page");
+  }
+}
+
+function edit_confirm(id)
+{
+  window.location.href="/update_user?id="+id;
+}
+
+</script>
+</head>
+        <h0><a href="/">back to home page</a></h0>
+        <br></br>
+        <h2 align = center >user information manage</h2>  
+        <!--<table id="example" align="center" class="display" style="height:100px;" border="1" cellspacing="0" bordercolor="#000000" cellpadding="8">-->
+    <table id="example" align="center" class="display" border="1" cellspacing="0" bordercolor="#000000" cellpadding="5" >
+        <tr>
+            <td>ID</td>
+            <td>username</td>
+            <td>password</td>
+            <td>gender</td>
+            <td>Age</td>
+            <td>phone</td>
+            <td>Email</td>
+            <td>Role</td>
+            <td>operation</td>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{ i[0] }}</td> 
+            <td>{{ i[1] }}</td>
+            <td>{{ i[2] }}</td>
+            <td>{{ i[3] }}</td>
+            <td>{{ i[4] }}</td>
+            <td>{{ i[5] }}</td>
+            <td>{{ i[6] }}</td>
+            <td>{{ i[7] }}</td>
+            <td>
+                <!--<button><a href='/update_user?id={{ i[0] }}'>edit</a></button>-->
+                <!--<button><a href='/delete_user?id={{ i[0] }}'>delete</a></button>-->
+                <input type="button" onclick="edit_confirm({{ i[0] }})" value="edit" />
+                <input type="button" onclick="show_confirm({{ i[0] }}, '{{ i[1]  }}')" value="delete" />
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</html>
