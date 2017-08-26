@@ -96,41 +96,7 @@ def xiugai():
     _xiugai(username,passwd,sex,age,phone,email,role,uid)
 
     # return redirect("/xinxi/")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# @app.route('/xiugai/',methods=['GET', 'POST'])
-# def xiugai():
-#     if request.method == 'POST':
-#         # 获取用户输入
-#         username = request.form.get('name')
-#         passwd = request.form.get('passwd')
-#         sex = request.form.get('sex')
-#         phone = request.form.get('phone')
-#         email = request.form.get('email')
-#         role = request.form.get('role')
-#         age = request.form.get('age')
-#     else:
-#         uid = request.args.get('id')
-#     print username,password,sex,age,phone,email,role,uid
-#     ss = _xiugai(username,password,sex,age,phone,email,role,uid)
-#     # print ss
-#     # res = chaxunall()
-#     return render_template("xiugai.html")
-
-
+# 删除
 @app.route('/delete/',methods=['GET', 'POST'])
 def delete():
     if request.method == 'POST':
