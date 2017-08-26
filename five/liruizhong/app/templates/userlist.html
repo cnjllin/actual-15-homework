@@ -1,0 +1,42 @@
+<html>
+	<title>用户列表</title>
+	<body style="text-align:center">
+	
+	<h2 style="text-align:center"><a>用户列表</a></h2>
+	<table border="1px" align='center'>
+	<thead>
+		<tr>
+			<th>id</th>
+			<th>username</th>
+			<th>password</th>
+			<th>sex</th>
+			<th>age</th>
+			<th>phone</th>
+			<th>email</th>
+			<th>role</th>
+			<th>操作</th>
+		</tr>
+	</thead>
+	<tbody>
+	{% for i in ret %}
+		<tr>
+			<td>{{ i[0] }}</td>
+			<td>{{ i[1] }}</td>
+			<td>{{ i[2] }}</td>
+			<td>{{ i[3] }}</td>
+			<td>{{ i[4] }}</td>
+			<td>{{ i[5] }}</td>
+			<td>{{ i[6] }}</td>
+			<td>{{ i[7] }}</td>
+			<td noWrap>
+				<a href="/update/?id={{i[0]}}" class="dow">修改</a>
+				<a href="/delete/?id={{i[0]}}" class="dow">删除</a>
+			</td>
+
+		</tr>
+	{% endfor %}
+	</tbody>
+	</table>
+	<h2 style="text-align:center"><a href="/adduser/">增加用户</a></h2>
+	</body>
+</html>

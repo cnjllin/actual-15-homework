@@ -1,0 +1,26 @@
+<html>
+	<title>欢迎注册</title>
+	<body style="text-align:center">
+	<h1 style="text-align:center">Welcome To My Home!</h1>
+	<h2 style="text-align:center"><a href="/register">欢迎注册</a></h2>
+	<form action="/register/" accept-charset="UTF-8" method="post">
+		昵&nbsp;&nbsp;&nbsp;&nbsp;称：<input placeholder="设置昵称" type="text" name="nick_name"><br>
+		性&nbsp;&nbsp;&nbsp;&nbsp;别：<input placeholder="性别" type="text" name="nick_sex"><br>
+		年&nbsp;&nbsp;&nbsp;&nbsp;龄：<input placeholder="年龄" type="text" name="nick_age"><br>
+		手机号：<input placeholder="手机号" type="text" name="nick_phone"><br>
+		邮&nbsp;&nbsp;&nbsp;&nbsp;箱：<input placeholder="邮箱" type="text" name="nick_email"><br>
+		密&nbsp;&nbsp;&nbsp;&nbsp;码：<input placeholder="设置密码" type="password" name="nick_passwd"><br>
+		<input type="submit" name="commit" value="注册">
+
+	</form>
+	{% if error %}
+	<h3 style="color:blue">{{ error }}</h3>
+	{% else %}
+	<h3 style="color:blue"></h3>
+	{% endif %}
+	</body>
+</html>
+
+
+
+
