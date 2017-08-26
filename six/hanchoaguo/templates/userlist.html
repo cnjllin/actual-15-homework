@@ -1,0 +1,17 @@
+<html><table style="height:100px;" border="1" cellspacing="0" bordercolor="#000000" cellpadding="8">
+<tr><td>ID</td><td>用户</td><td>密码</td><td>性别</td><td>年龄</td><td>电话</td><td>邮箱</td><td>角色</td><td>动作</td></tr>
+{%for n in m%}
+<tr><td>{{n['id']}}</td>
+<td>{{n['username']}}</td>
+<td>{{n['passwd']}}</td>
+<td>{{n['sex']}}</td>
+<td>{{n['age']}}</td>
+<td>{{n['phone']}}</td>
+<td>{{n['email']}}</td>
+<td>{{n['role']}}/</td>
+<td><a href="http://192.168.209.167:400/shanchu?id={{n['id']}}">删除 </a><a href="http://192.168.209.167:400/xiugai?id={{n['id']}}">修改</a></td></tr>
+
+{%endfor%}
+
+<a href="http://192.168.209.167:400/">退出</a>
+</table></html>
