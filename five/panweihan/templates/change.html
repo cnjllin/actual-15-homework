@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+</head>
+<style>
+    body{text-align: center}
+</style>
+<body>
+<h1>{{name}}</h1>
+<h1><span style="background-color:#1E90FF;">用户信息</span></h1>
+     <table  height="100%" align="center">
+        <tr>
+            <td>
+                <div align="center">
+                    <!-- 内部表格开始 -->
+                    <table border="1">
+                        <tr>
+                            <th>ID</th>
+                            <th>账号</th>
+                            <th>密码</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                            <th>电话</th>
+                            <th>邮箱</th>
+                            <th>权限</th>
+                            <th colspan="2">功能</th>
+                        </tr>
+                        <!--
+                        {% for mess in data %}
+                         <!--
+                        <tr>
+                            <td>{{mess[0]}}</td>
+                            <td>{{mess[1]}}</td>
+                            <td>{{mess[2]}}</td>
+                            <td>{{mess[3]}}</td>
+                            <td>{{mess[4]}}</td>
+                            <td>{{mess[5]}}</td>
+                            <td>{{mess[6]}}</td>
+                            <td>{{mess[7]}}</td>
+                        </tr>
+                        {% endfor %}
+                        -->
+                        <form action="/change/" method="POST">
+                            <th><input type="text" name="id" value="禁止修改" required></th>
+                            <th><input type="text" name="username"></th>
+                            <th><input type="text" name="password"></th>
+                            <th><input type="text" name="sex"></th>
+                            <th><input type="text" name="age"></th>
+                            <th><input type="text" name="phone"></th>
+                            <th><input type="text" name="email"></th>
+                            <th><input type="text" name="role"></th>
+                            <th><input type="submit" value="提交修改"></th>
+                        </form>
+                    </table>
+                    <!-- 内部部表格结束 -->
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- 外部表格结束 -->
+</body>
+</html>

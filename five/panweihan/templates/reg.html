@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<style>
+    body{text-align: center}
+</style>
+<body>
+<h1><span style="background-color:#1E90FF;">注册窗口</span></h1>
+    <table width="760" height="100%" align="center">
+        <tr>
+            <td>
+                <div align="center">
+                    <!-- 内部表格开始 -->
+                    <form action="/reg/" method="POST">
+                    <table height="150">
+                        <tr>
+                             <th>账号：</th>
+                             <th><input type="text" name="username"></th>
+                        </tr>
+                        <tr>
+                            <th>密码：</th>
+                            <th><input type="text" name="password"></th>
+                        </tr>
+                        <tr>
+                            <th>确认密码：</th>
+                            <th><input type="text" name="password2"></th>
+                        </tr>
+                        <tr>
+                            <th>性别：</th>
+                            <th><input type="text" name="sex"></th>
+                        </tr>
+                        <tr>
+                            <th>年龄：</th>
+                            <th><input type="text" name="age"></th>
+                        </tr>
+                        <tr>
+                            <th>电话：</th>
+                            <th><input type="text" name="phone"></th>
+                        </tr>
+                        <tr>
+                            <th>邮箱：</th>
+                            <th><input type="text" name="email"></th>
+                        </tr>
+                        <tr>
+                            <th>权限：</th>
+                            <th><input type="text" name="role"></th>
+                        </tr>
+                        <tr>
+                            <th colspan="2"><input type="submit" style='font-size:28px' value="立即注册"></th>
+                            {% if error %}
+                            <th><span style="color: crimson">{{ error }}</span></th>
+                            {% endif %}
+                        </tr>
+                    </table>
+                    <!-- 内部部表格结束 -->
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- 外部表格结束 -->
+</form>
+</body>
+</html>
