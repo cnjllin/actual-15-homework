@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+reboot15
+</title>
+</head>
+<body>
+<form action="/login" method="POST" >
+    <ul>
+        <li>用户: <input type="TEXT" name="username"></li>
+        <li>密码: <input type="PASSWORD" name="passwd"></li>
+    {% if error %}
+        <span style='color:red'> {{error}} </span>
+    {% endif %}
+        <li><input type="SUBMIT" value="submit"></li>
+    </ul>
+</form>
+</body>
+</html>

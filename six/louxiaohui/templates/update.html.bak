@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>user info edit</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <link rel="icon" href="http://www.51reboot.com/images/favicon.ico">
+</head>
+    <body>
+        <h0><a href="/userlist">back to userlist page</a></h0>
+    <form action="/update_user" method="POST">
+        <p>username:<input type="text" name="username" value="{{ data.username }}"></p>
+        <p>password: <input placeholder="password" type="password" name="password" ></p>
+        <p>input again: <input placeholder="ensure password" type="password" name="repwd"></p>
+        <p>sex:<input type="text" name="sex" value="{{ data.sex }}"></p>
+        <p>age:<input type="text" name="age" value="{{ data.age }}"></p>
+        <p>phone:<input type="text" name="phone" value="{{ data.phone }}"></p>
+        <p>Email:<input type="text" name="email" value="{{ data.email }}"></p>
+        <p>Role:<input type="text" name="role" value="{{ data.role }}"></p>
+        <p><input type="hidden" name="id" value="{{ uid }}"></p>
+        <p><input type="submit" name="commit" value="confirm"></p>
+        {% if res.code == 0 %}
+            <span style='color:green'>{{ res.msg }}</span>
+            <meta http-equiv="refresh" content="2;url=/userlist"> 
+        {% elif res.code == 1 %}
+            <span style='color:red'>{{ res.msg }}</span>
+            <span style='color:red'>n{{ res.code }}n</span>
+            <meta http-equiv="refresh" content="1;url=/update_user?id={{ uid  }}"> 
+        {% else %}
+        {% endif %}
+    </form>
+
+    </body>
+</html>

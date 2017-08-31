@@ -1,0 +1,32 @@
+<html>
+<head>
+     <title>Register</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width">
+     <meta name="description" content="">
+     <link rel="icon" href="http://www.51reboot.com/images/favicon.ico">
+</head>
+
+<body>
+<h1 style="text-align:center">Register</h1>
+
+<form action="/reg/" method="POST">
+    <p>用户名：<input name="username" type="text" placeholder="username"></p>
+    <p>密码：
+    <input name="password" type="password" placeholder="password" required></p>
+    </p>
+    角色：
+    <input type="radio" name="role"  id="admin" value="0">
+    <label for="admin">admin</label>
+    <input type="radio" name="role" id="user" value="1">
+    <label for="user">user</label><br>
+    <input type="SUBMIT" name="commit" value="提交">
+    <h1>你输入的用户名:{{ user.username  }}</h1>
+    <h1>你输入的密码：{{  user.password }}</h1>
+    </h1>你的角色：{% if role == '0' %} 管理员{% else %} 普通用户 {% endif %}</h1>
+    </p><span style="color:red"> {{ error }}</span></p>
+</form>
+
+</body>
+
+</html>
