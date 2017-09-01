@@ -1,0 +1,17 @@
+<html>
+<body>
+
+<form action="/login/" accept-charset="UTF-8" method="POST">
+<table border="1">
+<tr><td>name</td><td><input type="text" name="username"/></td></tr>
+<tr><td>password</td><td><input type="password" name="password"/></td></tr>
+<tr><td>
+<label><input name="role" type="radio" value="1" />admin</label><label><input name="role" type="radio" value="0" />person</label> 
+</td></tr>
+<tr><td colspan="2" align="middle"><input type="submit"  value="login"/></td></tr></table>
+</table>
+</form>
+<a href="http://192.168.11.130:5000/login/">login</a><a href="http://192.168.11.130:5000/reg/">register</a>
+<h1>{{result}}</h1>
+</body>
+</html>

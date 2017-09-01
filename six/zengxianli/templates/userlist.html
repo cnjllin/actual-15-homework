@@ -1,0 +1,30 @@
+ <html>
+	<title>首页</title>
+	<body style="background:LightGreen">
+	<table action="/userlist/" accept-charset="UTF-8"  border="1px">
+	<tr>
+	<td>user</td>
+	<td>password</td>	
+	<td>role</td>	
+	<td>操作</td>	
+	</tr>
+	{% for user in result %}
+	<tr>
+	<td>{{user.username}}</td>
+	<td>{{user.password}}</td>	
+	<td>{{user.role}}</td>	
+	<td>
+	<a href="http://192.168.11.130:5000/userlist/?id={{user.id}}">删除</a>	<a href="http://192.168.11.130:5000/update/?id={{user.id}}">更新</a>
+	</td>	
+	</tr>
+
+	{% endfor %}
+	
+
+
+
+	</table>
+	
+<a href="http://192.168.11.130:5000/login/">login</a><a href="http://192.168.11.130:5000/reg/">register</a>
+	</body>
+</html>

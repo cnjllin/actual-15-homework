@@ -1,0 +1,108 @@
+###需求分析
+
+>用户权限管理系统
+
+####功能模块
+
+#####首页
+
+V: index.html
+
+   1.reg/login两个导航按钮，注册到登陆注册模块
+   2.欢迎信息：welcome {{username}}
+
+C: @aqq.route('/')
+   @aqq.route('/index')
+     def index():
+         username="wd"
+         return render_template("index.html")
+
+### 注册页面
+
+V: reg.html
+   <form> action="/reg/",method="POST">
+    用户名、密码、角色
+   </form>
+
+C: @aqq.route('/reg/',methods=['GET','POST'])
+   def reg()
+      if methods 为POST：
+          username=requset.form.get('username',"")
+          ......
+          if 判断用户是否已经存在
+              如果存在则返回错误信息render_template("reg.html",error=error)
+          else:
+              sql
+              return rediret("跳转到登陆页面")
+       return render_template("reg.html") 
+
+M:user
+
+  select * from user where username=nsername
+  insert into user () value ()
+
+
+  
+
+
+###登陆页面
+
+V: reg.html
+   <form> action="/reg/",method="POST">
+    用户名、密码、角色
+   </form>
+
+C: @aqq.route('/reg/',methods=['GET','POST'])
+   def reg()
+      if methods 为POST：
+          username=requset.form.get('username',"")
+          ......
+          if 判断用户是否已经存在
+              如果不存在则返回错误信息render_template("reg.html",error=error)
+          else:
+              sql
+              if 判断密码是否正确
+                 如果不正确则返回错误信息render_template("reg.html",error=error)
+              else    
+                 return rediret("跳转到用户列表页面")
+       return render_template("login.html") 
+
+
+###管理页面/用户列表
+V:userlist.html
+   <table action="/userlist/" accept-charset="UTF-8"  border="1px">  
+   用户名、密码、角色 
+   </form>
+
+C: @aqq.route('/userlist/')  
+  def userlist():
+      判断是否有传GET到ID值
+      if uid:
+          调用删除函数
+      user=list('user')
+      return render_template("跳转到用户列表页面“)
+      
+M:user
+
+  select * from user
+  delete from user where id=id      
+      
+
+
+###更新页面   
+V: reg.html
+   <form> action="/reg/",method="POST">
+    用户名、密码、角色
+   </form>
+
+C:if request.method=="POST":
+        user=dict ((k,v[0]) for k,v in dict(request.form).items())
+        调用更新函数
+        return  redirect("跳转到用户列表页面") 
+    if request.method=="GET":
+        uid=request.args.get('id')GET到ID值
+        return render_template("跳转到更新页面")   
+        
+M:user
+
+  update user set username=username,password=password,role=role where id =id        
