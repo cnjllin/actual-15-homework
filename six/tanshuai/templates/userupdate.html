@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+</head>
+<body>
+    <form action="/user/update/" method="post">
+        <div>
+            {% if error %}
+            <span style="color:red">{{ error }}</span>
+            {% endif %}
+        </div>
+        <div>用户名: <input type="text" name="username" disabled value="{{ user[1] }}"/></div>
+        <div>密  码: <input type="password" name="password" value="{{ user[2] }}"/></div>
+        <div>性  别:
+            <select name="sex">
+                <option value="0">女</option>
+                <option value="1">男</option>
+            </select>
+        </div>
+        <div>年  龄: <input type="text" name="age" value="{{ user[4] }}"/></div>
+        <div>手  机: <input type="text" name="phone" value="{{ user[5] }}"/></div>
+        <div>邮  箱: <input type="text" name="email" value="{{ user[6] }}"/></div>
+        <div>角  色:
+            <select name="role">
+                <option value="0">超级管理员</option>
+                <option value="1">普通用户</option>
+            </select>
+        </div>
+        <input type="hidden" name="uid" value="{{ user[0] }}">
+        <input type="submit" value="更新"/>
+        <a href="/">返回首页</a>
+    </form>
+</body>
+</html>
