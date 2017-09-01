@@ -1,0 +1,68 @@
+{% extends 'base.html'  %}
+
+{% block title %}用户列表{% endblock %}
+
+{% block head %}
+<style>
+     th {text-align:center;valign:center;align;center;}
+     td {text-align:center;valign:center;align;center;}
+     td {text-align:center}
+     th {text-align:center}
+</style>
+
+{% endblock %}
+
+{% block main %}
+
+<center>
+<div style="text-align:center">
+
+<table align="center" style="height:50px;margin:auto;width: 80%;" border="1" cellspacing="0" bordercolor="#000000" cellpadding="8" >
+<tr><th>ID</th>
+<th>用户</th>
+<th>密码</th>
+<th>年龄</th>
+<th>性别</th>
+<th>电话</th>
+<th>邮箱</th>
+<th>角色</th>
+<th>删除</th>
+<th>修改</th>
+</tr>
+
+{%for n in users%}
+
+
+<form action="/upd/" method="POST" >
+<tr>
+<td> <input readonly type="text" value="{{ n.uid }}" name="uid">  </td>
+<td> <input readonly type="text" value="{{ n.username }}" name="username">  </td>
+<td> <input style="color:#993399" type="password" value="{{ n.passwd }}" name="passwd">  </td>
+<td> <input style="color:#993399" type="text" value="{{ n.age }}" name="age">  </td>
+<td> <input style="color:#993399" type="test" value="{{ n.sex }}" name="sex">  </td>
+<td> <input style="color:#993399" type="text" value="{{ n.phone }}" name="phone">  </td>
+<td> <input style="color:#993399" type="text" value="{{ n.email }}"  name="email">  </td>
+{% if n.role == 0  %}
+<!--  <td> <input style="color:#993399" type="text" value="{{ n.role }}" name="role">  </td>  -->
+<td> <input style="color:#993399" type="text" value="管理员" name="role">  </td>
+{% else %}
+<td> <input style="color:#993399" type="text" value="普通用户" name="role">  </td>
+{% endif %}
+<td> <a href="{{  url_for('dele')+'?id='}}{{ n.uid }}">删除</a>  </td>
+<td> <input type = 'submit' name="b1" value="提交修改">  </td>
+</tr>
+
+</form>
+
+
+
+{%endfor%}
+</table>
+
+</div>
+
+</center>
+
+
+{% endblock %}
+

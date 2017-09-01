@@ -1,0 +1,51 @@
+{% extends 'base.html'  %}
+
+{% block title %}发布文章{% endblock %}
+
+{% block head %}
+<style>
+     th {text-align:center;valign:center;align;center;}
+     td {text-align:center;valign:center;align;center;}
+     td {text-align:center}
+     th {text-align:center}
+</style>
+{% endblock %}
+
+{% block main %}
+
+<!--<h2 id="contact" class="lead"发布文章"</h2>-->
+<div class="divContent">
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading"> 发布文章 </div>
+        <div class="panel-body">
+            <form action="" method="post">
+                <div class="form-group has-feedback has-success">
+                    <label class="control-label"for="title"Title</label>
+                    <input type="text" class="form-control" id="title" placeholder="请输入标题" name="title">
+                    <!--<span class="glyphicon glyphicon-ok form-control-feedback"></span>-->
+                </div>
+                <div class="form-group has-feedback has-success">
+                    <label class="control-label"for="content"Content</label>
+                    <textarea  class="form-control" id="content" row ="30" placeholder="请输入内容" name="content"></textarea>
+                    <!--<span class="glyphicon glyphicon-ok form-control-feedback"></span>-->
+                    <!--<span class="glyphicon glyphicon-remove form-control-feedback"></span>-->
+                </div>
+
+                 <div class="btn-group pull-right">
+                    <button type="submit" class="bth btn-success">立即发表</button>
+                    <button type="reset" class="bth btn-danger">重置</button>
+                </div>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+        <div class="panel-footer"></div>
+    </div>
+</div>
+
+
+</div>
+
+
+{% endblock %}
+

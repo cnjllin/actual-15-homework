@@ -1,0 +1,36 @@
+{% extends 'base.html'  %}
+
+{% block title %}首页{% endblock %}
+
+{% block head %}
+<style>
+     th {text-align:center;valign:center;align;center;}
+     td {text-align:center;valign:center;align;center;}
+     td {text-align:center}
+     th {text-align:center}
+</style>
+{% endblock %}
+
+{% block main %}
+
+
+<form action="/upd/" method="POST" >
+    <ul>
+        <li><h>  uid 和用户名不能修改  </h> </li>
+        <li>UID:<input type="text" value="{{n['uid']}}" name="uid"></li>
+        <li>用户名:<input type="text" value="{{n['username']}}" name="username"></li>
+        <li>密 码:<input type="password" value="{{n['passwd']}}" name="passwd"></li>
+        <li>年龄:<input type="text" value="{{n['age']}}" name="age"></li>
+        <li>性别:<input type="test" value="{{n['sex']}}" name="sex"></li>
+        <li>电话:<input type="text" value="{{n['phone']}}" name="phone"></li>
+        <li>邮箱:<input type="text" value="{{n['email']}}"  name="email"></li>
+        <li>角色:<input type="text" value="{{n['role']}}" name="role"></li>
+        <li><input type = 'submit' name="b1" value="提交修改"></li>
+    </ul>
+
+</form>
+
+
+
+{% endblock %}
+

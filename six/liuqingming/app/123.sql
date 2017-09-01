@@ -1,0 +1,11 @@
+insert into user_info (username,passwd,age,sex,phone,role,email) values ('杜甫', '1', '1', '男', '1', '1', '1@1.com');
+insert into user_info (username,passwd,age,sex,phone,role,email) values ('白居易', '1', '1', '男', '1', '1', '1@1.com');
+insert into user_info (username,passwd,age,sex,phone,role,email) values ('元稹', '1', '1', '男', '1', '1', '1@1.com');
+insert into user_info (username,passwd,age,sex,phone,role,email) values ('陆游', '1', '1', '男', '1', '1', '1@1.com');
+insert into user_info (username,passwd,age,sex,phone,role,email) values ('辛弃疾', '1', '1', '男', '1', '1', '1@1.com');
+insert into user_info (username,passwd,age,sex,phone,role,email) values ('李白', '1', '1', '男', '1', '1', '1@1.com');
+insert into user_info (username,passwd,age,sex,phone,role,email) values ('王安石', '1', '1', '男', '1', '1', '1@1.com');
+insert into user_info (username,passwd,age,sex,phone,role,email) values ('李清照', '1', '1', '男', '1', '1', '1@1.com');
+insert into user_info (username,passwd,age,sex,phone,role,email) values ('秦观', '1', '1', '男', '1', '1', '1@1.com');
+insert into user_info (username,passwd,age,sex,phone,role,email) values ('苏轼', '1', '1', '男', '1', '1', '1@1.com');
+insert into user_info (username,passwd,age,sex,phone,role,email) values ('韩愈', '1', '1', '男', '1', '1', '1@1.com');

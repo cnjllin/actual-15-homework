@@ -1,0 +1,61 @@
+{% extends 'base.html'  %}
+
+{% block title %}注册{% endblock %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block main %}
+
+        <div class="container">
+            <form class="form-signin" role="form" action="/regist/" method="POST">
+                <h2 class="form-signin-heading" style="text-alin:center;">注册</h2>
+                <div class="form-group">
+                 <input type="text" class="form-control" name='username' placeholder="用户名" required autofocus>
+                 </div>
+                 <div class="form-group">
+                 <input type="password" class="form-control" name='passwd' placeholder="密码" required >
+                  </div>
+                 <div class="form-group">
+                 <input type="password" class="form-control" name='passwd1' placeholder="重复上次密码" required >
+                  </div>
+                 <div class="form-group">
+                 <input type="text" class="form-control" name='age' placeholder="年龄" required >
+                  </div>
+                 <div class="form-group">
+                 <label> 性别:  </label>   
+                 <label class="radio-inline"> <input id="man" type="radio" value="男" checked="checked" name="sex" />男 </label>
+                 <label class="radio-inline">  <input id="woman" type="radio"  value="女" name="sex"/>女 </label>
+           <!--      <label> 性别:  </label>   <label class="checkbox-inline"> <input  type="checkbox" value="男"  name="sex" />男 </label> <label class="checkbox-inline"> <input type="checkbox"  value="女" name="sex"/>女 </label> -->
+                  </div>
+                 <div class="form-group">
+                 <input type="text" class="form-control" name='phone' placeholder="手机号码" required >
+                  </div>
+                 <div class="form-group">
+                 <input type="email" class="form-control" name='email' placeholder="邮箱" required input-lg>
+                  </div>
+                 <div class="form-group">
+                 <!--   <input type="text" class="form-control" name='role' placeholder="角色" required >  -->
+                 <label> 角色:  </label>
+                 <label class="radio-inline"> <input id="admin" type="radio" value="1" checked="checked" name="role" />普通用户 </label>
+                 <label class="radio-inline">  <input id="comm" type="radio"  value="0" name="role"/>管理员 </label>
+                 <!--   <label> 角色:  </label>     -->
+                 <!--   <label class="form-control"> <input id="admin" type="radio" value="1" checked="checked" name="role" />普通用户 </label>  -->
+                 <!--   <label class="form-control">  <input id="comm" type="radio"  value="0" name="role"/>管理员 </label>  -->
+                  </div>
+
+                  <li><a href="{{ url_for('regist') }}"><img src="{{  url_for('static',filename='image/idencode.png') }}" onclick="window.location.reload()">点击图片或文字刷新</a>（验证码不区分大小写）</li>
+                  <!--<li><a href="{{ url_for('login') }}"><img src="{{  url_for('static',filename='image/idencode.png') }}"></a></li>  -->
+
+                 <div class="form-group">
+                 <input type="text" class="form-control" name='code' placeholder="在此输入验证码" required autofocus> 
+                 </div>
+
+                 <button class="btn btn-lg btn-primary btn-block" type="submit">立即注册</button>
+                 <a href="{{ url_for('login') }}">已有账号，马上登陆 </a>  <span style="color:red;"> {{ m }} </span>
+            </form>
+        </div>
+
+
+{% endblock %}

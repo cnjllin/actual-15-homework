@@ -1,0 +1,49 @@
+{% extends 'base.html'  %}
+
+{% block title %}首页{{ search_title }}{% endblock %}
+
+{% block head %}
+   <link rel="" href="{{ url_for('static',filename='css/index.css')}}">
+<style>
+     th {text-align:center;valign:center;align;center;}
+     td {text-align:center;valign:center;align;center;}
+     td {text-align:center}
+     th {text-align:center}
+</style>
+{% endblock %}
+
+{% block main %}
+
+<div class="divContent">
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading"><span style="color:blue">{{ search_title }}</span>文章列表</div>
+        <div class="panel-body">
+             <ul>
+                 {% for search in search_result %}
+                     <li>
+                         <div class="question-group">
+                             <p class="question-title"><a href="#">{{ search.title }}</a>  </p>
+                             <p class="question-content">{{ search.content }} </p>
+                             <div class="question-info">
+                                 <span class="question-author">{{ search.username }}</span>
+                                 <span class="question-time">{{ search.create_time  }}</span>
+                             </div>
+             
+                         </div>
+                     </li>
+                 {%  endfor %}
+             
+             </ul> 
+             <hr></hr>
+        </div>
+        <div class="panel-footer"></div>
+    </div>
+</div>
+
+
+</div>
+
+
+{% endblock %}
+

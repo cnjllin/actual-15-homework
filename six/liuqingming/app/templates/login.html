@@ -1,0 +1,37 @@
+{% extends 'base.html'  %}
+
+{% block title %}登陆{% endblock %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block main %}
+
+        <div class="container">
+            <form class="form-signin" role="form" action="/login/" method="POST">
+                {{m}}
+                <h2 class="form-signin-heading" style="text-alin:center;">登录</h2>
+                <div class="form-group">
+                 <input type="text" class="form-control" name='username' placeholder="在此输入用户名" required autofocus> 
+                 </div>
+                 <div class="form-group">
+                 <input type="password" class="form-control" name='passwd' placeholder="在此输入密码" required >
+                  </div>
+
+                  <li><a href="{{ url_for('login') }}"><img src="{{  url_for('static',filename='image/idencode.png') }}" onclick="window.location.reload()">点击图片或文字刷新</a>（验证码不区分大小写）</li>
+                  <!--<li><a href="{{ url_for('login') }}"><img src="{{  url_for('static',filename='image/idencode.png') }}"></a></li>  -->
+                  <!--<img id="verficode" src="{{  url_for('static',filename='image/idencode.png') }}" onclick="this.src='{{  url_for('static',filename='image/idencode.png') }}?d='+Math.random();" />  -->
+
+                 <div class="form-group">
+                 <input type="text" class="form-control" name='code' placeholder="在此输入验证码" required autofocus> 
+                  </div>
+
+                 <button class="btn btn-lg btn-primary btn-block" type="submit">立即登录</button>
+                 <a href="{{ url_for('regist') }}">注册</a>
+                 <span style="color:red;"> {{ err_info }} </span>
+            </form>
+        </div>
+
+        <!-- <textarea class="form-control" rows="15" name='text1'></textarea>   -->
+{% endblock %}
