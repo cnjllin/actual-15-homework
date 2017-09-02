@@ -1,0 +1,28 @@
+<table border="1">
+{% if user_info.user_role == 0 %}
+	{% for attr in user_attr %}
+	<tr>
+		<td>{{ attr }}</td>
+		<td>{{ user_info[attr] }}</td>
+	</tr>
+	{% endfor %}
+{% else %}
+	<tr>
+		{% for attr in user_attr %}
+		<td>{{ attr }}</td>
+		{% endfor %}
+	</tr>
+	{% for i in length %}
+	<tr>
+		{% for attr in user_attr %}
+			{% if attr == 'user_name' %}
+			<td><a style="text-decoration:none;" href="{{url_for('user_up',id_num=user_all[i].id_num)}}">{{ user_all[i][attr] }}</a></td>
+			{% else %}
+		  <td>{{ user_all[i][attr] }}</td>
+			{% endif %}
+		{% endfor %}
+	</tr>
+	{% endfor %}
+{% endif %}
+</table>
+<p><a style="text-decoration:none;" href={{url_for('login')}}>返回登录页面</a></p>
