@@ -1,0 +1,15 @@
+<html>
+<head>
+ <meta charset="gb2132">
+<head>
+<body>
+<form action="/reg/" method="POST">
+<ul>
+<li>用户名<input type=text name=username  placeholder="用户名"></li>
+<li>密    码<input type=password name=password  placeholder="密码"></li>
+<li>角    色<input type=radio name=role value=0>管理员<input type=radio name=role value=1>普通用户</li>
+<li><input type=submit value='提交'></li>
+<li style='color:red'>{{msg.errmsg}}</li>
+</form>
+</body>
+</html>

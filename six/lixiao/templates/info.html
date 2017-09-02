@@ -1,0 +1,71 @@
+<html>{{ msg.sucmsg }}</html>
+
+
+<html>
+  <head>
+      <meta charset="gb2312">
+      <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+       <style>
+        .container{
+                width:500px
+        }
+       </style>
+  </head>
+<body> 
+  <div id="main" style="width:100%;  height:100%;">
+    <div id="left" style="float:left ;  width:20%;  height:100%; background-color:#F0F8FF" >
+       <h5>用户名：{{ user['username']  }}</h5>
+           <div>{% if user['role']==0 %}
+               <h5>身份：管理员</h5>
+               <h5><a href=/log/>日志</a></h5> 
+               <h5><a href=/log/>设备</a></h5>
+                {% else %}
+               <h5>身份：普通用户</h5>
+                {% endif %}
+           </div> 
+   </div>
+
+   <div id="left" style="float:left ;  width:80%;  height:100%; background-color:#FAEBD7">
+       <h3> 用户信息 </h3>
+          <table border=1>
+              <tr>
+                  <th>id</th><th>用户名</th><th>密码</th><th>权限</th><th>操作</th><th>操作</th>
+              </tr>
+
+           {% if user['role']==0 %}
+             {% for k in userlist %}
+             <tr>
+                <td>{{ k.id }}</td><td>{{ k.username }}</td><td>{{ k.password }}</td><td>{{ k.role }}</td><td>
+                   <form action="/info/">
+                      <input type='hidden' name='id' value="{{ k.id }}">
+                      <input type="submit" value="修改">
+                   </form></td><td><form action="/dele/">
+                      <input type='hidden' name='id' value="{{ k.id }}">
+                      <input type="submit" value="删除"></form>
+                </td>
+            </tr>
+          {% endfor %}
+          
+          {% else %}
+            <tr>
+               <td>{{ user.id }}</td><td>{{ user.username }}</td><td>{{ user.password }}</td><td>{{ user.role }}</td>
+               <td>
+                  <form action="/info/">
+                     <input type='hidden' name='id' value="{{ user.id }}">
+                     <input type="submit" value="修改">
+                  </form>
+               </td>
+               <td>
+                  <form action="/dele/">
+                     <input type='hidden' name='id' value="{{ user.id }}">
+                     <input type="submit" value="删除">
+                  </form>
+               </td>
+           </tr>
+        {% endif %}
+          </table>
+           <a href="/">返回</a>
+       </div>
+     </div>
+   </body>
+</html>

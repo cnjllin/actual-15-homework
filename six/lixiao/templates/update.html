@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="gb2312">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <style>
+	.container{
+                width:500px;
+       }
+      </style>
+    </head>
+<body>
+
+    <div class="container" style=" background-color:#FAEBD7">
+        <h1> 修改用户:{{ res.username}}信息 </h1>
+     <table border=1>
+        <tr>
+            <th>名称</th><th>原始信息</th><th>新信息</th>
+        </tr>
+
+    <form action="/update/" method='POST'>
+         <tr>
+            <td>密码</td><td>{{ res.password  }}</td>
+            <td>
+                <input type='text' name='password' value="{{ res.password }}",disabled>
+                <input type='hidden' name='id' value="{{ res.id }}",disabled >
+                <input type='hidden' name='username' value="{{ res.username }}",disabled >
+            </td>
+        </tr>
+
+        <tr>
+           <td>权限</td>
+           <td>
+                <input type=radio name=role value=0 {% if res.role==0 %} checked {% endif %}>管理员
+           </td>
+           <td>
+                <input type=radio name=role value=1 {% if res.role==1 %} checked {% endif %}>普通用户
+           </td>
+       </tr>
+
+       <tr>
+           <td>
+               <input type="submit" value="提交">
+           </td>
+       </tr>
+    </form>
+  </table>
+   <a href="/">返回</a>
+  </div>
+
+</body>
+</html>
+
