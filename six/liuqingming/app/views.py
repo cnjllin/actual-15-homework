@@ -9,6 +9,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 from functools import wraps
 import passwd_hash
+import cStringIO,StringIO
 
 def login_required(func) :
     @wraps(func)
@@ -69,12 +70,24 @@ def upd():
         update(users)
         return redirect(url_for('userlist'))
 
+@app.route('/code',methods=['GET','POST'])
+def code():
+    code_str,code_img = gene_code()
+    session['code'] = code_str.lower()
+    print gene_code()
+    buf = cStringIO.StringIO()
+    #code_img.save(buf,'jpeg')
+    code_img.save(buf,'png')
+    buf_str = buf.getvalue()
+    response = app.make_response(buf_str)
+    response.headers['Content-Type'] = 'image/png'
+    return response
 
 @app.route('/login/',methods=['GET','POST'])
 def login():
     if request.method == 'GET' :
-        code_str = gene_code()
-        session['code'] = code_str.lower()
+        #code_str = gene_code()
+        #session['code'] = code_str.lower()
         return render_template('login.html')
     else :
         users = request.form.to_dict()
@@ -106,8 +119,8 @@ def login():
 @app.route('/regist/',methods = ['GET','POST'])
 def regist():
     if request.method == 'GET' :
-        code_str = gene_code()
-        session['code'] = code_str.lower()
+        #code_str = gene_code()
+        #session['code'] = code_str.lower()
         return render_template('regist.html')
     else :
         users = request.form.to_dict()

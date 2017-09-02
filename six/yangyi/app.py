@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route('/index')
 def index():
     # 判断用户名是否存在，存在直接进入用户列表
-    if  session['username']:
+    if  'username' in session:
         return redirect('/user')
     else:
         return render_template('index.html')
@@ -100,7 +100,7 @@ def delete():
 # 退出登录
 @app.route('/logut')
 def logut():
-    session['username']=''
+    session.pop('username', None)
     return redirect('/index')
 
 if __name__ == '__main__':
