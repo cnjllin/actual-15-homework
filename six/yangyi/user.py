@@ -12,7 +12,7 @@ def add(user):
     return result
 
 # 查询指定用户所有信息
-def select_one(*user):
+def select_one(user):
     execute = utils.DB()
     execute.table = 'user'
     sql = 'SELECT * FROM %s WHERE username = "%s"' % (execute.table, user)
