@@ -1,0 +1,31 @@
+
+<html>
+<head>
+<meta charset="utf-8" /> 
+<title>用户注册</title> 
+<style> body{ text-align:center} </style> 
+</head>
+
+<h1>欢迎注册</h1>
+
+
+<body>
+        <form action="/reg/" method="post">
+                    <p><label for="username">账号：</label>
+                    <input type="text"  name="username" class="loginInput" autofocus="autofocus"  autocomplete="off" placeholder="请输入用户名" value="" /></p>
+                    <!-- required 规定必需在提交之前填写输入字段-->
+                    <p><label for="passwd">密码：</label>
+                    <input type="password"  name="password" class="loginInput" required="required" placeholder="请输入密码" value=""/></p>
+                    
+                    <p><label for="email">邮箱：</label>
+                    <input type="text"  name="email" class="loginInput" autofocus="autofocus"  autocomplete="off" placeholder="请输入email" value="" /></p>
+                    <p>{{err.msg}}</p>
+                    <p><label for="role">角色：</label>
+                    <input type="radio" name="role" value="0">管理员<input type="radio" name="role" value="1">普通用户</p>
+                </div>
+                    <button class="loginBtn">提交注册</button>
+                </div>
+
+</body>
+
+</html>

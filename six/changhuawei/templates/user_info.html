@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="utf-8" /> 
+<title>userlist</title> 
+<style> body{ text-align:center} </style> 
+</head>
+
+<h1>用户列表</h1>
+
+<body>
+
+<table border="1px">
+
+<tr>
+
+<td>ID</td>
+<td>user</td>
+<td>passwd</td>
+<td>email</td>
+<td>role</td>
+<td>修改</td>
+</tr>
+<!-- {% block content %} -->
+{% for list in result %}
+<tr>
+<td>{{list['id']}}</td>
+<td>{{list['username']}}</td>
+<td>{{list['password']}}</td>
+<td>{{list['email']}}</td>
+<td>{{list['role']}}</td>
+
+<td><span><a href="/update/?id={{list['id']}}">修改</a></span></td>
+</tr>
+
+{% endfor %}
+  <!-- {% endblock %} -->
+</table>
+
+</body>
+
+</html>
