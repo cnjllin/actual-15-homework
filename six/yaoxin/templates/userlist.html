@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户列表</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>用户名</td>
+        <td>密码</td>
+        <td>role</td>
+        <td>用户操作</td>
+    </tr>
+    {% for i in data %}
+    <tr>
+        <td>{{ i.id }}</td>
+        <td>{{ i.username }}</td>
+        <td>{{ i.password }}</td>
+        <td>{% if i.role == 0%}管理员{% else %}用户{% endif %}</td>
+        <td>
+            <button><a href="/update/?id={{ i.id }}">更新</a></button>
+            <button><a href="/deleteuser/?id={{ i.id }}">删除</a></button>
+        </td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

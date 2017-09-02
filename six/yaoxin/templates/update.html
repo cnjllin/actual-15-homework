@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户更新</title>
+</head>
+<body>
+<form>
+<input value="{{ res.id }}" type="hidden" name="id"
+                <p><label for="password">密码：</label>
+                        <input placeholder="密码" type="password" name="password" value="{{ res.password }}" class="loginInput" autofocus="autofocus" autocomplete="off"></p><tr>
+                <p><label for="role">角色：</label>
+                        <input type="radio" name="role" value="0" {% if res.role==0 %} checked {% endif %}>管理员
+                   <input type="radio" name="role" value="1" {% if res.role==1 %} checked {% endif %}>用户</p><tr>
+                <p><input type="submit"</p>
+        <span>{{ res.msg }}</span>
+</form>
+</body>
+</html>
