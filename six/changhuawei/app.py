@@ -3,7 +3,7 @@
 
 
 from flask import Flask,request,render_template,redirect
-from util import _reg,_login,_select_all,_select_name,_delete,_update
+from util import _reg,_login,_select_all,_select_name,_delete,_update,_select
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -72,26 +72,26 @@ def login():
             res_err['cord'] = 2
             res_err['msg'] = 'name or passwd err' 
     return render_template('login.html',err=res_err)
-
+# 更新
 @app.route('/update/',methods=['GET','POST'])
 def update():
-    if request.method == 'POST':
-        data = {k:v[0] for k,v in dict(request.form).items()}
-        print data
-        res_user = _update(data)
-        res = _select_all()
-        print res
-        return render_template('user_list.html',result = res)
-    else:
+    if request.method == 'GET':
         data = {}
         uid = request.args.get('id')
         data['id'] = uid
-        res = _select_name(data)
-        print res 
+        res = _select(data)
+        # print res 
         return render_template('update.html',result = res)
+    if request.method == 'POST':
+        data = {k:v[0] for k,v in dict(request.form).items()}
+        # print data
+        res_user = _update(data)
+        res = _select_all()
+        # print res
+        return render_template('user_list.html',result = res)
 
 
-
+# 删除
 @app.route('/delete/')
 def delete():
     data = {}

@@ -65,9 +65,18 @@ def _delete(data):
 # 更新信息
 def _update(data):
     fileds = ["{}='{}'".format(k,data[k]) for k in data]
+    # print fileds
     sql = "update user set {} where id = '{}'".format(','.join(fileds),data['id'])
     cur.execute(sql)
     ss = cur.fetchone()
     return ss
 
+# 更新查询
+def _select(data):
+    fileds = ['id','username','password','role','email']
+    sql = "select * from user where id = '{}'".format(data['id'])
+    cur.execute(sql)
+    ss = cur.fetchone()
+    user_one = dict(zip(fileds,ss))
+    return user_one
 
