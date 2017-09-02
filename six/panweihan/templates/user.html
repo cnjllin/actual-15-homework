@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+</head>
+<style>
+    body{text-align: center}
+</style>
+<body>
+<h1>{{name}}</h1>
+<h1><span style="background-color:#1E90FF;">用户信息</span></h1>
+     <table  height="100%" align="center">
+        <tr>
+            <td>
+                <div align="center">
+                    <!-- 内部表格开始 -->
+                    <form action="/change/">
+                    <table border="1">
+                        <tr>
+                            <th>ID</th>
+                            <th>账号</th>
+                            <th>密码</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                            <th>电话</th>
+                            <th>邮箱</th>
+                            <th>身份</th>
+                        </tr>
+                        <tr>
+                        {%for mess in data%}
+                        <td>{{mess}}</td>
+                        {%endfor%}
+                        </tr>
+
+                        </form>
+                    </table>
+                    <!-- 内部部表格结束 -->
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- 外部表格结束 -->
+</body>
+</html>

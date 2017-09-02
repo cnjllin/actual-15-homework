@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+</head>
+<style>
+    body{text-align: center}
+</style>
+<body>
+<h1><span style="background-color:#1E90FF;">用户信息</span></h1>
+     <table  height="100%" align="center">
+        <tr>
+            <td>
+                <div align="center">
+                    <!-- 内部表格开始 -->
+                    <table border="1">
+                        <tr>
+                            <th>ID</th>
+                            <th>账号</th>
+                            <th>密码</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                            <th>电话</th>
+                            <th>邮箱</th>
+                            <th>身份</th>
+                            <th colspan="2">功能</th>
+                        </tr>
+                        <form action="/change/" method="POST">
+                        <tr>
+                            <td><input type="text" name="id" value="{{data[0]}}" readonly></td>
+                            <td><input type="text" name="username" value="{{data[1]}}"></td>
+                            <td><input type="text" name="password" value="{{data[2]}}"></td>
+                            <td> 男:<input type="radio" name="sex" value="男">女<input type="radio" name="sex" value="女"></td>
+                            <td><input type="text" name="age" value="{{data[4]}}"></td>
+                            <td><input type="text" name="phone" value="{{data[5]}}"></td>
+                            <td><input type="text" name="email" value="{{data[6]}}"></td>
+                            <td>管理员:<input type="radio" name="role" value="管理员">普通用户<input type="radio" name="role" value="普通用户"></td>
+                            <th><input type="submit" value="提交修改"></th>
+                        </tr>
+                        </form>
+                    </table>
+                    <!-- 内部部表格结束 -->
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- 外部表格结束 -->
+</body>
+</html>

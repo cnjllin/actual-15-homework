@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<style>
+    body{text-align: center}
+</style>
+<body>
+<h1><span >注册窗口</span></h1>
+
+                    <form action="/reg/" method="POST">
+                        账号：<input type="text" name="username"></br>
+                        密码：<input type="text" name="password"></br>
+                        确认密码：<input type="text" name="password2"></br>
+                        男:<input type="radio" name="sex" value="男">女<input type="radio" name="sex" value="女"></br>
+                        年龄：<input type="text" name="age"></br>
+                        电话：<input type="text" name="phone"></br>
+                        邮箱：<input type="text" name="email"></br>
+                        管理员:<input type="radio" name="role" value="管理员">普通用户<input type="radio" name="role" value="普通用户"></br>
+                        <input type="submit" style='font-size:28px' value="立即注册"></br>
+                            {% if error %}
+                        <span style="color: crimson">{{ error }}</span>
+                            {% endif %}
+</form>
+</body>
+</html>

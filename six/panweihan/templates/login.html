@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录窗口</title>
+</head>
+<style>
+    body{text-align: center}
+</style>
+<body>
+<h1><span style="background-color:#1E90FF;">登录窗口</span></h1>
+
+<form action="/login/" method="POST">
+    账号：<input type="text" name="username"></br>
+    密码：<input type="password" name="password"></br>
+    <input type="submit" value="立即登录"></br>
+</form>
+        {% if error %}
+        <span style="color: crimson">{{ error }}</span></br>
+        {%endif%}
+    {%if id%}
+<a href="/user/?id={{id}}">登录成功，点击进入个人空间</a>
+    {%endif%}
+</body>
+</html>
