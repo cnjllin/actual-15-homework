@@ -1,0 +1,21 @@
+<html>
+    <title>用户信息更新</title>
+	<body style="text-align:center">
+	<h1>修改用户信息</h1>
+	<form action="/update/" accept-charset="UTF-8" method="POST">
+			{% for i in user_msg %}
+			        <input type="hidden" name="id" value={{i.id}}>       
+			用户名：<input  type="text" name="username" value={{i.username}}><br>
+			手机号：<input  type="tel" name="phone" value={{i.phone}}><br>
+			密&nbsp;&nbsp;&nbsp;&nbsp;码：<input  type="text" name="password" value={{i.password}}><br>
+			{% endfor %}
+		            <input type="submit" value="更新">
+
+	</form>
+	{% if error %}
+	<h3 style="color:blue">{{ error }}</h3>
+	{% else %}
+	<h3 style="color:blue"></h3>
+	{% endif %}
+	</body>
+</html>
