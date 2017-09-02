@@ -86,5 +86,5 @@ def logs():
     return render_template('logs.html',rt_list=rt_list,title='Top %s' % topn)
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
 

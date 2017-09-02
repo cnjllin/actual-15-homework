@@ -6,8 +6,8 @@ import math
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 # 字体的位置，不同版本的系统会有不同
-#font_path = '/root/桌面/fronts/CALIBRIL.TTF'
-font_path = 'CALIBRIL.TTF'
+font_path = '/root/桌面/fronts/CALIBRIL.TTF'
+#font_path = 'CALIBRIL.TTF'
 # 生成几位数的验证码
 number = 4
 # 生成验证码图片的高度和宽度
@@ -53,10 +53,11 @@ def gene_code():
     # image = image.transform((width+30,height+10), Image.AFFINE, (1,-0.3,0,-0.1,1,0),Image.BILINEAR) #创建扭曲
     image = image.transform((width + 20, height + 10), Image.AFFINE, (1, -0.3, 0, -0.1, 1, 0), Image.BILINEAR)  # 创建扭曲
     image = image.filter(ImageFilter.EDGE_ENHANCE_MORE)  # 滤镜，边界加强
-    import os
-    #print os.getcwd()
-    image.save(r'app/static/image/idencode.png')  # 保存验证码图片
-    return text
+    #import os
+    #cwd = os.getcwd()
+    #print "code pwd:",cwd
+    #image.save(r'app/static/image/idencode.png')  # 保存验证码图片
+    return text,image
 
 if __name__ == "__main__":
     gene_code()

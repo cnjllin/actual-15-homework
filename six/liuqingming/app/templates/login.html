@@ -19,9 +19,9 @@
                  <input type="password" class="form-control" name='passwd' placeholder="在此输入密码" required >
                   </div>
 
-                  <li><a href="{{ url_for('login') }}"><img src="{{  url_for('static',filename='image/idencode.png') }}" onclick="window.location.reload()">点击图片或文字刷新</a>（验证码不区分大小写）</li>
+                  <!-- <li><a href="{{ url_for('login') }}"><img src="{{  url_for('static',filename='image/idencode.png') }}" onclick="window.location.reload()">点击图片或文字刷新</a>（验证码不区分大小写）</li> -->
                   <!--<li><a href="{{ url_for('login') }}"><img src="{{  url_for('static',filename='image/idencode.png') }}"></a></li>  -->
-                  <!--<img id="verficode" src="{{  url_for('static',filename='image/idencode.png') }}" onclick="this.src='{{  url_for('static',filename='image/idencode.png') }}?d='+Math.random();" />  -->
+                  <li><img id="code" src="{{ url_for('code') }}" onclick="this.src='{{ url_for('code') }}?d='+Math.random();" />点击图片刷新, 验证码不区分大小写</li>
 
                  <div class="form-group">
                  <input type="text" class="form-control" name='code' placeholder="在此输入验证码" required autofocus> 

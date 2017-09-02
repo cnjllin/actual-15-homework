@@ -17,7 +17,7 @@
 │   │       └── idencode.png  验证码图片
 │   ├── templates 模板文件
 │   │   ├── base.css
-│   │   ├── base.html 基础模板
+│   │   ├── base.html
 │   │   ├── dog.jpg
 │   │   ├── idencode.png
 │   │   ├── index.html
@@ -40,18 +40,54 @@
 ├── idencode.png
 ├── README.md
 ├── run.py  运行程序
-└── flask 虚拟环境
+├── flask 虚拟环境
+└──CALIBRIL.TTF 字体文件
+```
+***
+## 建表语句
+* 用户信息表`user_info`,主键uid
+```
+CREATE TABLE `user_info` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) NOT NULL,
+  `passwd` varchar(100) NOT NULL,
+  `age` int(11) DEFAULT NULL,
+  `sex` varchar(10) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `email` varchar(40) DEFAULT NULL,
+  `role` int(11) NOT NULL,
+  PRIMARY KEY (`username`),
+  KEY `uid` (`uid`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+```
+* 文章信息表`articles`,主键id,外键author_id,关联用户信息表`user_info`的uid,级联删除
+```
+CREATE TABLE `articles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL,
+  `content` text NOT NULL,
+  `author_id` int(11) DEFAULT NULL,
+  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `modify_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  PRIMARY KEY (`id`),
+  KEY `articles_ibfk_1` (`author_id`),
+  CONSTRAINT `articles_ibfk_1` FOREIGN KEY (`author_id`) REFERENCES `user_info` (`uid`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 ```
 ***
 
 ## 模块说明
-* **基础模板** `base.html`，其他模板继承导航航条，title后缀，bootstrap样式
+* **基础模板** `base.html`，其他模板继承导航航条，和title后缀、bootstrap样式
 > 导航栏:首页  发表文章  文章查找  登录/用户信息  注册/注销  
 
 * **首页** 
     - 功能：显示文章、查找文章，路由：`'/'`、`'/index/'`,模板文件：`index.html`
 > 模板继承显示导航栏，`get`请求返回所有文章列表  
 `post`请求根据关键字查找文件
+
+* **验证码**  
+  - 功能，向前端返回验证码图片，服务端以缓存形式不存盘，路由`/code/`
+> 登录和注册里`src="{{ url_for('code') }}"`,服务端保存验证码到session
 
 * **注册**  
   - 功能：注册用户，加密密码，数据库保存用户信息，路由：`'/regist/'`,模板文件：`regist.html`
@@ -70,7 +106,7 @@
 通过提交表单到`'/upd/'`修改用户信息
 
 * **删除用户** 
-  - 功能：删除用户，路由：`'/dele/'`,模板文件：`无`，首页超链接？id=xx传uid
+  - 功能：删除用户，路由：`'/dele/'`,模板文件：`无`
 > 模板继承显示导航栏，`get`请求/dele/?id=xx传输用户id号删除用户，需要登录
 
 
@@ -86,7 +122,7 @@
 
 
 * **退出登录**
-  - 功能：退出登录，路由：`'/logout/'`,模板文件：`无`，接收base.html请求
+  - 功能：退出登录，路由：`'/article/'`,模板文件：`quest.html`
 > 显示在导航栏，`get`请求清除session退出登录跳转到首页
 
 ***

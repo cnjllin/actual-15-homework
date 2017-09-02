@@ -1,0 +1,22 @@
+<html>
+	<title>增加用户</title>
+	<body style="text-align:center">
+	<h1>填加用户信息</h1>
+	<form action="/adduser/" accept-charset="UTF-8" method="post">
+		昵&nbsp;&nbsp;&nbsp;&nbsp;称：<input placeholder="设置昵称" type="text" name="username"><br>
+		性&nbsp;&nbsp;&nbsp;&nbsp;别：<input placeholder="性别" type="text" name="sex"><br>
+		年&nbsp;&nbsp;&nbsp;&nbsp;龄：<input placeholder="年龄" type="text" name="age"><br>
+		手机号：<input placeholder="手机号" type="text" name="phone"><br>
+		邮&nbsp;&nbsp;&nbsp;&nbsp;箱：<input placeholder="邮箱" type="text" name="email"><br>
+		密&nbsp;&nbsp;&nbsp;&nbsp;码：<input placeholder="设置密码" type="password" name="password"><br>
+		<input type="hidden" name="role" value=1>
+		<input type="submit" value="添加">
+
+	</form>
+	{% if error %}
+	<h3 style="color:blue">{{ error }}</h3>
+	{% else %}
+	<h3 style="color:blue"></h3>
+	{% endif %}
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<title>用户列表</title>
+        <h0><a href="/adminmanager">返回管理页面</a></h0>
+	<table border="1px">
+		<tr>
+			<td>ID</td>
+			<td>用户名</td>
+			<td>密码</td>
+			<td>Role</td>
+			<td>用户操作</td>
+		</tr>
+		{% for i in data %}
+		<tr>
+			<td>{{ i.id }}</td>
+			<td>{{ i.username }}</td>
+			<td>{{ i.password }}</td>
+			<td>{% if i.role == 0 %}管理员{% else %}用户{% endif %}</td>
+			<td>
+				<button><a href='/update/?id={{ i.id }}'>更新</a></button>
+				<button><a href='/deleteuser/?id={{ i.id }}'>删除</a></button>
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+</html>

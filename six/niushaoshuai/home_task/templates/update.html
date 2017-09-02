@@ -5,54 +5,54 @@
 </head>
 <body>
 
-<form action="/userlist/update/" method="POST">
+<form action="/update/" method="POST">
        <table width="98%" border="0" align="center" cellpadding="5" cellspacing="0">
           <tbody>
           <tr>
             <td height="50" class="zi14"><div align="right">ID：</div></td>
-            <td><input name="id" type="hidden" value={{ msg.id }} >
+            <td><input name="id" type="hidden" value={{ msg[0].id }} >
             <span class="hong">*</span></td>
             <td>&nbsp;</td>
           </tr>
           <tr>
             <td height="50" class="zi14"><div align="right">用 户 名：</div></td>
-            <td><input name="name" type="text" value={{ msg.u_name }} >
+            <td><input name="name" type="text" value={{ msg[0].u_name }} >
             <span class="hong">*</span></td>
             <td>&nbsp;</td>
           </tr>
           <tr>
             <td height="50" class="zi14"><div align="right">密   &nbsp;&nbsp; 码：</div></td>
-            <td><input name="pwd" type="text" value={{ msg.password }} >
+            <td><input name="pwd" type="text" value={{ msg[0].password }} >
             <span class="hong">*</span></td>
             <td>&nbsp;</td>
           </tr>
 		    <tr>
             <td height="50" class="zi14"><div align="right">性   &nbsp;&nbsp; 别：</div></td>
-            <td><input name="sex" type="text" value={{ msg.sex }} >
+            <td><input name="sex" type="text" value={{ msg[0].sex }} >
             <span class="hong">*</span></td>
             <td>&nbsp;</td>
           </tr>
 		   <tr>
             <td height="50" class="zi14"><div align="right">年   &nbsp;&nbsp; 龄：</div></td>
-            <td><input name="age" type="text" value={{ msg.age }} >
+            <td><input name="age" type="text" value={{ msg[0].age }} >
             <span class="hong">*</span></td>
             <td>&nbsp;</td>
           </tr>
 		  <tr>
             <td height="50" class="zi14"><div align="right">电话号码：</div></td>
-            <td><input name="phone" type="text" value={{ msg.phone }} >
+            <td><input name="phone" type="text" value={{ msg[0].phone }} >
             <span class="hong">*</span></td>
             <td>&nbsp;</td>
           </tr>
           <tr>
             <td height="50" class="zi14"><div align="right">电子邮箱：</div></td>
-            <td> <input name="email" type="text" value={{ msg.email }} >
+            <td> <input name="email" type="text" value={{ msg[0].email }} >
             <span class="hong STYLE1">*</span></td>
             <td>&nbsp;</td>
           </tr>
            <tr>
             <td height="50" class="zi14"><div align="right">角色：</div></td>
-            <td> <input name="role" type="text" value={{ msg.role }} >
+            <td> <input name="role" type="text" value={{ msg[0].role }} >
             <span class="hong STYLE1">*</span></td>
             <td>&nbsp;</td>
           </tr>
