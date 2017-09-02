@@ -23,7 +23,7 @@
 ## 程序说明
 ```
 .
-├── app.py
+├── app.py                     -- 入口程序
 ├── __pycache__
 │   ├── user.cpython-35.pyc
 │   └── utils.cpython-35.pyc
@@ -37,11 +37,11 @@
 │   └── js
 │       └── jquery-2.2.4.min.js
 ├── templates
-│   ├── error.html
-│   ├── index.html
-│   └── user.html
-├── user.py
-├── user.sql
-└── utils.py
+│   ├── error.html              -- 错误信息页
+│   ├── index.html              -- 首页
+│   └── user.html               -- 用户信息页
+├── user.py                     -- 用户模块
+├── user.sql                    -- 数据信息
+└── utils.py                    -- 数据库执行模块
 ```
 
