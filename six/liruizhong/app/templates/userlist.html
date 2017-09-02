@@ -1,0 +1,50 @@
+<html>
+	<title>用户列表</title>
+	<body style="text-align:center">
+	
+	<h2 style="text-align:center"><a>用户列表</a></h2>
+	<table border="1px" align='center'>
+	<thead>
+		<tr>
+			<th>用户id</th>
+			<th>用户昵称</th>
+			<th>用户密码</th>
+			<th>性别</th>
+			<th>年龄</th>
+			<th>手机号</th>
+			<th>邮箱</th>
+			<th>角色</th>
+			<th>操作</th>
+		</tr>
+	</thead>
+	<tbody>
+	{% for i in ret %}
+		<tr>
+			<td>{{ i.id }}</td>
+			<td>{{ i.username }}</td>
+			<td>{{ i.password }}</td>
+			{% if i.sex == 0 %}
+			<td>女</td>
+			{% else %}
+			<td>男</td>
+			{% endif %}
+			<td>{{ i.age }}</td>
+			<td>{{ i.phone }}</td>
+			<td>{{ i.email }}</td>
+			{% if i.role == 0 %}
+			<td>管理员</td>
+			{% else %}
+			<td>普通用户</td>
+			{% endif %}
+			<td noWrap>
+				<a href="/update/?id={{i.id}}" class="dow">修改</a>
+				<a href="/delete/?id={{i.id}}" class="dow">删除</a>
+			</td>
+
+		</tr>
+	{% endfor %}
+	</tbody>
+	</table>
+	<h2 style="text-align:center"><a href="/adduser/">增加用户</a></h2>
+	</body>
+</html>

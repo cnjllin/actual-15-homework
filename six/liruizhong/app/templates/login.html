@@ -1,0 +1,18 @@
+<html>
+	<title>登录</title>
+	<body style="text-align:center">
+	<h1 style="text-align:center">Welcome To My Home!</h1>
+	<h2 style="text-align:center"><a>欢迎登录</a></h2>
+	<form action="/login/" accept-charset="UTF-8" method="POST">
+		昵 称：<input placeholder="请输入昵称" type="text" name="name"><br>
+		密 码：<input placeholder="请输入密码" type="password" name="passwd"><br>
+		<input type="submit" value="登录">
+
+	</form>
+	{% if ret %}
+	<h3 style="color:blue">{{ ret }}</h3>
+	{% else %}
+	<h3 style="color:blue"></h3>
+	{% endif %}
+	</body>
+</html>
