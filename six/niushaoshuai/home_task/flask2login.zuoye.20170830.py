@@ -34,7 +34,7 @@ def userlist():
     return render_template('userlist.html',msg=users)
 
 # 会员中心-删除模块
-@test.route('/userlist/delete/',methods=['GET','POST'])
+@test.route('/delete/',methods=['GET','POST'])
 def delete():
     if request.method == 'POST':
         user_id=request.form.get('id')
@@ -44,7 +44,7 @@ def delete():
     return redirect('/userlist/')
 
 # 会员中心-更新模块
-@test.route('/userlist/update/',methods=['GET','POST'])
+@test.route('/update/',methods=['GET','POST'])
 def update():    
     if request.method == 'POST':
         user_id=request.form.get('id')
@@ -70,8 +70,16 @@ def afterlogin():
     if  request.method == 'POST':
         user_name=request.form.get('name')
         user_pass=request.form.get('pwd')
+        print user_name
+        user_id=utils.getid('user',user_name) 
+        user_role=utils.getrole('user',user_name)
         if utils.checkout_user_pass(user_name,user_pass):
-            return redirect('/userlist/')
+            if user_role == 0:
+                return redirect('/userlist/')
+            else:
+                users=utils.getone('user',filed,user_id)    
+                print users
+                return render_template('userlist.html',msg=users)
         else:
             return render_template('login.html',error='username or password is error')
     else:

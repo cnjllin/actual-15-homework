@@ -50,7 +50,26 @@ def getone(table,field,uid):
         return result
     else:
        user=dict((k,res[i]) for i,k in enumerate(field))
-       return user
+       users=[]
+       users.append(user)
+       return users
+
+def getrole(table,uname):
+    sql = "select role from %s where u_name='%s'" % (table,uname)
+    print sql
+    cur.execute(sql)
+    result=cur.fetchone()
+    res=result[0]
+    print res
+    return res
+
+def getid(table,uname):
+    sql = "select id from %s where u_name='%s'" % (table,uname)
+    cur.execute(sql)
+    result=cur.fetchone()
+    res=result[0]
+    print res
+    return res
 
 def GetUser():
     filed=['u_name','password']
