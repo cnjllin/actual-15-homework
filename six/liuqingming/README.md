@@ -40,7 +40,8 @@
 ├── idencode.png
 ├── README.md
 ├── run.py  运行程序
-└── flask 虚拟环境
+├── flask 虚拟环境
+└──CALIBRIL.TTF 字体文件
 ```
 ***
 ## 建表语句
@@ -76,7 +77,7 @@ CREATE TABLE `articles` (
 ***
 
 ## 模块说明
-* **基础模板** `base.html`，其他模板继承导航航条，和title后缀，后bootstrap样式
+* **基础模板** `base.html`，其他模板继承导航航条，和title后缀、bootstrap样式
 > 导航栏:首页  发表文章  文章查找  登录/用户信息  注册/注销  
 
 * **首页** 
@@ -84,7 +85,7 @@ CREATE TABLE `articles` (
 > 模板继承显示导航栏，`get`请求返回所有文章列表  
 `post`请求根据关键字查找文件
 
-* **验证码**
+* **验证码**  
   - 功能，向前端返回验证码图片，服务端以缓存形式不存盘，路由`/code/`
 > 登录和注册里`src="{{ url_for('code') }}"`,服务端保存验证码到session
 
