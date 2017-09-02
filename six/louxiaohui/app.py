@@ -8,7 +8,7 @@
 # * Description   : user_management_system
 # * ********************************************************
 from flask import Flask,request,render_template,redirect
-from utils import create_user,convert_user_info_to_dict,update_user_info,delete_user_info,get_all_user_info,check_user_login
+from utils import create_user,convert_user_info_to_dict,update_user_info,delete_user_info,get_all_user_info
 import MySQLdb as mysql
 import hashlib
 app = Flask(__name__)
@@ -40,9 +40,10 @@ def register():
 @app.route('/login',methods=['GET','POST'])
 def login():
     if request.method=="POST":
-        user_info_dict = dict(request.form)
-        data = {k:v[0] for k,v in user_info_dict.iteritems()}
-        if check_user_login('user',data):
+        username = request.form.get('username')
+        passwd = request.form.get('passwd')
+        sql = "select * from user where username = '%s' and password = password('%s')" %(username,passwd)
+        if cur.execute(sql):
             return redirect('/userlist')
         else:
             error = 'username or password is wrong'
