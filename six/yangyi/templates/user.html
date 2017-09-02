@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/user.css" type="text/css"/>
+    <script src="/static/js/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+<header><a href="/logut" style="margin-left:90%;padding-top:20px;">退出</a></header>
+<aside >
+	<input runat="server" id="divScrollValue" type="hidden" value="" />
+	<div>
+		<table style="margin:20px 40px;">
+            <tr>
+                <th>ID</th>
+                <th>用户名</th>
+                <th>手机</th>
+                <th>职位</th>
+                <th>用户角色</th>
+                <th>操作</th>
+            </tr>
+            {% for k in result %}
+            <tr>
+
+                <td>{{k.id}}</td>
+                <td>{{k.username}}</td>
+                <td style="display:none">{{k.password}}</td>
+                <td>{{k.phone}}</td>
+                <td>{{k.job}}</td>
+                {% if k.role==1 %}
+                <td>超级管理员</td>
+                {%else%}
+                 <td>用户</td>
+                {% endif %}
+                {% if role == 0 or k.role == 1 %}
+                <td>
+                    <a href="#" class="update">更新</a>
+                </td>
+                {% else %}
+                <td>
+                    <a href="#" class="update">更新</a>
+                    <a href="#" class="del">删除</a>
+                </td>
+                {% endif %}
+            </tr>
+{% endfor%}
+        </table>
+	</div>
+    <dialog id="favDialog">
+         <form action='/update' method="POST" >
+             <ul>
+                 <li>
+                     用户名：<input type="text" name="username"   placeholder="用户名"/>
+                 </li>
+                 <li>
+                     <input type="hidden" name="id" />
+                 </li>
+                 <li>
+                   新密码：<input type="password" name="password" placeholder="密码"/>
+                 </li>
+                 <li>
+                    密码确认：<input type="password" name="repwd" placeholder="确认密码"/>
+                 </li>
+                 <li>
+                    手机号：<input type="text" name="phone" placeholder="手机号"/>
+                 </li>
+                 <li>
+                    职  位：&nbsp;&nbsp;<input type="text" name="job" placeholder="邮箱"/>
+                 </li>
+             </ul>
+             <input type="submit" id="do" value="确认" />
+             <input type="submit" id="cancel" value="取消" />
+         </form>
+
+</dialog>
+</aside>
+<script>
+    (function() {
+  var favDialog = document.getElementById('favDialog');
+
+  $(".update").on('click', function() {
+      var btn = $(this).parent().parent().find('td');
+      favDialog.showModal();
+      $("input[name='username']").val($(btn[1]).text());
+      $("input[name='id']").val($(btn[0]).text());
+      $("input[name='phone']").val($(btn[3]).text());
+      $("input[name='job']").val($(btn[4]).text());
+
+  });
+})();
+    $(document).ready(function(){
+        $("input[name='password']").blur(function(){
+            if($(this).val().length <6){
+                alert('密码长度需大于六位');
+            }
+        })
+        $("input[name='repwd']").blur(function(){
+            if ($(this).val() !=$("input[name='password']").val()){
+                alert('两次输入不一致');
+                $(this).val("");
+                $("input[name='password']").val("")
+
+            }
+        })
+        $(".del").click(function(){
+            var t = this
+            var btn = $(t).parent().parent().children('td');
+            alert('你确定要删除'+ $(btn[1]).text() +'吗？');
+            $.ajax(
+                {   url: "/del",
+                    type: 'POST',
+                    data:{id:$(btn[0]).text()},
+                    success: function(data){
+                           if (data == '1'){
+                               location.reload()
+                           }
+
+
+                 }}
+            );
+        });
+
+
+    })
+
+</script>
+</body>
+</html>
