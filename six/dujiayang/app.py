@@ -9,7 +9,7 @@ app= Flask(__name__)
 @app.route('/index/')
 def index():
 	username = "wd"
-	render_template("index.html",username=usernaem)
+	render_template("index.html",username=username)
 
 @app.route('/reg/',methods=['POST','GET'])
 def reg():
@@ -18,8 +18,9 @@ def reg():
 		print data
 		field = ["username","passwd","role"]
 		result = insert('dudjiayang',field,data)
-		if result[['code'] == 0:
-			return redirect('/login/')
+		if result['code'] == 0:
+			return render_template("index.html",result=result)
+			#return redirect('/login/')
 		else:
 			return render_template("register.html",result=result)
 	return render_template("register.html")
