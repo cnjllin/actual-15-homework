@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>修改密码页面</title>
+</head>
+<body>
+
+<form action="/update/" method="POST">
+       <table width="98%" border="0" align="center" cellpadding="5" cellspacing="0">
+          <tbody>
+          <tr>
+            <td height="50" class="zi14"><div align="right"></div></td>
+            <td><input name="id" type="hidden" value={{ msg[0].id }} ></td>
+            <!-- <span class="hong">*</span></td> -->
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="50" class="zi14"><div align="right">用 户 名：</div></td>
+            <td><input name="u_name" type="text" value={{ msg[0].u_name }} >
+            <span class="hong">*</span></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="50" class="zi14"><div align="right">密   &nbsp;&nbsp; 码：</div></td>
+            <td><input name="password" type="text" value={{ msg[0].password }} >
+            <span class="hong">*</span></td>
+            <td>&nbsp;</td>
+          </tr>
+		    <tr>
+            <td height="50" class="zi14"><div align="right">性   &nbsp;&nbsp; 别：</div></td>
+            <td><input name="sex" type="text" value={{ msg[0].sex }} >
+            <span class="hong">*</span></td>
+            <td>&nbsp;</td>
+          </tr>
+		   <tr>
+            <td height="50" class="zi14"><div align="right">年   &nbsp;&nbsp; 龄：</div></td>
+            <td><input name="age" type="text" value={{ msg[0].age }} >
+            <span class="hong">*</span></td>
+            <td>&nbsp;</td>
+          </tr>
+		  <tr>
+            <td height="50" class="zi14"><div align="right">电话号码：</div></td>
+            <td><input name="phone" type="text" value={{ msg[0].phone }} >
+            <span class="hong">*</span></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="50" class="zi14"><div align="right">电子邮箱：</div></td>
+            <td> <input name="email" type="text" value={{ msg[0].email }} >
+            <span class="hong STYLE1">*</span></td>
+            <td>&nbsp;</td>
+          </tr>
+           <tr>
+            <td height="50" class="zi14"><div align="right">角色：</div></td>
+            <td> <input name="role" type="text" value={{ msg[0].role }} >
+            <span class="hong STYLE1">*</span></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="50">&nbsp;</td>
+            <td>
+            <input type="submit" class="pbtn2 btn15" id="tijiao" value="确定更新">
+            <input type="reset"  class="pbtn2 btn15" id="tijiao" value="重   &nbsp;&nbsp; 置">
+			</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody></table>
+          <tr>
+                    {% if error %}
+                <td><span style='color:red'><div align="center">{{error}}</d> </span></td>
+            {% elif ok %}
+                 <td><span style='color:red'><div align="center">{{ok}}</d> </span></td>
+            {%endif%}
+                  </tr>
+</form>
+</body>
+</html>
