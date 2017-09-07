@@ -1,3 +1,29 @@
+#  作业
+###  扒页面
+
+# 目录结构
+
+<pre>
+
+├── README.md              # 测试文档及项目文档
+├── test                   # 测试结构图片
+├── show_create_table.md   # 表结构
+├── static                 # 静态文件
+│   ├── css
+│   ├── img
+│   ├── js
+│   └── pulgin
+├── templates             # html
+│   ├── add.html          # 添加用户界面
+│   ├── index.html        # 首页
+│   ├── list.html         # 用户界面
+│   ├── login.html        # 登录界面
+│   ├── reg.html          # 注册界面
+│   └── userlist.html     # 用户列表
+├── utils.py              # 功能函数
+
+</pre>
+
 
 # 测试结果
 
@@ -219,24 +245,4 @@ M端：
   sql="update user set password='%s',sex=%d,age=%d,phone=%d,email='%s',role=%d where id=%d"%(my_tup[0],my_tup[1],my_tup    
 </pre>       
 
-### 目录结构
-<pre>
-
-├── README.md              # 测试文档及项目文档
-├── show_create_table.md   # 表结构
-├── static                 # 静态文件
-│   ├── css
-│   ├── img
-│   ├── js
-│   └── pulgin
-├── templates             # html
-│   ├── add.html          # 添加用户界面
-│   ├── index.html        # 首页
-│   ├── list.html         # 用户界面
-│   ├── login.html        # 登录界面
-│   ├── reg.html          # 注册界面
-│   └── userlist.html     # 用户列表
-├── utils.py              # 功能函数
-
-</pre>
 
