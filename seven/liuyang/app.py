@@ -85,11 +85,6 @@ def update():
 		print user_dict
 		result = modify('user',user_dict)
 		return json.dumps(result)
-		#if result['code']==0:
-			#return redirect("/userlist/")
-		#else:
-			#result = result['errmsg']
-			#return render_template('update.html',result=result)
 
 # 删除用户
 @app.route('/delete/')
@@ -110,11 +105,7 @@ def add_user():
 		print user_dict
 		result = insert('user',field,user_dict)
 		if result['code'] == 0:
-			#return redirect('/userlist/')
-			print json.dumps(result)
 			return json.dumps(result)
-		#else:
-			#return render_template('adduser.html',result=result)
 	return render_template('add.html')
 
 # 登出系统
