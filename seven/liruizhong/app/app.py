@@ -2,7 +2,7 @@
 #-*- coding:utf-8 -*-
 
 from flask import Flask,request,render_template,redirect,session
-from utils import *
+from utils import insert,getone,listall,updateuser,delete
 import json
 
 app = Flask(__name__)
