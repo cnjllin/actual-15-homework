@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<meta charset="utf-8" /> 
+<title>更新信息</title> 
+<style> body{ text-align:center} </style> 
+</head>
+
+<h1>信息更新</h1>
+
+
+<body>
+        <form action="/update/" accept-charset="UTF-8" method="post">
+                    <input value="{{ result.id }}" type="hidden" name="id"
+                    <p><label for="username">账号：</label>
+                    <input type="text"  name="username" class="loginInput" autofocus="autofocus"  autocomplete="off"  value="{{result.username}}" /></p>
+                    <!-- required 规定必需在提交之前填写输入字段-->
+                    <p><label for="passwd">密码：</label>
+                    <input type="password"  name="password" class="loginInput" required="required"  value="{{result.password}}"/></p>      
+                    <p><label for="email">邮箱：</label>
+                    <input type="text"  name="email" class="loginInput" autofocus="autofocus"  autocomplete="off"  value="{{result.email}}" /></p>
+                    <p><label for="role">角色：</label>
+                    <input type="radio" name="role" value="0">管理员<input type="radio" name="role" value="1">普通用户</p>
+                </div>
+                    <button class="loginBtn">提交</button>
+                </div>
+
+</body>
+
+</html>
