@@ -1,0 +1,98 @@
+<!--
+{% if result.errmsg %}
+	<p style='color:red'>{{result.errmsg}}</p>
+{% else %}
+
+<table border=1>
+	<thead>
+		<tr>
+			<th>用户名</th>
+			<th>密码</th>
+			<th>角色</th>
+			<th>操作</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		{% for user in result %}
+		<tr>
+			<td>{{user['username']}}</td>
+			<td>{{user.password}}</td>
+			<td>{% if user.role==0 %}管理员{% else %}用户{%endif%}</td>
+			<td>
+				<a href="/userinfo/?id={{user.id}}">更新</a>
+			<a href="/update/?id={{user.id}}">更新</a>
+				<a href="/del/?id={{user.id}}">删除</a>
+			</td>
+	</tr>
+		{%endfor%}
+	</tbody>
+</table>
+{% endif %}
+-->
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>userlist</title>
+
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="dashboard.css" rel="stylesheet">
+
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  
+  </head>
+
+  <body>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+          <th>用户名</th>
+          <th>密码</th>
+          <th>角色</th>
+          <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in result %}
+          <tr>
+          <td>{{user['username']}}</td>
+          <td>{{user.password}}</td>      
+          <td>{% if user.role==0 %}管理员{% else %}用户{%endif%}</td>
+          <td>
+          <a href="/userinfo/?id={{user.id}}">更新</a>
+          <a href="/update/?id={{user.id}}">更新</a>
+          <a href="/del/?id={{user.id}}">删除</a>
+          </td>
+          </tr>
+          {%endfor%}
+        </tbody>
+      </table>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+

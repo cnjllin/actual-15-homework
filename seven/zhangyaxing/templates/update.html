@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>更新信息</h1>
+	<form action="/update/" accept-charset='utf-8' method='post'>
+		<input type="hidden" value="{{result.id}}" name="id">
+		username: <input type="text" value="{{result.username}}" name="username"><br>
+		password: <input type="text" value="{{result.password}}" name="password"><br>
+		<!--
+		role: <input type="radio" name="role" value=0 {%if result.role==0%}checked{%endif%}>管理员
+			<input type="radio" name="role" value=1 {%if result.role==1%}checked{%endif%}>用户<br>
+			-->
+			<input type="submit" value="更新"><br>
+	</form>
+</body>
+</html>
