@@ -13,7 +13,7 @@
 * utils.py 功能函
 
 ## 流程图
-![image](./image/登录运维平台.png)
+![image](./image/liuchengtu.png)
 
 ## 目录结构
 ![image](./image/tree.png)
