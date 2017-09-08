@@ -5,7 +5,7 @@
 ### 功能模块
 
 #### 首页
-
+```
 V: index.html
    1: reg/login 两个导航按钮,链接到登录注册模块
    2: 欢迎信息：welcom {{ username}}
@@ -14,8 +14,9 @@ C: @app.route('/')
    def index():
        username = 'wd'
        return render_template("index.html",username=username)
-
+```
 #### 注册页面
+```
 V: reg.html
    <form action="/reg/", method="post">
    用户名,密码,角色
@@ -35,8 +36,9 @@ M: user
    
    select * form user
    insert into user () values ()
-
+```
 #### 登录页面
+```
 V: login.html
     <form action ='/login/',method='post'>
      username  passwd
@@ -60,7 +62,7 @@ M: 查某一条数据
               ...
         else:
              ...
-
+```
 #### 管理页面/用户列表
     
 
