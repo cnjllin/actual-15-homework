@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+		<meta charset="utf-8">
+		<link href="../static/css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</head>
+<body>
+	 <!-----start-main---->
+	 <div class="main">
+		<div class="login-form">
+			<h1>Member Register</h1>
+					<div class="head">
+						<img src="../static/images/user.png" alt=""/>
+					</div>
+				<form action="/reg/" accept-charset="UTF-8" method="POST">
+						<input type="text" class="text"  name="username" />
+						<input type="password"  name="password" />
+						<table border="0"><tr><td><label><input name="role" type="radio" value="1" />&nbsp;</label></td><td>admin</td><td>&nbsp;&nbsp;&nbsp;</td><td><label><input name="role" type="radio" value="0" />&nbsp;</label></td><td>person</td></table>
+						<div class="submit">
+							<input type="submit" onclick="myFunction()" value="Register" >
+					</div>	
+					<p>已有账号？<a href="http://192.168.11.133:5000/login/">重新登陆</a></p>
+				</form>
+			</div>
+			<!--//End-login-form-->
+			 <!-----start-copyright---->
+   					<div class="copy-right">
+		
+					</div>
+				<!-----//end-copyright---->
+		</div>
+			 <!-----//end-main---->
+		 		
+<div style="display:none"></div>
+<h1>{{result}}</h1>
+</body>
+</html>

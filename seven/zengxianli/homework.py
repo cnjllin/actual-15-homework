@@ -21,8 +21,8 @@ app=Flask(__name__)
 @app.route("/")
 @app.route("/index/")
 def index():
-    username="zxl" 
-    return render_template("index.html",username=username)
+    
+    return render_template("index.html")
 
 ##打开注册页面
 @app.route("/reg/",methods=["GET","POST"])
