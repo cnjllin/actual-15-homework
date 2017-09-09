@@ -55,6 +55,7 @@
         * 格式正确更新数据库返回更新信息
 
 ##项目结构
+```
 .
 ├── app.py
 ├── __pycache__
@@ -73,4 +74,4 @@
 │   ├── userlist.html
 │   └── userself.html
 └── utils.py
-
+```
