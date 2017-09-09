@@ -1,0 +1,29 @@
+{% if result.code == 1 %}
+    <p>{{result}}</p>
+{% else %}
+
+<table border='1'>
+    <thead>
+        <tr>
+            <td>用户名</td>
+            <td>密码</td>
+            <td>角色</td>
+            <td>操作</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>{{result['username']}}</td>
+            <td>{{result.password}}</td>
+            <td>{% if result.role==0 %}管理员{% else%}用户{%endif%}</td>
+            <td> 
+            <a href="/update/?id={{ result.id }}">更新</a>
+            <a href="/delete?id={{ result.id }}"> 删除</a>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
+
+{% endif %}

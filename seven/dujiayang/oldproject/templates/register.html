@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+h1 {color:red;text-align:center;}
+h2 {color:gold;text-align:center;}
+h3 {color:green;text-align:center;}
+</style>
+</head>
+<body>
+<h1>欢迎注册</h1>
+	<form action="/reg/" accept-charset="UTF-8" method="post">
+		姓名：<input name="username" type="text"><br>
+		密码：<input name="password" type="password"><br>
+		角色：<input name="role" type="radio" value=0>管理员
+		      <input name="role" type="radio" value=1>普通用户<br>
+		      <input type="submit" value="signin"><br>
+	
+<br>
+{% if result %}
+{% for k,v in result.iteritems() %}
+	<h3>{{k}}{{v}}</h3>
+{% endfor %}
+{% else %}
+<h3>欢迎你，Get</h3>
+{% endif %}
+
+
+</body>
+</html>
