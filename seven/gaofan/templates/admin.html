@@ -1,0 +1,32 @@
+<link rel="stylesheet" type="text/css" href="/static/bootstrap.css">
+<table class='table' border="1">
+	<thead>
+	<tr>
+		<th>ID</th>
+		<th>用户名</th>
+		<th>密码</th>
+		<th>性别</th>
+		<th>年龄</th>
+		<th>电子邮箱</th>
+		<th>角色</th>
+	</tr>
+	</thead>
+	<tbody>
+		{% for user in users_info %}
+		<tr>
+			<td>{{ user.user_id}}</td>
+			<td><a style="text-decoration:none;" href="{{ url_for('user_up',id = user.user_id) }}">{{ user.user_name }}</a></td>
+			<td>{{user.user_pass}}</td>
+			<td>{{user.user_sex}}</td>
+			<td>{{user.user_age}}</td>
+			<td>{{user.user_email}}</td>
+			{% if user.user_role == 1 %}
+			<td>管理员</td>
+			{% else %}
+			<td>普通用户</td>
+			{% endif %}
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+<p><a style="text-decoration:none;" href={{url_for('index')}}>返回首页</a></p>
