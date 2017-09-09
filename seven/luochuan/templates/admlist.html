@@ -1,0 +1,37 @@
+<html>
+	<title>userlist</title>
+
+<body style="text-align:center">
+
+<form method='post' action='/userlist'>
+
+<h1 class="logo hide-text">login successs!</h1>
+
+<h2 class="subtitle">chose to view the userinfomation or return to homepage</h2>
+
+
+</table>
+<a href="/" class="active">homepage</a>
+
+
+<span class="navs-slider-bar"></span></a></h2>
+
+<table border="1">
+</title>
+<h1 style="color:red">userinfomation</h1>
+<body style="text-align:center">
+
+
+{% for i in list_adm %}
+    
+
+<<table style="height:100px;" border="1" cellspacing="0" bordercolor="#000000"cellpadding="8"<tr><td>username</td><td>password</td><td>role</td></tr>
+<tr><td>{{ i[1] }}</td><td>{{ i[2] }}</td><td>{{i[3]}}</td></tr>
+
+% endfor %}
+
+</table>
+
+</body>
+
+</html>
