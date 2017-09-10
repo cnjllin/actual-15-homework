@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户列表</title>
+</head>
+<body>
+{% if result.errmsg %}
+    <p style="color:red">{{result.errmsg}}</p>
+{% else %}
+<table border='1'>
+    <thead>
+        <tr>
+            {% if info['role'] == 0 %}
+            <td>用户名</td>
+            <td>密码</td>
+            <td>角色</td>
+            <td>操作</td>
+        </tr>
+    </thead>
+
+    <tbody>
+      {% for user in result %}
+        <tr>
+            <td>{{user['username']}}</td>
+            <td>{{user.password}}</td>
+            <td>{% if user.role==0 %}管理员{% else%}用户{%endif%}</td>
+            <td> 
+            <a href="/userinfo/?id={{ user.id }}">用户信息</a>
+            <a href="/update/?id={{ user.id }}">更新</a>
+            <a href="/delete?id={{ user.id }}"> 删除</a>
+                {% else %}
+                    hello
+                {% endif %}
+        </td>
+        </tr>
+      {%endfor%}
+    </tbody>
+
+</table>
+{% endif %}
+</table>
+</body>
+</html>

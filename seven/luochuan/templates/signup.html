@@ -1,0 +1,31 @@
+<html>
+	<title>sign up</title>
+
+<body style="text-align:center">
+
+<form method='post' action='/signup/'>
+
+<h1 class="logo hide-text">sign up</h1>
+
+<h2 class="subtitle">please input your infomation</h2>
+
+
+<input type="text" name="username" aria-label="username" placeholder="username" ><br>
+<input type="password" name="password" aria-label="password" placeholder="password" required><br>
+
+<label><input name="role" type="radio" value=1 />Administrator </label> 
+<label><input name="role" type="radio" value=0 />nobody </label> <br>
+
+<input type="submit" name="commit" value="submit"><br>
+
+
+<p class="tip"><span>{{reg_info['msg']}}</span></p>
+
+
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,15 @@
+<html>
+<body>
+<h1>欢迎登录</h1>
+
+<form action="/login/" accept-charset="UTF-8" method="POST">
+	姓名 : <input placeholder="姓名" type="text" name="username"> <br>
+        密码 : <input placeholder="密码" type="password" name="password"> <br>
+        <input type="submit" value="登录"> <br>
+
+</form>
+ 	{% if result %}
+  	<span style="color:red">{{ result }}</span>
+ 	{% endif %}
+</body>
+</html>
