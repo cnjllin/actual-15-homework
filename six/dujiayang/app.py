@@ -23,9 +23,11 @@ def index():
 def reg():
 	if request.method == "POST":
 		data = {k:v[0].strip() for k,v in dict(request.form).iteritems()}	
+		print "data"
 		print data
 		field = ["username","password","role"]
 		info = insert('dujiayang',field,data)
+		print "info"
 		print info
 		print data["role"]
 		if info['code'] == 0:
@@ -98,4 +100,4 @@ def modify():
 		
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0',debug=True)
+	app.run(host='0.0.0.0',port=9999,debug=True)

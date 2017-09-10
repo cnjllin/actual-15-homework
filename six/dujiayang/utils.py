@@ -11,8 +11,11 @@ cur = db.cursor()
 #注册
 def insert(table,field,data):
 	sql = "insert into %s(%s) values(%s)" % (table,','.join(field),','.join(['"%s"' % data[i] for i in field]))
+	print "sql"
 	print sql
 	res = cur.execute(sql)
+	print "res"
+	print res
 	if res:
 		result = {"code":0,"msg":"insert ok"}
 	else:
