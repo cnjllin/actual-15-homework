@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form id="loginform" action="" class="form-horizontal">     <!--定义垂直表单样式-->
+
+ <div class="form-group"> <!--定义一组div-->
+      <label for="" class="control-label col-md-2" >用户名</label>
+      <div class="col-md-4">  <!--定义下表单所占的空间-->
+      <input class="form-control" id="username" type="text" name="username" placeholder="请输入用户名">
+      </div>
+ </div>     <!--username end-->
+
+ <div class="form-group">
+   <label for="" class="control-label col-md-2">密码</label>
+   <div class="col-md-4">
+      <input id="password" class="form-control" type="password" name="pwd">
+    </div>
+  </div>     <!---password end-->
+
+
+
+ <div class="form-group">
+   <div class="col-md-4 col-md-offset-2">    <!--按钮占四个栅栏，并偏移两个栅栏位置-->
+     <button id="login" class="btn btn-primary">登陆</button>
+     <button class="btn btn-warning">取消</button>
+   </div>
+ </div><!--button end-->
+
+</form>
+
+<p id="aa" class="test" uid="1">我将被jQuery传来的数据覆盖</p>
+<p id="bb" class="test" uid="2">我其实不想被覆盖</p>
+<button type="button">Click me</button>
+
+<script> 
+$("#login").click(function(){
+	var str = $('#loginform').serialize()
+	console.log(str)
+	$.post("/login/",str,function(data){
+		console.log(data)
+		data = JSON.parse(data)
+		console.log(data)
+		if (data['code']==0){
+			alert("success")
+		}else{
+			alert("fail")
+		}
+	})
+	return false
+})
+
+$("button").click(function(){
+//	$(".test").css("color","red");
+//	var username="wd"
+//	var password="123456"
+	var url = "/getone/?username=pc"
+	$.getJSON(url,function(result){
+	console.log(result)
+	var username=result.name
+	var password=result.passwd
+	$('#username').val(username);
+	$('#password').val(password);
+ });
+});
+</script>
+
+{% endblock %}
