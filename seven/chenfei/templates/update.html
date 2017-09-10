@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1>更新信息</h1>
+<form action="/update/" accept-charset="UTF-8" method="post">
+       <input value="{{result.id}}" type="hidden" name="id">
+       姓名:<input placeholder="姓名" type="text" value="{{result.username}}" name="username"><br>
+       密码:<input placeholder="密码" type="text" value="" name="password"><br>
+       角色:<input type="radio" name="role" value=0 checked>管理员
+            <input type="radio" name="role" value=1 >用户
+            <br>
+       <input type="submit"  value="更新"><br>
+       <input type="submit"  value="注销"><br>
+</body>
+</html>

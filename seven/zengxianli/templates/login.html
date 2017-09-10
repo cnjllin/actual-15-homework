@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap后台登录界面</title>
+
+<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+<link href="../static/css/signin.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="signin">
+	<div class="signin-head"><img src="../static/images/test/head_120.png" alt="" class="img-circle"></div>
+	<form class="form-signin" role="form" action="/login/" accept-charset="UTF-8" method="POST">
+		<input type="text" name="username" class="form-control" placeholder="用户名" required autofocus />
+		<input type="password" name="password" class="form-control" placeholder="密码" required />
+		<button class="btn btn-lg btn-warning btn-block" type="submit">登录</button>
+		<label class="checkbox">
+			没有账号?<a href="http://192.168.11.133:5000/reg/">注册一个</a>
+		</label>
+	</form>
+</div>
+
+<div style="text-align:center;">
+
+</div>
+<h1>{{result}}</h1>
+</body>
+</html>

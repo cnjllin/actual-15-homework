@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% block index %}
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <span>
+                        <img alt="image" class="img-circle" width="48" height="48" src="/static/img/root.png">
+                    </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">欢迎，{{session.username}}<span style="color: #8095a8"></span></strong>
+                                <span class="text-muted text-xs block">
+                                    {% if session.role == 1 %}
+                                        管理员
+                                    {% else %}
+                                        普通用户
+                                    {% endif %}
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </li>
+            <li id="index" class="active">
+                <a href="/">
+                    <i class="fa fa-gitlab">
+                        <span class="nav-label">仪表盘</span><span class="label label-info pull-right"></span>
+                    </i>
+                </a>
+            </li>
+            <li id="juser">
+                <a href="#"><i class="fa fa-group"></i> <span class="nav-label">用户管理</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="/">个人中心</a></li>
+                    <li><a href="/userlist">用户列表</a></li>
+                </ul>
+            </li>   <!-- 用户管理 -->
+            <li id="jasset">
+                <a><i class="fa fa-inbox"></i> <span class="nav-label">资产管理</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="/idc">机房管理</a></li>
+                    <li> <a href="/cabinet">机柜管理</a></li>
+                    <li> <a href="/server">服务器管理</a></li>
+                </ul>
+            </li> <!-- 资产管理 -->
+            <li id="job">
+                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">工单系统</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li ><a href="/jobadd">工单申请</a></li>
+                    <li > <a href="/joblist/">申请列表</a></li>
+                    <li > <a href="/jobhistory/">历史工单</a></li>
+                </ul>
+            </li> <!-- 工单管理 -->
+            <li id="setting">
+                <a href="/monitor"><i class="fa fa-gears"></i> <span class="nav-label">监控</span><span class="label label-info pull-right"></span></a>
+            </li>    <!--监控-->
+            <li id="log">
+                <a><i class="fa fa-gears"></i> <span class="nav-label">日志可视化</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="/log">日志状态饼图</a></li>
+                    <li> <a href="/map">日志来源地图</a></li>
+                </ul>
+            </li>    <!--日志可视化-->
+        </ul>
+    </div>
+</nav>
+
+<div id="page-wrapper" class="gray-bg">
+    <div class="row border-botto">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom">
+            <div class="navbar-header">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <form role="search" class="navbar-form-custom">
+                    <div class="form-group">
+                        <input type="text" placeholder="输入搜索..." class="form-control" name="search" id="top-search">
+                    </div>
+                </form>
+            </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <span class="m-r-sm text-muted welcome-message">Reboot自动化运维平台</span>
+                    </li>
+                    <li>
+                        <a href="/logout/">
+                            <i class="fa fa-sign-out"></i> Log out
+                        </a>
+                    </li>
+                </ul>
+        </nav>
+    </div>
+
+    <!--右边第二层面包导航-->
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-12">
+         <br />
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/">仪表盘</a>
+                </li>
+                <li>
+                    <a href="/">个人中心</a>
+                </li>
+            </ol>
+        </div>
+    </div> <!--右边导航结束-->
+
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            {% block info %}{% endblock %}
+            {% block userlit %}{% endblock %}
+            {% block create %}{% endblock %}
+
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+$('li').click(function(){
+    $('li').removeClass("active");
+    $(this).addClass("active");
+})
+$('#jasset').click(function(){
+    $("#jasset").children("ul").toggleClass("collapse");
+})
+$('#juser').click(function(){
+    $("#juser").children("ul").toggleClass("collapse");
+})
+$('#job').click(function(){
+    $("#job").children("ul").toggleClass("collapse");
+})
+$('#log').click(function(){
+    $("#log").children("ul").toggleClass("collapse");
+})
+$('#api').click(function(){
+    $("#api").children("ul").toggleClass("collapse");
+})
+</script>
+
+{% endblock %}
+

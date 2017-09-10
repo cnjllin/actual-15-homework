@@ -1,0 +1,82 @@
+  <!--
+  <!DOCTYPE html>
+  <html>
+    <body>
+      <h1>欢迎使用</h1>
+
+      <form action="/reg/" method="post" accept-charset="utf-8">
+        username: <input type="text" name="username"><br>
+        password: <input type="password" name="password"><br>
+        
+        管理员: <input type="radio" name="role" value="0">
+        普通用户: <input type="radio" name="role" value="1"><br>
+        
+        <input type="submit" value="注册"><br>
+      </form>
+    </body>
+  </html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="is-AppPromotionBarVisible cssanimations csstransforms csstransitions flexbox no-touchevents no-mobile" style="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../static/css/main.4df360a5.css">
+</head>
+<body class="zhi  no-auth" style="">
+<div class="index-main">
+    <div class="index-main-body">
+        <div class="desk-front sign-flow clearfix sign-flow-simple">
+            <div class="index-tab-navs">
+                <div class="navs-slider" data-active-index="0">
+        <a onclick='changeTab("signup")'  class="active"  id="tab_active_sinup">注册</a>
+                <span class="navs-slider-bar" id='tab_slider_bar'></span>
+                </div>
+            </div>
+            <div class="view view-signin"  id = 'tab_sign_in' data-za-module="SignInForm" style="display: none;">
+              <form method="POST" action="/login/" novalidate="novalidate" style="display: block;">
+                <input type="hidden" name="_xsrf" value="300e34b5f71be3107bf3aa05d69c181c">
+                <div class="group-inputs">
+                    <div class="account input-wrapper">
+                      <input type="text" name="account" aria-label="手机号或邮箱" placeholder="手机号或邮箱" required="">
+                    </div> 
+                    <div class="verification input-wrapper">
+                        <input type="password" name="password" aria-label="密码" placeholder="密码" required="">
+                    </div>
+                </div>
+                <div class="button-wrapper command">
+                    <button class="sign-button submit" type="submit">登录</button>
+                </div>
+              </form>
+            </div>
+            <div class="view view-signup selected" data-za-module="SignUpForm" id="tab_sign_up" style="display: block;">
+            <form class="zu-side-login-box"  id="sign-form-1" action='/reg/' autocomplete="off" method="POST" novalidate="novalidate">
+                <input type="password" hidden="">
+                <input type="hidden" name="_xsrf" value="300e34b5f71be3107bf3aa05d69c181c">
+                <div class="group-inputs">
+                    <div class="name input-wrapper">
+                        <input required="" type="text" name="username" aria-label="姓名" placeholder="姓名">
+                    </div>
+                    <!--
+                    <div class="email input-wrapper">
+                        <input required="" type="text" class="account" name="phone_num" aria-label="手机号" placeholder="手机号">
+                    </div>  -->
+                    <div class="input-wrapper">
+                        <input required="" type="password" name="password" aria-label="密码" placeholder="密码" autocomplete="off">
+                    </div>
+                </div>
+                <div class="button-wrapper command">
+                    <button class="sign-button submit" type="submit">注册</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="particles">
+    <canvas class="particles-js-canvas-el" width="2530" height="1222" style="width: 100%; height: 100%;"></canvas>
+</div>
+</body>
+</html>

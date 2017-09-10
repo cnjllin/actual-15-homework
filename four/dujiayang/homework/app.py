@@ -1,39 +1,59 @@
 #!/usr/bin/env python
-#coding:utf-8
+#-*- coding:utf-8 -*-
 
-from flask import Flask,render_template,request
-import invoke
+#------------------------------------
+#      FileName: login.py
+#          Desc:
+#        Author: ruizhong.li
+#       Version:
+#    CreateTime: 2017-08-14
+#------------------------------------
 
-app = Flask(__name__)            ###相当于把Flask框架赋值给app，下面直接调用app变量即可
+from flask import Flask
+from flask import render_template
+from flask import request
+from judge import judge_register_user
+from judge import judge_login_user
+
+app = Flask(__name__)
 
 @app.route('/')
 @app.route('/index')
-def index_1():
-	return render_template('index.html')
+def index():
+    hello = "Welcome To My Home!"
+    return render_template("index.html",hello=hello)
 
+@app.route('/register',methods=['GET','POST'])
+def register():
+    if request.method == 'POST':
+        user_name = request.form.get('nick_name','None')
+        user_phone = request.form.get('mobile_num','None')
+        user_passwd = request.form.get('password','None')
+        ret = judge_register_user(user_name,user_phone,user_passwd)
+        if ret != "":
+            return render_template("register.html",error=ret)
+        else:
+            with open('./user_file','a+') as f:
+                f.write("{0} {1} {2}".format(user_name,user_phone,user_passwd))
+                f.write('\n')
+            return render_template("successful.html",ret="Registration success")
+    else:
+        return render_template("register.html")
 
-@app.route('/zhuceye',methods=['POST','GET'])
-def sigin():
-	return render_template('zhuceye.html')
-	
-@app.route('/zhuce',methods=['POST','GET'])
-def reg():
-	#mtd = request.form if request.method == 'POST' else request.args
-	#name = mtd.get('username')
-	#password = mtd.get('passwd')
-	name = request.form.get('username')
-	password = request.form.get('passwd')
-	invoke.register(name,password)
-	return "congratulation,%s reged is ok" %name
-
-
-@app.route('/denglu',methods=['POST','GET'])
+@app.route('/login',methods=['GET','POST'])
 def login():
-	return render_template('login.html')
-        mtd = request.form if request.method == 'POST' else request.args
-        name = mtd.get('username')
-        password = mtd.get('passwd')
-        login(name,password)
+    if request.method == "POST":
+        user_name = request.form.get('nick_name','None')
+        user_passwd = request.form.get('password','None')
+        ret = judge_login_user(user_name,user_passwd)
+        if ret == "Login successful":
+            return render_template("successful.html",ret=ret)
+        else:
+            return render_template("login.html",ret=ret)
+    else:
+        return render_template("login.html")
 
-if __name__== '__main__':
-	app.run(host='0.0.0.0',port=5000,debug=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0',port=5000,debug=True)
+
+

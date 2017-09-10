@@ -1,0 +1,17 @@
+<html>
+<body>
+
+<h1>update</h1>
+
+ <form action="/update/" accept-charset="UTF-8" method="post">
+        <input value="{{result.id }}" type="hidden"  name="id">
+        name ：<input placeholder="username" type="text" value="{{result.username}}" name="username"><br>
+        password：<input placeholder="password" type="text" value="{{result.password}}" name="password"><br>
+        role：<input type="radio" name="role" value=1 {%if result.role==0%}checked{%endif%}>admin
+               <input type="radio" name="role" value=0 {%if result.role==1%}checked{%endif%} >somebody  
+               <br>
+        <input type="submit"  value="update"> <br>
+                                                                                                                                      
+ </form>
+</body>
+</html>
