@@ -112,8 +112,8 @@
                 title: "登录成功", 
                 text: data['result'],   
                 type: "success",   
-                confirmButtonText: "确定" },function(){  //登录成功跳转到/userinfo/     
-                  location.href="/userinfo/"
+                confirmButtonText: "确定" },function(){  //登录成功跳转到/user/     
+                  location.href="/user/"
               });
           }else{ 
             swal("MY GOD",data['errmsg'],"error");
