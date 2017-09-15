@@ -24,33 +24,52 @@
 </pre>
 
 ###首页
+
 ![](https://github.com/51reboot/actual-15-homework/blob/master/eight/lixiao/images/index.png)
 
+
 ###注册页面
+
 ![](https://github.com/51reboot/actual-15-homework/blob/master/eight/lixiao/images/reg.png)
 
+
 ###登录页面
+
 ![](https://github.com/51reboot/actual-15-homework/blob/master/eight/lixiao/images/login.png)
 
+
 ###个人信息页面
+
 ![](https://github.com/51reboot/actual-15-homework/blob/master/eight/lixiao/images/info.png)
 
+
 ###管理员界面
+
 ![](https://github.com/51reboot/actual-15-homework/blob/master/eight/lixiao/images/admin.png)
 
+
 ###修改个人密码界面
+
 ![](https://github.com/51reboot/actual-15-homework/blob/master/eight/lixiao/images/update%20pwd.png)
 
+
 ###用户列表界面
+
 ![](https://github.com/51reboot/actual-15-homework/blob/master/eight/lixiao/images/list.png)
 
+
 ###添加用户界面
+
 ![](https://github.com/51reboot/actual-15-homework/blob/master/eight/lixiao/images/add.png)
 
+
 ###修改用户信息界面
+
 ![](https://github.com/51reboot/actual-15-homework/blob/master/eight/lixiao/images/updatelist.png)
 
 ![](https://github.com/51reboot/actual-15-homework/blob/master/eight/lixiao/images/show.png)
 
+
 ###删除用户
+
 ![](https://github.com/51reboot/actual-15-homework/blob/master/eight/lixiao/images/del.png)
