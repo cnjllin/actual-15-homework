@@ -68,7 +68,7 @@
 			   
 		   *. 用户列表
 		       
-			     函数文件： userlist.py
+		        函数文件： userlist.py
 				
 			          userlist()         用户列表，显示已添加用户列表
 			          update()           更新用户信息
@@ -79,16 +79,16 @@
 
              *.机房管理
 			     
-			     函数文件：idc.py
+		        函数文件：idc.py
 				      
 			          idc()             显示已添加 idc列表
 			          idcadd()          添加机房
-				      idcupdate()       修改机房信息
+			          idcupdate()       修改机房信息
 			          idcdelete()       删除机房
 		
 	         *.机柜管理
                   
-                 函数文件： cabinet.py
+		        函数文件： cabinet.py
                        
  			          cabinet()         机柜列表，显示已添加机柜信息
 			          cabinetadd()      添加新机柜
@@ -97,7 +97,7 @@
 				 
 	         *.服务器管理
          	    
-                 函数文件: server.py
+		        函数文件: server.py
 				 
  			          server()          显示已添加机服务器列表
  			          serveradd()       添加新服务器
@@ -106,7 +106,7 @@
 		                               
 	  3).工单系统
 	          
-                 函数文件：  job.py
+		        函数文件：  job.py
             	  
             *.工单申请
 			    
