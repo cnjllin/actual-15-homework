@@ -87,8 +87,8 @@
         v:JS:$.post("/userlist/",URL,funtion(result))提交表单，获取C端口返回数据，将数据result转成JSON(JSON.parse(result))格式，ajex判断，返回信息给页面（动态框显示）
         C:获取JS提交表单
 ###  项目实现：登录（登录为例，其他略）
-        <!--表单定义提交用户信息 -->
-        <form id="loginForm" method="post">
+    <!--表单定义提交用户信息 -->
+    <form id="loginForm" method="post">
                 <div class="form-group">
                     <input id="username" type="text" name="username" class="form-control" placeholder="Username" required="length[6~50]">
                 </div>
