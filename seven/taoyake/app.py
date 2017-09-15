@@ -35,7 +35,7 @@ def register():
             return render_template("register.html",result = result)
     return render_template("register.html")
 
-# 登录函数
+# 用户登录函数
 @app.route('/login/',methods=['GET','POST'])
 def login():
     if request.method == 'POST':
