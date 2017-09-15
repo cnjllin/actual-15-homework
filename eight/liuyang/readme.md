@@ -98,7 +98,7 @@
                 <button id="loginbtn" type="submit" class="btn btn-primary block full-width m-b">登录</button>
     </form>
     <!--表单定义end-->
-    <!--JS处理-->
+    <!--JQ处理-->
     <script>
     $('#loginbtn').on('click',function(){ //事件选择器:loginbtn 点击触发下面动作ajex获取表单内容,传给URL,发给后端请求
      var str = $('#loginForm').serialize()
