@@ -122,7 +122,7 @@
      return false //JS提交发起post请求后直接返回，表单默认post请求不再执行
     });
     </script>
-#### 项目结果（略：第七节课作业显示图一样，js实现）
+#### 项目结果（略：第七节课作业显示图一样，js实现 修改个人信息还有点问题）
     --
 #### 目录结构
  ![image](./static/img/directory.png)
