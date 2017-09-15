@@ -4,10 +4,10 @@
 	form:负责V端用户输入数据，并传到C端
 	table:渲染/展示M端数据
 	div:把form table放到页面好看的位置--布局
-### CSS：页面化妆
+#### CSS：页面化妆
 	<style="color:red">
 
-### bootstrap:HTML+CSS
+#### bootstrap:HTML+CSS
     1.引入CSS
     2.表格、表单、按钮、文件
     3.栅栏-布局 12宫格 <div class="row"></div>
