@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% block content %}
+<li class="nav-header">
+    <div class="dropdown profile-element">
+        <span>
+            <img alt="image" class="img-circle" width="48" height="48" src="/static/img/logo.png">
+        </span>
+        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <span class="clear">
+                <span class="block m-t-xs">
+                    <strong class="font-bold">欢迎，{{result.username}}<span style="color: #8095a8"></span></strong>
+                </span>
+                <span class="text-muted text-xs block">
+
+                             {% if result.role==0 %}管理员{% else %}普通用户{% endif %}
+
+                 </span>
+            </span>
+        </a>
+    </div>
+</li>
+{% endblock %}
+{% block main %}
+<!--右边第二层面包导航-->
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-12">
+     <br />
+        <ol class="breadcrumb">
+            <li>
+                <a href="/">仪表盘</a>
+            </li>
+            <li>
+                <a href="/">
+
+机房更新
+
+
+                </a>
+            </li>
+        </ol>
+    </div>
+</div> <!--右边导航结束-->
+
+<!--正文部分分了三层-->
+<div class="wrapper wrapper-content">
+
+    <div class="row">
+        <div class="col-sm-12 border-bottom white-bg dashboard-header" style="margin-left:15px;height: 800px">
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+	<div class="col-sm-10">
+	    <div class="ibox float-e-margins">
+		<div class="ibox-title">
+		    <h5>填写基本信息</h5>
+		<div class="ibox-tools">
+			<a class="collapse-link">
+			    <i class="fa fa-chevron-up"></i>
+			</a>
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			    <i class="fa fa-wrench"></i>
+			</a>
+			<a class="close-link">
+			    <i class="fa fa-times"></i>
+			</a>
+        </div>
+       </div>
+	<div class="ibox-content">
+    <form  id="updateForm" class="form-horizontal">
+		<input id='id' type='hidden' name='id' value= 1 readonly='true'>
+
+	    <div class='form-group'>
+                <label for="name" class="col-sm-3 control-label">机房英文简写<span class="red-fonts">*</span></label>
+                <div class="col-sm-7">
+                    <input id="name" name="username" value=syq type="text" class="form-control" >
+                </div>
+	    </div> <!--name-->
+	    >
+	    <div class="hr-line-dashed"></div>
+	    <div class='form-group'>
+                <label for="address" class="col-sm-3 control-label">地址</label>
+                <div class="col-sm-7">
+                    <input id="address" name="address" value=sansss type="text" class="form-control">
+                </div>
+	    </div><!--address-->
+
+	    <div class="hr-line-dashed"></div>
+	    <div class='form-group'>
+		<label for="phone" class="col-sm-3 control-label">联系电话</label>
+                <div class="col-sm-7">
+                    <input id="phone" name="phone" value="1821019911" type="text" class="form-control" >
+                </div>
+	    </div><!--phone-->
+	    <div class="hr-line-dashed"></div>
+        <div class="form-group">
+           <div class="col-sm-6 col-sm-offset-2">
+                    <button type="button" class="btn btn-primary update-sure">确认</button>
+                    <button type="button" class="btn btn-default update-cancel">取消</button>
+            </div>
+       </div> <!--button-->
+	</form> <!--form-->
+ </div> <!--ibox-content-->
+</div>  <!---->
+</div><!---->
+
+<script>
+
+$(".update-sure").click(function(){
+	$.post("/machinupdate/",$("#updateForm").serialize(),function(data){
+	    console.log(data)
+	    data=JSON.parse(data);
+	    if(data["code"] == 0){
+		swal({
+		    title:'Congratulation',
+		    text:data['msg'],
+		    type:'success',
+		    confirmButtonText:'确定'
+		    },function(){
+			location.href='/machinlist/'
+		    })
+	    }else{
+		swal('Error',data['errmsg'],'error')
+	    }
+	})
+    return false
+})
+</script>
+
+
+         </div>
+    </div>
+    <br>
+
+
+</div> <!--wrapper-content-->
+
+
+
+<!--页面尾部-->
+<div class="footer fixed">
+    <div class="pull-right">
+        Version <strong>0.3.1</strong> GPL.
+    </div>
+    <div>
+        <strong>Copyright</strong>Reboot.com  Team © 2014-2015
+    </div>
+</div>
+
+</div>  <!--page-wrapper-->
+</div>   <!--wrapper-->
+
+{% endblock %}
+
+
+</body></html>
