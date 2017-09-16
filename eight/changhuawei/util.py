@@ -61,6 +61,15 @@ def update(table,field,data):
         result = {'code':1,'errmsg':'update fail'}
     return result 
 
+def deleteuser(table,user_dict):
+	sql = 'delete from %s where id="%s";'%(table,user_dict['id'])
+	res = cur.execute(sql)
+	if res:
+		result = {'code':0,'msg':'delete ok'}
+	else:
+		result = {'code':1,'msg':'data is null'}
+	return result
+
 
 
 

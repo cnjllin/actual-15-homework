@@ -2,7 +2,7 @@
 #coding:utf-8
 
 from flask import Flask,request,render_template,redirect,session
-from util import insert,getone,getlist,update
+from util import insert,getone,getlist,update,deleteuser
 import sys,json
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -27,7 +27,7 @@ def reg():
         filed = ['username','password','role','email']
         result = insert('user',filed,user)
         if result['code'] == 0:
-            return redirect('/login/')
+            return redirect('/userlist/')
         else:
             return render_template('reg.html',result=result)
     return render_template('reg.html')
@@ -113,6 +113,18 @@ def information():
 
         data = session
         return render_template('information.html',result=data)    
+
+@app.route('/delete/')
+def delete():
+	if not session:
+		return redirect('/login')
+	uid = request.args.get('id')
+	user_dict = {'id':uid}
+	result = deleteuser('user',user_dict)
+	#print result
+	#return json.dumps(result)
+	#if result['code'] == 0:
+	return redirect('/userlist/')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=5000,debug=True )
