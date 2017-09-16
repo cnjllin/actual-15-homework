@@ -113,7 +113,9 @@ def add_user():
         if request.method == 'POST':
                 user_dict = {k:v[0] for k,v in dict(request.form).items()}
                 print user_dict
-                result = insert('user',field,user_dict)
+                field = ['username','password','role']
+                result = insert('taokey',field,user_dict)
+                print result
                 if result['code'] == 0:
                         return json.dumps(result)
         return render_template('adduser.html')
