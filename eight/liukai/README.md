@@ -96,7 +96,7 @@
 
 ![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/普通用户.png)
 
-# --------------资产管理------------------
+# ----------------------------------------资产管理---------------------------------
 
 ## 机房列表
 
@@ -106,6 +106,37 @@
 
 ![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/添加机房.png)
 
+## 编辑机房
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/编辑机房.png)
+
+## 删除机房
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/删除机房.png)
+
+## 机柜列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/机柜列表.png)
+
+## 添加机柜
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/添加机柜.png)
+
+## 编辑机柜
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/编辑机柜.png)
+
+## 删除机柜
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/删除机柜.png)
+
+## 普通用户机房列表（只读）
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/普通用户机房列表.png)
+
+## 普通用户机柜列表（只读）
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/普通用户机柜列表.png)
 
 # 项目文档
 
