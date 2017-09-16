@@ -1,3 +1,93 @@
+#  作业
+###  扒页面
+
+# 目录结构
+
+<pre>
+
+├── README.md              # 测试文档及项目文档
+├── test                   # 测试结构图片
+├── show_create_table.md   # 表结构
+├── static                 # 静态文件
+│   ├── css
+│   ├── img
+│   ├── js
+│   └── pulgin
+├── templates             # html
+│   ├── add.html          # 添加用户界面
+│   ├── index.html        # 首页
+│   ├── list.html         # 用户界面
+│   ├── login.html        # 登录界面
+│   ├── reg.html          # 注册界面
+│   └── userlist.html     # 用户列表
+├── utils.py              # 功能函数
+
+</pre>
+
+
+# 测试结果
+
+#### 主界面
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/index.png)
+
+#### 注册界面 
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/reg.png)
+
+#### 注册失败
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/reg_error.png)
+
+#### 注册成功
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/reg_ok.png)
+
+#### 登录界面
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/login.png)
+
+#### 登录失败
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/login_error.png)
+
+#### 登录成功
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/login_ok.png)
+
+#### 管理员界面
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/admin.png)
+
+
+#### 修改个人资料
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/修改个人资料.png)
+
+#### 用户列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/userlist.png)
+
+#### 编辑用户信息
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/编辑用户信息.png)
+
+## 删除用户
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/删除用户.png)
+
+## 添加用户
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/添加用户.png)
+
+## 普通用户界面
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/普通用户.png)
+
+
+
+# 项目文档
+
 ## 需求分析
 
 > 用户权限管理系统
@@ -22,7 +112,7 @@ def index():
 ### 注册页面
 V端：reg.html
 <pre>
-  <\form atction="/reg/",method="POST">
+  <\form atction"/reg/",method="POST">
     用户名，密码，角色
   <\/form>
 </pre>   
@@ -46,13 +136,11 @@ M端:user
 <pre>
  mysql> CREATE TABLE `user` (
  ->   `id` int(100) NOT NULL AUTO_INCREMENT,
- ->   `username` varchar(100) NOT NULL UNIQUE,
+ ->   `username` varchar(100) NOT NULL,
  ->   `password` varchar(100) NOT NULL,
  ->   `role` int(10) NOT NULL,
  ->   PRIMARY KEY (`id`)
  -> )  DEFAULT CHARSET=utf8;
-
-UNIQUE 用户名唯一
 
 select * from user where username=username
 insert into user () values()
@@ -71,20 +159,26 @@ C端:
 @app.route("/login/",methods=["GET","POST"]
 def login():
     if method为post：
-       user=request.form
-       if res['code']==0 && res['msg']['passwd']=user['password']
-            ..........        
-        else:
-            ...........
-     return render_template("user.html",user=user)
+       username=request.form.get("username"," ")
+       password=request.form.get("password"," ")
+       if 判断用户是存在并且密码正确：
+             if role==1:
+                user_dict=查询所有用户信息,并转换为字典
+                return render_template("user_list.html",user_dict=user_idct,usaername=username,role=role)
+             else:
+                user=按用户名查询单用户信息
+                return render_template("user.html",user=user)
        
+       else：
+           msg=用户或密码错误
+           return redicet("/login/?msg='用户名或密码错误'")
+    return render_tempalte("login.html")
 </pre> 
 
-M端: 查某一天数据 
+M端:  
 <pre>
- def getone(table,field,data)
-     sql="select * from user where username='wd'"
-     cur.exculte(sql)
+查所用户信息 sql=" select * from user"
+按username 查单用户信息 sql= "select * from user where username=%s"%username
 </pre>
 
 ## 管理页面/用户列表
@@ -135,7 +229,7 @@ def update():
     user=执行查询单用户sql，
         return  render_tempalte('update.html'user=user)
 
-@app.route("/update/new/")
+@app.route("/update/")
     获取修改的数据
     执行update sql 更改数据库
             
@@ -151,20 +245,4 @@ M端：
   sql="update user set password='%s',sex=%d,age=%d,phone=%d,email='%s',role=%d where id=%d"%(my_tup[0],my_tup[1],my_tup    
 </pre>       
 
-### 目录结构
-<pre>
-.
-├── app.py                 # 主程序
-├── README.md              # 项目文档
-├── show_create_table.md   # 表结构
-├── static 
-├── templates
-│   ├── index.html         # 首页
-│   ├── list.html          # 用户页面
-│   ├── login.html         # 登录页面
-│   ├── reg.html           # 注册页面
-│   └── update.html        # 更新页面
-├── utils.py               # 功能函数
-└── utils.pyc
 
-</pre>
