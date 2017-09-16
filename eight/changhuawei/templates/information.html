@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block body%}
+
+用户名：{{ result.username }}  权限 {% if result.role==0 %}管理员{% else%}普通用户{%endif%} 
+
+{% endblock %}
