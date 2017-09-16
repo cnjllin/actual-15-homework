@@ -1,0 +1,23 @@
+<html>
+	<title>signin</title>
+
+<body style="text-align:center">
+
+<form method='post' action='/signin/'>
+
+<h1 class="logo hide-text">signin</h1>
+
+<h2 class="subtitle">please input your infomation</h2>
+
+<input type="text" name="username" aria-label="username" placeholder="username" required><br>
+<input type="password" name="password" aria-label="password" placeholder="password" required><br>
+<input type="submit" name="commit" value="signin"><br>
+<p class="tip"><span>{{login_message['msg']}}</span></p>
+
+<a href="/index/" class="active">homepage</a>
+<a href="/signup/">signup</a>
+
+</form>
+
+</body>
+</html>
