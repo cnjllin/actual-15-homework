@@ -21,8 +21,9 @@
             <h2>Welcome to 51reboot</h2>
             <form id="loginForm" action='/reg/' method='post' >
                 <div class="form-group">
-                    <input id="name" type="text" name="name" class="form-control" placeholder="用户名" required="length[6~50]">
+                    <input id="name" type="text" name="username" class="form-control" placeholder="用户名" required="length[6~50]">
                 </div>
+                    <span style="color:red">{{msg}}</span>
                 <div class="form-group">
                     <input id="tel" type="text" name="tel" class="form-control" placeholder="手机号" required="length[6~50]">
                 </div>
@@ -45,31 +46,6 @@
     <script src="/static/pulgin/sweetalert-master/dist/sweetalert.min.js"></script>        
     <script src="/static/js/bootstrap.min.js"></script>
 
-<script>
-//alert("welcome jquery")
-
-$('#loginbtn').on('click',function(){
-     var str = $('#loginForm').serialize()
-     console.log(str) 
-     $.post("/login",str,function(data){
-           console.log(data)    
-          data = JSON.parse(data)
-          console.log(data)  
-          if (data['code']==0){
-            swal({ 
-                title: "登录成功", 
-                text: data['result'],   
-                type: "success",   
-                confirmButtonText: "确定"                                                                                      },function(){               
-                  location.href="/"
-              });
-          }else{ 
-            swal("MY GOD",data['errmsg'],"error");
-             }
-     })
-     return false
-})
-</script>
 </body>
 
 </html>

@@ -28,11 +28,12 @@ def register():
     if request.method=="POST":
         field = ['username','password','tel','email','role']
         data = {k:v[0] for k,v in dict(request.form).items()}
-        result = utils.insert('user1',field,data)
+	result = utils.getone('user1',data,field)
         if result["code"] == 0:
-	    return json.dumps(result) 
+            return render_template('register.html',msg=u'用户存在')
         else:
-	    return json.dumps(result)
+            res = utils.insert('user1',field,data)
+            return redirect('/login/')
     return render_template('register.html')
 
 
