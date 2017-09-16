@@ -18,17 +18,17 @@
 │   └── pulgin
 ├── templates              # html文件
 │   ├── add.html           # 添加用户
-│   ├── base.html          #模板
+│   ├── base.html          # 模板
 │   ├── cabinet_add.html   # 添加机柜
-│   ├── cabinet.html       #机柜列表
-│   ├── idc_add.html       #添加机房 
-│   ├── idc.html           #机房列表 
+│   ├── cabinet.html       # 机柜列表
+│   ├── idc_add.html       # 添加机房 
+│   ├── idc.html           # 机房列表 
 │   ├── index.html         # 主界面
-│   ├── list.html          #用户界面
-│   ├── login.html         #用户登录
+│   ├── list.html          # 用户界面
+│   ├── login.html         # 用户登录
 │   ├── reg.html           # 用户注册
-│   └── userlist.html      #用户列表
-├── utils.py               #功能模块
+│   └── userlist.html      # 用户列表
+├── utils.py               # 功能模块
 └── utils.pyc
 
 
@@ -96,7 +96,7 @@
 
 ![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/普通用户.png)
 
-# ----------------------------------------资产管理---------------------------------
+# ----------------------资产管理---------------------
 
 ## 机房列表
 
