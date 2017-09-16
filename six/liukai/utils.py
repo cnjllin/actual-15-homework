@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 #_*_coding:utf-8_*_
 import MySQLdb
-db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="root123",db="reboot15",port=3306,charset="utf8")
+db=MySQLdb.connect(host="127.0.0.1",user="root",passwd="123456",db="reboot15",port=3306,charset="utf8")
 cur=db.cursor()
 db.autocommit(True)
 

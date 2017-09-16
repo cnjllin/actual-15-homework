@@ -21,6 +21,7 @@ def index():
 def reg():
     if request.method=='POST':
         user_dict={k:v[0] for k,v in dict(request.form).items()}
+        print user_dict
         user=utils.get_name(table,field,user_dict['username'])
         if  user:
            result={'code':1,'msg':'username is already'} 
