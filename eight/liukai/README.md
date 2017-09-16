@@ -1,26 +1,38 @@
 #  作业
 ###  扒页面
 
+###  static目录没有上传
+
 # 目录结构
 
 <pre>
 
 ├── README.md              # 测试文档及项目文档
+├── config.py              # 链接数据库配置
 ├── test                   # 测试结构图片
 ├── show_create_table.md   # 表结构
-├── static                 # 静态文件
+├── static                 # 静态文件(没有上传git）
 │   ├── css
 │   ├── img
 │   ├── js
 │   └── pulgin
-├── templates             # html
-│   ├── add.html          # 添加用户界面
-│   ├── index.html        # 首页
-│   ├── list.html         # 用户界面
-│   ├── login.html        # 登录界面
-│   ├── reg.html          # 注册界面
-│   └── userlist.html     # 用户列表
-├── utils.py              # 功能函数
+├── templates              # html文件
+│   ├── add.html           # 添加用户
+│   ├── base.html          # 模板
+│   ├── cabinet_add.html   # 添加机柜
+│   ├── cabinet.html       # 机柜列表
+│   ├── idc_add.html       # 添加机房 
+│   ├── idc.html           # 机房列表 
+│   ├── index.html         # 主界面
+│   ├── list.html          # 用户界面
+│   ├── login.html         # 用户登录
+│   ├── reg.html           # 用户注册
+│   └── userlist.html      # 用户列表
+├── utils.py               # 功能模块
+└── utils.pyc
+
+
+
 
 </pre>
 
@@ -84,7 +96,47 @@
 
 ![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/seven/liukai/test/普通用户.png)
 
+# ----------------------资产管理---------------------
 
+## 机房列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/%E6%9C%BA%E6%88%BF%E5%88%97%E8%A1%A8.png)
+
+## 添加机房
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/添加机房.png)
+
+## 编辑机房
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/编辑机房.png)
+
+## 删除机房
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/删除机房.png)
+
+## 机柜列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/机柜列表.png)
+
+## 添加机柜
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/添加机柜.png)
+
+## 编辑机柜
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/编辑机柜.png)
+
+## 删除机柜
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/删除机柜.png)
+
+## 普通用户机房列表（只读）
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/普通用户机房列表.png)
+
+## 普通用户机柜列表（只读）
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/普通用户机柜列表.png)
 
 # 项目文档
 
