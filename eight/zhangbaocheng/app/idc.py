@@ -12,6 +12,8 @@ fields = ['id','name','name_cn','address','adminer','phone']
 # 机房管理
 @app.route('/idc',methods=['GET', 'POST'])
 def idc():
+    if 'username' not in  session:
+        return redirect('/login/')
     msg = sessionmsg()
     result = list('idc',fields)
  
@@ -20,6 +22,8 @@ def idc():
 # 添加机房
 @app.route('/idcadd',methods=['GET', 'POST'])
 def idcadd():
+    if 'username' not in  session:
+        return redirect('/login/')
     msg = sessionmsg()
     if request.method=='POST':
         idc = {k:v[0] for k,v in dict(request.form).items()}
@@ -35,6 +39,8 @@ def idcadd():
 # 修改机房信息
 @app.route('/idcupdate',methods=['GET', 'POST'])
 def idcupdate():
+    if 'username' not in  session:
+        return redirect('/login/')
     msg = sessionmsg()
     if request.method=='GET':
         id = request.args.get('id')
@@ -53,6 +59,8 @@ def idcupdate():
 # 删除机房信息
 @app.route('/idcdelete',methods=['GET', 'POST'])
 def idcdelete():
+    if 'username' not in  session:
+        return redirect('/login/')
     msg = sessionmsg()
     if request.method=='POST':
         idc = {k:v[0] for k,v in dict(request.form).items()}

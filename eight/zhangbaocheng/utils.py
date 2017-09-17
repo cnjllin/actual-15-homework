@@ -54,18 +54,7 @@ def getone(table,data,field):
         result ={'code':1, 'msg':"data is null"}
     return result 
 
-# 个人中心数据获取
-def _center(table,data,field):
-    sql = 'select %s from %s where username="%s";' % (','.join(field),table,data['username'])
-    print sql
-    cur.execute(sql)
-    res = cur.fetchone()
-    if res:
-        user = {k:res[i] for i,k in enumerate(field)}
-        result  = {'code':0,'msg':user}
-    else:
-       result ={'code':1, 'msg':"data is null"}
-    return result
+
 
 # 数据更新
 def _update(table,field,data): 

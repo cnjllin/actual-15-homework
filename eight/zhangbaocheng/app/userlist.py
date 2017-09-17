@@ -11,6 +11,8 @@ import json
 # 用户列表
 @app.route('/userlist',methods=['GET', 'POST'])
 def userlist():
+    if 'username' not in  session:
+        return redirect('/login/')
     msg = sessionmsg()
     field  = ["id","username","name_cn","password","mobile","email","role","status"]
     result = list('user',field)
@@ -19,6 +21,8 @@ def userlist():
 # 更新用户信息	
 @app.route('/update/',methods=['GET', 'POST'])
 def update():
+    if 'username' not in  session:
+        return redirect('/login/')
     msg = sessionmsg()
     field  = ["id","username","name_cn","password","mobile","email","role","status"]
     if request.method=='GET':
@@ -38,6 +42,8 @@ def update():
 # 添加用户
 @app.route('/add/',methods=['GET', 'POST'])
 def  add():
+    if 'username' not in  session:
+        return redirect('/login/')
     msg = sessionmsg()
 
     if request.method=='GET':
@@ -55,6 +61,8 @@ def  add():
 # 删除用户
 @app.route('/delete/',methods=['GET', 'POST'])
 def delete():
+    if 'username' not in  session:
+        return redirect('/login/')
     msg = sessionmsg()
     if request.method=='GET':
         userid = request.args.get('id')
