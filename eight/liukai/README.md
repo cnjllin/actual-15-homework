@@ -7,7 +7,8 @@
 
 <pre>
 
-├── README.md              # 测试文档及项目文档
+├── app.py                 # 主文件
+├── README.md              # 测试文档及项目文档
 ├── config.py              # 链接数据库配置
 ├── test                   # 测试结构图片
 ├── show_create_table.md   # 表结构
@@ -297,4 +298,48 @@ M端：
   sql="update user set password='%s',sex=%d,age=%d,phone=%d,email='%s',role=%d where id=%d"%(my_tup[0],my_tup[1],my_tup    
 </pre>       
 
+# cdmd 资产管理 
 
+## 机房列表
+
+V端: idc.html  
+     <pre>
+     显示一个表格（编号，机房名，地址，中文名， 联系人，电话 ，操作）操作里有两个按钮（编辑，删除）表格上方有添加按钮
+     点击添加,弹出模态窗，添加机房信息
+     点击编辑按钮，跳转到界面，idc_uptdae.html
+     点击删除按照，直接执行删除sql
+     
+     idc_update.html
+     点击编辑按钮 ,跳转到idc_update.html，获取id.执行utils.getone。渲染信息
+     修改信息。然后点击更新，执行util.update.
+     </pre>
+     
+ C端：
+ <pre>
+ @app.route('/idc/')
+ def idc()：
+       查所有机房，
+       return render_template("渲染信息")
+   
+  @app.route("/idc_getone")
+  def idc_getone():
+      date=utils.getone(idc_table,filed,data)
+      return render_template(‘渲染信息')
+   
+ @app.route('/idc_update/'） 
+ def idc_update():
+     date=utils.update()
+     return json.dumps(data)
+   </pre> 
+ 
+ M端：
+   <pre> 
+    查idc表
+    执行util.select(idc_table,idc_field,data)
+    
+    查单idc信息
+    util.getone(idc_table,idc_field,data)
+    
+    #更新
+    utils.update(idc_table,idc_field,data)
+    </pre>
