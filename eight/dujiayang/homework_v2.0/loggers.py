@@ -22,4 +22,4 @@ logger.addHandler(fh)
 
 # 记录两条日志
 logger.info('foorbar')  
-#logger.debug('just a test ')  
+logger.debug('just a test ')  
