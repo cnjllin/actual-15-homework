@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>会员中心</title>
+</head>
+<table  border=1 >
+    <thead>
+        <tr>
+	        <th>ID</th>
+		<th>NAME</th>
+	        <th>PASSWORD</th>
+	        <th>ROLE</th>
+	        <th>操作1</th>
+	        <th>操作2</th>
+    	</tr>
+    </thead>
+	<tbody>
+	    {%  for m in  msg %}
+		<tr>
+		        <td>{{m['id']}}</td>
+		        <td>{{m['username']}}</td>
+		        <td>{{m['password']}}</td>
+                        <td>{% if m['role']==0 %}管理员{%else%}用户{%endif%}</td>
+                    <td><a href="/update/?id={{m['id']}}">更新</a></td>
+                    <td><a href="/delete/?id={{m['id']}}">删除</a></td>
+                </tr>
+	    {% endfor %}
+     <tr><a href="/logout">注销</a></tr><br>
+    </tbody>
+</table>
+</html>

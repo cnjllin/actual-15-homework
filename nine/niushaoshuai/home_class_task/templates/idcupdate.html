@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block content%}
+
+<!--右边第二层面包导航-->
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-12">
+     <br />
+        <ol class="breadcrumb">
+            <li>
+                <a href="/">仪表盘</a>
+            </li>
+            <li>
+                <a href="/">
+                 
+机房更新
+
+          
+                </a>
+            </li>
+        </ol>
+    </div>
+</div> <!--右边导航结束-->
+
+<!--正文部分分了三层-->
+<div class="wrapper wrapper-content">
+
+    <div class="row">
+        <div class="col-sm-12 border-bottom white-bg dashboard-header" style="margin-left:15px;height: 800px">
+                 
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+	<div class="col-sm-10">
+	    <div class="ibox float-e-margins">
+		<div class="ibox-title">
+		    <h5>填写基本信息</h5>
+		<div class="ibox-tools">
+			<a class="collapse-link">
+			    <i class="fa fa-chevron-up"></i>
+			</a>
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			    <i class="fa fa-wrench"></i>
+			</a>
+			<a class="close-link">
+			    <i class="fa fa-times"></i>
+			</a>
+        </div>
+       </div>   
+	<div class="ibox-content">  
+    <form  id="updateForm" class="form-horizontal">
+		<input id='id' type='hidden' name='id' value={{ msg.id }}  readonly='true'>
+
+	    <div class='form-group'>
+                <label for="name" class="col-sm-3 control-label">机房英文简写<span class="red-fonts">*</span></label>
+                <div class="col-sm-7">
+                    <input id="name" name="idcname" value={{ msg.idcname }} type="text" class="form-control" >
+                </div>
+	    </div> <!--name-->
+	    <div class="hr-line-dashed"></div>
+	    <div class='form-group'>
+                <label for="name_cn" class="col-sm-3 control-label">机房中文名</label>
+                <div class="col-sm-7">
+                    <input id="name_cn" name="idcname_cn" value={{ msg.idcname_cn }} type="text" class="form-control" >
+                </div>
+	    </div> <!--name_cn-->
+	    <div class="hr-line-dashed"></div>
+	    <div class='form-group'>
+                <label for="address" class="col-sm-3 control-label">地址</label>
+                <div class="col-sm-7">
+                    <input id="address" name="address" value={{ msg.address }} type="text" class="form-control">
+                </div>
+	    </div><!--address-->
+	    <div class="hr-line-dashed"></div>
+	    <div class='form-group'>
+                <label for="adminer" class="col-sm-3 control-label">联系人</label>
+                <div class="col-sm-7">
+                    <input id="adminer" name="contact" value={{ msg.contact }} type="text" class="form-control">
+                </div>
+	    </div><!--address-->
+	    <div class="hr-line-dashed"></div>
+	    <div class='form-group'>
+		<label for="phone" class="col-sm-3 control-label">联系电话</label>
+                <div class="col-sm-7">
+                    <input id="phone" name="phone" value={{ msg.phone }} type="text" class="form-control" >
+                </div>
+	    </div><!--phone-->
+	    <div class="hr-line-dashed"></div>
+        <div class="form-group">
+           <div class="col-sm-6 col-sm-offset-2"> 
+                    <button type="button" class="btn btn-primary update-sure">确认</button>
+                    <button type="button" class="btn btn-default update-cancel">取消</button>
+            </div>
+       </div> <!--button-->
+	</form> <!--form-->
+ </div> <!--ibox-content-->
+</div>  <!---->
+</div><!---->
+
+<script>
+
+$(".update-sure").click(function(){
+	$.post("/idcupdate",$("#updateForm").serialize(),function(data){
+	    console.log(data)
+	    data=JSON.parse(data);
+	    if(data["code"] == 0){
+		swal({
+		    title:'Congratulation',
+		    text:data['result'],
+		    type:'success',
+		    confirmButtonText:'确定'
+		    },function(){
+			location.href='/idc'
+		    })
+	    }else{
+		swal('Error',data['errmsg'],'error')
+	    }
+	})
+    return false
+})
+</script>
+
+
+         </div>
+    </div>
+    <br>
+
+
+</div> <!--wrapper-content-->
+
+{% endblock%}
