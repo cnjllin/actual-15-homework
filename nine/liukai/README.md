@@ -32,10 +32,8 @@
 │   │   └── userlist.html           # 用户列表
 │   ├── user.py              # 用户权限模块
 │   └── user.pyc
-├── config.py
-├── config.pyc
-├── logger.py
-├── run.py                    # 入口        
+├── config.py                 # 数据库配置模块
+├── run.py                    # 入口         
 ├── util.py                   # 日志模块
 ├── utils.py                  # 功能模块
 
