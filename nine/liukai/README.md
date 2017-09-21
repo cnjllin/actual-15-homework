@@ -49,8 +49,62 @@
 # 测试结果
 
 
+## 日志
 
-![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eight/liukai/test/普通用户机柜列表.png)
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/日志.png)
+
+# 用户权限
+
+## 用户列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/用户列表.png)
+
+## 用户添加
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/用户添加.png)
+
+## 用户编辑
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/用户编辑.png)
+
+# 资产管理CMDB
+
+## 机房列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/机房列表.png)
+
+## 机房添加
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/机房添加.png)
+
+## 机房编辑
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/机房编辑.png)
+
+## 机柜列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/机柜列表.png)
+
+## 机柜添加
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/添加机柜.png)
+
+## 机柜编辑
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/机柜编辑.png)
+
+
+## 服务器列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/服务器列表.png)
+
+## 服务器添加
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/服务器添加.png)
+
+## 服务器编辑
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/服务器编辑.png)
 
 # 项目文档
 
