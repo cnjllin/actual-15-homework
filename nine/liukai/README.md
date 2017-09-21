@@ -8,30 +8,37 @@
 
 <pre>
 
-├── app.py                 # 主文件
-├── README.md              # 测试文档及项目文档
-├── config.py              # 链接数据库配置
-├── test                   # 测试结构图片
-├── show_create_table.md   # 表结构
-├── static                 # 静态文件(没有上传git）
-│   ├── css
-│   ├── img
-│   ├── js
-│   └── pulgin
-├── templates              # html文件
-│   ├── add.html           # 添加用户
-│   ├── base.html          # 模板
-│   ├── cabinet_add.html   # 添加机柜
-│   ├── cabinet.html       # 机柜列表
-│   ├── idc_add.html       # 添加机房 
-│   ├── idc.html           # 机房列表 
-│   ├── index.html         # 主界面
-│   ├── list.html          # 用户界面
-│   ├── login.html         # 用户登录
-│   ├── reg.html           # 用户注册
-│   └── userlist.html      # 用户列表
-├── utils.py               # 功能模块
-└── utils.pyc
+├── app
+│   ├── cmdb.py            # 资产管理
+│   ├── __init__.py
+│   ├── static             # 静态文件
+│   │   ├── css
+│   │   ├── img
+│   │   ├── js
+│   │   └── pulgin
+│   ├── templates                # html目录
+│   │   ├── add.html             # 添加用户
+│   │   ├── base.html            #  模板 
+│   │   ├── cabinet.html          # 机柜列表
+│   │   ├── cabinet_update.html   # 更新机柜
+│   │   ├── idc_add.html          # 添加机房
+│   │   ├── idc.html               # 机房列表
+│   │   ├── index.html             # 主页面
+│   │   ├── list.html              #  用户主界面
+│   │   ├── login.html             #  登录界面
+│   │   ├── reg.html               # 注册界面
+│   │   ├── server.html            # 服务器列表
+│   │   ├── server_update.html     # 服务器更新
+│   │   └── userlist.html           # 用户列表
+│   ├── user.py              # 用户权限模块
+│   └── user.pyc
+├── config.py
+├── config.pyc
+├── logger.py
+├── run.py                    # 入口        
+├── util.py                   # 日志模块
+├── utils.py                  # 功能模块
+
 
 
 
@@ -47,7 +54,7 @@
 
 # 项目文档
 
-## 需求分析
+## 需求分析：
 
 > 用户权限管理系统
 
