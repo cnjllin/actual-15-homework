@@ -1,0 +1,291 @@
+2017-09-23 02:00:53,890 - utils.py- [line:19] -regist ERROR - err Execute insert into user (username,name,password,phone,mail,role,status) values("admin","1243","3423","1242","12243","1","0") error: Traceback (most recent call last):
+  File "/python/project/nine/utils.py", line 15, in regist
+    res = cur.execute(sql)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'admin' for key 'username'")
+
+2017-09-23 02:02:07,162 - user.py- [line:45] -login INFO - login admin login success 
+2017-09-23 02:05:59,550 - user.py- [line:45] -login INFO - login admin login success 
+2017-09-23 02:07:51,975 - utils.py- [line:38] -getone ERROR - err Execute select * from user where username='123423' error: Traceback (most recent call last):
+  File "/python/project/nine/utils.py", line 34, in getone
+    user = {k:res[i] for i,k in enumerate(field)}
+  File "/python/project/nine/utils.py", line 34, in <dictcomp>
+    user = {k:res[i] for i,k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 02:08:34,297 - user.py- [line:45] -login INFO - login admin login success 
+2017-09-23 02:08:34,297 - user.py- [line:45] -login INFO - login admin login success 
+2017-09-23 02:14:09,088 - user.py- [line:45] -login INFO - login admin login success 
+2017-09-23 02:22:57,042 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:23:06,684 - user.py- [line:45] -login INFO - login admini login success 
+2017-09-23 02:24:46,319 - user.py- [line:45] -login INFO - login xiaoli login success 
+2017-09-23 02:24:46,319 - user.py- [line:45] -login INFO - login xiaoli login success 
+2017-09-23 02:25:16,263 - user.py- [line:45] -login INFO - login xiaoli login success 
+2017-09-23 02:25:16,263 - user.py- [line:45] -login INFO - login xiaoli login success 
+2017-09-23 02:25:16,263 - user.py- [line:45] -login INFO - login xiaoli login success 
+2017-09-23 02:25:20,547 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:25:20,547 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:25:38,400 - user.py- [line:45] -login INFO - login admin login success 
+2017-09-23 02:25:38,400 - user.py- [line:45] -login INFO - login admin login success 
+2017-09-23 02:25:38,400 - user.py- [line:45] -login INFO - login admin login success 
+2017-09-23 02:25:38,400 - user.py- [line:45] -login INFO - login admin login success 
+2017-09-23 02:25:45,072 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:25:45,072 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:25:45,072 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:26:16,265 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:26:16,265 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:26:16,265 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:26:16,265 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:27:06,081 - utils.py- [line:38] -getone ERROR - err Execute select * from user where username='pc' error: Traceback (most recent call last):
+  File "/python/project/nine/utils.py", line 34, in getone
+    user = {k:res[i] for i,k in enumerate(field)}
+  File "/python/project/nine/utils.py", line 34, in <dictcomp>
+    user = {k:res[i] for i,k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 02:27:27,118 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:27:27,118 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:27:27,118 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:27:27,118 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:27:27,118 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:27:56,566 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:27:56,566 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:27:56,566 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:27:56,566 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:27:56,566 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:27:56,566 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:30:41,649 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:30:41,649 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:30:41,649 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:30:41,649 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:30:41,649 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:30:41,649 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:30:41,649 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:01,806 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:01,806 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:01,806 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:01,806 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:01,806 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:01,806 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:01,806 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:01,806 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,439 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,439 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,439 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,439 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,439 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,439 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,439 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,439 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,439 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,629 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,629 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,629 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,629 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,629 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,629 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,629 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,629 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,629 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,629 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,778 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,778 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,778 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,778 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,778 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,778 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,778 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,778 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,778 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,778 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,778 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,951 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,951 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,951 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,951 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,951 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,951 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,951 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,951 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,951 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,951 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,951 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:33:02,951 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:15,327 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:29,099 - utils.py- [line:38] -getone ERROR - err Execute select * from idc where sr='HK' error: Traceback (most recent call last):
+  File "/python/project/nine/utils.py", line 34, in getone
+    user = {k:res[i] for i,k in enumerate(field)}
+  File "/python/project/nine/utils.py", line 34, in <dictcomp>
+    user = {k:res[i] for i,k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 02:34:29,099 - utils.py- [line:38] -getone ERROR - err Execute select * from idc where sr='HK' error: Traceback (most recent call last):
+  File "/python/project/nine/utils.py", line 34, in getone
+    user = {k:res[i] for i,k in enumerate(field)}
+  File "/python/project/nine/utils.py", line 34, in <dictcomp>
+    user = {k:res[i] for i,k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:34:48,514 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:30,929 - utils.py- [line:38] -getone ERROR - err Execute select * from idc where sr='AM' error: Traceback (most recent call last):
+  File "/python/project/nine/utils.py", line 34, in getone
+    user = {k:res[i] for i,k in enumerate(field)}
+  File "/python/project/nine/utils.py", line 34, in <dictcomp>
+    user = {k:res[i] for i,k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 02:35:30,929 - utils.py- [line:38] -getone ERROR - err Execute select * from idc where sr='AM' error: Traceback (most recent call last):
+  File "/python/project/nine/utils.py", line 34, in getone
+    user = {k:res[i] for i,k in enumerate(field)}
+  File "/python/project/nine/utils.py", line 34, in <dictcomp>
+    user = {k:res[i] for i,k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 02:35:30,929 - utils.py- [line:38] -getone ERROR - err Execute select * from idc where sr='AM' error: Traceback (most recent call last):
+  File "/python/project/nine/utils.py", line 34, in getone
+    user = {k:res[i] for i,k in enumerate(field)}
+  File "/python/project/nine/utils.py", line 34, in <dictcomp>
+    user = {k:res[i] for i,k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:35:56,039 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:36:44,774 - utils.py- [line:45] -getall INFO - sql getall:select * from idc
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:25,991 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:52:37,507 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:00,904 - utils.py- [line:38] -getone ERROR - err Execute select * from user where username='pc' error: Traceback (most recent call last):
+  File "/python/project/nine/utils.py", line 34, in getone
+    user = {k:res[i] for i,k in enumerate(field)}
+  File "/python/project/nine/utils.py", line 34, in <dictcomp>
+    user = {k:res[i] for i,k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 02:53:00,904 - utils.py- [line:38] -getone ERROR - err Execute select * from user where username='pc' error: Traceback (most recent call last):
+  File "/python/project/nine/utils.py", line 34, in getone
+    user = {k:res[i] for i,k in enumerate(field)}
+  File "/python/project/nine/utils.py", line 34, in <dictcomp>
+    user = {k:res[i] for i,k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 02:53:00,904 - utils.py- [line:38] -getone ERROR - err Execute select * from user where username='pc' error: Traceback (most recent call last):
+  File "/python/project/nine/utils.py", line 34, in getone
+    user = {k:res[i] for i,k in enumerate(field)}
+  File "/python/project/nine/utils.py", line 34, in <dictcomp>
+    user = {k:res[i] for i,k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 02:53:00,904 - utils.py- [line:38] -getone ERROR - err Execute select * from user where username='pc' error: Traceback (most recent call last):
+  File "/python/project/nine/utils.py", line 34, in getone
+    user = {k:res[i] for i,k in enumerate(field)}
+  File "/python/project/nine/utils.py", line 34, in <dictcomp>
+    user = {k:res[i] for i,k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
+2017-09-23 02:53:33,210 - utils.py- [line:45] -getall INFO - sql getall:select * from user
