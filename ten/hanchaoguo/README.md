@@ -117,38 +117,38 @@
 
 #图片展示
 ###登录
-![](http://F:\reboot\15期\第十天\image\login.png)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/login.png)
 ###登录成功
-![](http://F:\reboot\15期\第十天\image\loginsucess.png)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/loginsucess.png)
 ###用户信息
-![](http://F:\reboot\15期\第十天\image\userinfo.png)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/userinfo.png)
 ###用户列表
-![](http://F:\reboot\15期\第十天\image\userlist.png)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/userlist.png)
 ###添加用户
-![](http://F:\reboot\15期\第十天\image\useradd.png)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/useradd.png)
 ###编辑用户信息
-![](http://F:\reboot\15期\第十天\image\userupdate.png)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/userupdate.png)
 ###机房列表
-![](http://F:\reboot\15期\第十天\image\idclist.jpg)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/idclist.jpg)
 ###添加机房
-![](http://F:\reboot\15期\第十天\image\idcadd.jpg)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/idcadd.jpg)
 ###编辑机房信息
-![](http://F:\reboot\15期\第十天\image\idcupdate.jpg)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/idcupdate.jpg)
 ###机柜列表
-![](http://F:\reboot\15期\第十天\image\cabinetlist.jpg)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/cabinetlist.jpg)
 ###添加机柜
-![](http://F:\reboot\15期\第十天\image\cabinetadd.jpg)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/cabinetadd.jpg)
 ### 编辑机柜信息
-![](http://F:\reboot\15期\第十天\image\cabinetupdate.jpg)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/cabinetupdate.jpg)
 ### 服务器列表
-![](http://F:\reboot\15期\第十天\image\serverlist.jpg)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/serverlist.jpg)
 ### 添加服务器
-![](http://F:\reboot\15期\第十天\image\serveadd.png)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/serveadd.png)
 ###编辑服务器
-![](http://F:\reboot\15期\第十天\image\serverupdate.png)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/serverupdate.png)
 ###申请工单
-![](http://F:\reboot\15期\第十天\image\jobadd.png)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/jobadd.png)
 ### 工单列表
-![](http://F:\reboot\15期\第十天\image\joblist.png)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/joblist.png)
 ###历史工单
-![](http://F:\reboot\15期\第十天\image\jobhistory.png)
+![](https://github.com/51reboot/actual-15-homework/blob/master/ten/hanchaoguo/image/jobhistory.png)
