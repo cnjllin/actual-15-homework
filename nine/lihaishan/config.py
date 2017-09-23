@@ -1,0 +1,5 @@
+user="root"
+password="root"
+db="reboot15"
+charset="utf8"
+host="127.0.0.1"

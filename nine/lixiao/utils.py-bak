@@ -1,0 +1,73 @@
+#!/usr/bin/python
+#coding:utf-8
+import MySQLdb as mysql
+import config,util
+#import config
+con=mysql.connect(host=config.DB_host,user=config.DB_user,passwd=config.DB_passwd,db=config.DB_db,port=config.DB_port,charset=config.DB_charset)
+con.autocommit(True)
+cur = con.cursor()
+
+#insert注册
+def regist(table,field,data):
+    sql = 'insert into %s (%s) values(%s)' %(table,','.join(field),','.join(['"%s"' %data[v] for v in field]))
+    res = cur.execute(sql)
+    if res:
+        result = {'code':0,'msg':'reg success'}
+    else:
+        result = {'code':1,'msg':'reg faild'}
+    return result
+    
+
+#select单用户查询
+def getone(table,field,data):
+    if data.has_key('username'):
+        sql = "select * from %s where username='%s'" %(table,data['username'])
+    elif data.has_key('sr'):
+        sql = "select * from %s where sr='%s'" %(table,data['sr'])
+    else:
+        sql = "select * from %s where id='%s'" %(table,data['id'])
+    cur.execute(sql)
+    res=cur.fetchone()
+    if res:
+        user = {k:res[i] for i,k in enumerate(field)}
+        res = {'code':0,'msg':user}
+        return res
+    else:
+        res = {'code':1,'msg':'user not is exist'}
+    return res
+
+
+#select多用户查询
+def getall(table,field):
+    sql = "select * from %s" %(table)
+    util.Writelog('sql').info('getall:%s' %sql)
+    cur.execute(sql)
+    res = cur.fetchall()
+    if res:
+        user = [{k:row[i] for i,k in enumerate(field)} for row in res]
+        res = {'code':0,'msg':user}
+    else:
+        res = {'code':1,'msg':'select faild'}
+    return res
+
+#数据更新
+def update(table,field,data):
+    sql = "update %s set %s where id=%s" %(table,','.join(["%s='%s'" %(k,data[k]) for k in data]),data['id'])
+    print sql
+    res = cur.execute(sql)
+    if res:
+        res = {'code':0,'msg':'update success'}
+    else:
+        res = {'code':1,'msg':'update faild'}
+    return res
+
+#删除用户
+def delete(user,uid):
+    sql = "delete from %s where id=%s" %(user,uid)
+    print sql
+    res = cur.execute(sql)
+    if res:
+        res = {'code':0,'msg':'delete success'}
+    else:
+        res = {'code':1,'msg':'delete faild'}
+    return res

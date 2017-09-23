@@ -1,0 +1,73 @@
+<html>
+	<title>register</title>
+
+<body style="text-align:center">
+{% extends "base.html" %}
+
+{% block content%}
+
+<form id="useradd" class="form-horizontal" method='post' action='/register/'>     <!--定义垂直表单样式-->
+ <div class="form-group"> <!--定义一组div-->
+      <label for="" class="control-label col-md-2" >用户名</label>
+      <div class="col-md-4">  <!--定义下表单所占的空间-->
+      <input class="form-control" type="text" name="username" placeholder="请输入用户名" datatype="s5-16" errormsg="必须5-16个字符！">
+      </div>
+ </div>     <!--username end-->
+
+ <div class="form-group">
+   <label for="" class="control-label col-md-2">密码</label>
+   <div class="col-md-4">
+      <input class="form-control" type="password" name="password" placeholder="请输入密码" required="">
+    </div>
+  </div>     <!---password end-->
+
+
+
+   <div class="form-group">
+        <label class="col-md-2 control-label">资产类型</label>
+        <div class="col-md-2">
+            <select id="tag_update" name="role"  class="form-control" >
+               <option value="0">普通用户</option> 
+               <option value="1">管理员</option> 
+            </select>
+    </div>
+    </div><!--add role  end -->
+
+ <div class="form-group">
+   <div class="col-md-4 col-md-offset-2">    <!--按钮占四个栅栏，并偏移两个栅栏位置-->
+     <button id="submit_button" class="btn btn-primary">注册</button>
+    <button class="btn btn-warning" type="reset">取消</button>
+   </div>
+ </div>
+ </div>
+
+ </form>
+
+ <script>
+        $("#submit_button").click(function(){
+         	var str = $('#useradd').serialize()
+		console.log(str)
+        $.post("/register/",str,function(result){
+		console.log(result)
+                data=JSON.parse(result)
+		console.log(data)
+              if (data['code']==1){
+                        swal({ 
+                        title: "添加成功", 
+                        text: data['result'],   
+                        type: "success",   
+                        confirmButtonText: "确定"                                                                                      },function(){               
+                         location.href="/userlist/"
+                        });
+                }else{ 
+                        swal("MY GOD",data['result'],"error");
+                }
+  	      }); 
+		return false
+	});  
+</script>
+
+{% endblock%}
+</body>
+
+</html>

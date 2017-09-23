@@ -1,0 +1,58 @@
+<!--更新密码模态窗-->
+<div id="updatepasswd"  class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span ariaa-hidden="true">&times;</span></button>
+    <h3 class="modal-title">修改个人密码</h3>
+    </div> <!--modal-header end-->
+    <div class="modal-body">
+    <form class="form-horizontal" id="updatepw">
+        <div class="form-group"> 
+            <input type="hidden" name="id" value='{{msg.id}}'>
+            <label class="col-sm-2 control-label">旧密码</label>
+             <div class="col-sm-10">
+                <input class="form-control" type="password" id="oldpasswd" name="oldpasswd" >
+            </div> 
+        </div> <!-- oldpasswd end-->
+        <div class="form-group">
+            <label class="control-label col-sm-2">新密码</label>
+             <div class="col-sm-10">
+                <input class="form-control" type="password" id="newpasswd"  name="newpasswd" >
+            </div> 
+        </div> <!--newpasswd  end-->
+        <div class="form-group">
+            <div class="modal-footer">
+                <button class="btn btn-primary" id = "uppwbtn" >更新</button>
+                <but ton class="btn btn-warni ng exit-btn" data-dismiss="modal">退出</button>
+            </div>  
+      </div><!--button end-->
+    </form><!--form end--> 
+  </div> <!--modal-body end -->
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div> <!--modal end-->
+<!--模态窗结束-->
+
+
+/*修改密码的模态窗显示 */
+$("#passwd").on('click',function(){
+    $('#updatepasswd').modal('show')  
+})
+/*用户自己修改密码*/
+$("#uppwbtn").on('click',function(){
+   var str = $("#updatepw").serialize()
+   var url = '/user/chpwdoneself'
+   $.post(url,str,function(data){
+        data=JSON.parse(data)
+        console.log(data)
+        if (data['code']==0){   //recevie json object
+             swal("更新成功")
+             $('#updatepasswd').modal('hide')
+        }else{
+             swal(data['msg'])
+              }
+   })
+        return false
+})

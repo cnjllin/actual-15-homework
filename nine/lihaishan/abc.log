@@ -1,0 +1,143 @@
+2017-09-23 10:52:36,730 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="cxf"; 
+2017-09-23 10:52:41,181 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="cxf"; 
+2017-09-23 10:52:41,181 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="cxf"; 
+2017-09-23 10:53:40,476 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="lhs"; 
+2017-09-23 10:53:40,476 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="lhs"; 
+2017-09-23 10:53:40,476 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="lhs"; 
+2017-09-23 10:53:40,479 untitled11.py - [line:45] - login  INFO - user lhs login succesful
+2017-09-23 10:53:41,637 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="lhs"; 
+2017-09-23 10:53:41,637 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="lhs"; 
+2017-09-23 10:53:41,637 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="lhs"; 
+2017-09-23 10:53:41,637 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="lhs"; 
+2017-09-23 10:53:47,369 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:53:47,369 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:53:47,369 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:53:47,369 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:53:47,369 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:53:55,134 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 10:53:55,134 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 10:53:55,134 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 10:53:55,134 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 10:53:55,134 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 10:53:55,134 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 10:55:06,805 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:12,993 utile.py - [line:14] - insert  INFO - sql insert:insert into job (apply_name,apply_type,apply_desc) values ('lhs','0','123')
+2017-09-23 10:55:12,993 utile.py - [line:14] - insert  INFO - sql insert:insert into job (apply_name,apply_type,apply_desc) values ('lhs','0','123')
+2017-09-23 10:55:15,908 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:15,908 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:15,908 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:19,710 utile.py - [line:76] - update  INFO - sql update:update job set status='1',handle_name='lhs',id='65' where id=65
+2017-09-23 10:55:19,710 utile.py - [line:76] - update  INFO - sql update:update job set status='1',handle_name='lhs',id='65' where id=65
+2017-09-23 10:55:19,710 utile.py - [line:76] - update  INFO - sql update:update job set status='1',handle_name='lhs',id='65' where id=65
+2017-09-23 10:55:19,710 utile.py - [line:76] - update  INFO - sql update:update job set status='1',handle_name='lhs',id='65' where id=65
+2017-09-23 10:55:20,098 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:20,098 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:20,098 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:20,098 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:20,098 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:25,358 utile.py - [line:76] - update  INFO - sql update:update job set status='2',handle_desc='123123',id='65' where id=65
+2017-09-23 10:55:25,358 utile.py - [line:76] - update  INFO - sql update:update job set status='2',handle_desc='123123',id='65' where id=65
+2017-09-23 10:55:25,358 utile.py - [line:76] - update  INFO - sql update:update job set status='2',handle_desc='123123',id='65' where id=65
+2017-09-23 10:55:25,358 utile.py - [line:76] - update  INFO - sql update:update job set status='2',handle_desc='123123',id='65' where id=65
+2017-09-23 10:55:25,358 utile.py - [line:76] - update  INFO - sql update:update job set status='2',handle_desc='123123',id='65' where id=65
+2017-09-23 10:55:25,358 utile.py - [line:76] - update  INFO - sql update:update job set status='2',handle_desc='123123',id='65' where id=65
+2017-09-23 10:55:26,384 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:26,384 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:26,384 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:26,384 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:26,384 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:26,384 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:26,384 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 10:55:28,194 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:55:28,194 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:55:28,194 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:55:28,194 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:55:28,194 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:55:28,194 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:55:28,194 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:55:28,194 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:57:47,890 utile.py - [line:61] - list  INFO - sql list:select * from server
+2017-09-23 10:57:47,890 utile.py - [line:61] - list  INFO - sql list:select * from server
+2017-09-23 10:57:47,890 utile.py - [line:61] - list  INFO - sql list:select * from server
+2017-09-23 10:57:47,890 utile.py - [line:61] - list  INFO - sql list:select * from server
+2017-09-23 10:57:47,890 utile.py - [line:61] - list  INFO - sql list:select * from server
+2017-09-23 10:57:47,890 utile.py - [line:61] - list  INFO - sql list:select * from server
+2017-09-23 10:57:47,890 utile.py - [line:61] - list  INFO - sql list:select * from server
+2017-09-23 10:57:47,890 utile.py - [line:61] - list  INFO - sql list:select * from server
+2017-09-23 10:57:47,890 utile.py - [line:61] - list  INFO - sql list:select * from server
+2017-09-23 10:58:02,247 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:58:02,247 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:58:02,247 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:58:02,247 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:58:02,247 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:58:02,247 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:58:02,247 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:58:02,247 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:58:02,247 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 10:58:02,247 utile.py - [line:32] - getone  INFO - sql getone:select *from job where id='65'
+2017-09-23 11:01:53,710 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:02:25,049 utile.py - [line:14] - insert  INFO - sql insert:insert into machine (username,address,phone) values ('machin','xxx','1856')
+2017-09-23 11:02:25,049 utile.py - [line:14] - insert  INFO - sql insert:insert into machine (username,address,phone) values ('machin','xxx','1856')
+2017-09-23 11:02:25,979 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:02:25,979 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:02:25,979 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:02:30,188 utile.py - [line:32] - getone  INFO - sql getone:select *from machine where id='1'
+2017-09-23 11:02:30,188 utile.py - [line:32] - getone  INFO - sql getone:select *from machine where id='1'
+2017-09-23 11:02:30,188 utile.py - [line:32] - getone  INFO - sql getone:select *from machine where id='1'
+2017-09-23 11:02:30,188 utile.py - [line:32] - getone  INFO - sql getone:select *from machine where id='1'
+2017-09-23 11:02:38,778 utile.py - [line:76] - update  INFO - sql update:update machine set username='sda',phone='1821019911',id='1',address='123' where id=1
+2017-09-23 11:02:38,778 utile.py - [line:76] - update  INFO - sql update:update machine set username='sda',phone='1821019911',id='1',address='123' where id=1
+2017-09-23 11:02:38,778 utile.py - [line:76] - update  INFO - sql update:update machine set username='sda',phone='1821019911',id='1',address='123' where id=1
+2017-09-23 11:02:38,778 utile.py - [line:76] - update  INFO - sql update:update machine set username='sda',phone='1821019911',id='1',address='123' where id=1
+2017-09-23 11:02:38,778 utile.py - [line:76] - update  INFO - sql update:update machine set username='sda',phone='1821019911',id='1',address='123' where id=1
+2017-09-23 11:02:39,681 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:02:39,681 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:02:39,681 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:02:39,681 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:02:39,681 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:02:39,681 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:03:48,263 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 11:03:57,154 utile.py - [line:14] - insert  INFO - sql insert:insert into cbten (username,address,U,power) values ('12','1','12','12')
+2017-09-23 11:03:57,154 utile.py - [line:14] - insert  INFO - sql insert:insert into cbten (username,address,U,power) values ('12','1','12','12')
+2017-09-23 11:03:57,892 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 11:03:57,892 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 11:03:57,892 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 11:04:22,704 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 11:04:22,704 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 11:04:22,704 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 11:04:22,704 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 11:12:25,244 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="lhs"; 
+2017-09-23 11:12:25,244 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="lhs"; 
+2017-09-23 11:12:25,244 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="lhs"; 
+2017-09-23 11:12:25,244 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="lhs"; 
+2017-09-23 11:12:25,244 utile.py - [line:32] - getone  INFO - sql getone:select * from mylist where username="lhs"; 
+2017-09-23 11:22:42,885 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:22:42,885 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:22:42,885 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:22:42,885 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:22:42,885 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:22:42,885 utile.py - [line:61] - list  INFO - sql list:select * from machine
+2017-09-23 11:24:28,447 utile.py - [line:32] - getone  INFO - sql getone:select *from machine where id='1'
+2017-09-23 11:24:28,447 utile.py - [line:32] - getone  INFO - sql getone:select *from machine where id='1'
+2017-09-23 11:24:28,447 utile.py - [line:32] - getone  INFO - sql getone:select *from machine where id='1'
+2017-09-23 11:24:28,447 utile.py - [line:32] - getone  INFO - sql getone:select *from machine where id='1'
+2017-09-23 11:24:28,447 utile.py - [line:32] - getone  INFO - sql getone:select *from machine where id='1'
+2017-09-23 11:24:28,447 utile.py - [line:32] - getone  INFO - sql getone:select *from machine where id='1'
+2017-09-23 11:24:28,447 utile.py - [line:32] - getone  INFO - sql getone:select *from machine where id='1'
+2017-09-23 11:26:13,051 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 11:26:13,051 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 11:26:13,051 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 11:26:13,051 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 11:26:13,051 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 11:26:13,051 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 11:26:13,051 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 11:26:13,051 utile.py - [line:61] - list  INFO - sql list:select * from cbten
+2017-09-23 11:32:04,061 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 11:32:04,061 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 11:32:04,061 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 11:32:04,061 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 11:32:04,061 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 11:32:04,061 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 11:32:04,061 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 11:32:04,061 utile.py - [line:61] - list  INFO - sql list:select * from job
+2017-09-23 11:32:04,061 utile.py - [line:61] - list  INFO - sql list:select * from job
