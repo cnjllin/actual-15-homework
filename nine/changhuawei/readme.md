@@ -9,20 +9,20 @@
     
 ### 目录结构
 ###
-![image](./static/xx/jiegou.png)
+![xx](./static/xx/jiegou.png)
 ###
-![image](./static/xx/login.png)
+![xx](./static/xx/login.png)
 ###
-![image](./static/xx/liginok.png)
+![xx](./static/xx/liginok.png)
 ###
-![image](./static/xx/userinfo.png)
+![xx](./static/xx/userinfo.png)
 ###
-![image](./static/xx/loginerr.png)
+![xx](./static/xx/loginerr.png)
 ###
-![image](./static/xx/chpasswd.png)
+![xx](./static/xx/chpasswd.png)
 ###
-![image](./static/xx/upditeinfo.png)
+![xx](./static/xx/upditeinfo.png)
 ###
-![image](./static/xx/updateuserinfo.png)
+![xx](./static/xx/updateuserinfo.png)
 ###
-![image](./static/xx/log.png)
+![xx](./static/xx/log.png)
