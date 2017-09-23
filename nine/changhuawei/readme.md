@@ -24,5 +24,8 @@
 ![xx](./static/xx/upditeinfo.png)
 ###
 ![xx](./static/xx/updateuserinfo.png)
+![xx](./static/xx/jifanglist.png)
+![xx](./static/xx/jiguilist.png)
+![xx](./static/xx/serverlist.png)
 ###
 ![xx](./static/xx/log.png)
