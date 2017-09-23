@@ -20,7 +20,7 @@
 
 <div class="col-sm-12">
 {% if session.role == 'admin' %}
-<a href="/cabinetadd/" class="btn btn-sm btn-primary" style="float:right"> 添加机柜</a>
+<a href="/cabinetadd" class="btn btn-sm btn-primary" style="float:right"> 添加机柜</a>
 {% endif %}
 <br />
 <table class="table table-striped table-bordered table-hover " id="cabinet_table">
@@ -75,7 +75,7 @@ $('#cabinet_table').DataTable({
 $('.del').click(function(){
     var id=$(this).attr('data-id')
     var str="id="+id
-    $.post('/cabinetdelete',str,function(data){
+    $.get('/cabinetdelete?'+str,function(data){
         data=JSON.parse(data);
 	    if(data["code"] == 0){
 		swal({

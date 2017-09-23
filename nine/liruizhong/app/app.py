@@ -182,7 +182,7 @@ def delete_idc():
     result = delete('idc',uid)
     return json.dumps(result)
 
-# 机柜更新
+# 机房更新
 @app.route('/idcupdate',methods=['GET','POST'])
 def idcupdate():
     if request.method == 'GET':
@@ -212,6 +212,44 @@ def cabinet():
         else:
             return redirect('/')
     return redirect('/login/')
+
+# 机柜更新
+@app.route('/cabinetupdate',methods=['GET','POST'])
+def cabinetupdate():
+    if request.method == 'GET':
+        userid = request.args.get('id')
+        data={'id':userid}
+        field = ['id','name','idc_id','u_num','power']
+        result = getone('cabinet',field,data)
+        ret = result['msg']
+        field_idc = ['id','name']
+        idcs = listall('idc',field_idc)
+        print idcs
+    else:
+        data = dict(request.form)
+        data = {k:v[0] for k,v in data.items()}
+        field = ['name','idc_id','u_num','power']
+        result = updateuser('cabinet',field,data)
+        return json.dumps(result)
+    return render_template('cabinet/cabinetupdate.html',cabinet=ret,idcs=idcs['msg'])   
+
+# 机柜添加
+@app.route('/cabinetadd',methods=['GET','POST'])
+def cabinetadd():
+    if request.method == 'POST':
+        data = dict(request.form)
+        data = {k:v[0] for k,v in data.items()}
+    else:
+        field_idc = ['id','name']
+        idcs = listall('idc',field_idc)
+    return render_template('cabinet/cabinetadd.html',idcs=idcs['msg'])
+
+# 删除机柜信息
+@app.route('/cabinetdelete')
+def delete_cabinet():
+    uid = int(request.args.get('id'))
+    result = delete('cabinet',uid)
+    return json.dumps(result)
 
 # 服务器列表
 @app.route('/server/')
