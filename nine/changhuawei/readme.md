@@ -11,7 +11,7 @@
 ![image](./static/xx/jiegou.png)
 ![image](./static/xx/login.png)
 ![image](./static/xx/userinfo.png)
-![image](./static/xx/updateinfo.png)
+![image](./static/xx/upditeinfo.png)
 ![image](./static/xx/userlist.png)
 ![image](./static/xx/logineok.png)
 ![image](./static/xx/loginerr.png)
