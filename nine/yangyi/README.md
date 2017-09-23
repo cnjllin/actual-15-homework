@@ -54,3 +54,21 @@ CMDB  增加对用户访问和数据操作异常的记录
 └── utils.py    
 
 ```
+
+### 用户列表页
+![](https://github.com/51reboot/actual-15-homework/raw/master/nine/yangyi/images/userlist.PNG)
+
+### 用户更新页
+![](https://github.com/51reboot/actual-15-homework/raw/master/nine/yangyi/images/updateuser.PNG)
+
+### 机房添加页
+![](https://github.com/51reboot/actual-15-homework/raw/master/nine/yangyi/images/idc_add.PNG)
+
+### 机房更新页
+![](https://github.com/51reboot/actual-15-homework/raw/master/nine/yangyi/images/idc_update.PNG)
+
+### 机柜添加页
+![](https://github.com/51reboot/actual-15-homework/raw/master/nine/yangyi/images/cabinetadd.PNG)
+
+### 机柜删除页
+![](https://github.com/51reboot/actual-15-homework/raw/master/nine/yangyi/images/cabinet_del.PNG)
