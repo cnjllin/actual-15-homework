@@ -37,7 +37,6 @@ def cabinet_update():
         cabinet = {v: cabinet[k] for k, v in enumerate(config.cabinet_fields)}
         return json.dumps({'code': 1, 'idcs': idcs, 'cabinet': cabinet})
     data = {k: v[0] for k, v in dict(request.form).items()}
-    print(data)
     conditions = ["%s='%s'" % (k, v) for k, v in data.items()]
     if db.update('cabinet', conditions, data['id']) > 0:
         return json.dumps({'code': 1, 'result': 'update completed!'})

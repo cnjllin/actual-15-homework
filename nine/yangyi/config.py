@@ -11,3 +11,4 @@ config = {
 user_fields=['id','username','password','role','phone','job']
 idc_fields = ['id','name','name_cn','address','userid']
 cabinet_fields=['id','name','idc_id','u_num','power']
+server_fields = ['id','hostname','lan_ip','wan_ip','cabinet_id','user_id']

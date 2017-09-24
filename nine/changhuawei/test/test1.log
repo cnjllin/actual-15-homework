@@ -1,0 +1,3 @@
+2017-09-20 03:45:14,115 test1 - INFO - loggerdemo.py  [line:22] - just a test info
+2017-09-20 03:46:32,283 test1 - INFO - test.py  [line:3] - just a test info
+2017-09-20 03:46:55,218 test1 - INFO - test.py  [line:3] - just a test1 info

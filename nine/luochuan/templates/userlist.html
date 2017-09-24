@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block title %}
+ 用户列表
+{% endblock %}
+
+{% block body %}
+
+<!--正文 -->
+<a  class="btn btn-sm btn-primary"  id="Addusers" style="float:left"> 添加用户</a> 
+<br />
+<br />
+<table class="table table-striped table-bordered table-hover " id="editable">
+<thead>
+    <tr>
+        <th class="text-center">用户名</th>
+        <th class="text-center">角色</th>
+        <th class="text-center">邮箱</th>
+        <th class="text-center">电话</th>
+        <th class="text-center">操作</th>
+    </tr>
+</thead>
+<tbody>
+       {% for i in userdict %}       	 
+        	 <tr>
+              <td class="text-center">{{i.username}}</td>
+              <td class="text-center">{% if i.role == 1 %}超级管理员 {% else %} 普通用户 {%endif%} </td>
+              <td class="text-center">{{i.email}}</td>
+              <td class="text-center">{{i.phone}}</td>
+               
+                <td class="text-center">
+                    <button data-id="{{i.id}}" class="btn btn-xs btn-info update">编辑</button>
+                    <button data-id="{{i.id}}" class="btn btn-xs btn-danger del ">删除</button>
+                </td>
+
+             </tr>
+        {% endfor %}
+ </tbody>
+</table>
+
+
+<!--用户添加模态框-->
+<div class="modal fade"  id ="adduser">   
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">添加用户</h4> 
+      </div>
+      <div class="modal-body">
+        <p hidden id="uperrorMsg" class="text-danger" style="color:red"></p> <!-- for error msg-->
+            <form id="adduserForm" class="form-horizontal nice-validator n-yellow" novalidate="novalidate">
+            <div class="form-group">
+                <label for="username" class="col-sm-2 control-label">用户名<span class="red-fonts">*</span></label>
+                <div class="col-sm-8">
+                    <input id="addusername" name="username" placeholder="username" type="text" class="form-control" >
+                </div>
+            </div><!--username-->
+            <div class="form-group">
+                   <label for="name" class="col-sm-2 control-label">密码<span class="red-fonts">*</span></label>
+                    <div class="col-sm-8">
+                        <input id="addpassword" name="password" placeholder="Password" type="password" class="form-control" aria-required="true" data-tip="密码">
+                         </div>
+             </div> <!--password-->
+
+        <div class="form-group">
+        <label for="username" class="col-sm-2 control-label">角色<span class="red-fonts">*</span></label>
+        <div class="col-sm-8">
+            <select id="tag_update" name="role"  class="form-control" >
+               <option value="0">普通用户</option> 
+               <option value="1">管理员</option> 
+            </select>
+    </div>
+    </div><!--add role  end -->
+
+            <div class="hr-line-dashed"></div>
+            <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">邮箱<span class="red-fonts">*</span></label>
+                <div class="col-sm-8">
+                    <input id="addemail" name="email" type="email" placeholder="email" class="form-control">
+                </div>
+            </div><!--Email-->
+
+            <div class="hr-line-dashed"></div>
+            <div class="form-group">
+                <label for="phone" class="col-sm-2 control-label">电话<span class="red-fonts">*</span></label>
+                <div class="col-sm-8">
+                    <input id="addphone" name="phone" placeholder="phone" class="form-control">
+                </div>
+            </div><!--phone-->
+
+
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="adduserbtn">确认</button>
+            </div>
+        </div> <!--button-->
+        </form> <!--form-->
+      </div> <!--modal-body-->
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script type="text/javascript">
+// 添加用户模态框
+$("#Addusers").on('click',function(){
+    $('#adduser').modal('show')  
+})
+
+// 添加用户提交数据
+$("#adduserbtn").click(function(){
+$.post("/register/",$("#adduserForm").serialize(),function(data) {
+    data=JSON.parse(data)
+    if(data["code"]==0){
+               swal({
+                title:"success",
+                text:"用户添加成功",
+                type:"success",
+                confirmButtonText:'确定'
+                },function(){
+                    location.reload()
+                })
+
+    }else{
+        swal("MY GOD",data['msg'],"error");
+    }
+    })
+    return false;
+})
+
+
+</script>
+
+{% endblock %}

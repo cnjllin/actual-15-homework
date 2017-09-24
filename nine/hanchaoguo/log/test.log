@@ -1,0 +1,112 @@
+2017-09-16 23:31:43,709 db.py - [line:68] - update  INFO - update user set username = "ajax",name = "han",phone = "1333333333",role = "0",mail = "124@adas",id = "35" where id = 35 update update user set username = "ajax",name = "han",phone = "1333333333",role = "0",mail = "124@adas",id = "35" where id = 35:
+2017-09-16 23:36:26,075 db.py - [line:49] - select  INFO - select * from user select select * from user:
+2017-09-16 23:36:34,163 db.py - [line:76] - delete  INFO - delete from user where id = 41 delete delete from user where id = 41:
+2017-09-16 23:36:34,210 db.py - [line:49] - select  INFO - select * from user select select * from user:
+2017-09-16 23:36:34,210 db.py - [line:49] - select  INFO - select * from user select select * from user:
+2017-09-16 23:37:33,770 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:37:40,118 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:37:40,118 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:37:49,018 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:37:49,018 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:37:49,018 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:37:55,542 db.py - [line:49] - select  INFO - select * from server select select * from server:
+2017-09-16 23:47:58,688 db.py - [line:49] - select  INFO - select * from server select select * from server:
+2017-09-16 23:48:01,589 db.py - [line:36] - getone  INFO - select * from server where id = "9" getone select * from server where id = "9":
+2017-09-16 23:48:07,107 db.py - [line:63] - update  INFO - update server set lan_ip = "192.168.1.1",hostname = "server01",wan_ip = "10.0.0.2",phone = "1333333333",cabinet_id = "18",id = "9",op = "guozi" where id = 9 update update server set lan_ip = "192.168.1.1",hostname = "server01",wan_ip = "10.0.0.2",phone = "1333333333",cabinet_id = "18",id = "9",op = "guozi" where id = 9:
+2017-09-16 23:48:08,417 db.py - [line:49] - select  INFO - select * from server select select * from server:
+2017-09-16 23:48:08,417 db.py - [line:49] - select  INFO - select * from server select select * from server:
+2017-09-16 23:48:11,777 db.py - [line:76] - delete  INFO - delete from server where id = 12 delete delete from server where id = 12:
+2017-09-16 23:48:13,014 db.py - [line:49] - select  INFO - select * from server select select * from server:
+2017-09-16 23:48:13,014 db.py - [line:49] - select  INFO - select * from server select select * from server:
+2017-09-16 23:48:13,014 db.py - [line:49] - select  INFO - select * from server select select * from server:
+2017-09-16 23:48:17,506 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:48:28,108 db.py - [line:22] - insert  INFO - insert into cabinet (name,idc_id,u_num,power) values ("asd","7","asda","asd"); insert insert into cabinet (name,idc_id,u_num,power) values ("asd","7","asda","asd");:
+2017-09-16 23:48:29,479 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:48:29,479 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:48:46,814 db.py - [line:22] - insert  INFO - insert into cabinet (name,idc_id,u_num,power) values ("sdfasd","1","asdas","asda"); insert insert into cabinet (name,idc_id,u_num,power) values ("sdfasd","1","asdas","asda");:
+2017-09-16 23:48:47,804 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:48:47,804 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:48:47,804 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:49:01,310 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:49:01,310 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:49:01,310 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-16 23:49:01,310 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 00:16:55,510 db.py - [line:36] - getone  INFO - select * from user where username= "aa" getone select * from user where username= "aa":
+2017-09-17 00:29:40,989 db.py - [line:49] - select  INFO - select * from user select select * from user:
+2017-09-17 00:41:25,442 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:41:38,300 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 00:41:41,583 db.py - [line:36] - getone  INFO - select * from cabinet where id = "12" getone select * from cabinet where id = "12":
+2017-09-17 00:45:41,803 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 00:45:41,803 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 00:45:44,884 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 00:45:44,884 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 00:45:44,884 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 00:45:47,065 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:45:47,065 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:48:03,281 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:48:03,281 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:48:03,281 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:48:03,309 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:48:03,309 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:48:03,309 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:48:03,309 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:49:02,662 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:49:02,662 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:49:02,662 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:49:02,662 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:49:02,662 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 00:49:05,137 db.py - [line:36] - getone  INFO - select * from idc where id = "9" getone select * from idc where id = "9":
+2017-09-17 01:25:33,440 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:26:57,479 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:26:57,479 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:27:09,732 db.py - [line:36] - getone  INFO - select * from user where username= "add" getone select * from user where username= "add":
+2017-09-17 01:28:39,135 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:28:39,135 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:28:39,135 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:28:41,125 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:28:41,125 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:28:41,125 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:28:41,125 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:30:32,347 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:30:32,347 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:30:32,347 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:30:32,347 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:30:32,347 db.py - [line:36] - getone  INFO - select * from user where username= "admin" getone select * from user where username= "admin":
+2017-09-17 01:30:59,477 db.py - [line:36] - getone  INFO - select * from user where username= "aa" getone select * from user where username= "aa":
+2017-09-17 01:31:03,332 db.py - [line:36] - getone  INFO - select * from user where username= "aa" getone select * from user where username= "aa":
+2017-09-17 01:31:03,332 db.py - [line:36] - getone  INFO - select * from user where username= "aa" getone select * from user where username= "aa":
+2017-09-17 01:31:04,030 db.py - [line:36] - getone  INFO - select * from user where username= "aa" getone select * from user where username= "aa":
+2017-09-17 01:31:04,030 db.py - [line:36] - getone  INFO - select * from user where username= "aa" getone select * from user where username= "aa":
+2017-09-17 01:31:04,030 db.py - [line:36] - getone  INFO - select * from user where username= "aa" getone select * from user where username= "aa":
+2017-09-17 01:38:07,211 db.py - [line:49] - select  INFO - select * from user select select * from user:
+2017-09-17 01:39:00,653 db.py - [line:36] - getone  INFO - select * from user where id = "39" getone select * from user where id = "39":
+2017-09-17 01:42:55,644 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 01:43:56,873 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 01:44:39,895 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 01:44:39,895 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 01:45:45,010 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 01:45:45,010 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 01:45:45,010 db.py - [line:49] - select  INFO - select * from idc select select * from idc:
+2017-09-17 01:45:46,116 db.py - [line:36] - getone  INFO - select * from idc where id = "9" getone select * from idc where id = "9":
+2017-09-17 01:47:46,692 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 01:47:46,692 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 01:48:38,039 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 01:48:38,039 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 01:48:38,039 db.py - [line:49] - select  INFO - select * from cabinet select select * from cabinet:
+2017-09-17 01:48:39,788 db.py - [line:36] - getone  INFO - select * from cabinet where id = "12" getone select * from cabinet where id = "12":
+2017-09-17 01:49:49,181 db.py - [line:49] - select  INFO - select * from server select select * from server:
+2017-09-17 01:51:40,722 db.py - [line:49] - select  INFO - select * from server select select * from server:
+2017-09-17 01:51:40,722 db.py - [line:49] - select  INFO - select * from server select select * from server:
+2017-09-17 01:51:42,106 db.py - [line:36] - getone  INFO - select * from server where id = "9" getone select * from server where id = "9":
+2017-09-17 02:44:35,290 db.py - [line:49] - select  INFO - select * from server select select * from server:
+2017-09-17 02:44:40,192 db.py - [line:36] - getone  INFO - select * from user where username= "aa" getone select * from user where username= "aa":
+2017-09-17 03:50:27,153 db.py - [line:36] - getone  INFO - select * from user where username= "user" getone select * from user where username= "user":
+2017-09-17 03:50:31,776 db.py - [line:36] - getone  INFO - select * from user where username= "user" getone select * from user where username= "user":
+2017-09-17 03:50:31,776 db.py - [line:36] - getone  INFO - select * from user where username= "user" getone select * from user where username= "user":
+2017-09-17 03:50:35,857 db.py - [line:36] - getone  INFO - select * from user where username= "user" getone select * from user where username= "user":
+2017-09-17 03:50:35,857 db.py - [line:36] - getone  INFO - select * from user where username= "user" getone select * from user where username= "user":
+2017-09-17 03:50:35,857 db.py - [line:36] - getone  INFO - select * from user where username= "user" getone select * from user where username= "user":
+2017-09-17 03:50:36,876 db.py - [line:36] - getone  INFO - select * from user where username= "user" getone select * from user where username= "user":
+2017-09-17 03:50:36,876 db.py - [line:36] - getone  INFO - select * from user where username= "user" getone select * from user where username= "user":
+2017-09-17 03:50:36,876 db.py - [line:36] - getone  INFO - select * from user where username= "user" getone select * from user where username= "user":
+2017-09-17 03:50:36,876 db.py - [line:36] - getone  INFO - select * from user where username= "user" getone select * from user where username= "user":

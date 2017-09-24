@@ -17,6 +17,8 @@ CMDB  增加对用户访问和数据操作异常的记录
     * 显示机房信息，添加、更新、删除机房信息
   * 机柜模块
     * 显示机柜信息、添加、更新、删除机柜信息
+  * 服务器模块
+	* 显示服务器信息、添加、更新、删除服务器信息
 
 
 ### 项目结构
@@ -72,3 +74,6 @@ CMDB  增加对用户访问和数据操作异常的记录
 
 ### 机柜删除页
 ![](https://github.com/51reboot/actual-15-homework/raw/master/nine/yangyi/images/cabinet_del.PNG)
+
+### 服务器更新页
+![](https://github.com/51reboot/actual-15-homework/raw/master/nine/yangyi/images/server_update.PNG)
