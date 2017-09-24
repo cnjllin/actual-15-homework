@@ -1,0 +1,11 @@
+CREATE TABLE `server` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `hostname` varchar(24) NOT NULL unique,
+  `lan_id` varchar(24) DEFAULT NULL,
+  `wan_ip` varchar(24) DEFAULT NULL,
+  `cabinet_id` int(11) DEFAULT NULL,
+  `op` varchar(24) DEFAULT NULL,
+  `phone` varchar(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
