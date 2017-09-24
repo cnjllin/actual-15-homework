@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+{% block main %}
+       <!--右边第二层面包导航-->
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-12">
+     <br />
+        <ol class="breadcrumb">
+            <li>
+                <a href="{{ url_for('userinfo') }}">仪表盘</a>
+            </li>
+            <li>
+                <a href="{{ url_for('cbtenlist') }}">
+
+机柜管理
+
+
+                </a>
+            </li>
+        </ol>
+    </div>
+</div> <!--右边导航结束-->
+<!--正文部分分了三层-->
+<div class="wrapper wrapper-content">
+
+    <div class="row">
+        <div class="col-sm-12 border-bottom white-bg dashboard-header" style="margin-left:15px;height: 800px">
+
+<div class="col-sm-12">
+
+<a id="cbtenreg"class='btn btn-sm btn-primary'>添加机柜</a>
+
+<table class="table table-striped table-bordered table-hover " id="idc_table">
+<thead>
+     <tr>
+         <td>id</td>
+        <td>username</td>
+        <td>address</td>
+        <td>U位</td>
+         <td>power</td>
+        <td>操作</td>
+    </tr>
+</thead>
+<tbody>
+         {% for user in result %}
+            <tr>
+                <td >{{ user.id }}</td>
+                <td class="text-center"><a href="{{ url_for('userinfo') }}">{{ user.username}}</a></td>
+                <td>{{user.address}}</td>
+                <td>{{ user.U}}</td>
+                <td>{{ user.power }}</td>
+                <td class="text-center">
+                    <a href="/cbtenupdate/?id={{ user.id}}"  class="btn btn-xs btn-info update">编辑</a>
+                    <button data-id={{ user.id }} class="btn btn-xs btn-danger del">删除</button>
+                </td>
+         </tr>
+    {% endfor %}
+
+</tbody>
+</table>
+
+<!--添加机柜信息-->
+<div id="cbtenregModal"  class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span ariaa-hidden="true">&times;</span></button>		    <h5>填写基本信息</h5>
+		    <div class="ibox-tools">
+			<a class="collapse-link">
+			    <i class="fa fa-chevron-up"></i>
+			</a>
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			    <i class="fa fa-wrench"></i>
+			</a>
+			<a class="close-link">
+			    <i class="fa fa-times"></i>
+			</a>
+		    </div>
+		</div>
+		<div class="ibox-content">
+		    <form id="cabinetForm" class="form-horizontal nice-validator n-yellow" >
+			<div class="form-group">
+			    <label for="name" class="col-sm-3 control-label  ">机柜名</label>
+			    <div class="col-sm-8">
+				<input id="name" name="username" placeholder="Name" type="text" class="form-control">
+			     </div>
+			</div><!--name-->
+			<div class="hr-line-dashed"></div>
+			<div class="form-group">
+			    <label for="idc_id" class="col-sm-3 control-label">所在机房ID</label>
+			    <div class="col-sm-8">
+			    <select id='idc_id' name="address"  class='multiselect dropdown-toggle btn btn-default'>
+
+                            <option  value="7">hp</option>
+
+                            <option  value="1">syq</option>
+
+                            <option  value="8">zhaowei</option>
+
+				</select>
+			    </div>
+			</div><!--idc-->
+			<div class="hr-line-dashed"></div>
+			<div class="form-group">
+			    <label for="u_num" class="col-sm-3 control-label">U位</label>
+			    <div class="col-sm-8">
+				<input id="u_num" name="U" placeholder="U number" type="text" class="form-control" aria-required="true">
+			    </div>
+			</div><!--U位-->
+			<div class="hr-line-dashed"></div>
+			<div class="form-group">
+			    <label for="power" class="col-sm-3 control-label">电量</label>
+			    <div class="col-sm-8">
+				<input id="power" name="power" placeholder="Power" type="text" class="form-control" >
+			    </div>
+			</div> <!--电量-->
+			<div class="hr-line-dashed"></div>
+			<div class="form-group">
+			    <div class="col-sm-6 col-sm-offset-2">
+				<button id="submit_button" class="btn btn-primary">确认保存</button>
+				<button id='cancel_button' class="btn btn-white" type="reset">取消</button>
+				<button class="btn btn-white" type="reset">重置</button>
+			    </div>
+			</div>
+			<div style="color:red" class="text-center" id="errmsg"></div>
+		   </form>
+		</div>
+	    </div>
+	</div>
+    </div>
+</div><!--添加机柜信息结束-->
+
+
+
+
+
+<script>
+$('#editable').DataTable({
+    "bDestroy": true,
+    "language": {
+        "lengthMenu": "每页 _MENU_ 条记录",
+        "zeroRecords": "没有找到记录",
+        "sInfo": "第 _PAGE_ 页 ( 总共 _PAGES_ 页 ),显示第 _START_ 至 _END_ 项(总共 _TOTAL_ 项)",
+        "infoEmpty": "无记录",
+        "infoFiltered": "(从 _MAX_ 条记录过滤)",
+        "sSearch": "搜索:",
+        "oPaginate": {
+        "sFirst": "首页",
+        "sPrevious": "上一页",
+        "sNext": "下一页",
+        "sLast": "末页"
+        }
+    },
+    "order": [[ 0,"asc" ]]
+})
+
+
+
+<!--添加机柜模态窗-->
+$("#cbtenreg").on('click',function(){
+    $('#cbtenregModal').modal('show')
+})
+
+
+$('#idc_id').multiselect({
+            placeholder: "请选择",
+            enableCaseInsensitiveFiltering: true
+            })
+$('#idc_id').multiselect('refresh')
+$("#submit_button").click(function(){
+    var str=$("#cabinetForm").serialize()
+	$.post("/cbtenreg/",str,function(data){
+	    data=JSON.parse(data);
+	    if(data["code"] == 0){
+		swal({
+		    title:'Congratulation',
+		    text:data['result'],
+		    type:'success',
+		    confirmButtonText:'确定'
+		    },function(){
+			    location.href='/cbtenlist/'
+		    })
+	    }else{
+		    swal('Error',data['errmsg'],'error')
+	    }
+	})
+	return false
+})
+
+$('#cancel_button').click(function(){
+    location.href='/cbtenlist/'
+})
+
+<!--机柜删除-->
+$('.del').click(function(){
+    var id=$(this).attr('data-id')
+    var str="id="+id
+    $.get('/cbtendlt/',str,function(data){
+        data=JSON.parse(data);
+	    if(data["code"] == 0){
+		swal({
+		    title:'删除成功',
+		    text:data['result'],
+		    type:'success',
+		    confirmButtonText:'Cool'
+		    },function(){
+			     location.reload()
+		    })
+	 }else{
+	    	swal('Error',data['errmsg'],'error')
+	}
+   })
+    return false
+})
+
+</script>
+
+
+
+         </div>
+    </div>
+    <br>
+
+
+</div> <!--wrapper-content-->
+
+
+
+<!--页面尾部-->
+<div class="footer fixed">
+    <div class="pull-right">
+        Version <strong>0.3.1</strong> GPL.
+    </div>
+    <div>
+        <strong>Copyright</strong>Reboot.com  Team © 2014-2015
+    </div>
+</div>
+
+</div>  <!--page-wrapper-->
+</div>   <!--wrapper-->
+
+
+{% endblock %}
+
+
+</body></html>
