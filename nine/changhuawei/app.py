@@ -204,7 +204,6 @@ def idcdelete():
 	print result 
 	return json.dumps(result)	
 
-# +++++++++++++++
 # 机柜管理
 cabinet_field = ['id','name','idc_name','u_num','power']
 
@@ -332,54 +331,53 @@ def cabinetdata():
     print json.dumps(result)
     return json.dumps(result)
 
-# +++++++++++++++
-# 工单管理
-
-job_field = ['id','type','contents','applicant','assign_to','apply_time','complete_time','status']
-
-# 工单列表主要显示没有处理的工单
-@app.route('/joblist/')
-def joblist():
-	if not session:
-		return redirect('/login/')
-	result = alllist('job',job_field)
-	print result
-	return render_template('joblist.html',result=result)
-
-
+## 工单管理
+#
+#job_field = ['id','type','contents','applicant','assign_to','apply_time','complete_time','status']
+#
+## 工单列表主要显示没有处理的工单
+#@app.route('/joblist/')
+#def joblist():
+#	if not session:
+#		return redirect('/login/')
+#	result = alllist('job',job_field)
+#	print result
+#	return render_template('joblist.html',result=result)
+#
+#
 # 申请工单	
-@app.route('/jobadd/',methods=['GET','POST'])
-def jobadd():
-	if request.method == 'POST':
-		job_field = ['type','contents','applicant','assign_to']
-		data = {k:v[0] for k,v in dict(request.form).items()}
-		print data
-		result = insert('job',job_field,data)
-		return json.dumps(result)
-	return render_template("jobadd.html")
+#@app.route('/jobadd/',methods=['GET','POST'])
+#def jobadd():
+##	if request.method == 'POST':
+#		job_field = ['type','contents','applicant','assign_to']
+#		data = {k:v[0] for k,v in dict(request.form).items()}
+#		print data
+#		result = insert('job',job_field,data)
+#		return json.dumps(result)
+#	return render_template("jobadd.html")
 
 # 历史工单显示所有工单信息
-@app.route('/jobhistory/')
-def jobhistory():
-	if not session:
-		return redirect('/login/')
-	result = alllist('job',job_field)
-	print result
-	return render_template('jobhistory.html',result=result)
+#@app.route('/jobhistory/')
+##def jobhistory():
+#	if not session:
+#		return redirect('/login/')
+#	result = alllist('job',job_field)
+#	print result
+#	return render_template('jobhistory.html',result=result)
 
 # 工单详情
-@app.route('/jobdetail/')
-def jobdetail():
-	if not session:
-		return redirect('/login/')
-	jobid = request.args.get('id')
-	data = {'id':jobid}
-	result = getone('job',job_field,data)
-	result['msg']['apply_time']=str(result['msg']['apply_time'])
-	result['msg']['complete_time']=str(result['msg']['complete_time'])
-	print result
-	if result['code'] == 0:
-		return json.dumps(result)
+#@app.route('/jobdetail/')
+#def jobdetail():
+#	if not session:
+#		return redirect('/login/')
+#	jobid = request.args.get('id')
+#	data = {'id':jobid}
+#	result = getone('job',job_field,data)
+##	result['msg']['apply_time']=str(result['msg']['apply_time'])
+#	result['msg']['complete_time']=str(result['msg']['complete_time'])
+#	print result
+#	if result['code'] == 0:
+#		return json.dumps(result)
 
 # 登出系统
 @app.route('/logout/')
@@ -388,6 +386,6 @@ def logout():
 	return redirect('/login')
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0',port=8888,debug=True)
+	app.run(host='0.0.0.0',port=8899,debug=True)
 
 
