@@ -1,0 +1,1155 @@
+2017-09-23 23:54:14,299 db.py - [line:45] - alllist  INFO - sql alllist:select * from user;
+2017-09-23 23:54:14,305 db.py - [line:49] - alllist  INFO - sql alllist:select * from user;
+2017-09-23 23:54:14,305 db.py - [line:49] - alllist  INFO - sql alllist:select * from user;
+2017-09-23 23:54:20,977 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-23 23:54:20,977 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-23 23:54:20,977 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-23 23:54:29,541 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:54:29,541 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:54:29,541 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:54:29,541 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:54:29,545 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:54:29,545 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:54:29,545 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:54:29,545 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:54:29,545 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:44,041 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:44,041 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:44,041 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:44,041 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:44,041 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:44,041 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:44,047 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:44,047 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:44,047 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:44,047 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:44,047 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:44,047 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:44,047 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-23 23:59:47,054 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,054 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,054 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,054 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,054 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,054 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,054 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,054 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,059 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,059 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,059 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,059 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,059 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,059 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,059 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,059 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-23 23:59:47,059 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,512 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,512 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,512 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,512 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,512 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,512 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,512 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,512 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,512 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,512 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,522 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,522 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,522 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,522 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,522 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,522 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,522 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,522 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,522 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,522 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:24,522 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:03:27,152 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,152 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,152 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,152 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,152 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,152 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,152 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,152 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,152 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,152 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,152 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,152 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:27,157 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,259 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:29,264 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:03:34,869 db.py - [line:45] - alllist  INFO - sql alllist:select * from job;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,302 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:09,317 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:51,077 db.py - [line:18] - insert  INFO - sql insert:insert into idc (name,name_cn,address,adminer,phone) values ("zhaowei","兆维","将台","chang","123456")
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,291 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:52,307 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,013 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:04:55,024 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:05:20,817 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("E1","zhaowei","31-1","2") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:27,897 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("E1","zhaowei","31_2","2") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:27,897 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("E1","zhaowei","31_2","2") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:35,739 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("E1","zhaowei","","") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:35,739 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("E1","zhaowei","","") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:35,739 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("E1","zhaowei","","") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:43,601 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("E1","zhaowei","22","") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:43,601 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("E1","zhaowei","22","") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:43,601 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("E1","zhaowei","22","") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:43,601 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("E1","zhaowei","22","") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:55,074 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:55,074 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:55,074 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:55,074 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:55,074 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:58,097 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","1") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:58,097 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","1") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:58,097 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","1") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:58,097 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","1") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:58,097 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","1") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:05:58,097 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","1") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:02,539 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:02,539 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:02,539 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:02,539 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:02,539 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:02,539 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:02,539 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:11,572 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_1","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:11,572 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_1","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:11,572 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_1","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:11,572 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_1","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:11,572 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_1","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:11,572 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_1","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:11,572 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_1","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:11,572 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_1","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:17,041 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_aa","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:17,041 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_aa","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:17,041 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_aa","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:17,041 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_aa","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:17,041 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_aa","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:17,041 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_aa","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:17,041 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_aa","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:17,041 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_aa","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:17,041 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("aa","zhaowei","22_aa","ss") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,190 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:06:22,215 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,773 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:07:49,784 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:08:07,164 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("qqq","zhaowei","q","q") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:07,164 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("qqq","zhaowei","q","q") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:07,164 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("qqq","zhaowei","q","q") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:07,164 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("qqq","zhaowei","q","q") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:07,164 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("qqq","zhaowei","q","q") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:07,164 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("qqq","zhaowei","q","q") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:07,164 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("qqq","zhaowei","q","q") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:07,164 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("qqq","zhaowei","q","q") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:07,164 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("qqq","zhaowei","q","q") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:07,164 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("qqq","zhaowei","q","q") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:49,034 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("002","zhaowei","1u","20A") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:49,034 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("002","zhaowei","1u","20A") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:49,034 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("002","zhaowei","1u","20A") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:49,034 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("002","zhaowei","1u","20A") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:49,034 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("002","zhaowei","1u","20A") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:49,034 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("002","zhaowei","1u","20A") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:49,034 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("002","zhaowei","1u","20A") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:49,034 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("002","zhaowei","1u","20A") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:49,034 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("002","zhaowei","1u","20A") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:49,034 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("002","zhaowei","1u","20A") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:49,034 db.py - [line:22] - insert  ERROR - db Execute insert into cabinet (name,idc_name,u_num,power) values ("002","zhaowei","1u","20A") error:Traceback (most recent call last):
+  File "/root/reboot15/actual-15-homework/nine/changhuawei/db.py", line 17, in insert
+    res = cur.execute(sql)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'idc_name' in 'field list'")
+
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,682 db.py - [line:45] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:08:57,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from idc;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,679 db.py - [line:45] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:23,685 db.py - [line:49] - alllist  INFO - sql alllist:select * from server;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,678 db.py - [line:45] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
+2017-09-24 00:09:46,689 db.py - [line:49] - alllist  INFO - sql alllist:select * from cabinet;
