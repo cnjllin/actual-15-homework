@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<h1>更新信息</h1>
+
+ <form action="/update/" accept-charset="UTF-8" method="post">
+        <input id= "uid" value="" type="hidden"  name="id">
+        姓名 ：<input placeholder="姓名" type="text"  id="username"  name="username"><br>
+        密 码：<input placeholder="密码" type="text"  id="password" name="password"><br>
+        角 色：<input type="radio" name="role" >管理员
+               <input type="radio" name="role"  >用户 
+               <br>
+        <input type="submit"  value="更新"> <br>
+
+ </form>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script>
+/*通过ID获取数据并渲染更新表单*/
+var id = {{ uid }}
+var url = "/userinfo/?id="+id
+console.log(url)
+$.getJSON(url,function(data){
+  console.log(data)  
+  $("#username").val(data['username'])
+  $("#password").val(data['password'])
+})
+</script>
+
+
+</html>

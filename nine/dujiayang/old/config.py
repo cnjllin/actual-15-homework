@@ -1,0 +1,5 @@
+#db_host = '121.43.191.76'
+db_host = '127.0.0.1'
+db_name = 'reboot15'
+db_user = 'macreboot'
+db_passwd = '123'

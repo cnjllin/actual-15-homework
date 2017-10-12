@@ -110,6 +110,11 @@
 	    <td>{{user.password}}</td>
 	    <td>{{user.email}}</td>
 	    <td>{{user.phone}}</td>
+{#	    {% if user.status == 0 %}
+                <td>正常</td>
+	    {% else %}
+	    	<td>锁定</td>
+	    {% endif %} #}
 	    <td>{% if user.role==0 %}管理员{% else%}用户{%endif%}</td>
 	    <td> 
            {% if info['role'] == 0%}

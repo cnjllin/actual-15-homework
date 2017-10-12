@@ -9,9 +9,12 @@ conn.autocommit(True)
 cur = conn.cursor()
 
 def insert(table,field,data):
+    print field
+    print data
     sql = "insert into %s (%s) values (%s)"  % (table,','.join(field),','.join(['"%s"' % data[x] for x in field]))
+    print sql
     res = cur.execute(sql)
-    util.WriteLog('[utils.py-insert插入数据库]').info(sql) 
+    util.WriteLog('[utils.py-insertsql]').info(sql) 
     if res:
         result = {'code':0,'msg':'insert ok'}
     else:
@@ -25,6 +28,8 @@ def getlist(table,field):
     res = cur.fetchall()
     if res:
        user = [{k:row[i] for i,k in enumerate(field)} for row in res]
+       print "fetchallallallall"
+       print user
        result = {'code':0,'msg':user}
     else:
        result = {'code':1,'errmsg':'data is null'}
@@ -42,6 +47,8 @@ def getone(table,field,data):
     res = cur.fetchone()
     if res:
        user = {k:res[i] for i,k in enumerate(field)}
+       print "fetchoneoneoneone"
+       print user
        result = {'code':0,'msg':user}
     else:
        result = {'code':1,'msg':"data is null"}
@@ -50,6 +57,8 @@ def getone(table,field,data):
 
 def update(table,field,data): 
     conditions = ["%s='%s'" % (k,data[k]) for k in data]
+    print conditions
+   # condition = [(k,data[k]) for k in data]
     sql = "update %s set %s where id=%s" %(table,','.join(conditions),data['id'])
     print sql
     res = cur.execute(sql)
