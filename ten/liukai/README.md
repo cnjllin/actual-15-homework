@@ -109,6 +109,26 @@
 
 ![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/服务器编辑.png)
 
+## 工单添加
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/ten/liukai/test/%E2%95%94%D1%8A%E2%95%9F%D1%8B%E2%95%A3%D0%B4%E2%95%A1%D0%B5.png)
+
+## 工单列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/ten/liukai/test/%E2%95%A3%D0%B4%E2%95%A1%D0%B5%E2%94%B4%E2%95%A8%E2%96%92%D1%8D.png)
+
+## 申请工单详情
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/ten/liukai/test/%E2%95%A3%D0%B4%E2%95%A1%D0%B5%E2%95%94%D1%8A%E2%95%9F%D1%8B%E2%95%A7%D1%8A%E2%95%9F%D1%89.png)
+
+## 工单历史
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/ten/liukai/test/%E2%94%94%C2%B7%E2%95%A9%E2%95%96%E2%95%A3%D0%B4%E2%95%A1%D0%B5.png）
+
+## 日志饼状图
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/ten/liukai/test/%E2%96%92%C2%A4%E2%95%AB%E2%94%A4%E2%95%90%E2%95%9D.png）
+
 # 项目文档
 
 ## 需求分析：
