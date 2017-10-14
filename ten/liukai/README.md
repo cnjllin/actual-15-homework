@@ -1,4 +1,117 @@
-## 需求分析
+#  作业
+###  扒页面
+
+###  static目录没有上传
+
+# 目录结构
+
+<pre>
+
+├── app
+│   ├── cmdb.py            # 资产管理
+│   ├── job.py            # 工单系统
+│   ├── __init__.py
+│   ├── static             # 静态文件
+│   │   ├── css
+│   │   ├── img
+│   │   ├── js
+│   │   └── pulgin
+│   ├── templates                # html目录
+│   │   ├── add.html             # 添加用户
+│   │   ├── base.html            #  模板 
+│   │   ├── cabinet.html          # 机柜列表
+│   │   ├── cabinet_update.html   # 更新机柜
+│   │   ├── idc_add.html          # 添加机房
+│   │   ├── idc.html               # 机房列表
+│   │   ├── index.html             # 主页面
+│   │   ├── list.html              #  用户主界面
+│   │   ├── login.html             #  登录界面
+│   │   ├── reg.html               # 注册界面
+│   │   ├── server.html            # 服务器列表
+│   │   ├── server_update.html     # 服务器更新
+│   │   ├── log.html               # 饼状图
+│   │   ├── map.html                # 地图
+│   │   ├── job_add.html            # 添加工单
+│   │   ├── jobhistory.html         # 工单历史
+│   │   ├── joblist.html            # 工单列表
+│   │   └── userlist.html           # 用户列表
+│   ├── user.py              # 用户权限模块
+│   └── log.py                # 可视化
+├── config.py                 # 数据库配置模块
+├── run.py                    # 入口         
+├── util.py                   # 日志模块
+├── utils.py                  # 功能模块
+
+
+
+
+
+</pre>
+
+
+# 测试结果
+
+
+## 日志
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/日志.png)
+
+# 用户权限
+
+## 用户列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/用户列表.png)
+
+## 用户添加
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/用户添加.png)
+
+## 用户编辑
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/用户编辑.png)
+
+# 资产管理CMDB
+
+## 机房列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/机房列表.png)
+
+## 机房添加
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/机房添加.png)
+
+## 机房编辑
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/机房编辑.png)
+
+## 机柜列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/机柜列表.png)
+
+## 机柜添加
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/添加机柜.png)
+
+## 机柜编辑
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/机柜编辑.png)
+
+
+## 服务器列表
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/服务器列表.png)
+
+## 服务器添加
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/服务器添加.png)
+
+## 服务器编辑
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/服务器编辑.png)
+
+# 项目文档
+
+## 需求分析：
 
 > 用户权限管理系统
 
@@ -22,7 +135,7 @@ def index():
 ### 注册页面
 V端：reg.html
 <pre>
-  <\form atction="/reg/",method="POST">
+  <\form atction"/reg/",method="POST">
     用户名，密码，角色
   <\/form>
 </pre>   
@@ -46,13 +159,11 @@ M端:user
 <pre>
  mysql> CREATE TABLE `user` (
  ->   `id` int(100) NOT NULL AUTO_INCREMENT,
- ->   `username` varchar(100) NOT NULL UNIQUE,
+ ->   `username` varchar(100) NOT NULL,
  ->   `password` varchar(100) NOT NULL,
  ->   `role` int(10) NOT NULL,
  ->   PRIMARY KEY (`id`)
  -> )  DEFAULT CHARSET=utf8;
-
-UNIQUE 用户名唯一
 
 select * from user where username=username
 insert into user () values()
@@ -71,20 +182,26 @@ C端:
 @app.route("/login/",methods=["GET","POST"]
 def login():
     if method为post：
-       user=request.form
-       if res['code']==0 && res['msg']['passwd']=user['password']
-            ..........        
-        else:
-            ...........
-     return render_template("user.html",user=user)
+       username=request.form.get("username"," ")
+       password=request.form.get("password"," ")
+       if 判断用户是存在并且密码正确：
+             if role==1:
+                user_dict=查询所有用户信息,并转换为字典
+                return render_template("user_list.html",user_dict=user_idct,usaername=username,role=role)
+             else:
+                user=按用户名查询单用户信息
+                return render_template("user.html",user=user)
        
+       else：
+           msg=用户或密码错误
+           return redicet("/login/?msg='用户名或密码错误'")
+    return render_tempalte("login.html")
 </pre> 
 
-M端: 查某一天数据 
+M端:  
 <pre>
- def getone(table,field,data)
-     sql="select * from user where username='wd'"
-     cur.exculte(sql)
+查所用户信息 sql=" select * from user"
+按username 查单用户信息 sql= "select * from user where username=%s"%username
 </pre>
 
 ## 管理页面/用户列表
@@ -135,7 +252,7 @@ def update():
     user=执行查询单用户sql，
         return  render_tempalte('update.html'user=user)
 
-@app.route("/update/new/")
+@app.route("/update/")
     获取修改的数据
     执行update sql 更改数据库
             
@@ -151,20 +268,48 @@ M端：
   sql="update user set password='%s',sex=%d,age=%d,phone=%d,email='%s',role=%d where id=%d"%(my_tup[0],my_tup[1],my_tup    
 </pre>       
 
-### 目录结构
-<pre>
-.
-├── app.py                 # 主程序
-├── README.md              # 项目文档
-├── show_create_table.md   # 表结构
-├── static 
-├── templates
-│   ├── index.html         # 首页
-│   ├── list.html          # 用户页面
-│   ├── login.html         # 登录页面
-│   ├── reg.html           # 注册页面
-│   └── update.html        # 更新页面
-├── utils.py               # 功能函数
-└── utils.pyc
+# cdmd 资产管理 
 
-</pre>
+## 机房列表
+
+V端: idc.html  
+     <pre>
+     显示一个表格（编号，机房名，地址，中文名， 联系人，电话 ，操作）操作里有两个按钮（编辑，删除）表格上方有添加按钮
+     点击添加,弹出模态窗，添加机房信息
+     点击编辑按钮，跳转到界面，idc_uptdae.html
+     点击删除按照，直接执行删除sql
+     
+     idc_update.html
+     点击编辑按钮 ,跳转到idc_update.html，获取id.执行utils.getone。渲染信息
+     修改信息。然后点击更新，执行util.update.
+     </pre>
+     
+ C端：
+ <pre>
+ @app.route('/idc/')
+ def idc()：
+       查所有机房，
+       return render_template("渲染信息")
+   
+  @app.route("/idc_getone")
+  def idc_getone():
+      date=utils.getone(idc_table,filed,data)
+      return render_template(‘渲染信息')
+   
+ @app.route('/idc_update/'） 
+ def idc_update():
+     date=utils.update()
+     return json.dumps(data)
+   </pre> 
+ 
+ M端：
+   <pre> 
+    查idc表
+    执行util.select(idc_table,idc_field,data)
+    
+    查单idc信息
+    util.getone(idc_table,idc_field,data)
+    
+    #更新
+    utils.update(idc_table,idc_field,data)
+    </pre>
