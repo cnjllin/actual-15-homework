@@ -123,7 +123,7 @@
 
 ## 工单历史
 
-![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/ten/liukai/test/%E2%94%94%C2%B7%E2%95%A9%E2%95%96%E2%95%A3%D0%B4%E2%95%A1%D0%B5.png）
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/ten/liukai/test/%E2%94%94%C2%B7%E2%95%A9%E2%95%96%E2%95%A3%D0%B4%E2%95%A1%D0%B5.png)
 
 ## 日志饼状图
 
