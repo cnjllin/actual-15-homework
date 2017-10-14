@@ -1,0 +1,233 @@
+{% extends "/common/base.html" %}
+{% block breadcrumb %}
+个人用户
+{% endblock %}
+{% block main %}
+
+<div class="modal fade" id='updateModel'>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	<h4 class="modal-title">更新</h4>
+      </div>
+      <div class="modal-body">
+	<form method="post" id="updateForm" class="form-horizontal">
+	    <div>
+		<input id='id' type='hidden' name='id' readonly='true' >
+	    </div><!-- id -->
+
+	    <div class='form-group'>
+		<label for="name" class="col-sm-2 control-label">用户名<span class="red-fonts">*</span></label>
+		<div class="col-sm-8">
+		    <input id="name" name="username" placeholder="Username" type="text" class="form-control" readonly>
+		</div>
+	    </div>
+	    <div class="hr-line-dashed"></div>
+	    <div class='form-group'>
+		<label for="mobile" class="col-sm-2 control-label">手机号</label>
+		<div class="col-sm-8">
+		    <input id="mobile" name="phone" placeholder="Mobile" type="text" class="form-control" aria-required="true" data-tip="手机号" class='inputxt' ignore='ignore' datatype='m' errormsg='手机号必须11位数字'>
+		</div>
+	    </div>
+	    <div class="hr-line-dashed"></div>
+	    <div class='form-group'>
+		<label for="job" class="col-sm-2 control-label">职位</label>
+		<div class="col-sm-8">
+		    <input id="job" name="job" placeholder="Job" type="text" class="form-control" aria-required="true" data-tip="Job" class='inputxt' ignore='ignore' >
+		</div>
+	    </div>
+
+	    <div class="hr-line-dashed"></div>
+	    <div id='role_div' class="form-group">
+		<label for="role" class="col-sm-2 control-label">角色</label>
+		<div class="col-sm-8">
+		    <select id="role" name="role" class="multiselect dropdown-toggle btn btn-default">
+            {% if user.role %}
+			<option value='1' >管理员</option>
+			<option value="0" >普通用户</option>
+                {% else %}
+                <option value="0" >普通用户</option>
+                {% endif %}
+		    </select>
+		</div>
+	    </div>
+	</form>
+      </div>
+      <div class="modal-footer">
+	<button type="button" class="btn btn-default update-cancel" data-dismiss="modal">取消</button>
+	<button type="button" class="btn btn-primary update-sure" data-name=''>确认</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id='modpwdModel'>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	<h4 class="modal-title">修改密码</h4>
+      </div>
+      <div class="modal-body">
+        <form method="post" id="modpwdForm" class="form-horizontal">
+	    <div>
+		<input id='mod-id' type='hidden' name='id' data-id=''  readonly='true' >
+	    </div>
+
+	    <div class='form-group'>
+		<label for="name" class="col-sm-2 control-label">用户名<span class="red-fonts">*</span></label>
+		<div class="col-sm-8">
+		    <input id="mod-name" name="name" placeholder="Username" type="text" class="form-control" readonly>
+		</div>
+	    </div>
+	    {% if role != 1 %}
+	    <div class="hr-line-dashed"></div>
+	    <div id='password_div' class="form-group">
+		<label for="password" class="col-sm-2 control-label">旧密码<span class="red-fonts">*</span></label>
+		<div class="col-sm-8">
+		    <input id="mod-password" name="password" placeholder="Password" type="password" class="form-control" aria-required="true" data-tip="密码" class='inputxt' datatype='*6-18' nullmsg='请输入旧密码' errormsg='密码最少6位，最多18位'>
+		</div>
+	    </div>
+	    {% endif %}
+	    <div class="hr-line-dashed"></div>
+	    <div class="form-group">
+		<label for="newpassword" class="col-sm-2 control-label">新密码<span class="red-fonts">*</span></label>
+		<div class="col-sm-8">
+		    <input id="mod-newpassword" name="newpassword" placeholder="Newpassword" type="password" class="form-control" aria-required="true" data-tip="密码" class='inputxt' plugin='passwordStrength' datatype='*6-18' nullmsg='请设置新密码' errormsg='密码最少6位，最多18位'>
+		    <td>
+			<div class="Validform_checktip"></div>
+		    </td>
+		</div>
+	    </div>
+	    <div class="hr-line-dashed"></div>
+	    <div class="form-group">
+		<label for="renewpassword" class="col-sm-2 control-label">再次输入<span class="red-fonts">*</span></label>
+		<div class="col-sm-8">
+		    <input id="mod-renewpassword" name="renewpassword" placeholder="Input again" type="password" class="form-control" aria-required="true" data-tip="密码" class='inputxt' recheck='newpassword' datatype='*6-18' nullmsg='请再次输入新密码' errormsg='密码不匹配'>
+		</div>
+	    </div>
+	</form>
+      </div>
+      <div class="modal-footer">
+        <div class="col-md-8" id='errmsg' style='color:red'></div>
+	<div class="col-md-4"><button type="button" class="btn btn-default modpwd-cancel" data-dismiss="modal">取消</button>
+	<button type="button" class="btn btn-primary modpwd-sure" data-id=''>确认</button></div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<table class="table table-bordered" id="editable">
+    {% if user %}
+    <tr>
+	<td style="vertical-align:middle; text-align:center;"><h2>{{user.username}}<h2></td>
+	<td>
+	    <table class="table table-striped table-bordered table-hover">
+	    <tr><td>姓名</td><td>{{user.username}}</td></tr>
+
+	    <tr><td>手机</td><td>{{user.phone}}</td></tr>
+	    <tr><td>角色</td><td>
+	    {% if user.role%}
+	    管理员
+	    {% else %}
+	    普通用户
+	    {% endif %}
+        <tr><td>职位</td><td>{{user.job}}</td></tr>
+            <tr><td>操作</td><td>
+                <button data-id="{{user.id}}" class="btn btn-xs btn-info update">编辑</button>
+                <button data-name="{{user.username}}"  data-id="{{user.id}}" class="btn btn-xs btn-primary modpwd ">修改密码</button></td></tr>
+	    <table>
+        </td>
+    <tr>
+    {% endif %}
+</table>
+
+<script>
+$('#updateForm').Validform({
+    tiptype:3,
+    usePlugin:{
+	passwordstrength:{
+	    minLen:6,
+	    maxLen:18
+	}
+    }
+})
+$('#modpwdForm').Validform({
+    tiptype:3,
+    usePlugin:{
+	passwordstrength:{
+	    minLen:6,
+	    maxLen:18
+	}
+    }
+})
+$('.update').click(function(){
+    var id=$(this).attr('data-id')
+    var url = "/userinfo/?id="+id
+    $.getJSON(url,function(data){
+	if (data){
+	    user = data['result']
+        console.log(user);
+	    $('#id').val(user['id'])
+	    $('#name').val(user['username'])
+	    $('#mobile').val(user['phone'])
+        $('#job').val(user['job'])
+	    $('#role').val(user['role'])
+	}else{
+	    $('#errmsg').html('fail')
+	}
+    })
+    $('#updateModel').modal('show')
+})
+$('.update-sure').click(function(){
+    var str=$('#updateForm').serialize()
+    var msg=$('.Validform_wrong').text()
+    if (!msg){
+        console.log(str)
+	$.post('/update/',str,function(data){
+	    data=JSON.parse(data)
+	    if (data['code'] == 1){
+		swal('Congratulation',data['result'],'success')
+		//location.href='/userlist'
+		$('.confirm').click(function(){
+		    location.href='/userinfo/'
+		})
+	    }else{
+		swal('Error',data['errmsg'],'error')
+	    }
+	})
+	return false
+    }
+})
+$('.modpwd').click(function(){
+    var id=$(this).attr('data-id')
+    var name=$(this).attr('data-name')
+    $('#mod-id').val(id)
+    $('#mod-name').val(name)
+    $('#modpwdModel').modal('show')
+})
+$('.modpwd-cancel').click(function(){
+    location.reload()
+})
+$('.modpwd-sure').click(function(){
+    var str=$('#modpwdForm').serialize()
+    var msg=$('.Validform_wrong').text()
+    if(!msg){
+	$.post('/update/',str,function(data){
+	    data=JSON.parse(data)
+	    if (data['code'] == 1){
+		swal('Congratulation',data['result'],'success')
+		//location.href='/userlist'
+		$('.confirm').click(function(){
+		    location.href='/userinfo/'
+		})
+	    }else{
+		swal('Error',data['errmsg'],'error')
+	    }
+	})
+	return false
+    }
+})
+</script>
+{% endblock %}

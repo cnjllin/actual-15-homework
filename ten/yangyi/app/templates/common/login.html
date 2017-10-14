@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login | 运维平台</title>
+    <script src="/static/js/jquery-2.2.4.min.js"></script>
+    <link rel="shortcut icon" href="/static/img/facio.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css"/>
+    <link href="/static/plugin/sweetalert-master/dist/sweetalert.css" rel="stylesheet">
+</head>
+<body>
+    <div class="middle">
+        <div class="login-form middle">
+            <h1 class="text-center logo"><img src="/static/img/logo.png" alt=""></h1>
+            <h2 class="text-center">欢迎使用##运维平台</h2>
+            <div class="form">
+                <form >
+                    <ul>
+                        <li><input type="text" placeholder="Username" name="username"></li>
+                        <li><input type="password" placeholder="Password" name="password"></li>
+                        <li><button id="login-btn">登 录</button></li>
+                    </ul>
+                </form>
+            </div>
+                <div class="top-14 text-center">
+                    <strong>Copyright</strong>Reboot.com  Team © 2017
+                </div>
+        </div>
+    </div>
+    <script src="/static/plugin/sweetalert-master/dist/sweetalert.min.js"></script>
+<script>
+        $("form").on('submit',function(event){
+            event.preventDefault();
+            $.post('/login/',$('form').serialize(),function(data){
+                data =JSON.parse(data);
+                if (data['code'] == 1){
+                    swal({
+                        title: "登录成功",
+                        text: data['result'],
+                        type: "success",
+                        confirmButtonText: "确定"                                                                                      },function(){
+                        location.href="/"
+              });
+                }else{
+                    swal("MY GOD",data['result'],"error");
+             }
+             return false;
+            })
+        });
+</script>
+</body>
+</html>
