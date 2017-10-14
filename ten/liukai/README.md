@@ -127,7 +127,7 @@
 
 ## 日志饼状图
 
-![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/ten/liukai/test/%E2%96%92%C2%A4%E2%95%AB%E2%94%A4%E2%95%90%E2%95%9D.png）
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/ten/liukai/test/%E2%96%92%C2%A4%E2%95%AB%E2%94%A4%E2%95%90%E2%95%9D.png)
 
 # 项目文档
 
