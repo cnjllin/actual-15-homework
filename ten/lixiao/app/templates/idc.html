@@ -1,0 +1,353 @@
+{%extends 'template.html'%}
+
+{% block bread %}
+ <a href="/idc/">机房列表</a>
+{% endblock %}
+
+{% block content %}
+
+<!--正文部分分了三层-->
+<div class="wrapper wrapper-content">
+
+    <div class="row">
+        <div class="col-sm-12 border-bottom white-bg dashboard-header" style="margin-left:15px;height: 800px">
+                 
+<div class="col-sm-12">
+<!--<a href="/idcadd/" class='btn btn-sm btn-primary'>添加机房</a>-->
+<h5 id="addsr" style="float:right" class="btn btn-sm btn-primary">添加机房</h5> <br /><br /><br />
+<table class="table table-striped table-bordered table-hover " id="idc_table">
+<thead>
+    <tr>
+        <th class="text-center">编号</th> 
+        <th class="text-center">机房名</th>
+        <th class="text-center">机房中文名</th>
+        <th class="text-center">地址</th>
+        <th class="text-center">联系人</th>
+        <th class="text-center">联系电话</th>
+        {% if session.role == 0 %}
+        <th class="text-center">操作</th>
+        {% endif %}
+    </tr>
+</thead>
+<tbody>
+   
+{% for idc in res %}
+        <tr clas s="gradeX">
+                <td class="text-center">{{idc.id}}</td>
+                <td class="text-center">{{idc.sr}}</td>
+                <td class="text-center">{{idc.srfn}}</td>
+                <td class="text-center">{{idc.address}}</td>
+                <td class="text-center">{{idc.manager}}</td>
+                <td class="text-center">{{idc.phone}}</td>
+               {% if session.role == 0 %} 
+                <td class="text-center">
+                    <button data-id="{{idc.id}}" onclick="update(this)" class="btn btn-xs btn-info update">编辑</a>
+                    <button data-id="{{idc.id}}" onclick="del(this)" class="btn btn-xs btn-danger del">删除</button>
+                </td>
+               {% endif %}
+         </tr>
+{% endfor %}
+
+</tbody>
+</table>
+
+<!--添加机房-->
+<div class="modal fade" id="addModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">填写机房信息</h4>
+      </div><!--模态窗称呼end-->
+     
+      <div class="ibox-content">
+        <form id="idcForm" class="form-horizontal nice-validator n-yellow" novalidate="novalidate">
+          <div class="form-group">
+            <label for="add_sr" class="col-sm-2 control-label  ">机房英文简写<span class="red-fonts ">*</span></label>
+              <div class="col-sm-8">
+                <input id="addsr" name="sr" placeholder="server room" type="text" class="form-control" aria-required="true">
+              </div>
+          </div>
+          
+          <div class="hr-line-dashed"></div>
+
+          <div class="form-group">
+            <label for="addsrfn" class="col-sm-2 control-label">机房中文名<span class="red-fonts">*</span></label>
+              <div class="col-sm-8">
+                <input id="addsrfn" name="srfn" placeholder="full name" type="text" class="form-control" aria-required="true">
+              </div>
+          </div>
+                            
+          <div class="hr-line-dashed"></div>
+                         
+          <div class="form-group">
+            <label for="addr" class="col-sm-2 control-label">机房地址<span class="red-fonts">*</span></label>                                
+              <div class="col-sm-8">
+                <input id="addr" name="address" placeholder="address" type="text" class="form-control" aria-required="true">
+              </div>
+          </div>
+                            
+          <div class="hr-line-dashed"></div>
+                            
+          <div class="form-group">
+            <label for="addmanager" class="col-sm-2 control-label">联系人</label>
+              <div class="col-sm-8">
+                <input id="addmanager" name="manager" placeholder="manager" type="text" class="form-control" aria-required="true">
+              </div>
+          </div>
+                                                       
+          <div class="hr-line-dashed"></div>
+                            
+          <div class="form-group">
+            <label for="addphone" class="col-sm-2 control-label">联系电话</label>
+              <div class="col-sm-8">
+                <input id="addphone" name="phone" placeholder="phone" type="text" class="form-control" aria-required="true">
+              </div>
+          </div>                            
+
+          <div class="hr-line-dashed"></div>
+                            
+          <div class="form-group">
+	      <div class="col-sm-6 col-sm-offset-2">
+	        <button id="submit_button" class="btn btn-primary">确认保存</button>
+		<button id='cancel_button' type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+		<button class="btn btn-white" type="reset">重置</button>
+	      </div>
+	  </div>
+	  <div style="color:red" class="text-center" id="errmsg"></div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div><!--添加机房end-->
+
+<!--编辑机房信息-->
+<div class="modal fade" id="editModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="editModalLabel">修改机房信息</h4>
+      </div><!--模态窗称呼end-->
+
+      <div class="ibox-content">  
+        <form  id="updateForm" class="form-horizontal">
+          <input id='upid' type='hidden' name='id' value={{res.id}} readonly='true'>
+
+	    <div class='form-group'>
+                <label for="sr" class="col-sm-3 control-label">机房英文简写<span class="red-fonts">*</span></label>
+                <div class="col-sm-7">
+                    <input id="sr" name="sr"  type="text" class="form-control" required="required">
+                </div>
+	    </div> <!--sr-->
+	    <div class="hr-line-dashed"></div>
+	    <div class='form-group'>
+                <label for="srfn" class="col-sm-3 control-label">机房中文名<span class="red-fonts">*</span></label>
+                <div class="col-sm-7">
+                    <input id="srfn" name="srfn" type="text" class="form-control" required="required">
+                </div>
+	    </div> <!--name_cn-->
+	    <div class="hr-line-dashed"></div>
+	    <div class='form-group'>
+                <label for="address" class="col-sm-3 control-label">地址<span class="red-fonts">*</span></label>
+                <div class="col-sm-7">
+                    <input id="address" name="address" placeholder="address" type="text" class="form-control" required="required">
+                </div>
+	    </div><!--address-->
+	    <div class="hr-line-dashed"></div>
+	    <div class='form-group'>
+                <label for="manager" class="col-sm-3 control-label">联系人<span class="red-fonts">*</span></label>
+                <div class="col-sm-7">
+                    <input id="manager" name="manager" placeholder="manager" type="text" class="form-control" required="required">
+                </div>
+	    </div><!--address-->
+	    <div class="hr-line-dashed"></div>
+	    <div class='form-group'>
+		<label for="phone" class="col-sm-3 control-label">联系电话<span class="red-fonts">*</span></label>
+                <div class="col-sm-7">
+                    <input id="phone" name="phone" placeholder="phone" type="text" class="form-control" required="required">
+                </div>
+	    </div><!--phone-->
+	    <div class="hr-line-dashed"></div>
+        <div class="form-group">
+           <div class="col-sm-6 col-sm-offset-2"> 
+               <button id="edit_btn" class="btn btn-primary">确认修改</button>
+                <button id='cancel_btn' type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+       </div> <!--button-->
+	</form> <!--form-->
+
+
+    </div>
+  </div>
+</div><!--编辑机房end-->
+
+
+
+<script>
+
+/*搜索框*/
+$('#idc_table').DataTable({
+    "bDestroy": true, 
+    "language": {
+         "lengthMenu": "每页 _MENU_ 条记录",
+        "zeroRecords": "没有找到记录",
+        "sInfo": "第 _PAGE_ 页 ( 总共 _PAGES_ 页 ),显示第 _START_ 至 _END_ 项(总共 _TOTAL_ 项)",
+        "infoEmpty": "无记录",
+        "infoFiltered": "(从 _MAX_ 条记录过滤)",
+        "sSearch": "搜索:",
+        "oPaginate": {
+        "sFirst": "首页",
+        "sPrevious": "上一页",
+        "sNext": "下一页",
+        "sLast": "末页"
+        }
+    },
+    "order": [[ 0,"asc" ]]
+})
+
+/*弹出添加机房模态窗*/
+$('#addsr').on('click',function(){
+    $('#addModel').modal('show')
+})
+
+/*添加机房*/
+$('#submit_button').on('click',function(){
+    var str = $('#idcForm').serialize()
+    console.log(str)
+    $.post('/addidc/',str,function(data){
+    console.log(data)
+    data = JSON.parse(data)
+    console.log(data)
+    if (data['code']==0){
+        swal({
+           title: '机柜添加成功',
+            text: data['msg'],
+            type: 'success',
+            confirmButtonText: '确定'
+            },function(){
+                location.href='/idc/'
+        });
+    }else{
+        swal('SORRY',data['msg'],'error');
+    }
+    })
+    return false;
+})
+
+//点击编辑按钮，获取机房id，从逻辑端查出对应数据，弹出模态窗渲染数据
+/*$('.update').click(function(){
+    var id = $(this).attr('data-id')
+    $.getJSON('/didc/',{'id':id},function(data){
+        console.log(data);
+        $('#upid').val(data['id']);
+        $('#sr').val(data['sr']);
+        $('#srfn').val(data['srfn']);
+        $('#address').val(data['address']);
+        $('#manager').val(data['manager']);
+        $('#phone').val(data['phone']);
+        $('#editModel').modal('show')
+    })
+
+})*/
+
+/*更新机房信息*/
+$('#edit_btn').click(function(){
+   if (!$('#sr').val()){
+     alert('机房名不能为空');
+     return false
+}
+    $.post('/updateidc/',$('#updateForm').serialize(),function(data){
+    data = JSON.parse(data)
+    console.log(data)
+    if (data['code']==0){
+        alert('update success')
+        location.reload()
+    }else{
+        alert(data['msg'])
+    }
+    })
+    return false
+})
+
+//点击编辑按钮，获取机房id，从逻辑端查出对应数据，弹出模态窗渲染数据
+function update(obj){
+  var id = $(obj).attr('data-id')
+    $.getJSON('/didc/',{'id':id},function(data){
+        console.log(data);
+        $('#upid').val(data['id']);
+        $('#sr').val(data['sr']);
+        $('#srfn').val(data['srfn']);
+        $('#address').val(data['address']);
+        $('#manager').val(data['manager']);
+        $('#phone').val(data['phone']);
+        $('#editModel').modal('show')
+    })
+}
+
+
+/*删除机房*/
+/*$('.del').click(function(){
+    var id=$(this).attr('data-id')
+    var str="id="+id
+    if (confirm('是否确认删除')){
+    $.post('/idcdel/',str,function(data){
+        data=JSON.parse(data)
+        console.log(data)
+	    if(data["code"] == 0){
+		swal({
+		    title:'删除成功',
+		    text:data['msg'],
+		    type:'success',
+		    confirmButtonText:'Cool'
+		    },function(){
+			location.reload()
+		    })
+	 }else{
+	    	swal('Error',data['msg'],'error')
+	}
+   })
+}
+    return false
+})*/
+
+function del(obj){
+    var id=$(obj).attr('data-id')
+    var str="id="+id
+    if (confirm('是否确认删除')){
+    $.post('/idcdel/',str,function(data){
+        data=JSON.parse(data)
+        console.log(data)
+            if(data["code"] == 0){
+                swal({
+                    title:'删除成功',
+                    text:data['msg'],
+                    type:'success',
+                    confirmButtonText:'Cool'
+                    },function(){
+                        location.reload()
+                    })
+         }else{
+                swal('Error',data['msg'],'error')
+        }
+   })
+
+}
+}
+
+</script>
+
+
+
+         </div>
+    </div>
+    <br>
+
+
+</div> <!--wrapper-content-->
+
+
+{% endblock %}
