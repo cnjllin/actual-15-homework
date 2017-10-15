@@ -35,6 +35,19 @@ def getlist(table,field):
        result = {'code':1,'errmsg':'data is null'}
     return result
 
+def getwhere(table,field,data):
+	sql = 'select * from %s where status=%s' % (table,data['stat'])
+	print sql
+	cur.execute(sql)
+	util.WriteLog('[utils.py-getwhere]').info(sql)
+	res = cur.fetchall()
+	if res:
+		order = [{k:row[i] for i,k in enumerate(field)} for row in res]
+		print order
+		result = {'code':0,'msg':order}
+	else:
+		result = {'code':1,'errmsg':'data is null'}
+	return result
 
 def getone(table,field,data):
     if data.has_key("username"):
@@ -57,7 +70,7 @@ def getone(table,field,data):
 
 def update(table,field,data): 
     conditions = ["%s='%s'" % (k,data[k]) for k in data]
-    print conditions
+#    print conditions
    # condition = [(k,data[k]) for k in data]
     sql = "update %s set %s where id=%s" %(table,','.join(conditions),data['id'])
     print sql
