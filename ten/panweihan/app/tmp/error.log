@@ -1,0 +1,389 @@
+2017-09-23 17:28:53,302 db.py - [line:98] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 91, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:29:44,821 db.py - [line:98] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 91, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:32:17,096 db.py - [line:98] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 91, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:32:31,625 db.py - [line:98] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 91, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:33:08,664 db.py - [line:99] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 92, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:34:07,506 db.py - [line:101] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 94, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:40:11,451 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:41:49,154 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:41:49,154 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:42:42,243 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:43:18,154 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:43:18,154 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:44:48,086 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where username = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'username' in 'where clause'")
+
+2017-09-23 17:45:08,032 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 17:45:08,884 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 17:45:45,654 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where name = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 98, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 98, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 17:45:45,654 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where name = "aaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 98, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 98, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 17:45:45,664 db.py - [line:36] - insert  INFO - db模块 执行语句：insert into idc (name,name_cn,address,adminer,phone) values("aaa","1号机房","1号楼101","潘威翰","332324")
+2017-09-23 17:45:45,664 db.py - [line:36] - insert  INFO - db模块 执行语句：insert into idc (name,name_cn,address,adminer,phone) values("aaa","1号机房","1号楼101","潘威翰","332324")
+2017-09-23 17:49:34,444 db.py - [line:40] - insert  ERROR - db模块 执行语句：insert into idc (name,name_cn,address,adminer,phone) values("aaa","1号机房","1号楼101","潘威翰","332324"),错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 35, in insert
+    res = cur.execute(sql)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\Program Files (x86)\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'aaa' for key 'name'")
+
+2017-09-23 17:55:42,313 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where name = "bbb",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 98, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 98, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 17:55:42,313 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where name = "bbb",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 98, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 98, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 17:59:40,226 db.py - [line:101] - getone  ERROR - db模块 执行语句：select * from idc where name = "bbb",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 96, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 18:00:21,515 db.py - [line:101] - getone  ERROR - db模块 执行语句：select * from idc where name = "bbb",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 96, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 18:00:21,520 db.py - [line:34] - insert  INFO - db模块 执行语句：insert into idc (name,name_cn,address,adminer,phone) values("bbb","2号机房","1号楼102","潘威翰","332324")
+2017-09-23 18:00:23,924 db.py - [line:77] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 18:00:56,331 db.py - [line:77] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 18:01:39,602 db.py - [line:77] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 18:44:04,506 db.py - [line:101] - getone  ERROR - db模块 执行语句：select * from user where id = "1",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 96, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 18:46:46,319 db.py - [line:101] - getone  ERROR - db模块 执行语句：select * from user where id = "1",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 96, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 18:46:46,319 db.py - [line:101] - getone  ERROR - db模块 执行语句：select * from user where id = "1",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 96, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 18:47:51,535 db.py - [line:101] - getone  ERROR - db模块 执行语句：select * from user where id = "1",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 96, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 18:54:27,930 db.py - [line:101] - getone  ERROR - db模块 执行语句：select * from user where id = "1",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 96, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 18:55:08,766 db.py - [line:101] - getone  ERROR - db模块 执行语句：select * from user where id = "1",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 96, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 18:55:08,766 db.py - [line:101] - getone  ERROR - db模块 执行语句：select * from user where id = "1",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 96, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 18:59:27,108 db.py - [line:77] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 18:59:27,108 db.py - [line:77] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 18:59:43,118 db.py - [line:77] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 18:59:43,118 db.py - [line:77] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 19:28:13,022 db.py - [line:101] - getone  ERROR - db模块 执行语句：select * from idc where name = "bbb",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 96, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 19:28:13,030 db.py - [line:34] - insert  INFO - db模块 执行语句：insert into idc (name,name_cn,address,adminer,phone) values("bbb","2号机房","2号楼201","PC","232453545")
+2017-09-23 19:28:14,072 db.py - [line:77] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 19:28:22,328 db.py - [line:98] - getone  INFO - db模块 执行语句：select * from idc where id = "4"
+2017-09-23 19:28:25,684 db.py - [line:62] - updata  INFO - db模块 执行语句：update idc set name = 'bbb',name_cn = '2号机房',phone = '232453545',adminer = 'WD',address = '2号楼201',id = '4' where id = 4
+2017-09-23 19:28:26,816 db.py - [line:77] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 19:28:50,260 db.py - [line:77] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 19:28:51,345 db.py - [line:98] - getone  INFO - db模块 执行语句：select * from user where username = "admin"
+2017-09-23 19:29:05,108 db.py - [line:98] - getone  INFO - db模块 执行语句：select * from user where username = "admin"
+2017-09-23 19:29:06,882 db.py - [line:77] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 22:49:57,815 db.py - [line:101] - getone  ERROR - db模块 执行语句：select * from cabinet where name = "aaaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 96, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 96, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 22:51:40,714 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from cabinet where name = "aaaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 98, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 98, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 22:52:22,433 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from cabinet where name = "aaaa",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 98, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 98, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 22:52:22,440 db.py - [line:36] - insert  INFO - db模块 执行语句：insert into cabinet (name,idc_id,u_num,power) values("aaaa","1","11","22")
+2017-09-23 22:52:24,105 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-23 22:53:17,753 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-23 23:10:53,302 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-23 23:10:59,713 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 23:11:26,127 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 23:11:26,828 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 23:13:18,871 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 23:16:48,371 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 23:16:51,240 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 23:17:02,447 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 23:17:37,262 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 23:17:41,049 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-23 23:17:42,947 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 23:18:22,969 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-23 23:18:22,976 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from cabinet where name = "啊啊啊",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 98, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 98, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 23:18:22,976 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from cabinet where name = "啊啊啊",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 98, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 98, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-23 23:18:22,984 db.py - [line:36] - insert  INFO - db模块 执行语句：insert into cabinet (name,idc_id,u_num,power) values("啊啊啊","aaa","444","1231")
+2017-09-23 23:18:22,984 db.py - [line:36] - insert  INFO - db模块 执行语句：insert into cabinet (name,idc_id,u_num,power) values("啊啊啊","aaa","444","1231")
+2017-09-23 23:18:23,969 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-23 23:18:23,969 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 11:40:43,831 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from cabinet where name = "2222",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 98, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 98, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-24 11:40:43,855 db.py - [line:36] - insert  INFO - db模块 执行语句：insert into cabinet (name,idc_id,u_num,power) values("2222","bbb","22","222")
+2017-09-24 11:40:44,832 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 11:40:48,095 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 11:40:48,101 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from cabinet where id = "3"
+2017-09-24 11:49:06,992 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from user
+2017-09-24 11:50:47,306 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from user where id = "2"
+2017-09-24 13:39:13,171 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 13:39:15,732 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 13:39:15,736 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from cabinet where id = "2"
+2017-09-24 15:46:46,895 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:46:58,976 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:47:22,759 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where name = "ccc",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 98, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 98, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-24 15:47:22,759 db.py - [line:103] - getone  ERROR - db模块 执行语句：select * from idc where name = "ccc",错误信息：Traceback (most recent call last):
+  File "E:\Reboot15\homework\nine\db.py", line 98, in getone
+    user = {k:res[i] for i, k in enumerate(field)}
+  File "E:\Reboot15\homework\nine\db.py", line 98, in <dictcomp>
+    user = {k:res[i] for i, k in enumerate(field)}
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2017-09-24 15:47:22,770 db.py - [line:36] - insert  INFO - db模块 执行语句：insert into idc (name,name_cn,address,adminer,phone) values("ccc","三号","三元桥","阿奎","1234234")
+2017-09-24 15:47:22,770 db.py - [line:36] - insert  INFO - db模块 执行语句：insert into idc (name,name_cn,address,adminer,phone) values("ccc","三号","三元桥","阿奎","1234234")
+2017-09-24 15:47:23,997 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:47:23,997 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:47:27,947 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:47:27,947 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:47:30,247 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:47:30,247 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:47:31,835 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:47:31,835 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:47:31,839 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from cabinet where id = "2"
+2017-09-24 15:47:31,839 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from cabinet where id = "2"
+2017-09-24 15:47:39,191 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:47:39,191 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:47:46,878 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:47:46,878 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:47:49,701 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from user where username = "admin"
+2017-09-24 15:47:49,701 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from user where username = "admin"
+2017-09-24 15:47:51,813 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:47:51,813 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:47:54,145 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from idc where id = "1"
+2017-09-24 15:47:54,145 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from idc where id = "1"
+2017-09-24 15:47:59,230 db.py - [line:64] - updata  INFO - db模块 执行语句：update idc set name = '111',name_cn = '1号机房',phone = '332324',adminer = '潘威翰',address = '2号楼',id = '1' where id = 1
+2017-09-24 15:47:59,230 db.py - [line:64] - updata  INFO - db模块 执行语句：update idc set name = '111',name_cn = '1号机房',phone = '332324',adminer = '潘威翰',address = '2号楼',id = '1' where id = 1
+2017-09-24 15:48:00,395 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:48:00,395 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:48:02,911 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:02,911 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:04,302 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:04,302 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:04,948 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:04,948 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:06,265 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:48:06,265 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:48:06,273 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from cabinet where id = "2"
+2017-09-24 15:48:06,273 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from cabinet where id = "2"
+2017-09-24 15:48:10,572 db.py - [line:64] - updata  INFO - db模块 执行语句：update cabinet set idc_id = '1',u_num = '444',id = '2',power = '1231',name = '啊啊啊' where id = 2
+2017-09-24 15:48:10,572 db.py - [line:64] - updata  INFO - db模块 执行语句：update cabinet set idc_id = '1',u_num = '444',id = '2',power = '1231',name = '啊啊啊' where id = 2
+2017-09-24 15:48:11,581 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:11,581 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:15,430 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:15,430 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:17,630 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:17,630 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:21,121 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:48:21,121 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 15:48:21,134 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from cabinet where id = "2"
+2017-09-24 15:48:21,134 db.py - [line:100] - getone  INFO - db模块 执行语句：select * from cabinet where id = "2"
+2017-09-24 15:48:25,447 db.py - [line:64] - updata  INFO - db模块 执行语句：update cabinet set idc_id = '4',u_num = '444',id = '2',power = '1231',name = '啊啊啊' where id = 2
+2017-09-24 15:48:25,447 db.py - [line:64] - updata  INFO - db模块 执行语句：update cabinet set idc_id = '4',u_num = '444',id = '2',power = '1231',name = '啊啊啊' where id = 2
+2017-09-24 15:48:26,269 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 15:48:26,269 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 16:10:33,305 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 16:10:33,305 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 16:10:48,667 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 16:10:48,667 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from cabinet
+2017-09-24 16:10:50,940 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
+2017-09-24 16:10:50,940 db.py - [line:79] - getlist  INFO - db模块 执行语句：select * from idc
