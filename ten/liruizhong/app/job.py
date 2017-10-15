@@ -21,7 +21,6 @@ def jobadd():
         job['apply_date'] = time.strftime('%Y-%m-%d %H:%M')
         job['apply_persion'] = session['name']
         job['status'] = 0
-        print job
         result = insert('ops_jobs',field,job)
         if result['code']==0:
             result['msg'] = "工单提交成功"
@@ -39,7 +38,6 @@ def joblist():
     if not session:
         return redirect("/")
     result = listall(table,field)['msg']
-    print result
     return render_template("job/joblist.html",job=result,res=session )
 
 # 修改列表
