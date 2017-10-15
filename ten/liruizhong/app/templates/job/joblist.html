@@ -39,9 +39,9 @@
        {% if j.status<=1 %}
         <tr class="gradeX">
                 <td class="text-center">{{ j.apply_persion }}</td>
-	        {% if j.apply_type==0 %}   	
+	       		{% if j.apply_type==0 %}   	
                 <td class="text-center" style='color:green'> 用户权限 </td>
-		{% elif j.apply_type==1 %}
+		        {% elif j.apply_type==1 %}
                 <td class="text-center" style='color:green'> 数据库操作 </td>
                 {% elif j.apply_type==2 %}
                 <td class="text-center" style='color:green'> 服务配置 </td>
@@ -49,9 +49,9 @@
                 <td class="text-center" style='color:green'> 其他 </td>
                 {% endif  %}
                 <td class="text-center">{{ j.apply_date }}</td>
-	        {% if j.status==0 %}	
+	            {% if j.status==0 %}	
                 <td class="text-center" style='color:red'>申请中</td>
-	        {% elif j.status==1 %}            
+	            {% elif j.status==1 %}            
                 <td class="text-center" style='color:red'>处理中</td>
                 {% endif %}
                 <td class="text-center">

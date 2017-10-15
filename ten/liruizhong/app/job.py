@@ -48,17 +48,18 @@ def jobupdate():
     if request.method == "GET":
         data = {}
         data['id'] = int(request.args.get('id'))
-        data['deal_person'] = session['name']
+        data['deal_persion'] = session['name']
         data['status'] = 1
-        field = ['id','deal_person','status']
+        field = ['deal_persion','status']
         result = updateuser(table,field,data)
+        print result
         return json.dumps(result)
     else:
         data={k:v[0] for k,v in dict(request.form).items()}
-        data['deal_person'] = session['name']
+        data['deal_persion'] = session['name']
         data['status'] = 2
         data['deal_time'] = time.strftime('%Y-%m-%d %H:%M')
-        field=['id','deal_person','deal_time','deal_desc','status']
+        field=['deal_persion','deal_time','deal_desc','status']
         result=updateuser(table,field,data)
         return json.dumps(result)
 

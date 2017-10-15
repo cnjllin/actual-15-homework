@@ -65,6 +65,7 @@ def updateuser(table,field,data):
     conditions = ["%s='%s'" % (k,data[k]) for k in field]
     print conditions
     sql = "update %s set %s where id = %s" % (table,','.join(conditions),data['id'])
+    print sql
     try:
         res = cur.execute(sql)
         WriteLog("sql").info("updateuser:%s" % sql)
