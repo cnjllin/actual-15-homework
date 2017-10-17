@@ -4,7 +4,8 @@
 
        新增功能:
 	               * ansible第三方接口
-	               * Bind-DLZ DNS 管理
+	               * Bind-DLZ DNS 管理  
+				      bind 方面的配置请参阅 https://github.com/1032231418/Bind-Web
 				   
 				   
 
