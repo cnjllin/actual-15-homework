@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*-coding:utf-8 -*-
 from flask import request,render_template, redirect,session
-from utils import  getone,check,_update,_delete,insert_sql,list
+from utils import  getone,check,_update,_delete,insert_sql,lists
 from . import app
 from sessions import sessionmsg
 import json
@@ -17,7 +17,7 @@ def ansible():
             return redirect('/login/')
         msg = sessionmsg()
         if request.method=='GET':
-            server  = list('server',server_fields)
+            server  = lists('server',server_fields)
             return render_template('ansible.html',msg=msg,server=server['msg'])
 
         if request.method=='POST':

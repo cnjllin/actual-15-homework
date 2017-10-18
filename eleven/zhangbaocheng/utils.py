@@ -29,13 +29,14 @@ def insert_sql(table_name,field,data):
     return result
 
 # 获得数据列表  
-def list(table_name,field):
+def lists(table_name,field):
     sql = "select  *  from %s ;" % table_name
     cur.execute(sql)
     res = cur.fetchall()
     loginfo.WriteLog("SQL").info("Select:%s" % sql)
     if res:
         user = [dict((k,row[i]) for i,k in enumerate(field))for row in res]
+        print user
         result = {'code':0,'msg':user}
     else:
         result = {'code':1,'errmsg':'data is null'}
@@ -109,4 +110,36 @@ def check(table,field,where):
 
     return  result
 
+# 获取日志status 值
+def logs(table,field):
+    sql =  "select  status AS  name,count(1) AS value  from %s  group  by  status  asc  order by count(1) desc; " % (table)
+    try:
+        if  cur.execute(sql):
+            res = cur.fetchall()
+            loginfo.WriteLog("SQL").info("Status:%s" % sql)
+            fields=["name","value"]
+            data  = [dict((k,row[i]) for i,k in enumerate(fields))for row in res]
+            result  = {'code':0,'data':data,'legend':field}
+        else:
+            result ={'code':1, 'msg':"data is null"}
+    except Exception, e:
+        result ={'code':1, 'msg':"SQL Error "}
 
+    return  result
+
+
+# 获取地图数据
+def  maps(table):
+    sql =  "select name,value  from %s  " % (table)
+    try:
+        if  cur.execute(sql):
+            res = cur.fetchall()
+            loginfo.WriteLog("SQL").info("Map:%s" % sql)
+            field=["name","value"]
+            data  = [dict((k,row[i]) for i,k in enumerate(field))for row in res]
+            result  = {'code':0,'mapdata':data}
+        else:
+            result ={'code':1, 'msg':"data is null"}
+    except Exception, e:
+        result ={'code':1, 'msg':"SQL Error "}
+    return  result

@@ -2,7 +2,7 @@
 # -*-coding:utf-8 -*-
 
 from flask import request,render_template, redirect,session
-from utils import  getone,check,_update,_delete,insert_sql,list
+from utils import  getone,check,_update,_delete,insert_sql,lists
 from . import app
 from sessions import sessionmsg
 import json
@@ -16,7 +16,7 @@ def namedlist():
     if 'username' not in  session:
         return redirect('/login/')
     msg = sessionmsg()
-    result = list('dns_records',field)
+    result = lists('dns_records',field)
     return  render_template('named.html',msg=msg,result=result['msg'])
 
 

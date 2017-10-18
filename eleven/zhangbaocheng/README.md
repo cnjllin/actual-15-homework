@@ -2,10 +2,11 @@
 
 作业：
 
-       新增功能:
+       新增功能:   
 	               * ansible第三方接口
 	               * Bind-DLZ DNS 管理  
 				      bind 方面的配置请参阅 https://github.com/1032231418/Bind-Web
+	               * 日志可视化			 
 				   
 				   
 
@@ -58,7 +59,15 @@
 	     
              *.显示已经添加的域名解析列表,可以对解析记录进行，增加，删除，修改
 			 
-
+	  6).日志可视化
+	  
+             *.网站浏览状态分析  
+			 
+			        *.查库获取状态码统计数据,返回前端，进行渲染	
+					
+              *.网站访问IP来源
+                   			  
+			        *.查库获取各省访问ip统计信息，格式化输出，前端渲染          
 	  
 2.项目功能分析:
 
@@ -143,7 +152,7 @@
  			          ansible()         ansible远程执行命令
  			          history()         ansible历史记录	  
                       					  
-	  4).域名管理
+	  5).域名管理
      	  
 		        函数文件：  named.py
 
@@ -152,7 +161,22 @@
  			          namedupdate()       更新接记录
  			          nameddelete()       删除解析记录
                 			
+	  6).日志可视化
+	      
+            *.日志状态饼图
+			
+      			函数文件：  log.py
+				
+ 			          log()             日志页面
+ 			          status()          日志状态数据
 
+            *.日志来源地图
+
+      			函数文件：  map.py			
+
+ 			          map()             地图展示
+ 			          mapdata()         传输地图数据			
+				
 	 
 <center>3.流程图</center > 
 
@@ -217,6 +241,13 @@ ansible 远程执行命令
 
 ![image](https://github.com/1032231418/python/blob/master/day11/cmd2.png)
 
+日志状态饼图
+
+![image](https://github.com/1032231418/python/blob/master/day11/bingtu.png)
+
+日志来源地图
+
+![image](https://github.com/1032231418/python/blob/master/day11/map.png)
 
 <center>5.目录结构</center > 
 

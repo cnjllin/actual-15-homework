@@ -2,7 +2,7 @@
 # -*-coding:utf-8 -*-
 
 from flask import request,render_template, redirect,session
-from utils import  getone,check,_update,_delete,insert_sql,list
+from utils import  getone,check,_update,_delete,insert_sql,lists
 from . import app
 from sessions import sessionmsg
 import json
@@ -45,7 +45,7 @@ def joblist():
     msg = sessionmsg()
     if request.method=='GET':
         jobs = []
-        result = list('job',field)
+        result = lists('job',field)
         results = result['msg']
         for x in results:
             if x['status'] < 2:
@@ -95,6 +95,6 @@ def jobhistory():
         return redirect('/login/')
     msg = sessionmsg()
     if request.method=='GET':
-        job  = list('job',field)
+        job  = lists('job',field)
     return render_template('jobhistory.html',msg=msg,joblist=job['msg'])
 

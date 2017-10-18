@@ -2,7 +2,7 @@
 # -*-coding:utf-8 -*-
 
 from flask import request,render_template, redirect,session
-from utils import  getone,check,_update,_delete,insert_sql,list
+from utils import  getone,check,_update,_delete,insert_sql,lists
 from . import app
 from sessions import sessionmsg
 import json
@@ -15,7 +15,7 @@ def idc():
     if 'username' not in  session:
         return redirect('/login/')
     msg = sessionmsg()
-    result = list('idc',fields)
+    result = lists('idc',fields)
  
     return render_template('idc.html',msg=msg,idc=result['msg'])
 

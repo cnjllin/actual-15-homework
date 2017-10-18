@@ -2,7 +2,7 @@
 # -*-coding:utf-8 -*-
 
 from flask import request,render_template, redirect,session
-from utils import  getone,check,_update,_delete,insert_sql,list
+from utils import  getone,check,_update,_delete,insert_sql,lists
 from . import app
 from sessions import sessionmsg
 import json
@@ -20,9 +20,9 @@ def server():
     if 'username' not in  session:
         return redirect('/login/')
     msg = sessionmsg()
-    idcs   =  list('idc',idc_fields)
-    cabinets   = list('cabinet',cabinet_fields)
-    servers  = list('server',server_fields)
+    idcs   =  lists('idc',idc_fields)
+    cabinets   = lists('cabinet',cabinet_fields)
+    servers  = lists('server',server_fields)
 
     for cab  in servers['msg']:
 
@@ -42,8 +42,8 @@ def serveradd():
         return redirect('/login/')
     msg = sessionmsg()
     if request.method=='GET':
-        idc   =  list('idc',idc_fields)
-        cabinet   =  list('cabinet',cabinet_fields)
+        idc   =  lists('idc',idc_fields)
+        cabinet   =  lists('cabinet',cabinet_fields)
         result = {'code':0,'idc':idc['msg'],'cabinet':cabinet['msg']}
         return  json.dumps(result)
 
@@ -64,8 +64,8 @@ def serverupdate():
         id = request.args.get('id')
         data={'id':id}
         server  = getone('server',data,server_fields)
-        idc   =  list('idc',idc_fields)
-        cabinet   =  list('cabinet',cabinet_fields)
+        idc   =  lists('idc',idc_fields)
+        cabinet   =  lists('cabinet',cabinet_fields)
         result = {'code':0,'idc':idc['msg'],'cabinet':cabinet['msg'],'server':server['msg']}
         return  json.dumps(result)
 

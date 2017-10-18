@@ -2,7 +2,7 @@
 # -*-coding:utf-8 -*-
 
 from flask import request,render_template, redirect,session
-from utils import  getone,check,_update,_delete,insert_sql,list
+from utils import  getone,check,_update,_delete,insert_sql,lists
 from . import app
 from sessions import sessionmsg
 import json
@@ -15,7 +15,7 @@ def userlist():
         return redirect('/login/')
     msg = sessionmsg()
     field  = ["id","username","name_cn","password","mobile","email","role","status"]
-    result = list('user',field)
+    result = lists('user',field)
     return  render_template('userlist.html',msg=msg,result=result['msg'])
 
 # 更新用户信息	

@@ -2,7 +2,7 @@
 # -*-coding:utf-8 -*-
 
 from flask import request,render_template, redirect,session
-from utils import  getone,check,_update,_delete,insert_sql,list
+from utils import  getone,check,_update,_delete,insert_sql,lists
 from . import app
 from sessions import sessionmsg
 import json
@@ -16,8 +16,8 @@ def cabinet():
     if 'username' not in  session:
         return redirect('/login/')
     msg = sessionmsg()
-    idcs   =  list('idc',idc_fields)['msg']
-    cabinets   = list('cabinet',field)['msg']
+    idcs   =  lists('idc',idc_fields)['msg']
+    cabinets   = lists('cabinet',field)['msg']
     for cab  in cabinets:
         for items in idcs:
             if  cab['idc_id'] == items['id']:
@@ -32,7 +32,7 @@ def cabinetadd():
     msg = sessionmsg()
     if request.method=='GET':
         fields = ['id','name']
-        result = list('idc',fields)
+        result = lists('idc',fields)
         return  json.dumps(result)
 
     if request.method=='POST':
@@ -53,7 +53,7 @@ def cabinetupdate():
         id = request.args.get('id')
         data={'id':id}
         cabinet  = getone('cabinet',data,field)
-        idc  = list('idc',idc_fields)
+        idc  = lists('idc',idc_fields)
         result  = {'code':0,'idc':idc['msg'],'cabinet':cabinet['msg']}
         return  json.dumps(result)
 
