@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block map %}
+<a href="/mem/">内存监控</a>
+{% endblock %}
+{% block user %}
+<div class="row">
+        <div class="col-sm-12 border-bottom white-bg dashboard-header" style="margin-left:15px;height: 800px">
+                
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="mem" style="width: 1000px;height:500px;"></div>
+
+
+
+         </div>
+    </div>
+    <br>
+
+
+</div> <!--wrapper-content-->
+
+
+
+<!--页面尾部-->
+<div class="footer fixed">
+    <div class="pull-right">
+        Version <strong>0.3.1</strong> GPL.
+    </div>
+    <div>
+        <strong>Copyright</strong>Reboot.com  Team © 2014-2015
+    </div>
+</div>
+
+</div>  <!--page-wrapper-->
+</div>   <!--wrapper-->
+
+
+<script src='/static/pulgin/echarts/echarts.min.js'></script>
+<script>
+var last_time
+$.getJSON('/memdata/',function(data){
+    console.log(data)
+    var myChart = echarts.init($('#mem')[0]);
+    var last_time=data.lasttime
+    var data=data.data
+    console.log(last_time)
+     option = {
+    title: {
+        text: '服务器内存使用率',
+        subtext: '项目演练'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['内存使用率']
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            dataZoom:{show:true},
+            dataView: {show:true,readOnly:true,title : '数据视图',lang : ['数据视图','关闭']},
+            magicType: {show:true,type: ['line', 'bar']},
+            restore: {show:true,title:'还原'},
+            saveAsImage: {show:true,title:"保存图片"}
+        } 
+    },
+    xAxis:  {
+        type: 'time',
+        boundaryGap: false,
+    },
+    yAxis: {
+        type: 'value',
+        axisLabel: { 
+          formatter : '{value} %' 
+        }
+    },
+    series: [
+        {
+            name:'i内存使用率',
+            type:'line',
+            data:data,
+       },
+    ]
+};
+myChart.setOption(option)
+// 每5秒请求一次数据 
+setInterval(function(){
+    $.getJSON('/memdata/?lasttime='+last_time,function(data){
+    last_time=data.lasttime
+    console.log(data.data)
+         myChart.setOption({
+            series:[{
+                 data:data.data
+             }]
+         })
+    })
+},3000)   
+})
+</script>
+
+
+
+{% endblock %}
+
