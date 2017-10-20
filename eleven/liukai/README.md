@@ -131,9 +131,25 @@
 
 ![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/ten/liukai/test/%E2%94%94%C2%B7%E2%95%A9%E2%95%96%E2%95%A3%D0%B4%E2%95%A1%D0%B5.png)
 
+## 内存监控可视化
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eleven/liukai/image/mem.png)
+
 ## 日志饼状图
 
 ![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/ten/liukai/test/%E2%96%92%C2%A4%E2%95%AB%E2%94%A4%E2%95%90%E2%95%9D.png)
+
+## 访问来源地图
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eleven/liukai/image/map.png)
+
+## ansible执行结果
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eleven/liukai/image/ansible.png)
+
+## ansible执行历史
+
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eleven/liukai/image/ansible_list.png)
 
 # 项目文档
 
