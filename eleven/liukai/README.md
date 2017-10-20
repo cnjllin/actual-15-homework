@@ -145,7 +145,7 @@
 
 ## ansible执行结果
 
-![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eleven/liukai/image/ansible.png)
+![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/eleven/liukai/image/ansible1.png)
 
 ## ansible执行历史
 
