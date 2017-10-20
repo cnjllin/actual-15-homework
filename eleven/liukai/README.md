@@ -9,10 +9,10 @@
 
 ├── app
 │   ├── cmdb.py            # 资产管理
-│   ├── ansible_test.py
-│   ├── mem.py
+│   ├── ansible_test.py    # ansibleAPI
+│   ├── mem.py             # 监控内存
 │   ├── job.py            # 工单系统
-│   ├── __init__.py
+│   ├── __init__.py      
 │   ├── static             # 静态文件
 │   │   ├── css
 │   │   ├── img
@@ -36,8 +36,8 @@
 │   │   ├── job_add.html            # 添加工单
 │   │   ├── jobhistory.html         # 工单历史
 │   │   ├── joblist.html            # 工单列表
-│   │   ├── ansible.html
-│   │   ├── mem.html
+│   │   ├── ansible.html            # 执行ansible
+│   │   ├── mem.html                # 内存监控可视化
 │   │   └── userlist.html           # 用户列表
 │   ├── user.py              # 用户权限模块
 │   └── log.py                # 可视化
@@ -68,7 +68,7 @@
 
 ![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/用户列表.png)
 
-## 用户添加
+## 用户添加：
 
 ![Alt text](https://github.com/51reboot/actual-15-homework/blob/master/nine/liukai/test/用户添加.png)
 
