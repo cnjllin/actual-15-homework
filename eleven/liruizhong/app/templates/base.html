@@ -110,6 +110,18 @@
   </ul> 
 </li> <!-- 工单管理 -->
 
+<li id="setting">
+<a href="/monitor"><i class="fa fa-gears"></i> <span class="nav-label">监控</span><span class="label label-info pull-right"></span></a>
+</li>    <!--监控-->
+
+<li id="log">
+<a><i class="fa fa-gears"></i> <span class="nav-label">日志可视化</span><span class="fa arrow"></span></a>
+  <ul class="nav nav-second-level collapse">
+    <li><a href="/log">日志状态饼图</a></li>
+    <li> <a href="/map">日志来源地图</a></li>
+  </ul> 
+</li>    <!--日志可视化-->
+
 <li id="api">
 <a href="#"><i class="fa fa-gears"></i> <span class="nav-label">第三方接口</span><span class="label label-info pull-right"></span></a>
   <ul class="nav nav-second-level collapse">
@@ -141,6 +153,9 @@ $('#juser').click(function(){
 })
 $('#job').click(function(){
 	$("#job").children("ul").toggleClass("collapse");   
+})
+$('#log').click(function(){
+    $("#log").children("ul").toggleClass("collapse");   
 })
 $('#api').click(function(){
 	$("#api").children("ul").toggleClass("collapse");   

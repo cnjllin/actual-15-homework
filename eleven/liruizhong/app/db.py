@@ -87,5 +87,17 @@ def delete(table,uid):
         WriteLog("sql").error("Execute %s error : %s" % (sql,traceback.format_exc()))
     return result
 
-
-
+# 获取地图数据
+def maps(table):
+    sql = "select name,value from %s " % (table)
+    try:
+        if cur.execute(sql):
+            res = cur.fetchall()
+            field = ['name','value']
+            data = [dict((k,row[i]) for i,k in enumerate(field)) for row in res]
+            result = {'code':0,'mapdata':data}
+        else:
+            result = {'code':1,'msg':'data is null'}
+    except Exception,e:
+        result = {'code':1,'msg':"sql error"}
+    return result
