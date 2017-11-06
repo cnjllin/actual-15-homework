@@ -3,9 +3,9 @@
 
 from flask import Flask,render_template,request,redirect,session
 import json
-import utils
+from utils import insert,getone,getlist,getwhere,update,delete
 import util
-import app
+from . import app
 #app.secret_key="dsadfasfadsfasf"
 
 field = ['id','username','password','email','phone','role']

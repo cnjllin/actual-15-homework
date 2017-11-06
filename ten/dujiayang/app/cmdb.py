@@ -2,7 +2,7 @@
 #coding:utf8
 
 from flask import Flask,render_template,request,redirect,session
-import utils
+from utils import insert,getone,getlist,getwhere,update,delete
 import util
 import json
 from . import app
