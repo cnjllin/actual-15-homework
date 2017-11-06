@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block username %}
+唐僧
+{% endblock %}
+
+{% block role %}
+女儿国国王
+{% endblock %}
+
+{% block userinfo %}
+机房管理
+{% endblock %}
+
+{% block body %}
+
+{% if result.errmsg %}
+    <p style="color:red">{{result.errmsg}}</p>
+{% else %}
+<h1>更新机柜信息</h1>
+
+
+ <form action="/cabinet_update/" class="form-horizontal" accept-charset="UTF-8" method="post">
+        <input value="{{result.id}}" type="hidden"  name="id">
+	<div class="form-group">
+            <label class="col-sm-4 control-label">机柜名</label>
+                 <div  class="col-sm-6">
+        	 <input class="form-control" placeholder="姓名" type="text" value="{{result.name}}" name="name">
+		 </div>
+	</div>
+	
+	<div class="form-group">
+            <label class="col-sm-4 control-label">所在机房ID</label>
+                 <div  class="col-sm-6">
+       		 <input class="form-control" placeholder="密码" type="text" value="请输入机房ID号" name="idc_id">
+		 </div>
+	</div>
+
+	<div class="form-group">
+            <label class="col-sm-4 control-label">U位</label>
+                 <div  class="col-sm-6">
+       		 <input class="form-control" placeholder="密码" type="text" value="{{result.u_num}}" name="u_num">
+		 </div>
+	</div>
+
+	<div class="form-group">
+            <label class="col-sm-4 control-label">电量</label>
+                 <div  class="col-sm-6">
+       		 <input class="form-control" placeholder="密码" type="text" value="{{result.power}}" name="power">
+		 </div>
+	</div>
+
+	<div class="form-group">
+            <label class="col-sm-4 control-label">负责人电话</label>
+                 <div  class="col-sm-6">
+       		 <input class="form-control" placeholder="密码" type="text" value="{{result.phone}}" name="phone">
+		 </div>
+	</div>
+
+	<div class='hr-line-dashed'></div>
+
+            <label class="col-sm-4 control-label">操作</label>
+                 <div  class="col-sm-6">
+        <!--	 <input type="radio" name="role" value=0 {%if result.role==0%}checked{%endif%}>管理员&nbsp;&nbsp;
+               	 <input type="radio" name="role" value=1 {%if result.role==1%}checked{%endif%} >用户&nbsp; -->
+       		 <input type="submit"  value="更新">
+       		 <input type="reset"  value="重置">
+		 </div>
+	</div>
+
+<!--	
+	<div class="form-group">
+            <label class="col-sm-4 control-label">状态</label>
+                 <div  class="col-sm-6">
+	  	 <select class="form-control" name="status">
+		{#	{% for s in statuses %}
+				{% if s.status == result.status %}
+					<option value="{{s.status}}" selected="selected">{{s.name}}</option>
+				{% else %}
+					<option value="{{s.status}}">{{s.name}}</option>
+				{% endif %}
+			{% endfor %} #}
+		</select>
+		</div>
+	</div> -->
+ </form>
+{% endif %}
+{% endblock %}

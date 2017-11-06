@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block username %}
+{{result.username}}
+{% endblock %}
+
+{% block role %}
+{% if result.role==0 %}管理员{% else%}用户{%endif%}
+{% endblock %}
+
+{% block userinfo %}
+用户列表
+{% endblock %}
+
+{% block body %}
+
+{% if result.errmsg %}
+    <p style="color:red">{{result.errmsg}}</p>
+{% else %}
+<h1>管理员更新信息</h1>
+
+
+ <form action="/update/" class="form-horizontal" accept-charset="UTF-8" method="post">
+        <input value="{{result.id}}" type="hidden"  name="id">
+	<div class="form-group">
+            <label class="col-sm-4 control-label">用户名</label>
+                 <div  class="col-sm-6">
+        	 <input class="form-control" placeholder="姓名" type="text" value="{{result.username}}" name="username">
+		 </div>
+	</div>
+	
+	<div class="form-group">
+            <label class="col-sm-4 control-label">密码</label>
+                 <div  class="col-sm-6">
+       		 <input class="form-control" placeholder="密码" type="text" value="{{result.password}}" name="password">
+		 </div>
+	</div>
+
+	<div class="form-group">
+            <label class="col-sm-4 control-label">角色</label>
+                 <div  class="col-sm-6">
+        	 <input type="radio" name="role" value=0 {%if result.role==0%}checked{%endif%}>管理员&nbsp;&nbsp;
+               	 <input type="radio" name="role" value=1 {%if result.role==1%}checked{%endif%} >用户&nbsp; 
+       		 <input type="submit"  value="更新">
+		 </div>
+	</div>
+
+<!--	
+	<div class="form-group">
+            <label class="col-sm-4 control-label">状态</label>
+                 <div  class="col-sm-6">
+	  	 <select class="form-control" name="status">
+		{#	{% for s in statuses %}
+				{% if s.status == result.status %}
+					<option value="{{s.status}}" selected="selected">{{s.name}}</option>
+				{% else %}
+					<option value="{{s.status}}">{{s.name}}</option>
+				{% endif %}
+			{% endfor %} #}
+		</select>
+		</div>
+	</div> -->
+ </form>
+{% endif %}
+{% endblock %}

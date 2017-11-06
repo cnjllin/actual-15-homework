@@ -312,6 +312,8 @@ def order_list():
 def order_deal():
 	if request.method == 'POST':
 		data = {k:v[0] for k,v in dict(request.form).iteritems()}
+		print '111111111111111111data'
+		print data
 		data['status'],data['deal_person'] = 1,session['username']
 		print '\n'
 		print data
@@ -323,16 +325,17 @@ def order_deal():
 #			return redirect('/orderlist/',result=result,info=session)
 #		result = {'errmsg':'deal is fail'}
 #		return render_template('order_list.html',result=result)
-#	if request.method == 'GET':
-#		orderid = request.args.get('id','')
-#		data = {}
-#		data['id'],data['status'],data['deal_person'] = orderid,1,session['username']
-#		print "\n"
-#		print "deal----deal"
-#		print data
-#		field = ['id','status','deal_person']
-#		result = update('work_order',field,data)
-#		return json.dumps(result)
+	if request.method == 'GET':
+		orderid = request.args.get('id','')
+		orderdesc = request.args.get('deal_desc','')
+		data = {}
+		data['id'],data['deal_desc'],data['status'],data['deal_person'] = orderid,orderdesc,1,session['username']
+		print "\n"
+		print "deal----deal"
+		print data
+		field = ['id','deal_desc','status','deal_person']
+		result = update('work_order',field,data)
+		return json.dumps(result)
 			#return redirect('/orderlist/',result=result,info=session)
 	
 
@@ -348,4 +351,4 @@ def order_history():
 			
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=5566,debug=True)
+    app.run(host='0.0.0.0',port=7799,debug=True)
